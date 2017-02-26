@@ -1,0 +1,9 @@
+title: Projets
+
+pages: projet
+files: false
+
+fields:
+  title:
+    label: Titre
+    type:  text

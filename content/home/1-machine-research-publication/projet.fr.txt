@@ -1,0 +1,17 @@
+Title: Machine Research Publication
+
+----
+
+Year: 2016
+
+----
+
+Indices: Machine,Nodejs,Live Publishing
+
+----
+
+Text: The PJ Machine (Publishing Jockey Machine) is a box with arcade buttons to control a node js web interface for live publishing. Made with Constant and love.
+
+----
+
+Thumbnail: pj-machine-test.png

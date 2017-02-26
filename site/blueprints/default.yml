@@ -1,0 +1,10 @@
+title: Page
+
+fields:
+  title:
+    label: Titre
+    type:  text
+
+  text:
+    label: Texte
+    type:  textarea
