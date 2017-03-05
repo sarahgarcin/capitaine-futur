@@ -17,6 +17,13 @@ fields:
   thumbnail:
     label: Image page d'accueil
     type:  selector
+  imageProjet:
+    label: Image page projet
+    type:  selector
+    mode:  multiple
   text:
     label: Texte
     type:  textarea
+  ascii:
+    label: Image ASCII
+    type:  selector

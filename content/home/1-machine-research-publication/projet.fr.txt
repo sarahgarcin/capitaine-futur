@@ -15,3 +15,11 @@ Text: The PJ Machine (Publishing Jockey Machine) is a box with arcade buttons to
 ----
 
 Thumbnail: pj-machine-test.png
+
+----
+
+Imageprojet: 01.jpg,03.jpg,20170119_084007-introduction_colophon.jpg
+
+----
+
+Ascii: test-ascii-01.png

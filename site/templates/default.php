@@ -1,7 +1,9 @@
 <?php snippet('header') ?>
+<?php snippet('menu') ?>
 
-  <h1><?php echo $page->title()->html() ?></h1>
-
-  <?php echo $page->text()->kirbytext() ?>
+<main class="small-11">
+	<h2><?= $page->title()->html()?></h2>
+	<?= $page->text()->kirbytext()?>
+</main>
 
 <?php snippet('footer') ?>
