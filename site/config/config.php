@@ -46,6 +46,12 @@ c::set('languages', array(
     'locale'  => 'fr_FR',
     'url'     => '/',
   ),
+  array(
+    'code'    => 'nl',
+    'name'    => 'Dutch',
+    'locale'  => 'nl_NL',
+    'url'     => '/nl',
+  ),
 ));
 
 c::set('multisizes', true);

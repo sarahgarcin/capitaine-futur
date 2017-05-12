@@ -4853,7 +4853,7 @@ meta.foundation-mq-topbar {
     height: 4rem;
     margin: 0; }
     .top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
-      font-size: 1.5rem;
+      font-size: 1rem;
       line-height: 4rem;
       margin: 0; }
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
@@ -4936,15 +4936,15 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       color: #000;
       display: block;
-      font-family: "terminal_grotesque", monospace;
-      font-size: 1.5rem;
+      font-family: Arial, monospace;
+      font-size: 1rem;
       font-weight: normal;
       padding-left: 1.33333rem;
       padding: 12px 0 12px 1.33333rem;
       text-transform: none;
       width: 100%; }
       .top-bar-section ul li > a.button {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-left: 1.33333rem;
         padding-right: 1.33333rem;
         background-color: #008CBA;
@@ -4995,7 +4995,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button.info:hover, .top-bar-section ul li > a.button.info:focus {
           color: #FFFFFF; }
     .top-bar-section ul li > button {
-      font-size: 1.5rem;
+      font-size: 1rem;
       padding-left: 1.33333rem;
       padding-right: 1.33333rem;
       background-color: #008CBA;
@@ -5476,7 +5476,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "terminal_grotesque", monospace;
+  font-family: Arial, monospace;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -5489,7 +5489,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 0.875rem; }
+  font-size: 0.375rem; }
 
 h2 {
   font-size: 0.575rem; }
@@ -5664,7 +5664,7 @@ blockquote p {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
   h1 {
-    font-size: 1.5rem; }
+    font-size: 1rem; }
   h2 {
     font-size: 1.2rem; }
   h3 {
@@ -8703,7 +8703,18 @@ h1, h2, h3, h4, h5, h6, a {
   color: #000; }
 
 h2, h3, h4, p {
-  font-size: 1.5rem; }
+  font-size: 1rem; }
+
+h1 {
+  font-size: 1.9em;
+  text-decoration: underline; }
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold; }
+
+h3 {
+  text-decoration: underline; }
 
 p {
   line-height: 1.2; }
@@ -8722,3 +8733,11 @@ figure {
 img {
   width: 100%;
   max-width: 100%; }
+
+main section {
+  border-bottom: 1px solid #000;
+  padding: 2em; }
+  main section .date {
+    margin-bottom: 2em; }
+    main section .date:last-child {
+      margin: 0; }

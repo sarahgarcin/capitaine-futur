@@ -6,15 +6,50 @@ fields:
   title:
     label: Title
     type:  text
-
   author:
     label: Author
     type:  text
-
   description:
     label: Description
-    type:  textarea
-    
+    type:  markdown
   copyright:
     label: Copyright
-    type:  textarea
+    type:  markdown
+  slogan:
+    label: Slogan
+    type:  markdown
+  logo:
+    label: Logo
+    type: selector
+    mode: single
+    sort: filename
+    autoselect: first
+    required: false
+    types:
+      - image
+    help: Logo du site
+  socialNetworkSettings:
+    label: Réseaux Sociaux
+    type:  headline
+  ogimage:
+    label: Site Thumbnail
+    type:  url
+    help:  URL de l'image qui va représenter votre site sur les réseaux sociaux
+  socialnetworks:
+    label: Vos Réseaux Sociaux
+    type:  structure
+    entry: >
+      <i class="fi-{{icon}}"></i>
+      {{link}}
+    fields:
+      icon:
+        label: Icône
+        type:  text
+        width: 1/2
+        icon:  share-alt
+      link:
+        label: Lien
+        type:  text
+        width: 1/2
+        icon:  link
+    help: Aller sur le site <a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a> pour trouver le nom de l'icône que vous voulez utiliser.

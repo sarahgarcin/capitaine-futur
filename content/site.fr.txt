@@ -1,4 +1,4 @@
-Title: Sarah Garcin
+Title: Capitaine Futur
 
 ----
 
@@ -11,3 +11,19 @@ Description:
 ----
 
 Copyright: 
+
+----
+
+Slogan: 
+
+----
+
+Logo: 
+
+----
+
+Ogimage: 
+
+----
+
+Socialnetworks: 
