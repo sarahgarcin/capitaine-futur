@@ -5,9 +5,11 @@
 	<ul class="row projets">
 		<?php foreach($page->children()->visible() as $project):
 			$thumb = $project->thumbnail()->toFile();
+			$ascii = $project->ascii()->toFile();
+			//print $ascii;
 			if($thumb):?>
 				<li class="small-12 large-2 columns left">
-					<a href="<?php echo $project->url()?>" title="<?php echo $project->title()?>">
+					<a class="thumb-image" href="<?php echo $project->url()?>" title="<?php echo $project->title()?>">
 						<?php
               echo kirbytag(array(
           		  'image'  				=> $thumb->filename(),
@@ -24,6 +26,24 @@
 	           ?>
 						<!-- <img src="<?= $thumb->url() ?>" alt="<?= $project->title()?>"> -->
 					</a>
+					<?php if($ascii):?>
+						<a class="ascii-image" href="<?php echo $project->url()?>" title="<?php echo $project->title()?>">
+							<?php
+	              echo kirbytag(array(
+	          		  'image'  				=> $ascii->filename(),
+	          		  'thumbwidth' 		=> 500,
+	          		  'outputlink'     => false,
+	          		  'optimumx'=> 2,
+	          		  'return_srcset' => false,
+	          		  'multisizes' => true,
+	          		  'originalPage'  => $project,
+	          		  'alt'=> $project->title(),
+	          		  'itemprop' => "image",
+	          		  'data-caption' => $project->title()
+	          		));
+		           ?>
+						</a>
+					<?php endif; ?>
 					<div class="legendes">
 						<?php $tags = $project->indices()->split(',');?>
 						<h2><?= $project->title()->html() ?></h2>
