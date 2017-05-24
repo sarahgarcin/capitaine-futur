@@ -35,20 +35,20 @@ c::set('debug', true);
 c::set('languages', array(
   array(
     'code'    => 'en',
-    'name'    => 'English',
+    'name'    => 'En',
     'locale'  => 'en_US',
     'url'     => '/en',
   ),
   array(
     'code'    => 'fr',
-    'name'    => 'Français',
+    'name'    => 'Fr',
     'default' => true,
     'locale'  => 'fr_FR',
     'url'     => '/',
   ),
   array(
     'code'    => 'nl',
-    'name'    => 'Dutch',
+    'name'    => 'Nl',
     'locale'  => 'nl_NL',
     'url'     => '/nl',
   ),

@@ -1,5 +1,5 @@
 // I M P O R T
-@import "../fonts/terminal/stylesheet.css";
+@import "../fonts/stylesheet.css";
 @import "_foundation.scss";
 @import "_font-awesome.scss";
 @import "_variables.scss";
@@ -8,26 +8,26 @@
 
 body {
 	font-size: 12px;
-	font-family: $font, monospace;
+	font-family: $inknut;
 	background: $background-color;
+	color: $vert;
 }
 
 h1,h2,h3,h4,h5,h6, a{
-	font-family: $font, monospace;
-	color: #000;
+	color: $vert;
 }
-h2,h3,h4,p{font-size:$h1-font-size;}
+h2,h3,h4,p{
+
+}
 
 h1{
 	font-size: 1.9em;
-	text-decoration: underline;
 }
 h2{
 	font-size: 1.5em;
 	font-weight: bold;
 }
 h3{
-	text-decoration: underline;
 }
 p{line-height:1.2;}
 
@@ -40,21 +40,99 @@ figure{
 	margin:0;
 }
 
+a{
+	&:hover, .active{
+		text-decoration: underline;
+	}
+}
+
 .FigureImage-lazy {
 	padding:0 !important;
 }
 
 img{width: 100%; max-width:100%}
 
-main section{
-	border-bottom: 1px solid #000;
-	padding: 2em;
-	.date{
-		margin-bottom: 2em;
-		&:last-child{
-			margin:0;
+header{
+	.top-bar{
+		.name{
+			h1 a{
+				@include titre;
+			}
 		}
 	}
 }
+
+#preloader {
+	display: none;
+	width: 1px;
+	height: 1px;
+	visibility: none;
+}
+.no-js {
+	padding-top: 106px;
+}
+h2 {
+	margin-top: 0;
+}
+.loading {
+	//background: url('../img/ico_loading.gif') no-repeat center center;
+}
+.loading main {
+	background: none;
+}
+section {
+	min-width: 960px;
+	opacity: 0;
+}
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+main {
+	overflow-x: hidden;
+}
+
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+/* Slide 1 */
+.bcg {background-image:url('../images/plan-1-gauche.png'); z-index:6;}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../images/plan-1-droite.png'); z-index:6;}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../images/plan-2.png');z-index:5;}
+
+/* Slide 4 */
+#slide-4 .bcg {background-image:url('../images/plan-3.png');z-index:4;}
+
+/* Slide 5 */
+#slide-5 .bcg {background-image:url('../images/plan-4.png');z-index:3;}
+
+/* Slide 6 */
+#slide-6 .bcg {background-image:url('../images/plan-5.png');z-index:2;}
+
+// résumé du projet
+#resume-du-projet{}
+#resume-du-projet .inner-content { 
+	background: #FFF;
+	padding: 30px;
+	//width: 500px !important; 
+	height: auto;
+	z-index:3;
+	position:fixed;
+}
+
 
 

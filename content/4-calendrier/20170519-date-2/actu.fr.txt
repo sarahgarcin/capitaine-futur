@@ -1,9 +1,0 @@
-Title: Date 2
-
-----
-
-Date: 2017-05-19
-
-----
-
-Text: Mauris posuere, risus at ullamcorper ornare, arcu magna blandit diam, nec commodo neque magna non ligula. Vivamus sed sagittis diam. Etiam tellus nisi, dictum vitae nunc et, porta lacinia est. Integer condimentum tempor eros, nec volutpat nibh finibus nec.

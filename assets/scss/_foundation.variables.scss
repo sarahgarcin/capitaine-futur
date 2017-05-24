@@ -1,33 +1,44 @@
 // Variables to override foundation CSS
 $background-color: #FFF;
 $row-width: 100%;
-// $total-columns: 18 ;
+$total-columns: 18 ;
+
+$bungee: "bungee", sans-serif; 
+$bungeeShade: "bungeeshade", sans-serif;
+$bungeeLine: "bungeehairline", sans-serif; 
+
+$inknut: "inknut", serif; 
+
+
+
+$vert: rgb(0,107,0);
+$jaune: rgb(255,255,0);
 
 // fonts
-$header-font-family: Arial, monospace;
+$header-font-family: $bungee;
 
 $h1-font-size: 1rem;
-$h2-font-size: 1.2rem;
+$h2-font-size: rem-calc(18);
 $h3-font-size: 1rem;
 $h4-font-size: 1rem;
 $h5-font-size: 1rem;
 $h6-font-size: 1rem;
 
 // top bar
-$topbar-title-font-size: $h1-font-size;
+$topbar-title-font-size: $h2-font-size;
 $topbar-height: 4rem;
-$topbar-bg-color: $background-color;
-$topbar-link-color: #000;
-$topbar-menu-link-color: #000;
-$topbar-menu-icon-color: #000;
+$topbar-bg-color: $jaune;
+$topbar-link-color: $vert;
+$topbar-menu-link-color: $vert;
+$topbar-menu-icon-color: $vert;
 
 $topbar-dropdown-bg: $background-color;
 $topbar-link-font-family:$header-font-family; 
-$topbar-link-font-size: $h1-font-size;
+$topbar-link-font-size: $h2-font-size;
 
 //hover 
-$topbar-link-color-hover: rgb(0,255,0);
-$topbar-link-bg-hover: $background-color;
-$topbar-link-bg-color-hover: $background-color;
+$topbar-link-color-hover: $vert;
+$topbar-link-bg-hover: $jaune;
+$topbar-link-bg-color-hover: $jaune;
 
 

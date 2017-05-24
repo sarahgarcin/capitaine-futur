@@ -1,1 +1,6 @@
-$font: Arial, sans-serif;
+
+@mixin titre{
+	font-size: rem-calc(25);
+	font-family:$bungeeShade;
+	color: $vert;
+}
