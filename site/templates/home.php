@@ -35,7 +35,10 @@
     </section>
 
     <section id="slide-5" class="homeSlide">
-      	<div class="bcg" data-top="top: 0%;" data-anchor-target="#slide-5">
+      	<div class="bcg" data-top="top: 0%;" 
+      	data-bottom="top: 20%;" 
+      	data--3000-bottom="top: 30%;" 
+      	data-anchor-target="#slide-5">
         </div>
     </section>
 

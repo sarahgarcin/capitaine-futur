@@ -154,7 +154,15 @@ main {
 #home .inner-content{z-index:3;} 
 #home-appel .inner-content{z-index:3;} 
 #resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:4;} 
+#partenaires .inner-content{z-index:2;} 
+#calendrier .inner-content{z-index:2;} 
 
+
+#bar{
+  background-color:$jaune;
+  width:100%;
+  height:10px;
+}
 
 
 // slider

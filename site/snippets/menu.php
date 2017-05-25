@@ -3,7 +3,7 @@
 	<nav class="top-bar" data-topbar role="navigation">
 	  <ul class="title-area">
 	    <li class="name">
-	      <h1><a href="<?php echo $site->url() ?>"><?php echo $site->title()->html()?></a></h1>
+	      <h1><a href="#"><?php echo $site->title()->html()?></a></h1>
 	    	
 	    </li>
 	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -31,5 +31,6 @@
 		  </ul>
 	  </section>
 	</nav>
+	<div id="bar"></div>
 	
 </header><!-- /header -->
