@@ -4,3 +4,48 @@
 	font-family:$bungeeShade;
 	color: $vert;
 }
+
+@mixin texteCourant{
+	font-family: $inknut;
+	color: $vert;
+	font-size: rem-calc(13);
+	line-height:1.2;
+}
+
+@mixin encart{
+	background: #FFF;
+	border: 1px solid $vert;
+	padding: 1rem;
+	position:fixed;
+}
+
+@mixin slider{
+	background: $vert;
+	padding: 0.4rem 0.4rem 1rem 0.4rem;
+	position:fixed;
+}
+
+@mixin formes{
+	position:fixed;
+}
+
+
+@mixin liensDirect{
+	font-size: rem-calc(20);
+	font-family:$bungee;
+	color: #FFF;
+	position:absolute; 
+	top: 35%;
+	left: 45%;
+	transform: translate(-50%);
+}
+
+@mixin titreSection{
+	font-size: rem-calc(24);
+	font-family:$bungeeRotated;
+	color: $vert;
+	transform: rotate(90deg);
+	transform-origin: 0 90%;
+	margin: 0;
+}
+

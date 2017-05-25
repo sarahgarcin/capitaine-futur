@@ -9008,8 +9008,9 @@ th.hide-for-touch {
 body {
   font-size: 12px;
   font-family: "inknut", serif;
-  background: #FFF;
-  color: #006b00; }
+  color: #006b00;
+  font-size: 0.8125rem;
+  line-height: 1.2; }
 
 h1, h2, h3, h4, h5, h6, a {
   color: #006b00; }
@@ -9022,6 +9023,9 @@ h2 {
   font-weight: bold; }
 
 p {
+  font-family: "inknut", serif;
+  color: #006b00;
+  font-size: 0.8125rem;
   line-height: 1.2; }
 
 ul {
@@ -9057,7 +9061,14 @@ header .top-bar .name h1 a {
   padding-top: 106px; }
 
 h2 {
-  margin-top: 0; }
+  font-size: 1.5rem;
+  font-family: "bungee_rotated", sans-serif;
+  color: #006b00;
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -ms-transform-origin: 0 90%;
+  transform-origin: 0 90%;
+  margin: 0; }
 
 .loading main {
   background: none; }
@@ -9114,9 +9125,71 @@ main {
   background-image: url("../images/plan-5.png");
   z-index: 2; }
 
-#resume-du-projet .inner-content {
+.textCartel .inner-content {
   background: #FFF;
-  padding: 30px;
-  height: auto;
-  z-index: 3;
+  border: 1px solid #006b00;
+  padding: 1rem;
   position: fixed; }
+
+.sliderCartel .inner-content {
+  background: #006b00;
+  padding: 0.4rem 0.4rem 1rem 0.4rem;
+  position: fixed; }
+
+.formes .inner-content {
+  position: fixed; }
+  .formes .inner-content a {
+    font-size: 1.25rem;
+    font-family: "bungee", sans-serif;
+    color: #FFF;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%); }
+
+#home .inner-content {
+  z-index: 3; }
+
+#home-appel .inner-content {
+  z-index: 3; }
+
+#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content {
+  z-index: 4; }
+
+.slider {
+  overflow: hidden;
+  margin-left: 0; }
+  .slider img {
+    margin: auto;
+    max-width: none; }
+  .slider button {
+    background: transparent;
+    padding: 0;
+    color: #006b00;
+    font-size: 2em;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 999;
+    outline: none; }
+    .slider button.slick-prev {
+      left: 10px; }
+    .slider button.slick-next {
+      right: 10px; }
+  .slider .slick-dots {
+    margin-left: 0.5rem; }
+    .slider .slick-dots li {
+      width: 10px;
+      height: 10px;
+      background: #FFF;
+      border-radius: 100%;
+      display: inline-block;
+      margin-right: 0.5em;
+      cursor: pointer; }
+      .slider .slick-dots li.slick-active {
+        background: yellow; }
+    .slider .slick-dots button {
+      display: none; }

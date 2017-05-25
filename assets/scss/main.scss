@@ -8,9 +8,7 @@
 
 body {
 	font-size: 12px;
-	font-family: $inknut;
-	background: $background-color;
-	color: $vert;
+	@include texteCourant;
 }
 
 h1,h2,h3,h4,h5,h6, a{
@@ -29,7 +27,9 @@ h2{
 }
 h3{
 }
-p{line-height:1.2;}
+p{
+	@include texteCourant;
+}
 
 ul{
 	margin:0;
@@ -71,9 +71,11 @@ header{
 .no-js {
 	padding-top: 106px;
 }
+
 h2 {
-	margin-top: 0;
+	@include titreSection;
 }
+
 .loading {
 	//background: url('../img/ico_loading.gif') no-repeat center center;
 }
@@ -123,15 +125,80 @@ main {
 /* Slide 6 */
 #slide-6 .bcg {background-image:url('../images/plan-5.png');z-index:2;}
 
-// résumé du projet
-#resume-du-projet{}
-#resume-du-projet .inner-content { 
-	background: #FFF;
-	padding: 30px;
-	//width: 500px !important; 
-	height: auto;
-	z-index:3;
-	position:fixed;
+//Cartel
+.textCartel{
+	.inner-content{
+		@include encart;
+	}
+}
+
+//slider
+.sliderCartel{
+	.inner-content{
+		@include slider;
+	}
+}
+
+
+// formes
+.formes{
+	.inner-content{
+		@include formes;
+		a{
+			@include liensDirect;
+		}
+	}
+}
+
+// Sections textuelles spécifiques
+#home .inner-content{z-index:3;} 
+#home-appel .inner-content{z-index:3;} 
+#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:4;} 
+
+
+
+// slider
+.slider{
+  overflow:hidden;
+  margin-left: 0;
+  img {
+    margin:auto;
+    max-width:none;
+  }
+  button{
+    background: transparent;
+    padding: 0;
+    color: $vert;
+    font-size: 2em;
+    font-weight: 100;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    outline: none;
+    &.slick-prev{
+      left:10px;
+    }
+    &.slick-next{
+      right:10px;
+    }
+  }
+  .slick-dots{
+    margin-left:0.5rem;
+    li{
+      width: 10px;
+      height:10px;
+      background: #FFF;
+      border-radius: 100%;
+      display:inline-block;
+      margin-right: 0.5em;
+      cursor: pointer;
+      &.slick-active{
+        background: $jaune;
+      }
+    }
+    button{display:none;}
+  }
 }
 
 

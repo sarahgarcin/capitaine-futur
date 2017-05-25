@@ -13,13 +13,13 @@
  	<main data-anchor-target="#slide-1">
      	 
     <section id="slide-1" class="homeSlide">
-      <div class="bcg" data-top="left: 0%;" data-bottom="left: -50%;" data-anchor-target="#slide-1">
+      <div class="bcg" data-top="left: 0%;" data-bottom="left: -100%;" data-anchor-target="#slide-1">
        </div>
     </section>
 
 	    
     <section id="slide-2" class="homeSlide">
-      	<div class="bcg" data-top="left: 0%;" data-bottom="left: 50%;" data-anchor-target="#slide-1">
+      	<div class="bcg" data-top="left: 0%;" data-bottom="left: 100%;" data-anchor-target="#slide-1">
         </div>
     </section>
 
@@ -34,40 +34,52 @@
         </div>
     </section>
 
-    <section id="slide-5" class="homeSlide" data-bottom="opacity: 1;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-5">
-      	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 1; width: 500%; height: 450%; top: -48%; left: -48%;" data-anchor-target="#slide-5">
+    <section id="slide-5" class="homeSlide">
+      	<div class="bcg" data-top="top: 0%;" data-anchor-target="#slide-5">
         </div>
     </section>
 
-    <section id="slide-6" class="homeSlide" data-bottom="opacity: 1;" data--10p-bottom="opacity: 1;" data-anchor-target="#slide-6">
-      	<div class="bcg" data-top="opacity: 1; width: 100%; height: 100%; top: 0%; left: 0%;" data-40p-bottom="opacity: 1; width: 500%; height: 450%; top: -48%; left: -48%;" data-anchor-target="#slide-6">
+    <section id="slide-6" class="homeSlide">
+      	<div class="bcg" data-top="top: 0%;">
         </div>
     </section>
 
-<!-- <div class="illustrations">
-	<div class="illustration-wrapper" id="plan5">
-		<img src="<?php echo $site->url()?>assets/images/plan-5.png" alt="">
-	</div>
-	<div class="illustration-wrapper" id="plan4">
-		<img src="<?php echo $site->url()?>/assets/images/plan-4.png" alt="">
-	</div>
-	<div class="illustration-wrapper" id="plan3">
-		<img src="<?php echo $site->url()?>/assets/images/plan-3.png" alt="">
-	</div>
-	<div class="illustration-wrapper" id="plan2">
-		<img src="<?php echo $site->url()?>/assets/images/plan-2.png" alt="">
-	</div>
-	<div class="illustration-wrapper" id="plan1D">
-		<img src="<?php echo $site->url()?>/assets/images/plan-1-droite.png" alt="">
-	</div>
-	<div class="illustration-wrapper" id="plan1G">
-		<img src="<?php echo $site->url()?>/assets/images/plan-1-gauche.png" alt="">
-	</div>
-</div> -->
-<main class="small-8 small-push-2">
-	<?php foreach($pages->visible() as $section) {
-	  snippet($section->uid(), array('data' => $section));
-	}?>
+    <section id="<?php echo $page->uid()?>" class="textCartel">
+			<div class="inner-content small-16 small-push-1 medium-6 medium-push-10" 
+			data-top="top: 100%;" 
+			data-bottom="top: 12%;" 
+			data-anchor-target="#slide-3"
+			data--500-bottom="top:12%;"
+			data--1500-bottom="top:100%;"
+			>
+				<?php echo $page->text()->kirbytext() ?>
+			</div>
+		</section>
+
+		<section id="<?php echo $page->uid()?>-appel" class="formes">
+			<div class="inner-content" 
+			data-top="top: 100%; left:35%;" 
+			data-bottom="top: 50%; left:35%;" 
+			data-anchor-target="#slide-3"
+			data--500-bottom="left:25%; top:50%;"
+			data--1500-bottom="left:-25%; top:50%;">
+				<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="155px" height="148.394px" viewBox="0 0 155 148.394" enable-background="new 0 0 155 148.394" xml:space="preserve">
+				<polygon fill="#007C12" points="26.935,0 0,69.114 0,112.819 27.952,137.213 39.132,141.278 94.016,148.394 141.787,119.934 
+					155,81.31 122.136,31.508 86.902,6.097 "/>
+				</svg>
+				<a href="<?php echo $pages->find('appel-a-projets')->url()?>" title="<?php echo $pages->find('appel-a-projets')->title()?>">
+					<?php echo $pages->find('appel-a-projets')->title()?>
+				</a>
+			</div>
+		</section>
+
+
+		<?php foreach($pages->visible() as $section) {
+		  snippet($section->uid(), array('data' => $section));
+		}?>
+
+
 </main>
 
 

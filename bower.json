@@ -20,6 +20,7 @@
   "dependencies": {
     "lazysizes": "^3.0.0",
     "skrollr": "^0.6.30",
-    "imagesloaded": "^4.1.2"
+    "imagesloaded": "^4.1.2",
+    "slick-carousel": "^1.6.0"
   }
 }

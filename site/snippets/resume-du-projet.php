@@ -1,17 +1,34 @@
-<section id="<?php echo $data->uid()?>" class="homeSlide">
-	<div class="inner-content  small-9" data-top="top: 100%;" 
-	data-bottom="top: 20%;" data-anchor-target="#slide-3">
-	  <h1><?php echo $data->title()->html() ?></h1>
-	  <h2><?php echo $data->slogan()->html() ?></h2>
-	  <?php if($site->logo()->isNotEmpty): ?>
-		  <div class="logo medium-2 ">
-				<a href="<?php echo $site->url()?>" title="<?php echo $site->title() ?>" >
-					<img src="<?php echo $site->logo()->toFile()->url() ?>" alt="<?php echo $site->title() ?>">
-				</a>
-			</div>
-		<?php endif; ?>
-	  <?php echo $data->text()->kirbytext() ?>
-	  <?php echo $data->mentions()->kirbytext() ?>
+<section id="<?php echo $data->uid()?>" class="textCartel">
+	<div class="inner-content small-18 small-push-1 medium-8" 
+	data-top="top: 12%; left:100%;" 
+	data-bottom="top: 12%; left:75%;" 
+	data--1000-bottom="top: 12%; left:50%;" 
+	data--1500-bottom="top: 12%; left:50%;"
+	data--2000-bottom="top: 12%; left:100%;" 
+	data-anchor-target="#slide-4">
+		<h2><?php echo $data->subtitle()->html() ?></h2>
+	  <div class="text-wrapper small-16 small-push-2">
+	  	<?php echo $data->text()->kirbytext() ?>	
+	  </div>
 	</div>
 
+</section>
+
+<section id="<?php echo $data->uid()?>-slider" class="sliderCartel">
+	<div class="inner-content small-18 small-push-1 medium-7" 
+	data-top="top: 12%; left:-100%;" 
+	data-bottom="top: 12%; left:-40%;" 
+	data--1000-bottom="top: 12%; left:5%;"
+	data--1500-bottom="top: 12%; left:5%;"
+	data--2000-bottom="top: 12%; left:-100%;" 
+	data-anchor-target="#slide-4">
+		<ul class="slider js_slides">
+		<?php foreach($data->images() as $slide):?>
+			<li class="slider-image">
+				<?php echo 	$slide->crop(1200, 800); ?>
+			</li>
+		<?php endforeach; ?>
+		</ul>
+	</div>
+	
 </section>
