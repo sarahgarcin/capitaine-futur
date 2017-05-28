@@ -70,7 +70,7 @@ kirby()->hook('panel.file.replace', 'resizeImage');
 
 function resizeImage($file) {
   // set a max. dimension
-  $maxDimension = 2000;
+  $maxDimension = 3000;
   try {
     // check file type and dimensions
     if ($file->type() == 'image' and ($file->width() > $maxDimension or $file->height() > $maxDimension)) {

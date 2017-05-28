@@ -37,7 +37,9 @@
     <section id="slide-5" class="homeSlide">
       	<div class="bcg" data-top="top: 0%;" 
       	data-bottom="top: 20%;" 
-      	data--3000-bottom="top: 30%;" 
+      	data--3000-bottom="top: 30%;"
+      	data--45000-bottom="top: 30%;"
+      	data--50000-bottom="top: 100%;" 
       	data-anchor-target="#slide-5">
         </div>
     </section>
@@ -49,11 +51,12 @@
 
     <section id="<?php echo $page->uid()?>" class="textCartel">
 			<div class="inner-content small-16 small-push-1 medium-6 medium-push-10" 
-			data-top="top: 100%;" 
-			data-bottom="top: 12%;" 
-			data-anchor-target="#slide-3"
-			data--500-bottom="top:12%;"
-			data--1500-bottom="top:100%;"
+			data-top="top: 12%; left:100%;"
+			data--100-top="top: 12%; left:90%;"  
+			data-bottom="top: 12%; left:50%" 
+			data-anchor-target="#slide-1"
+			data--500-bottom="top:12%; left:50%"
+			data--1500-bottom="top:12%; left:100%;"
 			>
 				<?php echo $page->text()->kirbytext() ?>
 			</div>
@@ -61,11 +64,12 @@
 
 		<section id="<?php echo $page->uid()?>-appel" class="formes">
 			<div class="inner-content" 
-			data-top="top: 100%; left:35%;" 
+			data-top="top: 50%; left:0%;"
+			data--100-top="top: 50%; left:10%;" 
 			data-bottom="top: 50%; left:35%;" 
-			data-anchor-target="#slide-3"
-			data--500-bottom="left:25%; top:50%;"
-			data--1500-bottom="left:-25%; top:50%;">
+			data--500-bottom="top: 50%; left:35%;"
+			data--1500-bottom="top: 50%; left:-100%;"
+			data-anchor-target="#slide-1">
 				<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 width="155px" height="148.394px" viewBox="0 0 155 148.394" enable-background="new 0 0 155 148.394" xml:space="preserve">
 				<polygon fill="#007C12" points="26.935,0 0,69.114 0,112.819 27.952,137.213 39.132,141.278 94.016,148.394 141.787,119.934 
@@ -76,6 +80,8 @@
 				</a>
 			</div>
 		</section>
+
+		<?php snippet('animations') ?>
 
 
 		<?php foreach($pages->visible() as $section) {

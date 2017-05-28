@@ -5,9 +5,19 @@
 	data--2500-bottom="top: 12%; left:5%;"
 	data--3000-bottom="top: -100%; left:5%;"   
 	data-anchor-target="#slide-5">
-	  <h2><?php echo $data->title()->html() ?></h2>
+	  <h2><?php echo $data->subtitle()->html() ?></h2>
 	  <div class="text-wrapper small-16 small-push-2">
-	  	<?php echo $data->text()->kirbytext() ?>
+	  	<ul>
+	  		<?php foreach($data->children()->visible() as $part):?>
+	  			<li>
+	  				<h3><?php echo $part->title()->html()?></h3>
+	  				<h4>+ d'infos</h4>
+	  				<div class="more-text">
+	  					<?php echo $part->text()->kirbytext()?>
+	  				</div>
+	  			</li>
+	  		<?php endforeach ?>
+	  	</ul>
 	  </div>
   </div>
 </section>

@@ -120,15 +120,19 @@ main {
 #slide-4 .bcg {background-image:url('../images/plan-3.png');z-index:4;}
 
 /* Slide 5 */
-#slide-5 .bcg {background-image:url('../images/plan-4.png');z-index:3;}
+#slide-5 .bcg {background-image:url('../images/plan-4.png');z-index:2;}
 
 /* Slide 6 */
-#slide-6 .bcg {background-image:url('../images/plan-5.png');z-index:2;}
+#slide-6 .bcg {background-image:url('../images/plan-5.png');z-index:1;}
+
 
 //Cartel
 .textCartel{
+	overflow:hidden;
 	.inner-content{
 		@include encart;
+		max-height:80vh;
+		overflow-y:scroll;
 	}
 }
 
@@ -144,18 +148,53 @@ main {
 .formes{
 	.inner-content{
 		@include formes;
-		a{
+		a, p{
 			@include liensDirect;
 		}
 	}
 }
 
 // Sections textuelles spécifiques
-#home .inner-content{z-index:3;} 
-#home-appel .inner-content{z-index:3;} 
-#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:4;} 
+#home .inner-content{z-index:5;} 
+#home-appel .inner-content{z-index:5;} 
+#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:2;} 
 #partenaires .inner-content{z-index:2;} 
 #calendrier .inner-content{z-index:2;} 
+#contact .inner-content{z-index:2;} 
+
+#partenaires .inner-content{
+	min-height: 80vh;
+	.text-wrapper{
+		li{
+			border-bottom: 1px solid $vert;
+			padding: 1.5rem 0 1rem 0;
+			&:first-child{
+				padding-top:0;
+			}
+			.more-text{
+				display:none;
+			}
+			h4{
+				cursor: pointer;
+				text-align: right;
+			}
+		}
+	}
+
+}
+#calendrier .inner-content{
+	ul{
+		//display: flex;
+		li{
+			height: 200px;
+			h4{
+				border-bottom: 1px solid $vert;
+			}
+
+		}
+	}
+
+}
 
 
 #bar{
@@ -208,6 +247,57 @@ main {
     button{display:none;}
   }
 }
+
+// Animation 
+
+#dauphin .anim {
+  width: 450px;
+  height: 100px;
+  position: fixed;
+	top: 0;
+	left: 0;
+	z-index:3;
+  //margin: 2em auto; 
+  background:  transparent url('../images/dauphin/sprites3.png') 0 0 no-repeat;
+  //background-size: 100%;
+  animation: sprite 2.5s steps(52) infinite;
+}
+
+#oiseaux .anim{
+  width: 249px;
+  height: 200px;
+  position: absolute;
+	top: 100px;
+	left: 0;
+	z-index:10;
+  margin: 2em auto; 
+  background:  transparent url('../images/oiseaux3/sprites3.png') 0 0 no-repeat;
+  animation: sprite 2.5s steps(26) infinite;
+}
+
+
+@keyframes sprite {
+  // from { background-position: 0 0%; }
+  // to { background-position: 0 100%; }
+  100% { background-position: 0 -5000px; }
+}
+
+// #dauphin .anim {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	z-index:3;
+//   width: 399px;   /* Viewport Width */
+//   height: 12.46em;   /* Viewport Height (~ 199.42px) */
+//   margin: 2em auto;   /* Little margin */
+//   background: transparent url('../images/dauphin/sprites3.png') 0 0 no-repeat;   /* Our sprite as viewport background */
+//   animation: catwalk 1s steps(51) infinite; /* The Animation */
+// }
+
+// @keyframes catwalk {
+//   100% { background-position: 0 -2393px; }
+// }
+
 
 
 

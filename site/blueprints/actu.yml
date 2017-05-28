@@ -10,6 +10,9 @@ fields:
   date: 
     type: date
     format: DD-MM-YYYY
+  link:
+    label: Lien
+    type:  url
   text:
     label: Résumé
     type:  markdown

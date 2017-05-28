@@ -1,12 +1,12 @@
 title: Partenaires
 
-pages: false
-files: true
+pages: Partenaire
+files: false
 
 fields:
   title:
     label: Titre
     type:  text
-  text:
-    label: Texte
-    type:  markdown
+  subtitle:
+    label: Sous-Titre
+    type:  text
