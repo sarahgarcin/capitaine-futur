@@ -260,27 +260,31 @@ main {
   //margin: 2em auto; 
   background:  transparent url('../images/dauphin/sprites3.png') 0 0 no-repeat;
   //background-size: 100%;
-  animation: sprite 2.5s steps(52) infinite;
+  animation: dauphin 2.5s steps(52) infinite;
 }
 
 #oiseaux .anim{
-  width: 249px;
-  height: 200px;
-  position: absolute;
-	top: 100px;
-	left: 0;
-	z-index:10;
+  width: 50px;
+  height: 49px;
+  position: fixed;
+	top: 60px;
+	left: 58%;
+	z-index:1;
   margin: 2em auto; 
   background:  transparent url('../images/oiseaux3/sprites3.png') 0 0 no-repeat;
-  animation: sprite 2.5s steps(26) infinite;
+  animation: oiseau 2.5s steps(26) infinite;
 }
 
 
-@keyframes sprite {
-  // from { background-position: 0 0%; }
-  // to { background-position: 0 100%; }
+@keyframes dauphin {
   100% { background-position: 0 -5000px; }
 }
+
+@keyframes oiseau {
+  100% { background-position: 0 -1263px; }
+}
+
+
 
 // #dauphin .anim {
 // 	position: fixed;
