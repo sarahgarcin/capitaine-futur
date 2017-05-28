@@ -13,6 +13,24 @@ function init(){
 	$slide = $('.homeSlide');
 	$body = $('body');
 
+	$('.menu .left li').each(function(){
+		var $link = $(this).find('a');
+		var id = $(this).find('a').attr("href");
+		if(id == "#resume-du-projet"){
+			$(this).find('a').attr('data-menu-top', '1100p');
+		}
+		if(id == "#partenaires"){
+			$(this).find('a').attr('data-menu-top', '1400p');
+		}
+		if(id == "#calendrier"){
+			$(this).find('a').attr('data-menu-top', '3500p');
+		}
+		if(id == "#contact"){
+			$(this).find('a').attr('data-menu-top', '8500p');
+		}
+		console.log($(this), id);
+	});
+
 	
     //FadeIn all sections    
 	$body.imagesLoaded( function() {
@@ -65,6 +83,13 @@ function init(){
 		var s = skrollr.init();
 
 		skrollr.menu.init(s, {
+			duration: function(currentTop, targetTop) {
+				//By default, the duration is hardcoded at 500ms.
+				return 1000;
+
+				//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+				//return Math.abs(currentTop - targetTop) * 1000;
+			},
 			change: function(hash, top) {
 				console.log(hash, top);
 			}
