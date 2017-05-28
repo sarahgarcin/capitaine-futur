@@ -9240,6 +9240,10 @@ main {
   background: transparent url("../images/dauphin/sprites3.png") 0 0 no-repeat;
   animation: dauphin 2.5s steps(52) infinite; }
 
+@keyframes dauphin {
+  100% {
+    background-position: 0 -5000px; } }
+
 #oiseaux .anim {
   width: 50px;
   height: 49px;
@@ -9251,10 +9255,21 @@ main {
   background: transparent url("../images/oiseaux3/sprites3.png") 0 0 no-repeat;
   animation: oiseau 2.5s steps(26) infinite; }
 
-@keyframes dauphin {
-  100% {
-    background-position: 0 -5000px; } }
-
 @keyframes oiseau {
   100% {
     background-position: 0 -1263px; } }
+
+#arbre .anim {
+  width: 160px;
+  height: 227px;
+  position: fixed;
+  top: 20px;
+  left: 28.7%;
+  z-index: 10;
+  margin: 2em auto;
+  background: transparent url("../images/arbre/sprites3.png") 0 0 no-repeat;
+  animation: arbre 3.5s steps(51) infinite; }
+
+@keyframes arbre {
+  100% {
+    background-position: 0 -11569px; } }

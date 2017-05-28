@@ -13,6 +13,14 @@ function init(){
 	$slide = $('.homeSlide');
 	$body = $('body');
 
+	$("#arbre .anim").css({"-webkit-animation-play-state":"paused","animation-play-state":"paused"});
+	$("#arbre .anim").hover(function(){
+		console.log($(this));
+		$(this).css({"-webkit-animation-play-state":"running","animation-play-state":"running"});
+	}, function(){
+		$(this).css({"-webkit-animation-play-state":"paused","animation-play-state":"paused"});
+	});
+
 	$('.menu .left li').each(function(){
 		var $link = $(this).find('a');
 		var id = $(this).find('a').attr("href");
