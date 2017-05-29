@@ -161,6 +161,9 @@ main {
 #partenaires .inner-content{z-index:2;} 
 #calendrier .inner-content{z-index:2;} 
 #contact .inner-content{z-index:2;} 
+#appel-a-projets .inner-content{z-index:20; top:12%;} 
+#appel-a-projets-appel .inner-content{z-index:30; top:40%; left:40%;} 
+#appel-a-projets-form .inner-content{z-index:30; top:12%;} 
 
 #partenaires .inner-content{
 	min-height: 80vh;
@@ -180,8 +183,14 @@ main {
 			}
 		}
 	}
-
+	.sliderCartel{
+		display:none;
+		.inner-content{
+			@include slider;
+		}
+	}
 }
+
 #calendrier .inner-content{
 	ul{
 		//display: flex;
@@ -263,6 +272,10 @@ main {
   animation: dauphin 2.5s steps(52) infinite;
 }
 
+@keyframes dauphin {
+  100% { background-position: 0 -5000px; }
+}
+
 #oiseaux .anim{
   width: 50px;
   height: 49px;
@@ -276,13 +289,35 @@ main {
 }
 
 
-@keyframes dauphin {
-  100% { background-position: 0 -5000px; }
-}
-
 @keyframes oiseau {
   100% { background-position: 0 -1263px; }
 }
+
+#arbre .anim{
+  width: 160px;
+  height: 227px;
+  position: fixed;
+	top: 20px;
+	left: 28.7%;
+	z-index:10;
+  margin: 2em auto; 
+  background:  transparent url('../images/arbre/sprites3.png') 0 0 no-repeat;
+  animation: arbre 3.5s steps(51) infinite;
+}
+
+
+@keyframes arbre {
+  100% { background-position: 0 -11569px; }
+}
+
+// uniform
+.uniform__potty {
+  position: absolute;
+  left: -9999px;
+}
+
+
+
 
 
 

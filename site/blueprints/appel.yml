@@ -10,3 +10,9 @@ fields:
   text:
     label: Texte
     type:  markdown
+  pdf:
+    label: Pdf
+    type: selector
+    mode:  single
+    types:
+      - document

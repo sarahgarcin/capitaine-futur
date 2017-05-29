@@ -15,6 +15,19 @@
 	  				<div class="more-text">
 	  					<?php echo $part->text()->kirbytext()?>
 	  				</div>
+
+	  				<section id="<?php echo $data->uid()?>-slider" class="sliderCartel">
+							<div class="inner-content small-18 small-push-1 medium-7 medium-push-10">
+								<ul class="slider js_slides">
+								<?php foreach($part->images() as $slide):?>
+									<li class="slider-image">
+										<?php echo 	$slide->crop(1200, 800); ?>
+									</li>
+								<?php endforeach; ?>
+								</ul>
+							</div>
+							
+						</section>
 	  			</li>
 	  		<?php endforeach ?>
 	  	</ul>

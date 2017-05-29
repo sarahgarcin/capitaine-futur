@@ -12,3 +12,8 @@
 	 	<div class="anim">
 		</div>
 	</div>
+
+	<div id="arbre" class="animations">
+	 	<div class="anim">
+		</div>
+	</div>

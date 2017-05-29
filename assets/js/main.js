@@ -13,6 +13,14 @@ function init(){
 	$slide = $('.homeSlide');
 	$body = $('body');
 
+	$("#arbre .anim").css({"-webkit-animation-play-state":"paused","animation-play-state":"paused"});
+	$("#arbre .anim").hover(function(){
+		console.log($(this));
+		$(this).css({"-webkit-animation-play-state":"running","animation-play-state":"running"});
+	}, function(){
+		$(this).css({"-webkit-animation-play-state":"paused","animation-play-state":"paused"});
+	});
+
 	$('.menu .left li').each(function(){
 		var $link = $(this).find('a');
 		var id = $(this).find('a').attr("href");
@@ -26,6 +34,9 @@ function init(){
 			$(this).find('a').attr('data-menu-top', '3500p');
 		}
 		if(id == "#contact"){
+			$(this).find('a').attr('data-menu-top', '8500p');
+		}
+		if(id == "#appel-a-projet"){
 			$(this).find('a').attr('data-menu-top', '8500p');
 		}
 		console.log($(this), id);
