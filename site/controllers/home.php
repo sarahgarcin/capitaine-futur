@@ -4,33 +4,46 @@ use Uniform\Form;
 
 return function ($site, $pages, $page) {
    $form = new Form([
+      'name' => [
+         'rules' => ['required'],
+         'message' => 'Name is required',
+      ],
+      'firstname' => [
+         'rules' => ['required'],
+         'message' => 'First name is required',
+      ],
+      'birthdate' => [
+         'rules' => ['required'],
+         'message' => 'Birthdate is required',
+      ],
+      'address' => [
+         'rules' => ['required'],
+         'message' => 'Address is required',
+      ],
+      'country' => [
+         'rules' => ['required'],
+         'message' => 'Country is required',
+      ],
       'email' => [
          'rules' => ['required', 'email'],
          'message' => 'Email is required',
       ],
-      'message' => [],
-      'name' => [
-         'rules' => ['required', 'name'],
-         'message' => 'Name is required',
+
+      'website' => [],
+      'videoLink' => [],
+      'resume' => [
+         'rules' => ['required'],
+         'message' => 'Resume is required',
       ],
-      'firsname' => [
-         'rules' => ['required', 'firstname'],
-         'message' => 'First name is required',
+      'bio' => [
+         'rules' => ['required'],
+         'message' => 'Bio is required',
       ],
-      'birthdate' => [
-         'rules' => ['required', 'birthdate'],
-         'message' => 'Birthdate is required',
-      ],
-      'adress' => [
-         'rules' => ['required', 'address'],
-         'message' => 'Adress is required',
+      'supernaturel' => [
+         'rules' => ['required'],
+         'message' => 'Supernaturel is required',
       ],
 
-      Pays de résidence
-      Contact e-mail
-      Site internet
-
-      Liens vers vidéo
    ]);
 
    if (r::is('POST')) {

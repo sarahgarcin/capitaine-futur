@@ -30,7 +30,7 @@
     </section>
 
     <section id="slide-4" class="homeSlide">
-      	<div class="bcg" data-top="top: 0%;" data-bottom="top: 100%;" data-anchor-target="#slide-3">
+      	<div class="bcg" data-top="top: 0%;" data--1000-top="top: 50%;" data-bottom="top: 100%;" data-anchor-target="#slide-3">
         </div>
     </section>
 
@@ -38,9 +38,9 @@
       	<div class="bcg" data-top="top: 0%;" 
       	data-bottom="top: 20%;" 
       	data--3000-bottom="top: 30%;"
-      	data--45000-bottom="top: 30%;"
-      	data--50000-bottom="top: 100%;" 
-      	data-anchor-target="#slide-5">
+      	data--7000-bottom="top: 30%;"
+      	data--7500-bottom="top: 100%;" 
+      	data-anchor-target="#slide-6">
         </div>
     </section>
 

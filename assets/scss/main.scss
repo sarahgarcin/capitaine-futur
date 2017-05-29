@@ -108,19 +108,19 @@ main {
 	left: 0;
 }
 /* Slide 1 */
-.bcg {background-image:url('../images/plan-1-gauche.png'); z-index:6;}
+.bcg {background-image:url('../images/plan-1-gauche.png'); z-index:7;}
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../images/plan-1-droite.png'); z-index:6;}
+#slide-2 .bcg {background-image:url('../images/plan-1-droite.png'); z-index:7;}
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../images/plan-2.png');z-index:5;}
+#slide-3 .bcg {background-image:url('../images/plan-2.png');z-index:6;}
 
 /* Slide 4 */
-#slide-4 .bcg {background-image:url('../images/plan-3.png');z-index:4;}
+#slide-4 .bcg {background-image:url('../images/plan-3.png');z-index:5;}
 
 /* Slide 5 */
-#slide-5 .bcg {background-image:url('../images/plan-4.png');z-index:2;}
+#slide-5 .bcg {background-image:url('../images/plan-4.png');z-index:3;}
 
 /* Slide 6 */
 #slide-6 .bcg {background-image:url('../images/plan-5.png');z-index:1;}
@@ -155,15 +155,15 @@ main {
 }
 
 // Sections textuelles spécifiques
-#home .inner-content{z-index:5;} 
-#home-appel .inner-content{z-index:5;} 
-#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:2;} 
+#home .inner-content{z-index:6;} 
+#home-appel .inner-content{z-index:6;} 
+#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:3;} 
 #partenaires .inner-content{z-index:2;} 
-#calendrier .inner-content{z-index:2;} 
-#contact .inner-content{z-index:2;} 
-#appel-a-projets .inner-content{z-index:20; top:12%;} 
-#appel-a-projets-appel .inner-content{z-index:30; top:40%; left:40%;} 
-#appel-a-projets-form .inner-content{z-index:30; top:12%;} 
+#calendrier .inner-content{z-index:1;} 
+#contact .inner-content{z-index:1;} 
+#appel-a-projets .inner-content{z-index:1;} 
+#appel-a-projets-appel .inner-content{z-index:1;} 
+#appel-a-projets-form .inner-content{z-index:1;} 
 
 #partenaires .inner-content{
 	min-height: 80vh;
@@ -265,7 +265,7 @@ main {
   position: fixed;
 	top: 0;
 	left: 0;
-	z-index:3;
+	z-index:4;
   //margin: 2em auto; 
   background:  transparent url('../images/dauphin/sprites3.png') 0 0 no-repeat;
   //background-size: 100%;
@@ -299,7 +299,7 @@ main {
   position: fixed;
 	top: 20px;
 	left: 28.7%;
-	z-index:10;
+	z-index:1;
   margin: 2em auto; 
   background:  transparent url('../images/arbre/sprites3.png') 0 0 no-repeat;
   animation: arbre 3.5s steps(51) infinite;

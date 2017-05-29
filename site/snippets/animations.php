@@ -4,7 +4,7 @@
   </section> -->
 
   <section id="dauphin" class="animations homeSlide" >
-	  <div class="anim" data-top="top: 52%; left:25%;" data-bottom="top: 50%; left: 100%;" data-anchor-target="#slide-4">
+	  <div class="anim" data-top="top: 52%; left:25%;" data-bottom="top: 50%; left: 50%;" data--500-bottom="top: 50%; left: 100%;" data-anchor-target="#slide-4">
 	  </div>  	
   </section>
 

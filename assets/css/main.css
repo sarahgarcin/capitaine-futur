@@ -5362,8 +5362,8 @@ meta.foundation-mq-topbar {
       color: #006b00;
       background: yellow; }
     .top-bar-section ul li.active > a {
-      background: #008CBA;
-      color: #FFFFFF; }
+      background: #006b00;
+      color: yellow; }
       .top-bar-section ul li.active > a:hover {
         background: #0078a0;
         color: #FFFFFF; }
@@ -5505,8 +5505,8 @@ meta.foundation-mq-topbar {
         background-color: yellow;
         background: yellow; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
-      background: #008CBA;
-      color: #FFFFFF;
+      background: #006b00;
+      color: yellow;
       line-height: 4rem;
       padding: 0 1.33333rem; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
@@ -5605,8 +5605,8 @@ meta.foundation-mq-topbar {
     background: yellow;
     color: #006b00; }
   .no-js .top-bar-section ul li:active > a {
-    background: #008CBA;
-    color: #FFFFFF; }
+    background: #006b00;
+    color: yellow; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     position: static !important;
     height: auto;
@@ -9098,27 +9098,27 @@ main {
 /* Slide 1 */
 .bcg {
   background-image: url("../images/plan-1-gauche.png");
-  z-index: 6; }
+  z-index: 7; }
 
 /* Slide 2 */
 #slide-2 .bcg {
   background-image: url("../images/plan-1-droite.png");
-  z-index: 6; }
+  z-index: 7; }
 
 /* Slide 3 */
 #slide-3 .bcg {
   background-image: url("../images/plan-2.png");
-  z-index: 5; }
+  z-index: 6; }
 
 /* Slide 4 */
 #slide-4 .bcg {
   background-image: url("../images/plan-3.png");
-  z-index: 4; }
+  z-index: 5; }
 
 /* Slide 5 */
 #slide-5 .bcg {
   background-image: url("../images/plan-4.png");
-  z-index: 2; }
+  z-index: 3; }
 
 /* Slide 6 */
 #slide-6 .bcg {
@@ -9153,35 +9153,31 @@ main {
     transform: translate(-50%); }
 
 #home .inner-content {
-  z-index: 5; }
+  z-index: 6; }
 
 #home-appel .inner-content {
-  z-index: 5; }
+  z-index: 6; }
 
 #resume-du-projet .inner-content, #resume-du-projet-slider .inner-content {
-  z-index: 2; }
+  z-index: 3; }
 
 #partenaires .inner-content {
   z-index: 2; }
 
 #calendrier .inner-content {
-  z-index: 2; }
+  z-index: 1; }
 
 #contact .inner-content {
-  z-index: 2; }
+  z-index: 1; }
 
 #appel-a-projets .inner-content {
-  z-index: 20;
-  top: 12%; }
+  z-index: 1; }
 
 #appel-a-projets-appel .inner-content {
-  z-index: 30;
-  top: 40%;
-  left: 40%; }
+  z-index: 1; }
 
 #appel-a-projets-form .inner-content {
-  z-index: 30;
-  top: 12%; }
+  z-index: 1; }
 
 #partenaires .inner-content {
   min-height: 80vh; }
@@ -9255,7 +9251,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   background: transparent url("../images/dauphin/sprites3.png") 0 0 no-repeat;
   animation: dauphin 2.5s steps(52) infinite; }
 
@@ -9284,7 +9280,7 @@ main {
   position: fixed;
   top: 20px;
   left: 28.7%;
-  z-index: 10;
+  z-index: 1;
   margin: 2em auto;
   background: transparent url("../images/arbre/sprites3.png") 0 0 no-repeat;
   animation: arbre 3.5s steps(51) infinite; }

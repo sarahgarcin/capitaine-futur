@@ -28,16 +28,16 @@ function init(){
 			$(this).find('a').attr('data-menu-top', '1100p');
 		}
 		if(id == "#partenaires"){
-			$(this).find('a').attr('data-menu-top', '1400p');
+			$(this).find('a').attr('data-menu-top', '1500p');
 		}
 		if(id == "#calendrier"){
-			$(this).find('a').attr('data-menu-top', '3500p');
+			$(this).find('a').attr('data-menu-top', '2200p');
 		}
 		if(id == "#contact"){
-			$(this).find('a').attr('data-menu-top', '8500p');
+			$(this).find('a').attr('data-menu-top', '2400p');
 		}
-		if(id == "#appel-a-projet"){
-			$(this).find('a').attr('data-menu-top', '8500p');
+		if(id == "#appel-a-projets"){
+			$(this).find('a').attr('data-menu-top', '2800p');
 		}
 		console.log($(this), id);
 	});
@@ -61,12 +61,12 @@ function init(){
 				console.log( docHeight );
 				console.log( baseX );
 
-				bar.css('background', '-webkit-linear-gradient(left, red '+ baseX +'%, green '+ baseX +'%)');
+				bar.css('background', '-webkit-linear-gradient(left, green '+ baseX +'%, transparent '+ baseX +'%)');
 
 				$window.scroll(function(e) {      
 
 				  var x = $window.scrollTop() / docHeight * 100 + baseX;
-				  bar.css('background', '-webkit-linear-gradient(left, red '+ x +'%, green '+ x +'%)');
+				  bar.css('background', '-webkit-linear-gradient(left, green '+ x +'%, transparent '+ x +'%)');
 				});
 			  
 		}, 800);

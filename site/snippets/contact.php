@@ -1,10 +1,10 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
 	<div class="inner-content small-18 small-push-1 medium-6 medium-push-10" 
 	data-top="top: -100%;" 
-	data--30000-bottom="top: -90%;" 
-	data--45000-bottom="top: 12%;"
-	data--50000-bottom="top: 12%;"
-	data--60000-bottom="top: -100%;"  
+	data--6500-bottom="top: -90%;" 
+	data--7000-bottom="top: 12%;"
+	data--8000-bottom="top: 12%;"
+	data--8500-bottom="top: -100%;"  
 	data-anchor-target="#slide-6">
 		<h2><?php echo $data->subtitle()->html() ?></h2>
 	  <div class="text-wrapper small-16 small-push-2">
@@ -17,10 +17,10 @@
 <section id="<?php echo $page->uid()?>-appel" class="formes">
 	<div class="inner-content" 
 	data-top="top: 100%; left: 30%;" 
-	data--45000-bottom="top: 90%; left: 30%;" 
-	data--50000-bottom="top: 50%; left: 30%;"
-	data--55000-bottom="top: 50%; left: 30%;"
-	data--60000-bottom="top: 100%; left: 30%;"  
+	data--6500-bottom="top: 100%; left: 30%;" 
+	data--7300-bottom="top: 50%; left: 30%;"
+	data--8000-bottom="top: 50%; left: 30%;"
+	data--8700-bottom="top: 100%; left: 30%;"  
 	data-anchor-target="#slide-6">
 	<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="331.334px" height="117.522px" viewBox="498.558 206.673 331.334 117.522"
