@@ -55,8 +55,54 @@ img{width: 100%; max-width:100%}
 header{
 	.top-bar{
 		.name{
-			h1 a{
-				@include titre;
+			padding: 0.5em 0;
+			margin-left: 2em;
+			width: 200px;
+			//transform: skewX(5deg);
+			h1 {
+				//line-height: 0;
+				display:none;
+				// a{
+				// 	@include titre;
+				// 	line-height: 0;
+				// 	padding-top: 0.5em;
+				// 	span{
+				// 		font-family: $bungee;
+				// 		font-size: 0.6em;	
+				// 	}
+				// }
+			}
+		}
+		.top-bar-section{
+			.left{
+				margin-left:4em;
+				//width: 50%;
+				//margin:auto;
+			}
+			.right{
+				line-height:1.2;
+				padding: 0.5em 2em;	
+				.languages, .infos-menu{
+					display:block;
+					float:none;
+				}
+				.languages {
+					&:after{
+						content: "—"; 
+						display:block;
+						line-height: 1.2;
+					}
+					li{
+						float:none;
+						display:inline-block;
+						&.active{
+							a{text-decoration: underline;}
+						}
+					}
+				}
+				a{
+					@include secondMenu;
+				}
 			}
 		}
 	}
@@ -209,7 +255,7 @@ main {
 #bar{
   background-color:$jaune;
   width:100%;
-  height:10px;
+  height:5px;
 }
 
 
@@ -240,12 +286,13 @@ main {
     }
   }
   .slick-dots{
-    margin-left:0.5rem;
+    margin-top:0.5rem;
     li{
-      width: 10px;
-      height:10px;
+      width: 15px;
+      height:15px;
       background: #FFF;
       border-radius: 100%;
+      border: 2px solid $vert;
       display:inline-block;
       margin-right: 0.5em;
       cursor: pointer;

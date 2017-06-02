@@ -18,7 +18,7 @@ Slogan:
 
 ----
 
-Logo: 
+Logo: logo.png
 
 ----
 

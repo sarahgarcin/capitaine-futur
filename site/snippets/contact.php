@@ -2,8 +2,8 @@
 	<div class="inner-content small-18 small-push-1 medium-6 medium-push-10" 
 	data-top="top: -100%;" 
 	data--6500-bottom="top: -90%;" 
-	data--7000-bottom="top: 12%;"
-	data--8000-bottom="top: 12%;"
+	data--7000-bottom="top: 15%;"
+	data--8000-bottom="top: 15%;"
 	data--8500-bottom="top: -100%;"  
 	data-anchor-target="#slide-6">
 		<h2><?php echo $data->subtitle()->html() ?></h2>

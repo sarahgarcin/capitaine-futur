@@ -51,12 +51,12 @@
 
     <section id="<?php echo $page->uid()?>" class="textCartel">
 			<div class="inner-content small-16 small-push-1 medium-6 medium-push-10" 
-			data-top="top: 12%; left:100%;"
-			data--100-top="top: 12%; left:90%;"  
-			data-bottom="top: 12%; left:50%" 
+			data-top="top: 15%; left:100%;"
+			data--100-top="top: 15%; left:90%;"  
+			data-bottom="top: 15%; left:50%" 
 			data-anchor-target="#slide-1"
-			data--500-bottom="top:12%; left:50%"
-			data--1500-bottom="top:12%; left:100%;"
+			data--500-bottom="top:15%; left:50%"
+			data--1500-bottom="top:15%; left:100%;"
 			>
 				<?php echo $page->text()->kirbytext() ?>
 			</div>

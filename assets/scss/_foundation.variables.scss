@@ -8,7 +8,7 @@ $bungeeShade: "bungeeshade", sans-serif;
 $bungeeLine: "bungeehairline", sans-serif; 
 $bungeeRotated : "bungee_rotated", sans-serif;
 
-$inknut: "inknut", serif; 
+$karla: "karla", sans-serif; 
 
 
 
@@ -27,7 +27,7 @@ $h6-font-size: 1rem;
 
 // top bar
 $topbar-title-font-size: $h2-font-size;
-$topbar-height: 4rem;
+$topbar-height: 5rem;
 $topbar-bg-color: $jaune;
 $topbar-link-color: $vert;
 $topbar-menu-link-color: $vert;
@@ -41,10 +41,12 @@ $topbar-link-font-size: $h2-font-size;
 $topbar-link-color-hover: $vert;
 $topbar-link-bg-hover: $jaune;
 $topbar-link-bg-color-hover: $jaune;
+$topbar-link-color-active-hover: $vert;
 
 //active
-$topbar-link-color-active: $jaune;
-$topbar-link-bg-active: $vert;
+$topbar-link-color-active: $vert;
+$topbar-link-bg-active: $jaune;
+$topbar-link-bg-active-hover: $jaune;
 
 
 
