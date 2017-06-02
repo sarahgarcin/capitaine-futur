@@ -10,7 +10,7 @@
 @mixin texteCourant{
 	font-family: $karla;
 	color: $vert;
-	font-size: rem-calc(12.5);
+	font-size: rem-calc(14);
 	line-height:1.3;
 }
 
@@ -42,13 +42,35 @@
 	transform: translate(-50%);
 }
 
-@mixin titreSection{
-	font-size: rem-calc(24);
+
+@mixin H2{
+	font-size: rem-calc(20);
 	font-family:$bungee;
-	color: $vert;
-	// transform: rotate(90deg);
-	// transform-origin: 0 90%;
-	margin: 0;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	&:first-child{
+		margin-top: 0;
+	}
+}
+
+@mixin titreSection{
+	@include H2;
+	border-bottom: 1px solid $vert;
+}
+
+@mixin H3{
+	font-size: rem-calc(18);
+	font-family:$bungee;
+}
+
+@mixin H4{
+	font-size: rem-calc(16);
+	font-family:$bungee;
+}
+
+@mixin H5{
+	font-size: rem-calc(14);
+	font-family:$bungee;
 }
 
 @mixin secondMenu{

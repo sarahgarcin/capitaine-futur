@@ -6,9 +6,7 @@
 	data--8000-bottom="top: 15%;"
 	data--8500-bottom="top: -100%;"  
 	data-anchor-target="#slide-6">
-		<h2><?php echo $data->subtitle()->html() ?></h2>
-	  <div class="text-wrapper small-16 small-push-2">
-	  	<?php echo $data->text()->kirbytext() ?>	
+	  <?php echo $data->text()->kirbytext() ?>	
 	  </div>
 	</div>
 
