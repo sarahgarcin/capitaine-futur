@@ -1,8 +1,8 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
 	<div class="inner-content small-16 small-push-1 medium-6 medium-push-1" 
 	data-top="top: 15%; left:-100%;" 
-	data--8500-bottom="top: 15%; left:-50%;" 
-	data--9000-bottom="top: 15%; left:3%;" 
+	data--6500-bottom="top: 15%; left:-50%;" 
+	data--7000-bottom="top: 15%; left:3%;" 
 	data-anchor-target="#slide-6">
 		<h2><?php echo $data->title()->html() ?></h2>
 		<div class="text-wrapper small-16 small-push-2">
@@ -14,8 +14,8 @@
 <section id="<?php echo $data->uid()?>-appel" class="formes">
 	<div class="inner-content" 
 	data-top="top: 100%; left:40%;" 
-	data--8500-bottom="top: 100%; left:40%;" 
-	data--9000-bottom="top: 49%; left:40%;" 
+	data--6500-bottom="top: 100%; left:40%;" 
+	data--7000-bottom="top: 49%; left:40%;" 
 	data-anchor-target="#slide-6">
 		<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="155px" height="148.394px" viewBox="0 0 155 148.394" enable-background="new 0 0 155 148.394" xml:space="preserve">
@@ -32,8 +32,8 @@
 <section id="<?php echo $data->uid()?>-form" class="textCartel">
 	<div class="inner-content small-16 small-push-1 medium-6 medium-push-10" 
 	data-top="top: 15%; left:100%;" 
-	data--8500-bottom="top: 15%; left:100%;" 
-	data--9000-bottom="top: 15%; left:60%;" 
+	data--6500-bottom="top: 15%; left:100%;" 
+	data--7000-bottom="top: 15%; left:60%;" 
 	data-anchor-target="#slide-6">
 		<h2>Candidater</h2>
 		<div class="text-wrapper small-16 small-push-2">

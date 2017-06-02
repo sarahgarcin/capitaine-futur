@@ -9139,18 +9139,20 @@ main {
   height: 100%;
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0; }
+  left: 0;
+  top: 0; }
 
 /* Slide 1 */
-.bcg {
+#slide-1 .bcg {
   background-image: url("../images/plan-1-gauche.png");
-  z-index: 7; }
+  z-index: 7;
+  top: 0; }
 
 /* Slide 2 */
 #slide-2 .bcg {
   background-image: url("../images/plan-1-droite.png");
-  z-index: 7; }
+  z-index: 7;
+  top: 0; }
 
 /* Slide 3 */
 #slide-3 .bcg {
@@ -9188,23 +9190,24 @@ main {
 .formes .inner-content {
   position: fixed; }
   .formes .inner-content a, .formes .inner-content p {
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
     font-family: "bungee", sans-serif;
-    color: #FFF;
+    color: #006b00;
+    text-align: center;
     position: absolute;
-    top: 35%;
+    top: 50px;
     left: 45%;
-    -ms-transform: translate(-50%);
-    transform: translate(-50%); }
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
 
-#home .inner-content {
-  z-index: 6; }
+#pourquoi .inner-content {
+  z-index: 5; }
 
-#home-appel .inner-content {
-  z-index: 6; }
+#pourquoi-appel .inner-content {
+  z-index: 5; }
 
 #resume-du-projet .inner-content, #resume-du-projet-slider .inner-content {
-  z-index: 3; }
+  z-index: 4; }
 
 #partenaires .inner-content {
   z-index: 2; }
@@ -9213,6 +9216,9 @@ main {
   z-index: 1; }
 
 #contact .inner-content {
+  z-index: 1; }
+
+#contact-appel .inner-content {
   z-index: 1; }
 
 #appel-a-projets .inner-content {

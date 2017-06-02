@@ -18,7 +18,7 @@
 	    <ul class="left">
 	    	<?php foreach($pages->visible() as $page):?>
 	    		<?php if($page->uid() != 'contact'):?>
-		      	<li>
+		      	<li class="menu-el">
 		      		<a <?php e($page->isOpen(), ' class="active"') ?> href="#<?php echo $page->uid()?>" title="<?php echo $page->uid()?>">
 								<?php echo $page->title()->html()?>
 							</a>
@@ -37,11 +37,13 @@
 			    </li>
 			    <?php endforeach ?>
 			  </ul>
-			  <div class="infos-menu">
-				  <a <?php e($page->isOpen(), ' class="active"') ?> href="#<?php echo $pages->find('contact')?>" title="<?php echo $pages->find('contact')?>">
-						<?php echo $pages->find('contact')->title()->html()?>
-					</a>
-				</div>
+			  <ul class="infos-menu">
+			  	<li class="menu-el">
+					  <a <?php e($page->isOpen(), ' class="active"') ?> href="#<?php echo $pages->find('contact')?>" title="<?php echo $pages->find('contact')?>">
+							<?php echo $pages->find('contact')->title()->html()?>
+						</a>
+					</li>
+				</ul>
 			</div>
 	  </section>
 	</nav>

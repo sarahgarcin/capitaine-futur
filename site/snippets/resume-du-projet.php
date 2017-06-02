@@ -5,7 +5,7 @@
 	data--1000-bottom="top: 15%; left:50%;"
 	data--2000-bottom="top: 15%; left:50%;"
 	data--2500-bottom="top: 15%; left:100%;" 
-	data-anchor-target="#slide-4">
+	data-anchor-target="#slide-2">
 	 	<?php echo $data->text()->kirbytext() ?>	
 	</div>
 
@@ -18,7 +18,7 @@
 	data--1000-bottom="top: 15%; left:5%;"
 	data--2000-bottom="top: 15%; left:5%;"
 	data--2500-bottom="top: 15%; left:-100%;" 
-	data-anchor-target="#slide-4">
+	data-anchor-target="#slide-2">
 		<ul class="slider js_slides">
 		<?php foreach($data->images() as $slide):?>
 			<li class="slider-image">

@@ -21,20 +21,23 @@ function init(){
 		$(this).css({"-webkit-animation-play-state":"paused","animation-play-state":"paused"});
 	});
 
-	$('.menu .left li').each(function(){
+	$('.menu .menu-el').each(function(){
 		var $link = $(this).find('a');
 		var id = $(this).find('a').attr("href");
+		if(id == "#pourquoi"){
+			$(this).find('a').attr('data-menu-top', '120p');
+		}
 		if(id == "#resume-du-projet"){
-			$(this).find('a').attr('data-menu-top', '1100p');
+			$(this).find('a').attr('data-menu-top', '600p');
 		}
 		if(id == "#partenaires"){
-			$(this).find('a').attr('data-menu-top', '1500p');
+			$(this).find('a').attr('data-menu-top', '1200p');
 		}
 		if(id == "#calendrier"){
-			$(this).find('a').attr('data-menu-top', '2200p');
+			$(this).find('a').attr('data-menu-top', '1500p');
 		}
 		if(id == "#contact"){
-			$(this).find('a').attr('data-menu-top', '2400p');
+			$(this).find('a').attr('data-menu-top', '1900p');
 		}
 		if(id == "#appel-a-projets"){
 			$(this).find('a').attr('data-menu-top', '2800p');

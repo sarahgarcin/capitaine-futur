@@ -1,14 +1,14 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
 	<div class="inner-content small-18 small-push-1 medium-12 medium-push-3" 
 	data-top="top: 100%;" 
-	data--3000-bottom="top: 100%;"
-	data--3800-bottom="top: 50%;" 
-	data--5000-bottom="top: 15%;" 
-	data--6000-bottom="top: 15%;"
-	data--6500-bottom="top: 100%;"  
-	data-anchor-target="#slide-6">
+	data-bottom="top: 100%;"
+	data--1800-bottom="top: 50%;" 
+	data--2200-bottom="top: 15%;" 
+	data--3000-bottom="top: 15%;"
+	data--3500-bottom="top: 100%;"  
+	data-anchor-target="#slide-5">
 	  <h2><?php echo $data->subtitle()->html() ?></h2>
-	  <div class="text-wrapper small-16 small-push-1"> 
+	  <div class="text-wrapper"> 
 		  <ul class="row">
 			  <?php foreach($data->children()->visible() as $date):?>
 			  	<?php if($date->agenda()->isNotEmpty()): ?>

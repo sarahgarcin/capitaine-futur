@@ -33,13 +33,14 @@
 
 
 @mixin liensDirect{
-	font-size: rem-calc(20);
+	font-size: rem-calc(25);
 	font-family:$bungee;
-	color: #FFF;
+	color: $vert;
+	text-align: center;
 	position:absolute; 
-	top: 35%;
+	top: 50px;
 	left: 45%;
-	transform: translate(-50%);
+	transform: translateX(-50%);
 }
 
 
