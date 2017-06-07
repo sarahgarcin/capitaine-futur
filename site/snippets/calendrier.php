@@ -1,11 +1,19 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
-	<div class="inner-content small-18 small-push-1 medium-12 medium-push-3" 
+<!-- 	<div class="inner-content small-18 small-push-1 medium-12 medium-push-3" 
 	data-top="top: 100%;" 
 	data-bottom="top: 100%;"
 	data--1800-bottom="top: 50%;" 
 	data--2200-bottom="top: 15%;" 
 	data--3000-bottom="top: 15%;"
 	data--3500-bottom="top: 100%;"  
+	data-anchor-target="#slide-5"> -->
+	<div class="inner-content small-18 small-push-1 medium-12 medium-push-3" 
+	data-top="top: 15%; opacity:0;" 
+	data-bottom="top: 15%; opacity:0;"
+	data--1800-bottom="top: 15%; opacity:0;" 
+	data--2200-bottom="top: 15%; opacity:1;" 
+	data--3000-bottom="top: 15%; opacity:1;"
+	data--3500-bottom="top: 15%; opacity:0;"  
 	data-anchor-target="#slide-5">
 	  <h2><?php echo $data->subtitle()->html() ?></h2>
 	  <div class="text-wrapper"> 

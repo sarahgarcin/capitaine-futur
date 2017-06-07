@@ -1,9 +1,0 @@
-Title: Appel à projets
-
-----
-
-Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt ultricies tempus. Aliquam tincidunt, odio ut efficitur ultrices, odio leo vulputate tellus, et feugiat felis magna vel urna. Donec viverra pretium diam at pharetra. Quisque quis accumsan mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque pretium elit at ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec in lorem sit amet elit lobortis suscipit et ut nulla. Vestibulum sapien purus, pulvinar in maximus quis, molestie at augue. Donec quis elementum mauris. Quisque pretium, magna ut molestie dignissim, risus sapien fringilla ligula, non mattis tortor neque in enim. Aliquam erat volutpat. Pellentesque tortor sapien, molestie tincidunt nulla efficitur, commodo faucibus mi. Nulla facilisi.
-
-----
-
-Pdf: abnormal_encephalization_in_the_age_of_m.pdf

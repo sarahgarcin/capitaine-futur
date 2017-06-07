@@ -27,6 +27,19 @@
 	    	<?php endforeach ?>
 
 	    </ul>
+	   <?php if($site->socialnetworks()->isNotEmpty()): ?>
+				<div class="social-network left">
+					<ul>
+					<?php foreach($site->socialnetworks()->toStructure() as $socialnetwork): ?>
+						<li>
+							<a href="<?php echo $socialnetwork->link() ?>" itemprop="url">
+								<i class="fa <?php echo $socialnetwork->icon()->html() ?>" aria-hidden="true"></i>
+					    </a>
+						</li>
+					<?php endforeach ?>
+					</ul>
+				</div>
+			<?php endif ?>
 	    <div class="right">
 			  <ul class="languages">
 			    <?php foreach($site->languages() as $language): ?>

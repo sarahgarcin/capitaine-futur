@@ -175,18 +175,25 @@ main {
 	left: 0;
 	top: 0;
 }
+
 /* Slide 1 */
 #slide-1 .bcg {
 	background-image:url('../images/plan-1-gauche.png'); 
 	z-index:7; 	
-	top: 0;
+	top: $topbar-height;
+	// left: 0;
+	// //width: 23%;
+	// height:100%;
 }
 
 /* Slide 2 */
 #slide-2 .bcg {
 	background-image:url('../images/plan-1-droite.png'); 
 	z-index:7;	
-	top: 0; 
+	top: $topbar-height;
+	// right:0;
+	// width: 23%; 
+	// height:100%;
 }
 
 /* Slide 3 */
@@ -194,23 +201,40 @@ main {
 	background-image:url('../images/plan-2.png');
 	z-index:6;
 	// bottom:0;
-	// height: 300px;
+	// left: 0;
+	// height: 45%;
 }
 
 /* Slide 4 */
-#slide-4 .bcg {background-image:url('../images/plan-3.png');z-index:5;}
+#slide-4 .bcg {
+	background-image:url('../images/plan-3.png');
+	z-index:5;
+	// bottom:0;
+	// left: 0;
+	// height:65%;
+}
 
 /* Slide 5 */
-#slide-5 .bcg {background-image:url('../images/plan-4.png');z-index:3;}
+#slide-5 .bcg {
+	background-image:url('../images/plan-4.png');
+	z-index:3;
+	// bottom:0;
+	// left: 0;
+	// height:65%;
+}
 
 /* Slide 6 */
-#slide-6 .bcg {background-image:url('../images/plan-5.png');z-index:1;}
+#slide-6 .bcg {
+	background-image:url('../images/plan-5.png');
+	z-index:1;
+	top: $topbar-height;
+}
 
 
 //Cartel
 .textCartel{
 	overflow:hidden;
-	.inner-content{
+	> .inner-content{
 		@include encart;
 		height:80vh;
 		overflow-y:scroll;
@@ -236,21 +260,61 @@ main {
 }
 
 // Sections textuelles spécifiques
-#pourquoi .inner-content{z-index:5;} 
-#pourquoi-appel .inner-content{z-index:5;} 
-#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:4;} 
-#partenaires .inner-content{z-index:2;} 
-#calendrier .inner-content{z-index:1;} 
-#contact .inner-content{z-index:1;} 
-#contact-appel .inner-content{z-index:1;} 
-#appel-a-projets .inner-content{z-index:1;} 
-#appel-a-projets-appel .inner-content{z-index:1;} 
-#appel-a-projets-form .inner-content{z-index:1;} 
+#home .inner-content{
+	//top: $topbar-height + 2;
+	top: 50%;
+	transform: translateY(-30%);
+	z-index:20;
+	position:fixed;
+	text-align: center; 
+	.title{
+		position:relative;
+		h1{
+			font-family: $bungeeShade;
+			font-size: rem-calc(46);
+			line-height: 1;
+			margin-bottom: 0.5em;
+			&.overlay{
+				font-family: $bungee;
+				color: #FFF;
+				position: absolute;
+				top: -3px;
+    		left: 10px;
+    		letter-spacing: 0.1em;
+    		z-index: -1;
+			}
+		}
+		h2{
+			font-size: rem-calc(22);
+		}
+	}
+	.formes{
+		position:relative;
+		a, p{
+			@include liensDirect;
+		}
+	}
+	.invitation-to-scroll{
+		margin-top: 0.7em;
+		font-size: rem-calc(40);
+		font-family: $bungee;
+	}
+} 
+#home-appel .inner-content{z-index:20;} 
+#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:20;} 
+#partenaires .inner-content{z-index:20;} 
+#calendrier .inner-content{z-index:10;} 
+#contact .inner-content{z-index:20;} 
+#contact-appel .inner-content{z-index:20;} 
+#appel-a-projets .inner-content{z-index:20;} 
+#appel-a-projets-appel .inner-content{z-index:20;} 
+#appel-a-projets-form .inner-content{z-index:20;} 
 
 #partenaires .inner-content{
+	height: 65vh;
 	.text-wrapper{
-		li{
-			&:before{content:""}
+		li.partenaire-el{
+			&::before{content:""}
 			border-bottom: 1px solid $vert;
 			padding: 1.5rem 0 1rem 0;
 			&:first-child{
@@ -262,17 +326,22 @@ main {
 			h3{
 				
 			}
-			h4{
+			h4.see-more{
 				font-family: $bungeeLine;
 				cursor: pointer;
 				text-align: right;
+				&.active{
+					//text-decoration: underline;
+				}
 			}
 		}
 	}
 	.sliderCartel{
-		display:none;
 		.inner-content{
+			li::before{content:""; margin:0;}
 			@include slider;
+			top:15%;
+			left: 100%;
 		}
 	}
 }
@@ -280,6 +349,7 @@ main {
 #calendrier .inner-content{
 	ul{
 		//display: flex;
+		margin-left: 0;
 		li{
 			&:before{
 				content:"";
@@ -388,7 +458,8 @@ main {
   width: 160px;
   height: 227px;
   position: fixed;
-	top: 20px;
+  top: 15vh;
+	//top: 20px;
 	left: 28.7%;
 	z-index:1;
   margin: 2em auto; 

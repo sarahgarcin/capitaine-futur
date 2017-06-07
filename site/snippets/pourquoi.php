@@ -1,11 +1,10 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
 	<div class="inner-content small-16 small-push-1 medium-6 medium-push-10" 
-	data-top="top: 15%; left:100%;"
-	data--100-top="top: 15%; left:90%;"  
-	data-bottom="top: 15%; left:50%" 
+	data-top="top: 15%; left:5%;" 
+	data-bottom="top: 15%; left:5%" 
+	data--500-bottom="top:15%; left:5%"
+	data--1000-bottom="top:15%; left:-100%;"
 	data-anchor-target="#slide-1"
-	data--500-bottom="top:15%; left:50%"
-	data--1500-bottom="top:15%; left:100%;"
 	>
 		<?php echo $data->text()->kirbytext() ?>
 	</div>
@@ -13,11 +12,10 @@
 
 <section id="<?php echo $data->uid()?>-appel" class="formes">
 	<div class="inner-content" 
-	data-top="top: 30%; left:0%;"
-	data--100-top="top: 30%; left:10%;" 
-	data-bottom="top: 30%; left:30%;" 
-	data--500-bottom="top: 30%; left:30%;"
-	data--1500-bottom="top: 30%; left:-100%;"
+	data-top="top: 30%; left:70%;" 
+	data-bottom="top: 60%; left:70%;" 
+	data--500-bottom="top: 60%; left:70%;"
+	data--1000-bottom="top: 60%; left:100%;"
 	data-anchor-target="#slide-1">
 	<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="170px" height="311.539px" viewBox="0 0 170 311.539" enable-background="new 0 0 170 311.539" xml:space="preserve">
