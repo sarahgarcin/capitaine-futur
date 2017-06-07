@@ -77,6 +77,8 @@
         data--6000-bottom="width:170%; height:170%; left:-65%;"
         data--9000-bottom="width:170%; height:170%; left:-65%;"
         data--11000-bottom="width:130%; height:130%; left:-25%;"
+        data--23000-bottom="width:130%; height:130%; left:-25%;"
+        data--24000-bottom="width:100%; height:100%; left:0%;"
         data-anchor-target="#slide-2">
         >
         </div>

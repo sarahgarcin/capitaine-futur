@@ -1,10 +1,9 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
 	<div class="inner-content small-18 small-push-1 medium-6 medium-push-10" 
-	data-top="top: 15%; opacity:0;" 
-	data--8000-bottom="top: 15%; opacity:0;" 
-	data--8000-bottom="top: 15%;opacity:1;"
-	data--8000-bottom="top: 15%;opacity:1;"
-	data--8000-bottom="top: 15%; opacity:0;"  
+	data-top="opacity:0;display:none;" 
+	data--19000-bottom="opacity:0;display:block;" 
+	data--20000-bottom="opacity:1;display:block;"
+	data--22000-bottom="opacity:1;display:block;"  
 	data-anchor-target="#slide-6">
 	  <?php echo $data->text()->kirbytext() ?>	
 	  </div>
@@ -14,11 +13,10 @@
 
 <section id="<?php echo $data->uid()?>-appel" class="formes">
 		<div class="inner-content" 
-	data-top="top: 50%; left: 30%; opacity:0;" 
-	data--8000-bottom="top: 50%; left: 30%; opacity:0;" 
-	data--8000-bottom="top: 50%; left: 30%;opacity:1;"
-	data--8000-bottom="top: 50%; left: 30%;opacity:1;"
-	data--8000-bottom="top: 50%; left: 30%;opacity:0;"  
+	data-top="top: 50%; left: 20%; opacity:0;display:none;" 
+	data--19000-bottom="top: 50%; left: 20%; opacity:0;display:block;" 
+	data--20000-bottom="top: 50%; left: 20%;opacity:1;display:block;"
+	data--22000-bottom="top: 50%; left: 20%;opacity:1;display:block;"  
 	data-anchor-target="#slide-6">
 	<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="331.334px" height="117.522px" viewBox="498.558 206.673 331.334 117.522"
