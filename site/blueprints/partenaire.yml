@@ -1,7 +1,11 @@
 title: Partenaire
 
 pages: false
-files: true
+files: 
+  fields:
+    caption:
+      label: Caption
+      type: markdown
 
 fields:
   title:

@@ -2,6 +2,10 @@ title: Actu
 
 pages: false
 files: true
+  fields:
+    caption:
+      label: Caption
+      type: markdown
 
 fields:
   title:

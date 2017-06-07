@@ -2,6 +2,10 @@ title: Appel à projets
 
 pages: false
 files: true
+  fields:
+    caption:
+      label: Caption
+      type: markdown
 
 fields:
   title:
