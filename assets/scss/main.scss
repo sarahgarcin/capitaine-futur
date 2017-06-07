@@ -46,7 +46,7 @@ ul{
 	}
 }
 
-.inner-content ul li {
+.inner-content .text-wrapper ul li {
 	&:before{
 		content: "—";
 		margin-right: 5px;
@@ -81,26 +81,13 @@ header{
 			padding: 0.5em 0;
 			margin-left: 2em;
 			width: 200px;
-			//transform: skewX(5deg);
 			h1 {
-				//line-height: 0;
 				display:none;
-				// a{
-				// 	@include titre;
-				// 	line-height: 0;
-				// 	padding-top: 0.5em;
-				// 	span{
-				// 		font-family: $bungee;
-				// 		font-size: 0.6em;	
-				// 	}
-				// }
 			}
 		}
 		.top-bar-section{
 			.left{
 				margin-left:4em;
-				//width: 50%;
-				//margin:auto;
 				a{
 					font-size: rem-calc(16);
 				}
@@ -181,9 +168,6 @@ main {
 	background-image:url('../images/plan-1-gauche.png'); 
 	z-index:7; 	
 	top: $topbar-height;
-	// left: 0;
-	// //width: 23%;
-	// height:100%;
 }
 
 /* Slide 2 */
@@ -191,36 +175,24 @@ main {
 	background-image:url('../images/plan-1-droite.png'); 
 	z-index:7;	
 	top: $topbar-height;
-	// right:0;
-	// width: 23%; 
-	// height:100%;
 }
 
 /* Slide 3 */
 #slide-3 .bcg {
 	background-image:url('../images/plan-2.png');
 	z-index:6;
-	// bottom:0;
-	// left: 0;
-	// height: 45%;
 }
 
 /* Slide 4 */
 #slide-4 .bcg {
 	background-image:url('../images/plan-3.png');
 	z-index:5;
-	// bottom:0;
-	// left: 0;
-	// height:65%;
 }
 
 /* Slide 5 */
 #slide-5 .bcg {
 	background-image:url('../images/plan-4.png');
 	z-index:3;
-	// bottom:0;
-	// left: 0;
-	// height:65%;
 }
 
 /* Slide 6 */
@@ -260,12 +232,14 @@ main {
 }
 
 // Sections textuelles spécifiques
-#home .inner-content{
-	//top: $topbar-height + 2;
-	top: 50%;
-	transform: translateY(-30%);
+section .inner-content{
 	z-index:20;
 	position:fixed;
+	top: $topbar-height + 2;
+}
+#home .inner-content{
+	top: 50%;
+	transform: translateY(-30%);
 	text-align: center; 
 	.title{
 		position:relative;
@@ -299,22 +273,22 @@ main {
 		font-size: rem-calc(40);
 		font-family: $bungee;
 	}
-} 
+}
+#appel-a-projets .inner-content{
+
+}   
 #home-appel .inner-content{z-index:20;} 
 #resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:20;} 
 #partenaires .inner-content{z-index:20;} 
 #calendrier .inner-content{z-index:10;} 
 #contact .inner-content{z-index:20;} 
 #contact-appel .inner-content{z-index:20;} 
-#appel-a-projets .inner-content{z-index:20;} 
-#appel-a-projets-appel .inner-content{z-index:20;} 
-#appel-a-projets-form .inner-content{z-index:20;} 
+#appel-a-projets .inner-content{z-index:20;}  
 
 #partenaires .inner-content{
 	height: 65vh;
 	.text-wrapper{
 		li.partenaire-el{
-			&::before{content:""}
 			border-bottom: 1px solid $vert;
 			padding: 1.5rem 0 1rem 0;
 			&:first-child{
@@ -338,7 +312,6 @@ main {
 	}
 	.sliderCartel{
 		.inner-content{
-			li::before{content:""; margin:0;}
 			@include slider;
 			top:15%;
 			left: 100%;
@@ -348,12 +321,8 @@ main {
 
 #calendrier .inner-content{
 	ul{
-		//display: flex;
 		margin-left: 0;
 		li{
-			&:before{
-				content:"";
-			}
 			height: 200px;
 			h4{
 				border-bottom: 1px solid $vert;
@@ -401,7 +370,6 @@ main {
   .slick-dots{
     margin-top:0.5rem;
     li{
-    	&:before{content:""}
       width: 15px;
       height:15px;
       background: #FFF;

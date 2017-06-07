@@ -36,12 +36,12 @@
 	    
     <section id="slide-3" class="homeSlide">
       	<div class="bcg" 
-        data-top="top: -100%;" 
-        data-bottom="top: -50%;"
-        data--500-bottom="top: 0%;" 
-        data--2500-bottom="top: 0%;"  
-        data--3000-bottom="top: -100%;"  
-        data-anchor-target="#slide-5">
+        data-top="top: 100%;" 
+        data-bottom="top: 100%;"
+        data--6000-bottom="top: 0%;" 
+        data--9000-bottom="top: 0%;"  
+        data--10000-bottom="top: 100%;"  
+        data-anchor-target="#slide-6">
         </div>
     </section>
 
@@ -50,26 +50,33 @@
         data-top="top: 100%;" 
         data-bottom="top: 100%;" 
         data--1000-bottom="top: 90%;"
-        data--2500-bottom="top: 0;" 
+        data--2500-bottom="top: 0%;"
+        data--4000-bottom="top: 0%;" 
+        data--4500-bottom="top: 100%;" 
         data-anchor-target="#slide-2">
         </div>
     </section>
 
     <section id="slide-5" class="homeSlide">
-      	<div class="bcg" data-top="top: -100%;" 
-      	data-bottom="top: -20%;" 
-      	data--3000-bottom="top: -30%;"
-      	data--6000-bottom="top: -30%;"
-      	data--7000-bottom="top: -100%;" 
-      	data-anchor-target="#slide-5">
+      	<div class="bcg" data-top="top: 100%;" 
+      	data-bottom="top: 100%;" 
+      	data--11000-bottom="top: 100%;"
+      	data--13000-bottom="top: 10%;"
+      	data--15000-bottom="top: 10%;" 
+        data--17000-bottom="top: 100%;" 
+      	data-anchor-target="#slide-6">
         </div>
     </section>
 
     <section id="slide-6" class="homeSlide">
       	<div class="bcg small-18"
-        data-top="width:100%; height:100%;" 
-        data-bottom="width:150%; height:150%;" 
-        data--1000-bottom="width:170%; height:170%;"
+        data-top="width:100%; height:100%; left:0%;" 
+        data-bottom="width:150%; height:150%; left:0%;" 
+        data--1000-bottom="width:170%; height:170%; left:0%;"
+        data--4500-bottom="width:170%; height:170%; left:0%;"
+        data--6000-bottom="width:170%; height:170%; left:-65%;"
+        data--9000-bottom="width:170%; height:170%; left:-65%;"
+        data--11000-bottom="width:130%; height:130%; left:-25%;"
         data-anchor-target="#slide-2">
         >
         </div>
