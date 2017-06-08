@@ -1,0 +1,20 @@
+title: Candidat
+
+pages: false
+files: true
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  name:
+    label: Nom
+    type:  text
+    width: 1/2
+  firstname:
+    label: Prénom
+    type:  text
+    width: 1/2
+  links:
+  	label: Liens
+  	type: text

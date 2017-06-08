@@ -16,9 +16,9 @@ $status = $comments->process();
 
 ?>
 <?php if ($comments->userHasSubmitted()): ?>
-  <p class="thank-you"><?php echo l::get('thanks') ?></p>
+  <p class="thank-you">Thank you for your comment!</p>
 <?php else: ?>
-  <h2 id="comments-form-headline"><?php echo l::get('apply') ?></h2>
+  <h2 id="comments-form-headline">Write your comment</h2>
   
   <?php if ($status->isUserError()): ?>
     <p id="comment-<?= $comments->nextCommentId() ?>" class="error">
@@ -27,12 +27,9 @@ $status = $comments->process();
   <?php endif ?>
   
   <form action="#comment-<?= $comments->nextCommentId() ?>" method="post" accept-charset="utf-8" role="form" aria-labelledby="comments-form-headline">
-    <label for="comments-field-name"><?php echo l::get('name') ?><abbr title="required">*</abbr></label>
+    <label for="comments-field-name">Name<abbr title="required">*</abbr></label>
     <input id="comments-field-name" type="text" name="<?= $comments->nameName() ?>" value="<?= $comments->nameValue() ?>" maxlength="<?= $comments->nameMaxLength() ?>" required>
     
-    <label for="comments-field-firstname"><?php echo l::get('firstname') ?><abbr title="required">*</abbr></label>
-    <input id="comments-field-firstname" type="text" name="<?= $comments->firstnameName() ?>" value="<?= $comments->firstnameValue() ?>" required>
-
     <label for="comments-field-email">Email Address<?php if ($comments->requiresEmailAddress()): ?><abbr title="required">*</abbr><?php endif ?></label>
     <input id="comments-field-email" type="email" name="<?= $comments->emailName() ?>" value="<?= $comments->emailValue() ?>" maxlength="<?= $comments->emailMaxLength() ?>" <?php e($comments->requiresEmailAddress(), 'required') ?>>
     

@@ -17,6 +17,7 @@ class Comment
    * @var string
    */
   private $name;
+  private $firstname;
   /**
    * The email address of the author of the comment. `null` if no email
    * address was provided.
@@ -58,11 +59,12 @@ class Comment
    */
   public $content_page;
   
-  function __construct($content_page, $id, $name, $email, $website, $message, $datetime, $is_preview = false)
+  function __construct($content_page, $id, $name, $firstname, $email, $website, $message, $datetime, $is_preview = false)
   {
     $this->content_page = $content_page;
     $this->id           = $id;
     $this->name         = trim(strip_tags($name));
+    $this->firstname    = trim(strip_tags($firstname));
     $this->email        = trim(strip_tags($email));
     $this->website      = trim(strip_tags($website));
     $this->message      = trim($message);
@@ -99,6 +101,7 @@ class Comment
     
     // Check POST data
     $name       = trim(Comment::qq($_POST, Comments::option('form.name'), ''));
+    $firstname  = trim(Comment::qq($_POST, Comments::option('form.firstname'), ''));
     $email      = trim(Comment::qq($_POST, Comments::option('form.email'), ''));
     $website    = trim(Comment::qq($_POST, Comments::option('form.website'), ''));
     $message    = trim(Comment::qq($_POST, Comments::option('form.message'), ''));
@@ -128,7 +131,7 @@ class Comment
       throw new Exception('The message is to long. (A maximum of '.Comments::option('form.message.max-length').' characters is allowed.)', 309);
     }
     
-    return new Comment($content_page, $id, $name, $email, $website, $message, $datetime, $is_preview);
+    return new Comment($content_page, $id, $name, $firstname, $email, $website, $message, $datetime, $is_preview);
   }
   
   public function id()
@@ -139,6 +142,11 @@ class Comment
   public function name()
   {
     return htmlentities($this->name);
+  }
+
+  public function firstname()
+  {
+    return htmlentities($this->firstname);
   }
   
   public function email()

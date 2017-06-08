@@ -266,6 +266,7 @@ class Comments implements Iterator
             'cid'     => $new_comment_id,
             'date'    => $new_comment->date('Y-m-d H:i:s'),
             'name'    => $new_comment->name(),
+            'firstname'=> $new_comment->firstname(),
             'email'   => $new_comment->email(),
             'website' => $new_comment->website(),
             'text'    => $new_comment->rawMessage()
@@ -346,6 +347,11 @@ class Comments implements Iterator
   {
     return $this->value($this->nameName(), $default);
   }
+
+  public function firstnameValue($default = '')
+  {
+    return $this->value($this->firstnameName(), $default);
+  }
   
   public function emailValue($default = '')
   {
@@ -382,6 +388,12 @@ class Comments implements Iterator
     return Comments::option('form.name');
   }
   
+  public function firstnameName()
+  {
+    return Comments::option('form.firstname');
+  }
+  
+
   public function emailName()
   {
     return Comments::option('form.email');
@@ -511,6 +523,7 @@ Comments::init(array(
   'form.preview'              => 'preview',
   'form.name'                 => 'name',
   'form.name.max-length'      => 64,
+  'form.firstname'            => 'firstname',
   'form.email'                => 'email',
   'form.email.required'       => false,
   'form.email.max-length'     => 64,
