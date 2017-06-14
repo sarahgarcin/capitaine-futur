@@ -1,4 +1,4 @@
-Title: La Gaîté lyrique : le lieu des cultures numériques [Paris, France]
+Title: La Gaîté lyrique
 
 ----
 
@@ -9,3 +9,11 @@ Par des événements fédérateurs (expositions, concerts, conférences, project
 Interprétant le numérique comme un enjeu citoyen dont il faut faire l’apprentissage dans une perspective d’empowerment, la Gaîté lyrique explore des approches sensibles d’être, de faire ensemble et de s’approprier les changements en cours. L’établissement compte 1 300 000 visiteurs depuis son ouverture en mars 2011. Son modèle économique mixte représente une innovation dans le secteur culturel français. 
 
 (link: http://www.gaite-lyrique.net text: www.gaite-lyrique.net)
+
+----
+
+Subtitle: Le lieu des cultures numériques
+
+----
+
+Place: [Paris, France]

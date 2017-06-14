@@ -1,4 +1,4 @@
-Title: KIKK : festival, plateforme créative et fablab [Namur, Belgique]
+Title: KIKK
 
 ----
 
@@ -9,3 +9,11 @@ La structure organise le KIKK festival, une manifestation annuelle international
 KIKK est également partenaire fondateur du hub créatif & Fab Lab Trakk  et du Smart Gastronomy Lab, premier living lab belge qui envisage la gastronomie à l’aune des technologies. 
 
 (link: http://www.kikk.be text: www.kikk.be )
+
+----
+
+Subtitle: festival, plateforme créative et fablab
+
+----
+
+Place: [Namur, Belgique]

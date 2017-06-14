@@ -110,7 +110,7 @@
           <polygon fill="#FFFFFF" points="94.339,0 40,17.496 0,72.029 0,87.496 25.339,125.496 94.339,151.496 149.339,151.496 
             196.505,101.496 196.505,72.029 155.338,19.496 "/>
           </svg>
-          <a href="#appel-a-projets" title="<?php echo $pages->find('appel-a-projets')->title()?>">
+          <a href="#appel-a-projets" data-menu-top='7000' title="<?php echo $pages->find('appel-a-projets')->title()?>">
             appel à<br>projets
           </a>
         </div>

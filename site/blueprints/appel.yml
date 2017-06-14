@@ -17,6 +17,9 @@ fields:
   sommaire: 
     label: Sommaire
     type:  markdown
+  entete: 
+    label: Texte d'en-tête
+    type:  markdown
   text:
     label: Texte
     type:  markdown

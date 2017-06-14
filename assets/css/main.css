@@ -9415,7 +9415,8 @@ body {
   font-family: "karla", sans-serif;
   color: #006b00;
   font-size: 0.9375rem;
-  line-height: 1.3; }
+  line-height: 1.3;
+  text-align: justify; }
 
 body[data-template='home'] {
   overflow: hidden; }
@@ -9435,27 +9436,32 @@ h2 {
   font-size: 1.25rem;
   font-family: "bungee", sans-serif;
   margin-bottom: 0.5em;
-  margin-top: 0.5em; }
+  margin-top: 0.5em;
+  text-align: left; }
   h2:first-child {
     margin-top: 0; }
 
 h3 {
   font-size: 1.125rem;
-  font-family: "bungee", sans-serif; }
+  font-family: "bungee", sans-serif;
+  text-align: left; }
 
 h4 {
   font-size: 1rem;
-  font-family: "bungee", sans-serif; }
+  font-family: "bungee", sans-serif;
+  text-align: left; }
 
 h5 {
   font-size: 0.875rem;
-  font-family: "bungee", sans-serif; }
+  font-family: "bungee", sans-serif;
+  text-align: left; }
 
 p {
   font-family: "karla", sans-serif;
   color: #006b00;
   font-size: 0.9375rem;
-  line-height: 1.3; }
+  line-height: 1.3;
+  text-align: justify; }
 
 ul {
   margin: 0; }
@@ -9464,6 +9470,7 @@ ul {
     color: #006b00;
     font-size: 0.9375rem;
     line-height: 1.3;
+    text-align: justify;
     list-style: none; }
 
 figure {
@@ -9580,17 +9587,20 @@ main {
     text-decoration: underline; }
 
 .appel-liens a {
-  display: block;
+  display: inline-block;
   border: 1px solid #006b00;
   padding: 5px;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 0.2em;
   font-family: "bungeehairline", sans-serif;
   font-size: 1.125rem;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  background: #006b00;
+  color: #FFF; }
   .appel-liens a:hover {
-    background: #006b00;
-    color: #FFF; }
+    background: #FFF;
+    color: #006b00; }
 
 .text-inner ul {
   margin-bottom: 1.25rem; }
@@ -9709,6 +9719,9 @@ section .inner-content {
     font-size: 2.5rem;
     font-family: "bungee", sans-serif; }
 
+#appel-a-projets .inner-content .entete-text p {
+  font-weight: bold; }
+
 #home-appel .inner-content {
   z-index: 20; }
 
@@ -9737,11 +9750,9 @@ section .inner-content {
     padding-top: 0; }
   #partenaires .inner-content .text-wrapper li.partenaire-el:last-child {
     border-bottom: none; }
-    #partenaires .inner-content .text-wrapper li.partenaire-el:last-child h3 {
-      font-size: 0.9375rem; }
   #partenaires .inner-content .text-wrapper li.partenaire-el .more-text {
     display: none; }
-  #partenaires .inner-content .text-wrapper li.partenaire-el h3.see-more {
+  #partenaires .inner-content .text-wrapper li.partenaire-el .see-more {
     cursor: pointer; }
 
 #partenaires .inner-content .sliderCartel .inner-content {
@@ -9749,21 +9760,19 @@ section .inner-content {
   top: 7rem;
   left: -100%; }
 
-#calendrier .inner-content {
-  padding-left: 5rem;
-  padding-right: 5rem; }
-  #calendrier .inner-content h2 {
-    padding-left: 0.9375rem; }
-  #calendrier .inner-content ul {
-    margin-left: 0; }
-    #calendrier .inner-content ul li {
-      height: 150px; }
-      #calendrier .inner-content ul li h4 {
-        font-size: 1rem;
-        letter-spacing: 0.08em;
-        border-bottom: 1px solid #006b00; }
-      #calendrier .inner-content ul li p {
-        margin-bottom: 0; }
+#calendrier .inner-content h2 {
+  padding-left: 0.9375rem; }
+
+#calendrier .inner-content ul {
+  margin-left: 0; }
+  #calendrier .inner-content ul li {
+    height: 150px; }
+    #calendrier .inner-content ul li h4 {
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #006b00; }
+    #calendrier .inner-content ul li p {
+      margin-bottom: 0; }
 
 #bar {
   background-color: yellow;
@@ -9966,6 +9975,8 @@ tr td {
   header .top-bar .top-bar-section .right {
     float: none !important;
     padding-bottom: 2em; }
+  p {
+    text-align: left; }
   #home .inner-content {
     -ms-transform: translateY(-40%);
     transform: translateY(-40%); }

@@ -1,4 +1,4 @@
-Title: Le WoeLab : centre africain pour la démocratie technologique [Lomé, Togo]
+Title: Le WoeLab
 
 ----
 
@@ -8,3 +8,11 @@ Premier laboratoire d’innovation sociale et technologique au Togo, le WoeLab (
 Avec pour mission de soutenir et vulgariser des technologies de rupture, le WoeLab est pensé pour être réplicable : prônant l’économie de moyens et l’innovation frugale, il incite les jeunes générations à l’apprentissage de pair à pair, au transfert et à la mutualisation des savoirs, à l’exploitation de solutions open source, au recyclage et à la créativité locale. Il organise la Woe-academy, des cours hebdomadaires gratuits en programmation, technologie libre et fabrication d’ordinateurs (projet Jerry). Il conçoit également « 3DprintAfricaEducative », des programmes de production d’objets utiles adaptés aux imprimantes 3D et fédère la communauté de makers lors des Boot(woe)Camp, des événements participatifs annuels dédiés au bricolage technologique à faible coût. Le WoeLab regroupe une trentaine de pensionnaires dont la moyenne d’âge est de 19 ans.
 
 (link: http://www.woelabo.com text: www.woelabo.com )
+
+----
+
+Subtitle: centre africain pour la démocratie technologique
+
+----
+
+Place: [Lomé, Togo]

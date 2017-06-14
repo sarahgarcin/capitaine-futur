@@ -207,17 +207,20 @@ main {
 }
 
 .appel-liens a{
-	display:block;
+	display:inline-block;
 	border: 1px solid $vert;
 	padding: 5px; 
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
+	margin-right: 0.2em;
 	font-family: $bungeeLine;
 	font-size: rem-calc(18);
 	text-decoration:none;
 	text-align: center;
+	background:$vert;
+	color: #FFF;
 	&:hover{
-		background:$vert;
-		color: #FFF;
+		background:#FFF;
+		color: $vert;
 	}
 }
 
@@ -367,7 +370,12 @@ section .inner-content{
 	}
 }
 #appel-a-projets .inner-content{
-	// top:300vh;
+	.entete-text{ 
+		p{font-weight:bold;}
+	}
+	.appel-section{
+
+	}
 }   
 #home-appel .inner-content{z-index:20;} 
 #resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{
@@ -396,12 +404,12 @@ section .inner-content{
 			}
 			&:last-child{
 				border-bottom: none;
-				h3{font-size: rem-calc(15)}
+				//h3{font-size: rem-calc(15)}
 			}
 			.more-text{
 				display:none;
 			}
-			h3.see-more{
+			.see-more{
 				cursor: pointer;
 			}
 		}
@@ -417,8 +425,8 @@ section .inner-content{
 }
 
 #calendrier .inner-content{
-	padding-left: 5rem;
-	padding-right: 5rem;
+	// padding-left: 5rem;
+	// padding-right: 5rem;
 	h2{
 		padding-left: 0.9375rem;
 	}

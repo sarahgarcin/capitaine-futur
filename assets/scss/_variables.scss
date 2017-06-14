@@ -12,6 +12,7 @@
 	color: $vert;
 	font-size: rem-calc(15);
 	line-height:1.3;
+	text-align: justify;
 }
 
 @mixin encart{
@@ -49,6 +50,7 @@
 	font-family:$bungee;
 	margin-bottom: 0.5em;
 	margin-top: 0.5em;
+	text-align: left;
 	&:first-child{
 		margin-top: 0;
 	}
@@ -62,17 +64,21 @@
 @mixin H3{
 	font-size: rem-calc(18);
 	font-family:$bungee;
+	text-align: left;
 }
 
 @mixin H4{
 	font-size: rem-calc(16);
 	font-family:$bungee;
+	text-align: left;
 }
 
 @mixin H5{
 	font-size: rem-calc(14);
 	font-family:$bungee;
+	text-align: left;
 }
+
 
 @mixin secondMenu{
 	font-size: rem-calc(12);

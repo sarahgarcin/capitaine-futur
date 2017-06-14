@@ -1,24 +1,28 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
 	<!-- <div class="inner-content small-16 small-push-1 medium-7 medium-push-10 xlarge-5 xlarge-push-12" > -->
-	  <div class="inner-content small-16 small-push-1 medium-7 medium-push-10 xlarge-5 xlarge-push-12" 
+	  <div class="inner-content small-16 small-push-1 medium-12 medium-push-3 xlarge-5 xlarge-push-12" 
 		data-top="opacity:0;display:none;" 
 		data-bottom="opacity:0;display:none;" 
 		data--8500-bottom="opacity:0;display:block;" 
 		data--9500-bottom="opacity:1;display:block;"
 		data--11000-bottom="opacity:1;display:block;"
-		data--12000-bottom="opacity:0;display:none;"   >
+		data--12000-bottom="opacity:0;display:none;">
 	  <div class="text-wrapper">
 	  	<ul>
 	  		<?php foreach($data->children()->visible() as $part):?>
 	  			<li class="partenaire-el">
-	  				<h3 class="see-more"><?php echo $part->title()->html()?></h3>
+	  				<div class="see-more">
+		  				<h3><?php echo $part->title()->html()?></h3>
+		  				<h4><?php echo $part->subtitle()->html()?></h4>
+		  				<h5><?php echo $part->place()->html()?></h5>
+	  				</div>
 	  				<div class="more-text">
 	  					<div class="text-inner">
 	  						<?php echo $part->text()->kirbytext()?>
 	  					</div>
 	  				</div>
 
-	  				<section id="<?php echo $data->uid()?>-slider" class="sliderCartel hide-for-small-only">
+<!-- 	  				<section id="<?php echo $data->uid()?>-slider" class="sliderCartel hide-for-small-only">
 							<div class="inner-content small-16 small-push-1 medium-6">
 								<ul class="slider js_slides">
 									<?php foreach($part->images() as $slide):?>
@@ -29,7 +33,7 @@
 								</ul>
 							</div>
 							
-						</section>
+						</section> -->
 	  			</li>
 	  		<?php endforeach ?>
 	  	</ul>

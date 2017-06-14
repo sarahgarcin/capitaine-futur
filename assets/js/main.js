@@ -49,6 +49,9 @@ function init(){
 		if(id == "#calendrier"){
 			$(this).find('a').attr('data-menu-top', '14000');
 		}
+		if(id == "#soutiens"){
+			$(this).find('a').attr('data-menu-top', '17000');
+		}
 		if(id == "#contact"){
 			$(this).find('a').attr('data-menu-top', '20000');
 		}
@@ -66,8 +69,6 @@ function init(){
 		    //Position the sections
 		    // calculPos();
 
-		    // Liens vers les éléments
-		    //menuLinks();
 		      
 			  $body.removeClass('loading').addClass('loaded');
 
@@ -152,7 +153,8 @@ function init(){
   
   $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
       e.preventDefault(); $(this).parent('div').remove(); x--;
-  })
+  });
+
 
 
 	function adjustWindow(){
@@ -211,38 +213,5 @@ function calculPos(){
 
 }
 
-
-function menuLinks(){
-
-	$('.menu .menu-el').each(function(){
-		var $link = $(this).find('a');
-		var id = $(this).find('a').attr("href");
-		var $target = $(id);
-		var targetTop = $(id).offset();
-		console.log($target, targetTop);
-
-	});
-
-		// $('.menu .menu-el').each(function(){
-	// 	var $link = $(this).find('a');
-	// 	var id = $(this).find('a').attr("href");
-	// 	if(id == "#appel-a-projets"){
-	// 		$(this).find('a').attr('data-menu-top', '1000p');
-	// 	}
-	// 	if(id == "#resume-du-projet"){
-	// 		$(this).find('a').attr('data-menu-top', '1500p');
-	// 	}
-	// 	if(id == "#partenaires"){
-	// 		$(this).find('a').attr('data-menu-top', '2500p');
-	// 	}
-	// 	if(id == "#calendrier"){
-	// 		$(this).find('a').attr('data-menu-top', '3400p');
-	// 	}
-	// 	if(id == "#contact"){
-	// 		$(this).find('a').attr('data-menu-top', '5000p');
-	// 	}
-	// 	//console.log($(this), id);
-	// });
-}
 
 

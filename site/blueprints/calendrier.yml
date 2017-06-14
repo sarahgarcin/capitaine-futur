@@ -1,8 +1,7 @@
 title: Calendrier
 
 pages:
-  template: Actu
-  num: date
+  template: Etapes
 files: false
 
 fields:
