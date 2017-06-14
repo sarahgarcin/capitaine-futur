@@ -3,7 +3,7 @@
 	$c = 0;
 	$count = 0;
 	$currentTime = date('Ymd');
-		foreach($data->children()->visible() as $periode):
+		foreach($data->children()->visible() as $key=>$periode):
 			$c ++;
 			foreach($periode->children()->visible() as $date):
 				if($date->agenda()->isNotEmpty()):
@@ -13,25 +13,25 @@
 						$to = $dates->to();
 						$newDateFrom = date("d.m.y", strtotime($from));
 						$newDateTo = date("d.m.y", strtotime($to));
-						$array[$c][$i]['datestart'] = date("Ymd", strtotime($from));
-		    		$array[$c][$i]['dateend'] = date("Ymd", strtotime($to));
+						$array[$key][$i]['datestart'] = date("Ymd", strtotime($from));
+		    		$array[$key][$i]['dateend'] = date("Ymd", strtotime($to));
 		    		
-		    		$array[$c][$i]['from'] = $newDateFrom;
-		    		$array[$c][$i]['to'] = $newDateTo;
+		    		$array[$key][$i]['from'] = $newDateFrom;
+		    		$array[$key][$i]['to'] = $newDateTo;
 						
-						$array[$c][$i]['titre'] = $date->title();
-						$array[$c][$i]['text'] = $date->text();
-						$array[$c][$i]['link'] = $date->link();
+						$array[$key][$i]['titre'] = $date->title();
+						$array[$key][$i]['text'] = $date->text();
+						$array[$key][$i]['link'] = $date->link();
 
 						$projectTime = date("Ymd", strtotime($from));
 		    		$projectTimeEnd = date("Ymd", strtotime($to));
 						if($currentTime > $projectTime && $currentTime > $projectTimeEnd){
-							unset($array[$i]);
+							unset($array[$key][$i]);
 						}
 					endforeach;
 				endif;
 			endforeach;
-			usort($array[$c], function($a, $b) {
+			usort($array[$key], function($a, $b) {
 			  return $a['datestart'] - $b['datestart'];
 			});
 		endforeach;
@@ -55,27 +55,27 @@
 	  <?php foreach($data->children()->visible() as $key => $periode):?>
 	  	<div class="small-6 columns">
 	  		<h2><?php echo $periode->title()->html()?></h2>
-			  <div class="text-wrapper"> 
+			  <div class="colonne-wrapper text-wrapper"> 
 				  <ul class="row">
-					  	<?php foreach($array as $date):?>
-					  		<?php //print $date[0]['titre'] ?>
+					  	<?php foreach($array[$key] as $date):?>
 					  		<li class="date small-18">
-						  		<a href="<?php echo $date[$count]['link']?>" title="<?php echo $date[$count]['titre']?>">
+						  		<a href="<?php echo $date['link']?>" title="<?php echo $date['titre']?>">
 										<ul class="dates">
 										  <li>
-										  	<?php if($date[$count]["from"] == $date[$count]["to"]):?>
-										  		<h4><?php echo $date[$count]["from"]?></h4>
-										  		<p><strong><?php echo $date[$count]["titre"]->html()?></strong></p>
-								  				<?php echo $date[$count]["text"]->kirbytext()?>
+										  	<?php if($date["from"] == $date["to"]):?>
+										  		<p class="date-head"><?php echo $date["from"]?></p>
+										  		<h4><?php echo $date["titre"]->html()?></h4>
+								  				<?php echo $date["text"]->kirbytext()?>
 										    <?php else:?>
-										    	<h4><?php echo $date[$count]["from"]?> - <?php echo $date[$count]["to"]?> </h4>
-					  							<p><strong><?php echo $date[$count]["titre"]->html()?></strong></p>
-								  				<?php echo $date[$count]["text"]->kirbytext()?>
+										    	<p class="date-head"><?php echo $date["from"]?> - <?php echo $date["to"]?> </p>
+					  							<h4><?php echo $date["titre"]->html()?></h4>
+								  				<?php echo $date["text"]->kirbytext()?>
 										    <?php endif; ?>
 										  </li>
 										</ul>
 							  	</a>
 								</li>
+
 				
 						<?php endforeach ?>
 					</ul>
