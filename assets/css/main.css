@@ -9458,10 +9458,6 @@ ul {
     line-height: 1.3;
     list-style: none; }
 
-.inner-content .text-wrapper ul li:before {
-  content: "—";
-  margin-right: 5px; }
-
 figure {
   margin: 0; }
 
@@ -9479,21 +9475,41 @@ img {
   width: 100%;
   max-width: 100%; }
 
+header .top-bar .title-area {
+  margin-left: 1rem; }
+
 header .top-bar .name {
-  padding: 0.5em 0;
-  margin-left: 2em;
-  width: 200px; }
+  width: 250px;
+  padding: 0.8em 0 0.8em 0; }
   header .top-bar .name h1 {
     display: none; }
 
 header .top-bar .top-bar-section .left {
-  margin-left: 4em; }
+  margin-left: 0.8em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  header .top-bar .top-bar-section .left li {
+    float: none;
+    display: inline-block;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
   header .top-bar .top-bar-section .left a {
-    font-size: 1rem; }
+    font-size: 0.875rem;
+    padding: 0 0.8rem; }
+
+header .top-bar .top-bar-section .social-network li:first-child a {
+  padding-left: 0.8rem; }
+
+header .top-bar .top-bar-section .social-network a {
+  padding: 0 0.4em; }
 
 header .top-bar .top-bar-section .right {
   line-height: 1.2;
-  padding: 0.5em 2em; }
+  padding: 0.5em 2em 0.5em 0.5em; }
   header .top-bar .top-bar-section .right .languages, header .top-bar .top-bar-section .right .infos-menu {
     display: block;
     float: none; }
@@ -9547,6 +9563,32 @@ main {
   left: 0;
   top: 0; }
 
+.sommaire-wrapper a {
+  font-family: "bungeehairline", sans-serif;
+  font-size: 1.375rem;
+  text-decoration: none; }
+  .sommaire-wrapper a:hover {
+    text-decoration: underline; }
+
+.appel-liens a {
+  display: block;
+  border: 1px solid #006b00;
+  padding: 5px;
+  margin-bottom: 0.5em;
+  font-family: "bungeehairline", sans-serif;
+  font-size: 1.125rem;
+  text-decoration: none;
+  text-align: center; }
+  .appel-liens a:hover {
+    background: #006b00;
+    color: #FFF; }
+
+.text-inner ul {
+  margin-bottom: 1.25rem; }
+  .text-inner ul li::before {
+    content: "—";
+    margin-right: 0.5em; }
+
 /* Slide 1 */
 #slide-1 .bcg {
   background-image: url("../images/plan-1-gauche.png");
@@ -9585,13 +9627,19 @@ main {
   .textCartel > .inner-content {
     background: #FFF;
     border: 1px solid #006b00;
-    padding: 1rem;
+    padding: 2rem;
     position: fixed;
-    height: 80vh;
+    height: 78vh;
     overflow-y: scroll; }
 
 .sliderCartel .inner-content {
   position: fixed; }
+  .sliderCartel .inner-content .caption-wrapper {
+    background-color: #FFF;
+    padding: 1em;
+    display: inline-block; }
+    .sliderCartel .inner-content .caption-wrapper p {
+      margin-bottom: 0; }
 
 .formes .inner-content {
   position: fixed; }
@@ -9617,7 +9665,9 @@ section .inner-content {
   transform: translateY(-30%);
   text-align: center; }
   #home .inner-content .title {
-    position: relative; }
+    position: relative;
+    margin: auto;
+    margin-bottom: 0.5em; }
     #home .inner-content .title h1 {
       font-family: "bungeeshade", sans-serif;
       font-size: 2.875rem;
@@ -9671,30 +9721,40 @@ section .inner-content {
 #appel-a-projets .inner-content {
   z-index: 20; }
 
-#partenaires .inner-content {
-  height: 65vh; }
-  #partenaires .inner-content .text-wrapper li.partenaire-el {
-    border-bottom: 1px solid #006b00;
-    padding: 1.5rem 0 1rem 0; }
-    #partenaires .inner-content .text-wrapper li.partenaire-el:first-child {
-      padding-top: 0; }
-    #partenaires .inner-content .text-wrapper li.partenaire-el .more-text {
-      display: none; }
-    #partenaires .inner-content .text-wrapper li.partenaire-el h4.see-more {
-      font-family: "bungeehairline", sans-serif;
-      cursor: pointer;
-      text-align: right; }
-  #partenaires .inner-content .sliderCartel .inner-content {
-    position: fixed;
-    top: 15%;
-    left: 100%; }
+#partenaires .inner-content .text-wrapper li.partenaire-el {
+  border-bottom: 1px solid #006b00;
+  padding: 1.5rem 0 1rem 0; }
+  #partenaires .inner-content .text-wrapper li.partenaire-el:first-child {
+    padding-top: 0; }
+  #partenaires .inner-content .text-wrapper li.partenaire-el:last-child {
+    border-bottom: none; }
+    #partenaires .inner-content .text-wrapper li.partenaire-el:last-child h3 {
+      font-size: 0.9375rem; }
+  #partenaires .inner-content .text-wrapper li.partenaire-el .more-text {
+    display: none; }
+  #partenaires .inner-content .text-wrapper li.partenaire-el h3.see-more {
+    cursor: pointer; }
 
-#calendrier .inner-content ul {
-  margin-left: 0; }
-  #calendrier .inner-content ul li {
-    height: 200px; }
-    #calendrier .inner-content ul li h4 {
-      border-bottom: 1px solid #006b00; }
+#partenaires .inner-content .sliderCartel .inner-content {
+  position: fixed;
+  top: 7rem;
+  left: -100%; }
+
+#calendrier .inner-content {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+  #calendrier .inner-content h2 {
+    padding-left: 0.9375rem; }
+  #calendrier .inner-content ul {
+    margin-left: 0; }
+    #calendrier .inner-content ul li {
+      height: 150px; }
+      #calendrier .inner-content ul li h4 {
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        border-bottom: 1px solid #006b00; }
+      #calendrier .inner-content ul li p {
+        margin-bottom: 0; }
 
 #bar {
   background-color: yellow;
@@ -9714,7 +9774,7 @@ section .inner-content {
     font-size: 2em;
     font-weight: 100;
     position: absolute;
-    top: 50%;
+    top: 45%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 999;
@@ -9783,6 +9843,112 @@ section .inner-content {
   100% {
     background-position: 0 -11569px; } }
 
-.uniform__potty {
-  position: absolute;
-  left: -9999px; }
+figure.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 2rem; }
+  figure.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#formulaire {
+  margin-bottom: 5rem; }
+  #formulaire .retour {
+    padding: 1rem 2rem; }
+    #formulaire .retour a {
+      background: #FFF;
+      font-size: 1rem;
+      color: #006b00; }
+      #formulaire .retour a:hover {
+        text-decoration: none; }
+
+label {
+  color: #006b00; }
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"], textarea {
+  border-color: #006b00;
+  box-shadow: none; }
+
+textarea {
+  height: 300px; }
+
+.input_fields_wrap-links div {
+  padding-left: 0;
+  position: relative; }
+
+.add_links_button.small {
+  padding: 10px;
+  background: #006b00;
+  color: #FFF;
+  outline: none;
+  margin-top: 1.3rem; }
+
+.remove_field {
+  text-align: right;
+  text-decoration: underline;
+  position: relative;
+  display: block;
+  margin-top: -0.7rem; }
+
+input[type="submit"] {
+  background: #FFF;
+  font-family: "bungee", sans-serif;
+  color: #006b00;
+  border: 1px solid #006b00;
+  outline: none;
+  margin-top: 1rem; }
+  input[type="submit"]:hover {
+    background: #006b00;
+    color: #FFF; }
+
+tr {
+  border-bottom: 1px solid #000; }
+
+table tr th {
+  text-align: center; }
+
+td, th {
+  border-right: 1px solid #000; }
+
+@media only screen and (max-width: 40em) {
+  header .top-bar.expanded {
+    background: yellow;
+    position: fixed; }
+  header .top-bar .title-area {
+    margin-left: 1.66667rem; }
+  header .top-bar .top-bar-section ul li {
+    background: yellow; }
+  header .top-bar .top-bar-section .left {
+    margin-left: 0; }
+    header .top-bar .top-bar-section .left.social-network {
+      float: none !important; }
+      header .top-bar .top-bar-section .left.social-network li {
+        display: inline-block; }
+  header .top-bar .top-bar-section .right {
+    float: none !important;
+    padding-bottom: 2em; }
+  #home .inner-content {
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%); }
+  #calendrier .inner-content {
+    padding-left: 1rem;
+    padding-right: 1rem; } }

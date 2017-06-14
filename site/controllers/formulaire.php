@@ -18,13 +18,16 @@ return function($site, $pages, $page) {
       'name' => get('name'),
       'firstname' => get('firstname'),
       'links' => $strlinks,
-      // 'firstname' => get('firstname'),
-      // 'firstname' => get('firstname'),
-      // 'firstname' => get('firstname'),
-      // 'firstname' => get('firstname'),
-      // 'firstname' => get('firstname'),
-      // 'firstname' => get('firstname'),
-      // 'firstname' => get('firstname'),
+      'birthdate' => get('birthdate'),
+      'address' => get('address'),
+      'address2' => get('address2'),
+      'country' => get('country'),
+      'email' => get('email'),
+      'phone' => get('phone'),
+      'company' => get('company'),
+      'resume' => get('resume'),
+      'bio' => get('bio'),
+      'supernaturel' => get('supernaturel'),
     );
     
     $title = get('name') . "-" . get('firstname');

@@ -179,7 +179,7 @@ kirbytext::$tags['toc'] = array(
 
 	// preparing the parameters. If not given, the default values will be used
 	$splitchar = $tag->attr('split', "%20");
-	$levelchar = $tag->attr('levelchar', '|');
+	$levelchar = $tag->attr('levelchar', '');
 	$lowercase = $tag->attr('lowercase', '0');
 
 	if(!strcmp($levelchar, 'space')) 

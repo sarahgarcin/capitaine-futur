@@ -1,0 +1,49 @@
+Name: Garcin
+
+----
+
+Firstname: Sarah
+
+----
+
+Links: http://test.com, http://test.fr,
+
+----
+
+Birthdate: 1989-06-06
+
+----
+
+Address: 102 rue Pelleport
+
+----
+
+Address2: 
+
+----
+
+Country: France
+
+----
+
+Email: sarahgarcin@hotmail.com
+
+----
+
+Phone: +33624320088
+
+----
+
+Company: g-u-i
+
+----
+
+Resume: ceci est le résumé de mon projet, et c'est cool
+
+----
+
+Bio: moi c'est sarah
+
+----
+
+Supernaturel: et ça c'est le lien super

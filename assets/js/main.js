@@ -37,25 +37,22 @@ function init(){
 	$('.menu .menu-el').each(function(){
 		var $link = $(this).find('a');
 		var id = $(this).find('a').attr("href");
-		if(id == "#pourquoi"){
-			$(this).find('a').attr('data-menu-top', '120p');
-		}
 		if(id == "#resume-du-projet"){
-			$(this).find('a').attr('data-menu-top', '600p');
-		}
-		if(id == "#partenaires"){
-			$(this).find('a').attr('data-menu-top', '1200p');
-		}
-		if(id == "#calendrier"){
-			$(this).find('a').attr('data-menu-top', '1500p');
-		}
-		if(id == "#contact"){
-			$(this).find('a').attr('data-menu-top', '1900p');
+			$(this).find('a').attr('data-menu-top', '8000');
 		}
 		if(id == "#appel-a-projets"){
-			$(this).find('a').attr('data-menu-top', '2800p');
+			$(this).find('a').attr('data-menu-top', '4000');
 		}
-		console.log($(this), id);
+		if(id == "#partenaires"){
+			$(this).find('a').attr('data-menu-top', '2500');
+		}
+		if(id == "#calendrier"){
+			$(this).find('a').attr('data-menu-top', '3400');
+		}
+		if(id == "#contact"){
+			$(this).find('a').attr('data-menu-top', '5000');
+		}
+		//console.log($(this), id);
 	});
 
 	
@@ -65,6 +62,12 @@ function init(){
 		      
 		    // Resize sections
 		    adjustWindow();
+
+		    //Position the sections
+		    // calculPos();
+
+		    // Liens vers les éléments
+		    //menuLinks();
 		      
 			  $body.removeClass('loading').addClass('loaded');
 
@@ -73,9 +76,9 @@ function init(){
 				docHeight = $('body').height(),
 				baseX = $window.height() / docHeight * 100;
 
-				console.log( $window.height() );
-				console.log( docHeight );
-				console.log( baseX );
+				// console.log( $window.height() );
+				// console.log( docHeight );
+				// console.log( baseX );
 
 				bar.css('background', '-webkit-linear-gradient(left, green '+ baseX +'%, transparent '+ baseX +'%)');
 
@@ -99,18 +102,18 @@ function init(){
 			$(this).removeClass('active');
 			$(this).next('.more-text').slideUp(400);
 			$(this).parent().find('.inner-content').animate({
-		    left: "100%"
+		    left: "-100%"
 		  }, 500 );
 		}
 		else{
 			$(this).addClass('active');
 			$('#partenaires .more-text').slideUp(400);
 			$('.partenaire-el .inner-content').animate({
-		    left: "100%"
+		    left: "-100%"
 		  }, 500 );
 			$(this).next('.more-text').slideDown(400);
 			$(this).parent().find('.inner-content').animate({
-		    left: "55%"
+		    left: "10%"
 		  }, 500 );
 		}
 		// $(this).next('.more-text').slideToggle(400);
@@ -143,7 +146,7 @@ function init(){
       if(x < max_fields){ //max input box allowed
           x++; //text box increment
           $(wrapper)
-          .append('<div><label for="links[]">Lien '+x+'</label><input type="text" name="links[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+          .append('<div class="small-14"><label for="links[]">Lien '+x+'</label><input type="text" name="links[]"/><a href="#" class="remove_field">remove</a></div>'); //add input box
       }
   });
   
@@ -162,7 +165,7 @@ function init(){
 				return 1000;
 
 				//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-				//return Math.abs(currentTop - targetTop) * 1000;
+				//return Math.abs(currentTop - targetTop) / 10;
 			},
 			change: function(hash, top) {
 				console.log(hash, top);
@@ -177,7 +180,7 @@ function init(){
 		} 
 	    
 	    $slide.height(winH*2);
-	    $('#slide-2, #slide-3').height(winH*3);
+	    $('#slide-2, #slide-3, #slide-4, #slide-5, #slide-6').height(winH*3);
 	    
 	    s.refresh($('.homeSlide'));
 
@@ -186,3 +189,60 @@ function init(){
 	}
 
 }
+
+
+function calculPos(){
+	var newPosition = 112;
+	$(".textCartel").each(function(){
+		var $prev = $(this).prev('.textCartel').find('.inner-content');
+		if($prev){
+			//prevOffsetTop = $prev.offset();
+			var prevHeight = $prev.height();
+			var step = 1000;
+			newPosition = newPosition + prevHeight + step;
+			$(this).find('.inner-content').css('top', newPosition);
+			if($(this).attr('id') == 'resume-du-projet'){
+				$("#resume-du-projet-slider").find('.inner-content').css('top', newPosition);
+			}
+
+			console.log($prev, newPosition, prevHeight)
+		}	
+	});
+
+}
+
+
+function menuLinks(){
+
+	$('.menu .menu-el').each(function(){
+		var $link = $(this).find('a');
+		var id = $(this).find('a').attr("href");
+		var $target = $(id);
+		var targetTop = $(id).offset();
+		console.log($target, targetTop);
+
+	});
+
+		// $('.menu .menu-el').each(function(){
+	// 	var $link = $(this).find('a');
+	// 	var id = $(this).find('a').attr("href");
+	// 	if(id == "#appel-a-projets"){
+	// 		$(this).find('a').attr('data-menu-top', '1000p');
+	// 	}
+	// 	if(id == "#resume-du-projet"){
+	// 		$(this).find('a').attr('data-menu-top', '1500p');
+	// 	}
+	// 	if(id == "#partenaires"){
+	// 		$(this).find('a').attr('data-menu-top', '2500p');
+	// 	}
+	// 	if(id == "#calendrier"){
+	// 		$(this).find('a').attr('data-menu-top', '3400p');
+	// 	}
+	// 	if(id == "#contact"){
+	// 		$(this).find('a').attr('data-menu-top', '5000p');
+	// 	}
+	// 	//console.log($(this), id);
+	// });
+}
+
+

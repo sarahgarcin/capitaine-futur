@@ -1,0 +1,36 @@
+@media #{$small-only} {
+	header {
+		.top-bar {
+			&.expanded{
+				background:$jaune;
+				position: fixed;
+			}
+			.title-area{
+				margin-left:1.66667rem;
+			}
+			.top-bar-section {
+				ul li{background:$jaune;}
+				.left{
+					margin-left: 0;
+					&.social-network{
+						float:none !important;
+						li{display:inline-block;}
+					}
+				}
+				.right{
+					float:none !important;
+					padding-bottom: 2em;
+				}
+			}
+		}
+	}
+
+	#home .inner-content{
+		transform: translateY(-40%);
+	}
+
+	#calendrier .inner-content{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}

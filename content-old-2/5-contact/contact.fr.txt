@@ -1,0 +1,55 @@
+Title: Infos pratiques
+
+----
+
+Text: 
+
+# header 1
+## header 2
+### header 3
+#### header 4
+(link: http://lien.com text:lien )
+- liste 1
+- liste 2
+- liste 3
+ceci est un texte en **bold**
+ceci est un texte en *bold*
+
+
+**Cinekid**
+
+Ward Janssen, directeur de la culture numérique.
+w.janssen[@]cinekid[.]nl
+
+Floor van Spaendonck, directrice générale.
+fvs[@]cinekid[.]nl
+
+**La Gaîté Lyrique**
+
+Jos Auzende, auteure de Capitaine futur et commissaire.
+jos.auzende[@]gaite-lyrique[.]net
+
+Clémence Seurat, conseillère artistique et chef de projet.
+clemence.seurat[@]gaite-lyrique[.]net
+
+**KIKK** 
+
+Marie Du Chastel, coordinatrice et commissaire.
+marie[@]kikk[.]be
+
+**WoeLab**
+
+Sénamé Koffi Agbodjinou, fondateur.
+sename[@]lafricainedarchitecture[.]com
+
+----
+
+Subtitle: Infos pratiques
+
+----
+
+Contact: 
+
+Pour toute question concernant l'appel à projets et les candidatures, merci d'écrire à call@capitainefutur.voyage
+Pour toute question concernant le projet de coopération européenne, merci d'écrire à info@capitainefutur.voyage
+Pour toute question concernant la presse et la communication, merci d'écrire à press@capitainefutur.voyage

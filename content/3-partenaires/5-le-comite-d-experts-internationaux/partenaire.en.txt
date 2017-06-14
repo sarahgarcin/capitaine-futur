@@ -1,0 +1,25 @@
+Title: Internation Experts Committee
+
+----
+
+Text: 
+
+**Régine Debatty (Belgium)**
+Régine Debatty is a writer, curator, critic, and founder of (link: http:// text: we-make-money-not-art), a blog which received 2 Webby awards and recently received an honorary mention at the START Prize, a competition which acknowledges " innovative projects at the interface of science, technology and art". Régine is known for her writings that explore the connections between art, science, technology, and social issues. She writes and lectures internationally about the way in which artists, hackers, and designers use technology as a medium for critical discussion. She also created A.I.L. (Artists in Laboratories), a weekly radio program about the collaborations between art and science for Resonance104.4fm in London (2012–14), and is the co-author of the “sprint book” New Art/Science Affinities, published by Carnegie Mellon University.
+(link: http:// text: http://we-make-money-not-art.com/)
+
+**Valerie Frissen (Netherlands)**
+Valerie Frissen is director of the SIDN Foundation, which provides financial support to ideas and projects that aim to make the internet stronger or that use the internet in innovative ways. By doing so, SIDN Fund wants to help increase the social impact of the internet in the Netherlands. SIDN Fund is an independent foundation established by SIDN, the foundation for internet domain registration in the Netherlands. Apart from being director of the SIDN Fund, Valerie is a professor of ICT & Social Change at the Erasmus University Rotterdam. 
+(link: http:// text: https://www.sidnfonds.nl/contact/valerie-frissen)
+
+**Daito Manabe (Japan)**
+Media Artist, DJ, Programmer, Daito Manabe founded Rhizomatiks in 2006, and since 2015 he has worked with Motoi Ishibashi on Rhizomatiks Research, which conducts projects for the purpose of R&D to a large extent. Also he carries out collaborative projects with artists in various genres making the most use of programming and interactive design. In 2011, Manabe started to work in collaboration with the dance company ELEVENNPLAY to produce works using machine learning technologies and computervision in order to devise new expressions of the body, and other technologies such as drones and robot arms. 
+(link: http:// text: http://daito.ws/)
+
+**Nick Pagee (Canada)**
+Nick Pagee is a designer and award-winning curator of interactive art, videogames, film and animation. Pagee has consulted on interactive art for TIFF the Toronto International Film Festival (Canada), TIFF Kids digiPlaySpace (Canada), The National Videogame Arcade (UK), Spin Master (Global), the Brooklyn Academy of Music (USA), The Strong National Museum of Play (USA), la Gaîté Lyrique (France), The Walker Art Center (USA), The Rec Room (Canada), and more. He holds an MSc Interaction Design from Malmo University, and a BFA New Media from Ryerson University.
+(link: http:// text: http://nickpagee.com/)
+
+**Sophie Pène (France)**
+Sophie Pène is vice president of the French Digital Council (CNNum, Conseil National du Numérique). She regularly contributes in the fields of social inclusion, digital literacy, digital transformation of institutions. She recently took part in the French A.I. Plan (CNNum and France Stratégie). She is full professor at Paris Descartes University and takes part to the Center for Research and Interdisciplinarity co-founded by François Taddéi. She is the co-director of EdTech Master Program and of the open Lab. She is a member of the Technology Academy,  Council for the the Future Generations,  and  Great Digital School orientation committee.
+(link: http:// text: https://cri-paris.org/team/sophiepene/)

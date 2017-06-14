@@ -15,6 +15,41 @@ fields:
     label: Prénom
     type:  text
     width: 1/2
+  birthdate:
+    label: Date de naissance
+    type:  text
+    width: 1/2
+  address:
+    label: Adresse 1
+    type:  text
+  address2:
+    label: Adresse 2
+    type:  text
+  country:
+    label: Pays
+    type:  text
+    width: 1/2
+  email:
+    label: Email
+    type:  text
+    width: 1/2
+  phone:
+    label: Téléphone
+    type:  text
+    width: 1/2
+  company:
+    label: Collectif / Studio
+    type:  text
+    width: 1/2
+  resume:
+    label: Résumé du projet
+    type:  textarea
+  bio:
+    label: Biographie
+    type:  textarea
+  supernaturel:
+    label: Lien avec supernaturel
+    type:  textarea
   links:
   	label: Liens
   	type: text

@@ -46,12 +46,12 @@ ul{
 	}
 }
 
-.inner-content .text-wrapper ul li {
-	&:before{
-		content: "—";
-		margin-right: 5px;
-	}
-}
+// .inner-content .text-wrapper ul li {
+// 	&:before{
+// 		content: "—";
+// 		margin-right: 5px;
+// 	}
+// }
 
 figure{
 	margin:0;
@@ -77,46 +77,68 @@ img{width: 100%; max-width:100%}
 
 header{
 	.top-bar{
+		.title-area{			
+			margin-left: 1rem;
+			
+		}
 		.name{
-			padding: 0.5em 0;
-			margin-left: 2em;
-			width: 200px;
+			width: 250px;
+			padding: 0.8em 0 0.8em 0;
 			h1 {
 				display:none;
 			}
 		}
 		.top-bar-section{
-			.left{
-				margin-left:4em;
-				a{
-					font-size: rem-calc(16);
-				}
-			}
-			.right{
-				line-height:1.2;
-				padding: 0.5em 2em;	
-				.languages, .infos-menu{
-					display:block;
-					float:none;
-				}
-				.languages {
-					&:after{
-						content: "—"; 
-						display:block;
-						line-height: 1.2;
+				.left{
+					margin-left:0.8em;
+					display: flex;
+			    -ms-flex-wrap: nowrap;
+			    flex-wrap: nowrap;
+			    -ms-flex-pack: distribute;
+			    justify-content: space-around;
+			    li{
+			    	float:none;
+			    	display: inline-block;
+				    -webkit-box-flex: 1;
+				    -ms-flex: 1 1 auto;
+				    flex: 1 1 auto;
+			    }
+					a{
+						font-size: rem-calc(14);
+						padding: 0 0.8rem;
 					}
-					li{
+				}
+				.social-network{
+					li:first-child a{padding-left: 0.8rem;}
+					a{
+						//&:first-child{padding-left: 1.66667rem;}
+						padding:0 0.4em;}
+				}
+				.right{
+					line-height:1.2;
+					padding: 0.5em 2em 0.5em 0.5em;	
+					.languages, .infos-menu{
+						display:block;
 						float:none;
-						display:inline-block;
-						&.active{
-							a{text-decoration: underline;}
+					}
+					.languages {
+						&:after{
+							content: "—"; 
+							display:block;
+							line-height: 1.2;
+						}
+						li{
+							float:none;
+							display:inline-block;
+							&.active{
+								a{text-decoration: underline;}
+							}
 						}
 					}
+					a{
+						@include secondMenu;
+					}
 				}
-				a{
-					@include secondMenu;
-				}
-			}
 		}
 	}
 }
@@ -161,6 +183,40 @@ main {
 	position: fixed;
 	left: 0;
 	top: 0;
+}
+
+.sommaire-wrapper a{
+	font-family: $bungeeLine;
+	font-size: rem-calc(22);
+	text-decoration:none;
+	&:hover{text-decoration:underline;}
+}
+
+.appel-liens a{
+	display:block;
+	border: 1px solid $vert;
+	padding: 5px; 
+	margin-bottom: 0.5em;
+	font-family: $bungeeLine;
+	font-size: rem-calc(18);
+	text-decoration:none;
+	text-align: center;
+	&:hover{
+		background:$vert;
+		color: #FFF;
+	}
+}
+
+.text-inner{
+	ul{
+		margin-bottom: 1.25rem;
+		li{
+			&::before{
+				content:"—";
+				margin-right: 0.5em;
+			}
+		}
+	}
 }
 
 /* Slide 1 */
@@ -208,8 +264,10 @@ main {
 	overflow:hidden;
 	> .inner-content{
 		@include encart;
-		height:80vh;
+		height:78vh;
 		overflow-y:scroll;
+		// position:absolute; 
+		// height:auto;
 	}
 }
 
@@ -217,9 +275,16 @@ main {
 .sliderCartel{
 	.inner-content{
 		@include slider;
+		// position:absolute; 
+		// height:auto;
+		.caption-wrapper{
+			background-color: #FFF;
+			padding: 1em;
+			display:inline-block;
+			p{margin-bottom: 0;}
+		}
 	}
 }
-
 
 // formes
 .formes{
@@ -232,17 +297,30 @@ main {
 }
 
 // Sections textuelles spécifiques
+// section{
+// 	min-height:100vh; 
+// 	position:relative;
+// }
+
 section .inner-content{
 	z-index:20;
+	// position:absolute;
 	position:fixed;
 	top: $topbar-height + 2;
+	// opacity:0;
 }
+
 #home .inner-content{
+	// position:absolute;
 	top: 50%;
 	transform: translateY(-30%);
+	// top: 50vh;
 	text-align: center; 
 	.title{
 		position:relative;
+		// width: 500px;
+		margin:auto;
+		margin-bottom: 0.5em;
 		h1{
 			font-family: $bungeeShade;
 			font-size: rem-calc(46);
@@ -275,18 +353,26 @@ section .inner-content{
 	}
 }
 #appel-a-projets .inner-content{
-
+	// top:300vh;
 }   
 #home-appel .inner-content{z-index:20;} 
-#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{z-index:20;} 
-#partenaires .inner-content{z-index:20;} 
-#calendrier .inner-content{z-index:10;} 
-#contact .inner-content{z-index:20;} 
+#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{
+	// top: 800vh;
+	z-index:20;
+} 
+#partenaires .inner-content{z-index:20; 
+	// top: 1200vh;
+} 
+#calendrier .inner-content{z-index:10; 
+	// top: 1500vh;
+} 
+#contact .inner-content{z-index:20; 
+	// top: 1800vh;
+} 
 #contact-appel .inner-content{z-index:20;} 
 #appel-a-projets .inner-content{z-index:20;}  
 
 #partenaires .inner-content{
-	height: 65vh;
 	.text-wrapper{
 		li.partenaire-el{
 			border-bottom: 1px solid $vert;
@@ -294,39 +380,45 @@ section .inner-content{
 			&:first-child{
 				padding-top:0;
 			}
+			&:last-child{
+				border-bottom: none;
+				h3{font-size: rem-calc(15)}
+			}
 			.more-text{
 				display:none;
 			}
-			h3{
-				
-			}
-			h4.see-more{
-				font-family: $bungeeLine;
+			h3.see-more{
 				cursor: pointer;
-				text-align: right;
-				&.active{
-					//text-decoration: underline;
-				}
 			}
 		}
 	}
 	.sliderCartel{
 		.inner-content{
 			@include slider;
-			top:15%;
-			left: 100%;
+			top:$topbar-height + 2;
+			left: -100%;
 		}
+
 	}
 }
 
 #calendrier .inner-content{
+	padding-left: 5rem;
+	padding-right: 5rem;
+	h2{
+		padding-left: 0.9375rem;
+	}
 	ul{
 		margin-left: 0;
 		li{
-			height: 200px;
+			height: 150px;
 			h4{
+				font-size: rem-calc(16);
+				letter-spacing: 0.08em;
+				//font-family: $bungeeLine;
 				border-bottom: 1px solid $vert;
 			}
+			p{margin-bottom:0;}
 
 		}
 	}
@@ -345,6 +437,9 @@ section .inner-content{
 .slider{
   overflow:hidden;
   margin-left: 0;
+  // &:hover button{
+  // 	display:block;
+  // }
   img {
     margin:auto;
     max-width:none;
@@ -356,10 +451,11 @@ section .inner-content{
     font-size: 2em;
     font-weight: 100;
     position:absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     z-index: 999;
     outline: none;
+    //display:none;
     &.slick-prev{
       left:10px;
     }
@@ -440,31 +536,110 @@ section .inner-content{
   100% { background-position: 0 -11569px; }
 }
 
-// uniform
-.uniform__potty {
-  position: absolute;
-  left: -9999px;
+//vimeo 
+
+figure.video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-bottom: 2rem;
+ 	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+// Formulaire
+#formulaire{
+	margin-bottom: 5rem;
+	.retour {
+		padding: 1rem 2rem;
+		a{
+			background: #FFF;
+			font-size: rem-calc(16);
+			color: $vert;
+			&:hover{
+				text-decoration:none;
+			}
+			//border: 1px solid $vert;
+			//margin-top: 1rem;
+		}
+	}
+}
+label{
+	color: $vert;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="week"], 
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="time"], 
+input[type="url"], 
+input[type="color"], textarea {
+	border-color: $vert;
+	box-shadow: none;
+}
+
+textarea{
+	height: 300px;
+}
+
+.input_fields_wrap-links{
+	div{padding-left:0;position:relative;}
+}
+
+.add_links_button.small{
+	padding: 10px; 
+	background: $vert;
+	color: #FFF;
+	outline: none;
+	margin-top: 1.3rem;
+}
+
+.remove_field{
+	text-align:right;
+	text-decoration:underline;
+	position:relative;
+	display:block;
+	margin-top: -0.7rem;
+}
+
+input[type="submit"] {
+	background: #FFF;
+	font-family: $bungee;
+	color: $vert;
+	border: 1px solid $vert;
+	outline:none;
+	margin-top: 1rem;
+	&:hover{
+		background: $vert;
+		color: #FFF;
+	}
+}
+
+// table
+tr{
+	border-bottom: 1px solid #000;
+}
+table tr th{text-align:center;}
+td, th{
+	border-right: 1px solid #000;
 }
 
 
-
-
-
-// #dauphin .anim {
-// 	position: fixed;
-// 	top: 0;
-// 	left: 0;
-// 	z-index:3;
-//   width: 399px;   /* Viewport Width */
-//   height: 12.46em;   /* Viewport Height (~ 199.42px) */
-//   margin: 2em auto;   /* Little margin */
-//   background: transparent url('../images/dauphin/sprites3.png') 0 0 no-repeat;   /* Our sprite as viewport background */
-//   animation: catwalk 1s steps(51) infinite; /* The Animation */
-// }
-
-// @keyframes catwalk {
-//   100% { background-position: 0 -2393px; }
-// }
+@import "mobile.scss";
 
 
 

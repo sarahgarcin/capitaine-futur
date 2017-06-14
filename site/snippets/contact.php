@@ -1,16 +1,18 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
-	<div class="inner-content small-18 small-push-1 medium-6 medium-push-10" 
+	<!-- <div class="inner-content small-16 small-push-1 medium-8 medium-push-8 large-7 large-push-8" > -->
+	<div class="inner-content small-16 small-push-1 medium-8 medium-push-8 large-7 large-push-8" 
 	data-top="opacity:0;display:none;" 
 	data--19000-bottom="opacity:0;display:block;" 
 	data--20000-bottom="opacity:1;display:block;"
 	data--22000-bottom="opacity:1;display:block;"  
 	data-anchor-target="#slide-6">
-	  <?php echo $data->text()->kirbytext() ?>	
-	  </div>
+	  <div class="text-inner">
+	  	<?php echo $data->text()->kirbytext() ?>
+	 	</div>	
 	</div>
 
 </section>
-
+<!-- 
 <section id="<?php echo $data->uid()?>-appel" class="formes">
 		<div class="inner-content" 
 	data-top="top: 50%; left: 20%; opacity:0;display:none;" 
@@ -26,4 +28,4 @@
 	</svg>
 	<?php echo $data->contact()->kirbytext() ?>
 	</div>
-</section>
+</section> -->

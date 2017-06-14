@@ -1,0 +1,36 @@
+Title: Les voyages de Capitaine futur
+
+----
+
+Author: 
+
+----
+
+Description: Thinking and Tinkering  with art & technology
+
+----
+
+Copyright: 
+
+----
+
+Slogan: Thinking and Tinkering <br>  with art & technology
+
+----
+
+Logo: logo3.png
+
+----
+
+Ogimage: 
+
+----
+
+Socialnetworks: 
+
+- 
+  icon: fa-facebook
+  link: facebook.com
+- 
+  icon: fa-twitter
+  link: http://twitter.com
