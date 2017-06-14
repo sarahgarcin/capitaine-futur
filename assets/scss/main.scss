@@ -57,6 +57,11 @@ ul{
 	}
 }
 
+hr {
+  border: solid $jaune;
+  border-width: 1px 0 0;
+}
+
 // .inner-content .text-wrapper ul li {
 // 	&:before{
 // 		content: "—";
@@ -325,6 +330,13 @@ section .inner-content{
 	position:fixed;
 	top: $topbar-height + 2;
 	// opacity:0;
+	.entete-text{ 
+		// border-top: 2px solid $jaune; 
+		// border-bottom: 2px solid $vert; 
+		margin-bottom: 1em;
+		// padding-top: 1em;
+		p{font-weight:bold;text-align: left;}
+	}
 }
 
 #home .inner-content{
@@ -371,9 +383,6 @@ section .inner-content{
 	}
 }
 #appel-a-projets .inner-content{
-	.entete-text{ 
-		p{font-weight:bold;}
-	}
 	.appel-section{
 
 	}

@@ -22,6 +22,7 @@
 	data--4000-bottom="opacity:1;display:block;"
 	data--4500-bottom="opacity:0;display:none;">
 		<div class="text-inner">
+			<h3><?php echo $data->subtitle()->html() ?>	</h3>
 			<?php echo $data->text()->kirbytext() ?>	
 		</div>
 	</div>

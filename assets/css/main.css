@@ -9473,6 +9473,10 @@ ul {
     text-align: justify;
     list-style: none; }
 
+hr {
+  border: solid yellow;
+  border-width: 1px 0 0; }
+
 figure {
   margin: 2em 0 3em 0; }
 
@@ -9677,6 +9681,11 @@ section .inner-content {
   z-index: 20;
   position: fixed;
   top: 7rem; }
+  section .inner-content .entete-text {
+    margin-bottom: 1em; }
+    section .inner-content .entete-text p {
+      font-weight: bold;
+      text-align: left; }
 
 #home .inner-content {
   top: 50%;
@@ -9719,9 +9728,6 @@ section .inner-content {
     margin-top: 0.7em;
     font-size: 2.5rem;
     font-family: "bungee", sans-serif; }
-
-#appel-a-projets .inner-content .entete-text p {
-  font-weight: bold; }
 
 #home-appel .inner-content {
   z-index: 20; }

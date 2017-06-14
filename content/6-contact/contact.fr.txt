@@ -4,18 +4,6 @@ Title: Infos pratiques
 
 Text: 
 
-# header 1
-## header 2
-### header 3
-#### header 4
-(link: http://lien.com text:lien )
-- liste 1
-- liste 2
-- liste 3
-ceci est un texte en **bold**
-ceci est un texte en *bold*
-
-
 **Cinekid**
 
 Ward Janssen, directeur de la culture numérique.
@@ -50,6 +38,11 @@ Subtitle: Infos pratiques
 
 Contact: 
 
-Pour toute question concernant l'appel à projets et les candidatures, merci d'écrire à call@capitainefutur.voyage
-Pour toute question concernant le projet de coopération européenne, merci d'écrire à info@capitainefutur.voyage
-Pour toute question concernant la presse et la communication, merci d'écrire à press@capitainefutur.voyage
+Pour toute question concernant l'appel à projets et les candidatures, merci d'écrire à   
+(email: call@capitainefutur.voyage  text: call@capitainefutur.voyage)  
+
+Pour toute question concernant le projet de coopération européenne, merci d'écrire à  
+(email: info@capitainefutur.voyage text: info@capitainefutur.voyage)  
+
+Pour toute question concernant la presse et la communication, merci d'écrire à  
+(email: press@capitainefutur.voyage text: press@capitainefutur.voyage)

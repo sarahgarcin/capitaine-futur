@@ -1,11 +1,14 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
 	<!-- <div class="inner-content small-16 small-push-1 medium-8 medium-push-8 large-7 large-push-8" > -->
-	<div class="inner-content small-16 small-push-1 medium-12 medium-push-3 large-12 large-push-3" 
+	<div class="inner-content small-16 small-push-1 medium-12 medium-push-3 large-8 large-push-5" 
 	data-top="opacity:0;display:none;" 
-	data--19000-bottom="opacity:0;display:block;" 
-	data--20000-bottom="opacity:1;display:block;"
-	data--22000-bottom="opacity:1;display:block;" >
+	data--24000-bottom="opacity:0;display:block;" 
+	data--25000-bottom="opacity:1;display:block;"
+	data--28000-bottom="opacity:1;display:block;" >
 	  <div class="text-inner">
+	  	<div class="entete-text">
+				<?php echo $data->contact()->kirbytext() ?>
+			</div>
 	  	<?php echo $data->text()->kirbytext() ?>
 	 	</div>	
 	</div>

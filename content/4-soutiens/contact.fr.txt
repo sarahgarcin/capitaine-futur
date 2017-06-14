@@ -8,10 +8,10 @@ Subtitle:
 
 Text: 
 
-(l2: EUROPE CREATIVE)
+## EUROPE CREATIVE
 Les Voyages de Capitaine futur bénéficie du soutien d'Europe Creative.
 
-(l2: LE COMITÉ D'EXPERTS INTERNATIONAUX)
+## LE COMITÉ D'EXPERTS INTERNATIONAUX
 **Régine Debatty (Belgique)**
 Régine Debatty est une reporter, critique d’art et la fondatrice de (link:  http://we-make-money-not-art.com/ text: we-make-money-not-art), un blog qui, depuis sa création en mars 2004, a reçu plusieurs distinctions dont 2 Webby awards et une mention d’honneur au STARTS Prize, un concours de la Commission Europénne qui récompense les “projets innovants au croisement entre la science, la technologie et l’art.” Elle intervient régulièrement lors de colloques, ateliers et festivals explorant les rencontres entre art, sciences et questions de société.
 Elle a créé A.I.L. (Artists in Laboratories), un programme radio hebdomadaire qui approfondit les collaborations entre l'art et la science pour Resonance 104.4fm à Londres (2012-2014) et est la co-auteure du "sprint book" New Art/Science Affinities, publié par l'Université Carnegie Mellon en 2011.

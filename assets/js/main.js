@@ -53,7 +53,7 @@ function init(){
 			$(this).find('a').attr('data-menu-top', '17000');
 		}
 		if(id == "#contact"){
-			$(this).find('a').attr('data-menu-top', '20000');
+			$(this).find('a').attr('data-menu-top', '25000');
 		}
 		//console.log($(this), id);
 	});

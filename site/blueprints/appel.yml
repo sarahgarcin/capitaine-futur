@@ -14,9 +14,6 @@ fields:
   subtitle:
     label: Sous-titre
     type:  text
-  sommaire: 
-    label: Sommaire
-    type:  markdown
   entete: 
     label: Texte d'en-tête
     type:  markdown
