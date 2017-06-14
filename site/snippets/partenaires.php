@@ -3,11 +3,10 @@
 	  <div class="inner-content small-16 small-push-1 medium-7 medium-push-10 xlarge-5 xlarge-push-12" 
 		data-top="opacity:0;display:none;" 
 		data-bottom="opacity:0;display:none;" 
-		data--7000-bottom="opacity:0;display:block;" 
-		data--8000-bottom="opacity:1;display:block;"
-		data--9000-bottom="opacity:1;display:block;"
-		data--10000-bottom="opacity:0;display:none;"   
-		data-anchor-target="#slide-6">
+		data--8500-bottom="opacity:0;display:block;" 
+		data--9500-bottom="opacity:1;display:block;"
+		data--11000-bottom="opacity:1;display:block;"
+		data--12000-bottom="opacity:0;display:none;"   >
 	  <div class="text-wrapper">
 	  	<ul>
 	  		<?php foreach($data->children()->visible() as $part):?>

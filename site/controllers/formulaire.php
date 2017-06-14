@@ -24,10 +24,14 @@ return function($site, $pages, $page) {
       'country' => get('country'),
       'email' => get('email'),
       'phone' => get('phone'),
-      'company' => get('company'),
-      'resume' => get('resume'),
+      // 'company' => get('company'),
       'bio' => get('bio'),
+      'philosophy' => get('philosophy'),
+      'projectTitle' => get('projectTitle'),
+      'resume' => get('resume'),
       'supernaturel' => get('supernaturel'),
+      'visitors' => get('visitors'),
+      'space' => get('space'),
     );
     
     $title = get('name') . "-" . get('firstname');
@@ -35,7 +39,23 @@ return function($site, $pages, $page) {
     // You can also use a different page by using `page('whatever')->children()->create()`
     $p = $page->children()->create($title, 'candidat', $data);
 
+    // $upload = new Upload($p->root() . DS . '{safeFilename}', array(
+    //   'input'     => 'file',
+    //   'overwrite' => true
+    // ));
 
+    // if($file = $upload->file()) {
+
+    // dump(array(
+    //     'file'     => $file->filename(),
+    //     'mime'     => $file->mime(),
+    //     'size'     => $file->size(),
+    //     'niceSize' => $file->niceSize()
+    //   ));
+
+    // } else {
+    //   dump($upload->error());
+    // }
     // Upload an image
     // try {
     //   // This uses the form field with `name="file"`
@@ -50,6 +70,7 @@ return function($site, $pages, $page) {
     //     // See the Upload class for other error values
     //   }
     // }
+
   }
   
   return compact('error');

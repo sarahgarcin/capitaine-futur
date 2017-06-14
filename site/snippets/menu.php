@@ -44,6 +44,7 @@
 			  <ul class="languages">
 			    <?php foreach($site->languages() as $language): ?>
 			    <li<?php e($site->language() == $language, ' class="active"') ?>>
+			      <!-- <a href="<?php echo $site->url($language->code()) ?>"> -->
 			      <a href="<?php echo $site->url($language->code()) ?>">
 			        <?php echo html($language->name()) ?>
 			      </a>

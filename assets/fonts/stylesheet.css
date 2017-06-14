@@ -44,8 +44,8 @@
 
 @font-face {
     font-family: 'karla';
-    src: url('karla-bold-webfont.woff2') format('woff2'),
-         url('karla-bold-webfont.woff') format('woff');
+    src: url('karmilla-bold-016-webfont.woff2') format('woff2'),
+         url('karmilla-bold-016-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 
@@ -73,8 +73,8 @@
 
 @font-face {
     font-family: 'karla';
-    src: url('karla-regular-webfont.woff2') format('woff2'),
-         url('karla-regular-webfont.woff') format('woff');
+    src: url('karmilla-regular-016-webfont.woff2') format('woff2'),
+         url('karmilla-regular-016-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

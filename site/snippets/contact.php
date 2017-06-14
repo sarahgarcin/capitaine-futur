@@ -4,8 +4,7 @@
 	data-top="opacity:0;display:none;" 
 	data--19000-bottom="opacity:0;display:block;" 
 	data--20000-bottom="opacity:1;display:block;"
-	data--22000-bottom="opacity:1;display:block;"  
-	data-anchor-target="#slide-6">
+	data--22000-bottom="opacity:1;display:block;" >
 	  <div class="text-inner">
 	  	<?php echo $data->text()->kirbytext() ?>
 	 	</div>	

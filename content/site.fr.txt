@@ -14,7 +14,7 @@ Copyright:
 
 ----
 
-Slogan: Thinking and Tinkering with art & technology
+Slogan: Thinking and Tinkering <br> with art & technology
 
 ----
 

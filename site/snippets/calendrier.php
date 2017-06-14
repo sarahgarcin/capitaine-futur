@@ -46,8 +46,7 @@
 	data--13000-bottom="opacity:0;display:block;" 
 	data--14000-bottom="opacity:1;display:block;" 
 	data--16000-bottom="opacity:1;display:block;"
-	data--17000-bottom="opacity:0;display:none;"  
-	data-anchor-target="#slide-6">
+	data--17000-bottom="opacity:0;display:none;" >
 	  <!-- <h2><?php echo $data->subtitle()->html() ?></h2> -->
 	  <div class="text-wrapper"> 
 		  <ul class="row">

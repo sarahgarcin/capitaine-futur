@@ -9414,8 +9414,16 @@ body {
   font-size: 12px;
   font-family: "karla", sans-serif;
   color: #006b00;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.3; }
+
+body[data-template='home'] {
+  overflow: hidden; }
+
+body[data-template='candidats'] {
+  width: auto; }
+  body[data-template='candidats'] main {
+    overflow-x: scroll; }
 
 h1, h2, h3, h4, h5, h6, a {
   color: #006b00; }
@@ -9446,7 +9454,7 @@ h5 {
 p {
   font-family: "karla", sans-serif;
   color: #006b00;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.3; }
 
 ul {
@@ -9454,12 +9462,12 @@ ul {
   ul li {
     font-family: "karla", sans-serif;
     color: #006b00;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.3;
     list-style: none; }
 
 figure {
-  margin: 0; }
+  margin: 2em 0 3em 0; }
 
 p a {
   text-decoration: underline; }
@@ -9561,7 +9569,8 @@ main {
   width: 100%;
   position: fixed;
   left: 0;
-  top: 0; }
+  top: 0;
+  overflow: hidden; }
 
 .sommaire-wrapper a {
   font-family: "bungeehairline", sans-serif;
@@ -9627,7 +9636,7 @@ main {
   .textCartel > .inner-content {
     background: #FFF;
     border: 1px solid #006b00;
-    padding: 2rem;
+    padding: 2rem 4rem;
     position: fixed;
     height: 78vh;
     overflow-y: scroll; }
@@ -9920,6 +9929,11 @@ input[type="submit"] {
     background: #006b00;
     color: #FFF; }
 
+table {
+  table-layout: fixed;
+  width: 3000px;
+  min-height: 60vh; }
+
 tr {
   border-bottom: 1px solid #000; }
 
@@ -9928,6 +9942,12 @@ table tr th {
 
 td, th {
   border-right: 1px solid #000; }
+
+tr td {
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+  width: 200px; }
 
 @media only screen and (max-width: 40em) {
   header .top-bar.expanded {

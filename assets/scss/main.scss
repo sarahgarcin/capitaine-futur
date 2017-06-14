@@ -11,6 +11,17 @@ body {
 	@include texteCourant;
 }
 
+body[data-template='home']{
+		overflow: hidden;
+}
+
+body[data-template='candidats']{
+		width:auto;
+		main{
+			overflow-x:scroll;
+		}
+}
+
 h1,h2,h3,h4,h5,h6, a{
 	color: $vert;
 }
@@ -54,7 +65,7 @@ ul{
 // }
 
 figure{
-	margin:0;
+	margin:2em 0 3em 0;
 }
 
 p a{
@@ -96,6 +107,8 @@ header{
 			    flex-wrap: nowrap;
 			    -ms-flex-pack: distribute;
 			    justify-content: space-around;
+			    // max-width: 65rem;
+			    // float:center !important;
 			    li{
 			    	float:none;
 			    	display: inline-block;
@@ -183,6 +196,7 @@ main {
 	position: fixed;
 	left: 0;
 	top: 0;
+	overflow:hidden;
 }
 
 .sommaire-wrapper a{
@@ -630,12 +644,24 @@ input[type="submit"] {
 }
 
 // table
+table{
+  table-layout: fixed;
+  width: 3000px;
+  min-height: 60vh;
+}
 tr{
 	border-bottom: 1px solid #000;
 }
 table tr th{text-align:center;}
 td, th{
 	border-right: 1px solid #000;
+}
+
+tr td{
+	white-space: normal;   
+	word-break: break-all;
+	word-wrap: break-word;
+	width: 200px;
 }
 
 

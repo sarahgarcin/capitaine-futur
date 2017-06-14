@@ -111,7 +111,7 @@
             196.505,101.496 196.505,72.029 155.338,19.496 "/>
           </svg>
           <a href="#appel-a-projets" title="<?php echo $pages->find('appel-a-projets')->title()?>">
-            appel <br>à<br>projets
+            appel à<br>projets
           </a>
         </div>
 

@@ -37,19 +37,28 @@ fields:
     label: Téléphone
     type:  text
     width: 1/2
-  company:
-    label: Collectif / Studio
+  links:
+    label: Liens
+    type: text
+  # company:
+  #   label: Collectif / Studio
+  #   type:  text
+  #   width: 1/2
+  philosophy:
+    label: Philosophie de l'artiste
+    type:  textarea
+  projectTitle:
+    label: Titre du projet
     type:  text
-    width: 1/2
   resume:
     label: Résumé du projet
-    type:  textarea
-  bio:
-    label: Biographie
     type:  textarea
   supernaturel:
     label: Lien avec supernaturel
     type:  textarea
-  links:
-  	label: Liens
-  	type: text
+  visitors:
+    label: Interactions visiteurs / oeuvre
+    type:  textarea
+  space:
+    label: Avez-vous besoin d'un espace de travail ?
+    type:  text

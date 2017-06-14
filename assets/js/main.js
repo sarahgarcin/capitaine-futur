@@ -38,19 +38,19 @@ function init(){
 		var $link = $(this).find('a');
 		var id = $(this).find('a').attr("href");
 		if(id == "#resume-du-projet"){
-			$(this).find('a').attr('data-menu-top', '8000');
+			$(this).find('a').attr('data-menu-top', '3000');
 		}
 		if(id == "#appel-a-projets"){
-			$(this).find('a').attr('data-menu-top', '4000');
+			$(this).find('a').attr('data-menu-top', '7000');
 		}
 		if(id == "#partenaires"){
-			$(this).find('a').attr('data-menu-top', '2500');
+			$(this).find('a').attr('data-menu-top', '9500');
 		}
 		if(id == "#calendrier"){
-			$(this).find('a').attr('data-menu-top', '3400');
+			$(this).find('a').attr('data-menu-top', '14000');
 		}
 		if(id == "#contact"){
-			$(this).find('a').attr('data-menu-top', '5000');
+			$(this).find('a').attr('data-menu-top', '20000');
 		}
 		//console.log($(this), id);
 	});
@@ -162,10 +162,10 @@ function init(){
 		skrollr.menu.init(s, {
 			duration: function(currentTop, targetTop) {
 				//By default, the duration is hardcoded at 500ms.
-				return 1000;
+				return 1500;
 
 				//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-				//return Math.abs(currentTop - targetTop) / 10;
+				//return Math.abs(currentTop - targetTop);
 			},
 			change: function(hash, top) {
 				console.log(hash, top);
