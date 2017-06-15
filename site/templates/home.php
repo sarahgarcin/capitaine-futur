@@ -7,7 +7,7 @@
  		<img src="assets/images/plan-3.png" alt="">
  		<img src="assets/images/plan-2.png" alt="">
  		<img src="assets/images/plan-1-droite.png" alt="">
- 		<!-- <img src="assets/images/plan-1-gauche.png" alt=""> -->
+ 		<img src="assets/images/plan-1-gauche.png" alt="">
  	</div>
 
  	<main data-anchor-target="#slide-1">
@@ -15,8 +15,7 @@
     <section id="slide-1" class="homeSlide">
       <div class="bcg" 
       data-top="left: 0%;" 
-      data-bottom="left: -50%;"
-      data-anchor-target="#slide-1">
+      data--2000-bottom="left: -40%;">
        </div>
     </section>
 
@@ -24,8 +23,7 @@
     <section id="slide-2" class="homeSlide">
       	<div class="bcg" 
         data-top="left: 0%;" 
-        data-bottom="left: 50%;"
-         data-anchor-target="#slide-1">
+        data--2000-bottom="left: 40%;">
         </div>
     </section>
 
@@ -34,35 +32,30 @@
       	<div class="bcg" 
         data-top="top: 100%;" 
         data-bottom="top: 100%;"
-        data--2000-bottom="top: 100%;"
-        data--3000-bottom="top: 0%;" 
-        data--9000-bottom="top: 0%;"  
-        data--10000-bottom="top: 100%;"  
-        data-anchor-target="#slide-6">
+        data--4000-bottom="top: 100%;"
+        data--5000-bottom="top: 0%;" 
+        data--7000-bottom="top: 0%;"  
+        data--8000-bottom="top: 100%;" >
         </div>
     </section>
 
     <section id="slide-4" class="homeSlide">
       	<div class="bcg" 
         data-top="top: 100%;" 
-        data-bottom="top: 100%;" 
-        data--1000-bottom="top: 90%;" 
+        data-bottom="top: 90%;" 
         data--2000-bottom="top: 0%;"
-        data--2500-bottom="top: 0%;"
-        data--4000-bottom="top: 0%;" 
-        data--4500-bottom="top: 100%;" 
-        data-anchor-target="#slide-2">
+        data--4000-bottom="top: 0%;"
+        data--5000-bottom="top: 100%;">
         </div>
     </section>
 
     <section id="slide-5" class="homeSlide">
       	<div class="bcg" data-top="top: 100%;" 
       	data-bottom="top: 100%;" 
-      	data--11000-bottom="top: 100%;"
-      	data--13000-bottom="top: 10%;"
-      	data--15000-bottom="top: 10%;" 
-        data--17000-bottom="top: 100%;" 
-      	data-anchor-target="#slide-6">
+      	data--9500-bottom="top: 100%;"
+      	data--11000-bottom="top: 10%;"
+      	data--13500-bottom="top: 10%;" 
+        data--14000-bottom="top: 100%;" >
         </div>
     </section>
 
@@ -70,13 +63,13 @@
       	<div class="bcg small-18"
         data-top="width:100%; height:100%; left:0%;" 
         data-bottom="width:140%; height:140%; left:0%;" 
-        data--1000-bottom="width:170%; height:170%; left:0%;"
-        data--2200-bottom="width:170%; height:170%; left:0%;"
-        data--3000-bottom="width:170%; height:170%; left:-65%;"
-        data--3500-bottom="width:130%; height:130%; left:-25%;"
-        data--7000-bottom="width:130%; height:130%; left:-25%;"
-        data--8000-bottom="width:100%; height:100%; left:0%;"
-        data-anchor-target="#slide-1">
+        data--2000-bottom="width:170%; height:170%; left:0%;"
+        data--4000-bottom="width:170%; height:170%; left:0%;"
+        data--6000-bottom="width:170%; height:170%; left:-65%;"
+        data--7000-bottom="width:170%; height:170%; left:-65%;"
+        data--9000-bottom="width:130%; height:130%; left:-25%;"
+        data--10000-bottom="width:130%; height:130%; left:-25%;"
+        data--12000-bottom="width:100%; height:100%; left:0%;">
         </div>
     </section>
 
@@ -87,17 +80,10 @@
       <div class="inner-content small-16 small-push-1 medium-10 medium-push-4 xlarge-6 xlarge-push-6" 
       data-top="opacity:1; display:block;" 
       data-bottom="opacity:1; display:block;" 
-      data--500-bottom="opacity:0; display:block;"
-      data--1000-bottom="opacity:0; display:none;"
-      data-anchor-target="#slide-1">
-<!--       <div class="inner-content small-16 small-push-1 medium-10 medium-push-4 xlarge-6 xlarge-push-6"
-      data-top="opacity:1;" 
-      data--500-bottom="opacity:0;" 
-      > -->
+      data--1000-bottom="opacity:1; display:block;"
+      data--2000-bottom="opacity:0; display:none;">
         <div class="title small-16 medium-16 large-14">
           <img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
-<!--           <h1><?php echo $site->title()->html() ?></h1>
-          <h1 class="overlay"><?php echo $site->title()->html() ?></h1> -->
         </div>
         <h2 class="medium-12 medium-push-3">
           <?php echo $site->slogan()->html() ?>
@@ -110,7 +96,7 @@
           <polygon fill="#FFFFFF" points="94.339,0 40,17.496 0,72.029 0,87.496 25.339,125.496 94.339,151.496 149.339,151.496 
             196.505,101.496 196.505,72.029 155.338,19.496 "/>
           </svg>
-          <a href="#appel-a-projets" data-menu-top='7000' title="<?php echo $pages->find('appel-a-projets')->title()?>">
+          <a href="#appel-a-projets" data-menu-top='4000' title="<?php echo $pages->find('appel-a-projets')->title()?>">
             appel à<br>projets
           </a>
         </div>

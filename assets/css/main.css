@@ -9491,7 +9491,6 @@ a:hover, a .active {
   padding: 0 !important; }
 
 img {
-  width: 100%;
   max-width: 100%; }
 
 header .top-bar .title-area {
@@ -9504,21 +9503,14 @@ header .top-bar .name {
     display: none; }
 
 header .top-bar .top-bar-section .left {
-  margin-left: 0.8em;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-  header .top-bar .top-bar-section .left li {
-    float: none;
-    display: inline-block;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
+  margin-left: 0.8em; }
   header .top-bar .top-bar-section .left a {
     font-size: 0.875rem;
     padding: 0 0.8rem; }
+    header .top-bar .top-bar-section .left a.active {
+      text-decoration: underline; }
+    header .top-bar .top-bar-section .left a:hover {
+      text-decoration: underline; }
 
 header .top-bar .top-bar-section .social-network li:first-child a {
   padding-left: 0.8rem; }
@@ -9547,6 +9539,8 @@ header .top-bar .top-bar-section .right {
     color: #006b00;
     padding: 0 !important;
     line-height: 1.2 !important; }
+    header .top-bar .top-bar-section .right a.active {
+      text-decoration: underline; }
 
 #preloader {
   display: none;
@@ -9627,17 +9621,20 @@ main {
 /* Slide 3 */
 #slide-3 .bcg {
   background-image: url("../images/plan-2.png");
-  z-index: 6; }
+  z-index: 6;
+  top: 100%; }
 
 /* Slide 4 */
 #slide-4 .bcg {
   background-image: url("../images/plan-3.png");
-  z-index: 5; }
+  z-index: 5;
+  top: 100%; }
 
 /* Slide 5 */
 #slide-5 .bcg {
   background-image: url("../images/plan-4.png");
-  z-index: 3; }
+  z-index: 3;
+  top: 100%; }
 
 /* Slide 6 */
 #slide-6 .bcg {
@@ -9678,6 +9675,7 @@ main {
     transform: translateX(-50%) translateY(-50%); }
 
 section .inner-content {
+  opacity: 0;
   z-index: 20;
   position: fixed;
   top: 7rem; }
@@ -9686,6 +9684,10 @@ section .inner-content {
     section .inner-content .entete-text p {
       font-weight: bold;
       text-align: left; }
+  section .inner-content .logos {
+    margin-top: 2em; }
+    section .inner-content .logos li:first-child {
+      padding-left: 0; }
 
 #home .inner-content {
   top: 50%;
@@ -9841,7 +9843,7 @@ section .inner-content {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 21;
   background: transparent url("../images/dauphin/sprites3.png") 0 0 no-repeat;
   animation: dauphin 2.5s steps(52) infinite; }
 

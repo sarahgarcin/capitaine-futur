@@ -3,7 +3,8 @@
 	<nav class="top-bar" data-topbar role="navigation">
 	  <ul class="title-area">
 	    <li class="name">
-	    	<a href="<?php e($page->template() != 'home', $site->url(), '#')?>">
+	    	<!-- <a href="<?php e($page->template() != 'home', $site->url(), '#')?>"> -->
+	    	<a href="<?php echo $site->url()?>" alt="<?php echo $site->title()?>">
 	    		<img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
 	    	</a>
 	      <h1><?php echo $site->title()->html()?></h1>
@@ -61,6 +62,6 @@
 			</div>
 	  </section>
 	</nav>
-	<div id="bar"></div>
-	
+<!-- 	<div id="bar"></div>
+	 -->
 </header><!-- /header -->

@@ -34,26 +34,43 @@ function init(){
 		$(this).css({"-webkit-animation-play-state":"paused","animation-play-state":"paused"});
 	});
 
+	var hash = window.location.hash;
+	$('.menu .menu-el a').on('click',function(){
+		// var hash = window.location.hash;
+		// var id = $(this).find('a').attr("href");
+		$('.menu .menu-el a').removeClass('active');
+		// if(id == hash){
+			$(this).addClass('active');
+		// }
+		// $('.menu .menu-el a').css('text-decoration', 'none');
+		// $(this).css('text-decoration', 'underline');
+	});
+
+	// $('.menu .menu-el a').hover('text-decoration', 'underline');
+
 	$('.menu .menu-el').each(function(){
 		var $link = $(this).find('a');
 		var id = $(this).find('a').attr("href");
+		if(id == hash){
+			$(this).find('a').addClass('active');
+		}
 		if(id == "#resume-du-projet"){
-			$(this).find('a').attr('data-menu-top', '3000');
+			$(this).find('a').attr('data-menu-top', '4000');
 		}
 		if(id == "#appel-a-projets"){
-			$(this).find('a').attr('data-menu-top', '7000');
+			$(this).find('a').attr('data-menu-top', '5000');
 		}
 		if(id == "#partenaires"){
-			$(this).find('a').attr('data-menu-top', '9500');
-		}
-		if(id == "#calendrier"){
-			$(this).find('a').attr('data-menu-top', '14000');
+			$(this).find('a').attr('data-menu-top', '6500');
 		}
 		if(id == "#soutiens"){
-			$(this).find('a').attr('data-menu-top', '17000');
+			$(this).find('a').attr('data-menu-top', '9000');
+		}
+		if(id == "#calendrier"){
+			$(this).find('a').attr('data-menu-top', '12500');
 		}
 		if(id == "#contact"){
-			$(this).find('a').attr('data-menu-top', '25000');
+			$(this).find('a').attr('data-menu-top', '15500');
 		}
 		//console.log($(this), id);
 	});
@@ -73,30 +90,30 @@ function init(){
 			  $body.removeClass('loading').addClass('loaded');
 
 		  	// header bar
-				var bar = $('#bar'),
-				docHeight = $('body').height(),
-				baseX = $window.height() / docHeight * 100;
+				// var bar = $('#bar'),
+				// docHeight = $('body').height(),
+				// baseX = $window.height() / docHeight * 100;
 
-				// console.log( $window.height() );
-				// console.log( docHeight );
-				// console.log( baseX );
+				// // console.log( $window.height() );
+				// // console.log( docHeight );
+				// // console.log( baseX );
 
-				bar.css('background', '-webkit-linear-gradient(left, green '+ baseX +'%, transparent '+ baseX +'%)');
+				// bar.css('background', '-webkit-linear-gradient(left, green '+ baseX +'%, transparent '+ baseX +'%)');
 
-				$window.scroll(function(e) {      
+				// $window.scroll(function(e) {      
 
-				  var x = $window.scrollTop() / docHeight * 100 + baseX;
-				  bar.css('background', '-webkit-linear-gradient(left, green '+ x +'%, transparent '+ x +'%)');
-				});
+				//   var x = $window.scrollTop() / docHeight * 100 + baseX;
+				//   bar.css('background', '-webkit-linear-gradient(left, green '+ x +'%, transparent '+ x +'%)');
+				// });
 			  
 		}, 800);
 	});
 
-	$('header .name a').click(function(){
-    $('html, body').animate({
-        scrollTop: 0
-    }, 500);
-	});
+	// $('header .name a').click(function(){
+ //    $('html, body').animate({
+ //        scrollTop: 0
+ //    }, 2000);
+	// });
 
 	$("#partenaires .see-more").on('click',function(){
 		if($(this).hasClass('active')){
@@ -207,7 +224,7 @@ function calculPos(){
 				$("#resume-du-projet-slider").find('.inner-content').css('top', newPosition);
 			}
 
-			console.log($prev, newPosition, prevHeight)
+			console.log($prev, newPosition, prevHeight);
 		}	
 	});
 

@@ -6,6 +6,9 @@ files: true
     caption:
       label: Caption
       type: markdown
+    imglink:
+      label: Liens
+      type: url
 
 fields:
   title:
@@ -20,3 +23,9 @@ fields:
   contact:
     label: Contact
     type:  markdown
+  logos:
+    label: Logos
+    type:  selector
+    mode:  multiple
+    types:
+      - all

@@ -89,7 +89,10 @@ a{
 	padding:0 !important;
 }
 
-img{width: 100%; max-width:100%}
+img{
+	//width: 100%; 
+	max-width:100%;
+}
 
 header{
 	.top-bar{
@@ -107,23 +110,30 @@ header{
 		.top-bar-section{
 				.left{
 					margin-left:0.8em;
-					display: flex;
-			    -ms-flex-wrap: nowrap;
-			    flex-wrap: nowrap;
-			    -ms-flex-pack: distribute;
-			    justify-content: space-around;
+					// display: flex;
+			  //   -ms-flex-wrap: nowrap;
+			  //   flex-wrap: nowrap;
+			  //   -ms-flex-pack: distribute;
+			  //   justify-content: space-around;
 			    // max-width: 65rem;
 			    // float:center !important;
 			    li{
-			    	float:none;
-			    	display: inline-block;
-				    -webkit-box-flex: 1;
-				    -ms-flex: 1 1 auto;
-				    flex: 1 1 auto;
+			    	// float:none;
+			    	// display: inline-block;
+				    // -webkit-box-flex: 1;
+				    // -ms-flex: 1 1 auto;
+				    // flex: 1 1 auto;
+
 			    }
 					a{
 						font-size: rem-calc(14);
 						padding: 0 0.8rem;
+						&.active{
+							text-decoration: underline;
+						}
+						&:hover{
+							text-decoration: underline;
+						}
 					}
 				}
 				.social-network{
@@ -155,6 +165,9 @@ header{
 					}
 					a{
 						@include secondMenu;
+						&.active{
+							text-decoration: underline;
+						}
 					}
 				}
 		}
@@ -259,18 +272,21 @@ main {
 #slide-3 .bcg {
 	background-image:url('../images/plan-2.png');
 	z-index:6;
+	top: 100%;
 }
 
 /* Slide 4 */
 #slide-4 .bcg {
 	background-image:url('../images/plan-3.png');
 	z-index:5;
+	top: 100%;
 }
 
 /* Slide 5 */
 #slide-5 .bcg {
 	background-image:url('../images/plan-4.png');
 	z-index:3;
+	top: 100%;
 }
 
 /* Slide 6 */
@@ -324,18 +340,25 @@ main {
 // 	position:relative;
 // }
 
-section .inner-content{
-	z-index:20;
-	// position:absolute;
-	position:fixed;
-	top: $topbar-height + 2;
-	// opacity:0;
-	.entete-text{ 
-		// border-top: 2px solid $jaune; 
-		// border-bottom: 2px solid $vert; 
-		margin-bottom: 1em;
-		// padding-top: 1em;
-		p{font-weight:bold;text-align: left;}
+section {
+	.inner-content{
+		opacity:0;
+		z-index:20;
+		// position:absolute;
+		position:fixed;
+		top: $topbar-height + 2;
+		// opacity:0;
+		.entete-text{ 
+			// border-top: 2px solid $jaune; 
+			// border-bottom: 2px solid $vert; 
+			margin-bottom: 1em;
+			// padding-top: 1em;
+			p{font-weight:bold;text-align: left;}
+		}
+		.logos{
+			margin-top: 2em;
+			li:first-child{padding-left:0;}
+		}
 	}
 }
 
@@ -553,7 +576,7 @@ section .inner-content{
   position: fixed;
 	top: 0;
 	left: 0;
-	z-index:4;
+	z-index:21;
   //margin: 2em auto; 
   background:  transparent url('../images/dauphin/sprites3.png') 0 0 no-repeat;
   //background-size: 100%;

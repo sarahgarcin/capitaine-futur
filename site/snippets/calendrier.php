@@ -47,10 +47,10 @@
 	<div class="inner-content small-16 small-push-1 medium-14 medium-push-2 large-12 large-push-3" 
 	data-top="opacity:0;display:none;" 
 	data-bottom="opacity:0;display:none;"
-	data--13000-bottom="opacity:0;display:block;" 
-	data--14000-bottom="opacity:1;display:block;" 
-	data--16000-bottom="opacity:1;display:block;"
-	data--17000-bottom="opacity:0;display:none;" >
+	data--12000-bottom="opacity:0;display:block;" 
+	data--12500-bottom="opacity:1;display:block;" 
+	data--13500-bottom="opacity:1;display:block;"
+	data--14000-bottom="opacity:0;display:none;" >
 	  <!-- <h2><?php echo $data->subtitle()->html() ?></h2> -->
 	  <?php foreach($data->children()->visible() as $key => $periode):?>
 	  	<div class="small-6 columns">
@@ -59,8 +59,24 @@
 				  <ul class="row">
 					  	<?php foreach($array[$key] as $date):?>
 					  		<li class="date small-18">
-						  		<a href="<?php echo $date['link']?>" title="<?php echo $date['titre']?>">
-										<ul class="dates">
+					  			<?php if($date['link'] != ""): ?>
+							  		<a href="<?php echo $date['link']?>" title="<?php echo $date['titre']?>">
+											<ul class="dates">
+											  <li>
+											  	<?php if($date["from"] == $date["to"]):?>
+											  		<p class="date-head"><?php echo $date["from"]?></p>
+											  		<h4><?php echo $date["titre"]->html()?></h4>
+									  				<?php echo $date["text"]->kirbytext()?>
+											    <?php else:?>
+											    	<p class="date-head"><?php echo $date["from"]?> - <?php echo $date["to"]?> </p>
+						  							<h4><?php echo $date["titre"]->html()?></h4>
+									  				<?php echo $date["text"]->kirbytext()?>
+											    <?php endif; ?>
+											  </li>
+											</ul>
+								  	</a>
+								  <?php else: ?>
+								  	<ul class="dates">
 										  <li>
 										  	<?php if($date["from"] == $date["to"]):?>
 										  		<p class="date-head"><?php echo $date["from"]?></p>
@@ -73,7 +89,7 @@
 										    <?php endif; ?>
 										  </li>
 										</ul>
-							  	</a>
+								  <?php endif ?>
 								</li>
 
 				
