@@ -55,13 +55,13 @@ function init(){
 			$(this).find('a').addClass('active');
 		}
 		if(id == "#resume-du-projet"){
-			$(this).find('a').attr('data-menu-top', '4000');
+			$(this).find('a').attr('data-menu-top', '5500');
 		}
 		if(id == "#appel-a-projets"){
-			$(this).find('a').attr('data-menu-top', '5000');
+			$(this).find('a').attr('data-menu-top', '7000');
 		}
 		if(id == "#partenaires"){
-			$(this).find('a').attr('data-menu-top', '6500');
+			$(this).find('a').attr('data-menu-top', '8000');
 		}
 		if(id == "#soutiens"){
 			$(this).find('a').attr('data-menu-top', '9000');
@@ -198,10 +198,12 @@ function init(){
 			winH = 550;
 		} 
 	    
-	    $slide.height(winH*2);
-	    $('#slide-2, #slide-3, #slide-4, #slide-5, #slide-6').height(winH*3);
-	    
-	    s.refresh($('.homeSlide'));
+    $slide.height(winH*2);
+    $('#slide-2, #slide-3, #slide-4, #slide-5, #slide-6').height(winH*3);
+    
+    $(window).trigger('resize');
+  	s.refresh();
+    //s.refresh($('.homeSlide'));
 
 
 	    

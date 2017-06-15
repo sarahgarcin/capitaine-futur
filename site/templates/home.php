@@ -15,7 +15,7 @@
     <section id="slide-1" class="homeSlide">
       <div class="bcg" 
       data-top="left: 0%;" 
-      data--2000-bottom="left: -40%;">
+      data--3000-bottom="left: -40%;">
        </div>
     </section>
 
@@ -23,7 +23,7 @@
     <section id="slide-2" class="homeSlide">
       	<div class="bcg" 
         data-top="left: 0%;" 
-        data--2000-bottom="left: 40%;">
+        data--3000-bottom="left: 40%;">
         </div>
     </section>
 
@@ -42,10 +42,10 @@
     <section id="slide-4" class="homeSlide">
       	<div class="bcg" 
         data-top="top: 100%;" 
-        data-bottom="top: 90%;" 
-        data--2000-bottom="top: 0%;"
+        data--3000-bottom="top: 100%;"
         data--4000-bottom="top: 0%;"
-        data--5000-bottom="top: 100%;">
+        data--6500-bottom="top: 0%;"
+        data--7500-bottom="top: 100%;">
         </div>
     </section>
 
@@ -62,14 +62,13 @@
     <section id="slide-6" class="homeSlide">
       	<div class="bcg small-18"
         data-top="width:100%; height:100%; left:0%;" 
-        data-bottom="width:140%; height:140%; left:0%;" 
-        data--2000-bottom="width:170%; height:170%; left:0%;"
-        data--4000-bottom="width:170%; height:170%; left:0%;"
-        data--6000-bottom="width:170%; height:170%; left:-65%;"
-        data--7000-bottom="width:170%; height:170%; left:-65%;"
-        data--9000-bottom="width:130%; height:130%; left:-25%;"
-        data--10000-bottom="width:130%; height:130%; left:-25%;"
-        data--12000-bottom="width:100%; height:100%; left:0%;">
+        data--3000-bottom="width:170%; height:170%; left:0%;"
+        data--6500-bottom="width:170%; height:170%; left:0%;"
+        data--9000-bottom="width:170%; height:170%; left:-65%;"
+        data--10000-bottom="width:170%; height:170%; left:-65%;"
+        data--11000-bottom="width:130%; height:130%; left:-25%;"
+        data--12000-bottom="width:130%; height:130%; left:-25%;"
+        data--13000-bottom="width:100%; height:100%; left:0%;">
         </div>
     </section>
 
