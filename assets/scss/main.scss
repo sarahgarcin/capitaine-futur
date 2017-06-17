@@ -73,6 +73,10 @@ figure{
 	margin:2em 0 3em 0;
 }
 
+p + ul {
+	margin-top: -1.25rem;
+}
+
 p a{
 	text-decoration: underline;
 }
