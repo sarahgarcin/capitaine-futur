@@ -9474,7 +9474,7 @@ ul {
     list-style: none; }
 
 hr {
-  border: solid yellow;
+  border: solid #006b00;
   border-width: 1px 0 0; }
 
 figure {
@@ -9918,18 +9918,38 @@ section .inner-content {
     height: 75vh; }
 
 #formulaire {
-  margin-bottom: 5rem; }
-  #formulaire .retour {
-    padding: 1rem 2rem; }
-    #formulaire .retour a {
-      background: #FFF;
-      font-size: 1rem;
-      color: #006b00; }
-      #formulaire .retour a:hover {
-        text-decoration: none; }
+  padding: 3rem 0 5rem 0;
+  background: yellow; }
+  #formulaire .logo-form {
+    margin-bottom: 2rem; }
+  #formulaire .languages li {
+    float: none;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-family: "bungee", sans-serif;
+    color: #006b00;
+    padding: 0 !important;
+    line-height: 1.2 !important; }
+    #formulaire .languages li.active a {
+      text-decoration: underline; }
+  #formulaire .inner-form {
+    background: #FFF;
+    padding: 2rem 5rem 5rem 5rem; }
 
 label {
-  color: #006b00; }
+  color: #006b00;
+  margin-bottom: 0.5rem; }
+
+fieldset {
+  border: none;
+  margin: 2rem 0;
+  padding: 0 0 2em 0;
+  border-bottom: 1px solid #006b00; }
+  fieldset legend {
+    font-size: 1.125rem;
+    font-family: "bungee", sans-serif;
+    text-align: left;
+    margin-bottom: 1rem; }
 
 input[type="text"],
 input[type="password"],
@@ -9949,7 +9969,7 @@ input[type="color"], textarea {
   box-shadow: none; }
 
 textarea {
-  height: 300px; }
+  height: 150px; }
 
 .input_fields_wrap-links div {
   padding-left: 0;

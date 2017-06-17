@@ -2,10 +2,10 @@
 	<!-- <div class="inner-content small-16 small-push-1 medium-8 medium-push-8 large-7 large-push-8" > -->
 	<div class="inner-content small-16 small-push-1 medium-12 medium-push-3 large-12 large-push-3" 
 	data-top="opacity:0;display:none;" 
-	data--8500-bottom="opacity:0;display:block;" 
-	data--9000-bottom="opacity:1;display:block;"
-	data--9500-bottom="opacity:1;display:block;" 
-	data--10000-bottom="opacity:0; display:none;" >
+	data--11000-bottom="opacity:0;display:block;" 
+	data--12000-bottom="opacity:1;display:block;"
+	data--13000-bottom="opacity:1;display:block;" 
+	data--14000-bottom="opacity:0; display:none;" >
 	  <div class="text-inner">
 	  	<?php echo $data->text()->kirbytext() ?>
 	 	</div>

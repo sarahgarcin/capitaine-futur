@@ -40,10 +40,10 @@ fields:
   links:
     label: Liens
     type: text
-  # company:
-  #   label: Collectif / Studio
-  #   type:  text
-  #   width: 1/2
+  company:
+    label: Collectif / Studio
+    type:  text
+    width: 1/2
   philosophy:
     label: Philosophie de l'artiste
     type:  textarea

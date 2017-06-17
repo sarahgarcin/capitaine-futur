@@ -24,7 +24,7 @@ return function($site, $pages, $page) {
       'country' => get('country'),
       'email' => get('email'),
       'phone' => get('phone'),
-      // 'company' => get('company'),
+      'company' => get('company'),
       'bio' => get('bio'),
       'philosophy' => get('philosophy'),
       'projectTitle' => get('projectTitle'),

@@ -58,7 +58,7 @@ ul{
 }
 
 hr {
-  border: solid $jaune;
+  border: solid $vert;
   border-width: 1px 0 0;
 }
 
@@ -678,23 +678,42 @@ section {
 
 // Formulaire
 #formulaire{
-	margin-bottom: 5rem;
-	.retour {
-		padding: 1rem 2rem;
-		a{
-			background: #FFF;
-			font-size: rem-calc(16);
-			color: $vert;
-			&:hover{
-				text-decoration:none;
+	padding: 3rem 0 5rem 0;
+	background: $jaune;
+	.logo-form{
+		margin-bottom: 2rem;
+	}
+	.languages{
+		li{
+			float:none;
+			display:inline-block;
+			@include secondMenu;
+
+			&.active{
+				a{text-decoration: underline;}
 			}
-			//border: 1px solid $vert;
-			//margin-top: 1rem;
 		}
+
+	}
+	.inner-form{
+		background: #FFF;
+		padding: 2rem 5rem 5rem 5rem;
 	}
 }
 label{
 	color: $vert;
+	margin-bottom: 0.5rem;
+}
+
+fieldset{
+	border: none;
+	margin: 2rem 0;
+	padding: 0 0 2em 0;
+	border-bottom: 1px solid $vert;
+	legend{
+		@include H3;
+		margin-bottom: 1rem;
+	}
 }
 
 input[type="text"], 
@@ -716,7 +735,7 @@ input[type="color"], textarea {
 }
 
 textarea{
-	height: 300px;
+	height: 150px;
 }
 
 .input_fields_wrap-links{

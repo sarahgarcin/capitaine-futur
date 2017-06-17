@@ -14,15 +14,15 @@ fields:
   subtitle:
     label: Sous-titre
     type:  text
-  entete: 
-    label: Texte d'en-tête
-    type:  markdown
-  text:
-    label: Texte
-    type:  markdown
   pdf:
     label: Pdf
     type: selector
     mode:  single
     types:
       - document
+  entete: 
+    label: Texte d'en-tête
+    type:  markdown
+  text:
+    label: Texte
+    type:  markdown

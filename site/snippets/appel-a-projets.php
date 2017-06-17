@@ -4,17 +4,18 @@
 	data-bottom="opacity:0; display:none;" 
 	data--7000-bottom="opacity:0; display:block;"
 	data--8000-bottom="opacity:1; display:block;"
-	data--8000-bottom="opacity:1; display:block;"
-	data--9000-bottom="opacity:0; display:none;" >
+	data--9000-bottom="opacity:1; display:block;"
+	data--10000-bottom="opacity:0; display:none;" >
 		<div class="text-wrapper">
 			<div class="entete-text">
 				<?php echo $data->entete()->kirbytext() ?>
 			</div>
 			<div class="appel-liens">
-				<a href="<?php echo $pages->find('appel-a-projets')->url()?>" title="<?php echo $pages->find('appel-a-projets')->title()?>" target="_blank">
+				<?php $file = $data->pdf()->toFile();?>
+				<a href="<?php echo $file->url()?>" title="<?php echo $file->name()?>" target="_blank">
 					PDF
 				</a>
-				<a href="<?php echo $pages->find('formulaire')->url()?>" title="<?php echo $pages->find('formulaire')->title()?>">
+				<a href="<?php echo $pages->find('formulaire')->url()?>" title="<?php echo $pages->find('formulaire')->title()?>" target="_blank">
 					<?php echo l::get('apply')?>
 				</a>
 			</div>
