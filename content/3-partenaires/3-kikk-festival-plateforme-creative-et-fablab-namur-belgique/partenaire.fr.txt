@@ -4,16 +4,17 @@ Title: KIKK
 
 Text: 
 
-Créant depuis 2011 des ponts entre les mondes de l’art, de la culture, des sciences et des technologies, l’association Kikk conçoit des événements, accompagne la production d’œuvres artistiques et initie des projets éducatifs. Elle diffuse l’idée auprès du grand public, des entreprises et des étudiants, que l’art, la culture, l’innovation technologique et la créativité constituent des leviers pour le développement économique futur. 
-La structure organise le KIKK festival, une manifestation annuelle internationale qui explore les cultures créatives et numériques à travers des expositions, des conférences, des ateliers et un marché des innovations. Dans une vision décloisonnée, le festival met en réseau les artistes, les makers, les entrepreneurs et les développeurs : il s’élargit à Little.KIKK en 2012, une programmation adressée aux enfants qui propose des ateliers d’initiation et de fabrication aux technologies et à l’art ainsi qu’un parcours d’œuvres dédiées. 
-KIKK est également partenaire fondateur du hub créatif & Fab Lab Trakk  et du Smart Gastronomy Lab, premier living lab belge qui envisage la gastronomie à l’aune des technologies. 
+**FESTIVAL, PLATEFORME CRÉATIVE ET FABLAB
+[Namur, Belgique]**
 
-(link: http://www.kikk.be text: www.kikk.be )
+Créée en 2011, l’association KIKK jette des ponts entre les mondes de l’art, la culture, les sciences et les technologies. KIKK conçoit des événements, accompagne la production d’œuvres artistiques et initie des projets éducatifs. Elle diffuse l’idée auprès du grand public, des entreprises et des étudiants, que l’art, la culture, l’innovation technologique et la créativité constituent des leviers pour le développement économique. KIKK, c’est d’abord un festival international annuel des cultures créatives et numériques qui s’articule autour d’expositions et de conférences, d’ateliers et d’un marché des innovations. Attentif à la nécessité de décloisonner les domaines, le festival met en réseau des artistes, makers, entrepreneurs et développeurs. KIKK est également partenaire fondateur du hub créatif & Fab Lab Trakk et du Smart Gastronomy Lab, premier living lab belge qui envisage la gastronomie à l’aune des technologies.
 
-----
-
-Subtitle: festival, plateforme créative et fablab
+<a href="http://www.kikk.be" target= "_blank"> www.kikk.be</a>
 
 ----
 
-Place: [Namur, Belgique]
+Subtitle: 
+
+----
+
+Place: 

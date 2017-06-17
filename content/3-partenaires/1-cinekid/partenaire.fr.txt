@@ -4,15 +4,18 @@ Title: Cinekid
 
 Text: 
 
-Depuis 30 ans, Cinekid organise un festival annuel du cinéma, de la télévision et des nouveaux médias à Amsterdam et dans 40 villes des Pays-Bas. Il rassemble 60 000 visiteurs autour d’un marché professionnel, des conférences et des masterclasses. Au sein de son MediaLab, Cinekid s’intéresse à l’évolution des technologies audiovisuelles, de l’art, du jeu, de l’écriture, des médias, afin d’anticiper leurs développements, leurs usages et les opportunités qu’ils présentent. 
-Par ses expositions thématiques au carrefour de l’art, de la science et de la technologie, le Cinekid MediaLab engage les enfants dans une découverte active et créative des médias : installations manipulables, jeux, applications et ateliers donnent un aperçu des recherches à la pointe. Soulignant le rôle de la collaboration, du hasard technologique et des processus pour apprendre, le Medialab développe le module « Art, Research and Development » (AR&D) qui met en avant les acteurs, les studios et les laboratoires multidisciplinaires : il invite des artistes à rendre sous la forme d’installations leurs recherches accessibles à un public large et s’inscrit dans un solide réseau européen et international de concepteurs et de structures.
+**FESTIVAL INTERNATIONAL DE FILMS POUR ENFANTS**
+**[Amsterdam, Pays-Bas]**
 
-(link: http://www.cinekid.nl text: www.cinekid.nl)
+Depuis 30 ans, Cinekid organise un festival annuel du cinéma, de la télévision et des nouveaux médias à Amsterdam et dans 40 villes des Pays-Bas. Il rassemble 60 000 visiteurs autour d’un marché professionnel, de conférences et de masterclasses. Au sein de son MediaLab, Cinekid s’intéresse à l’évolution des technologies audiovisuelles, de l’art, du jeu, de l’écriture, des médias, afin d’anticiper leurs développements, leurs usages et les opportunités qu’ils présentent.
+Par ses expositions thématiques au carrefour de l’art, de la science et de la technologie, le Cinekid MediaLab engage les enfants dans une découverte active et créative des médias : installations manipulables, jeux, applications et ateliers donnent un aperçu des recherches à la pointe.
+
+(link: http:// text: www.cinekid.nl)
 
 ----
 
-Subtitle: Le festival international de films pour enfants
+Subtitle: 
 
 ----
 
-Place: [Amsterdam, Pays Bas]
+Place: 

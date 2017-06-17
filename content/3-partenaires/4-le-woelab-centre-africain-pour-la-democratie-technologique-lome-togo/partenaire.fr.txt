@@ -1,18 +1,20 @@
-Title: Le WoeLab
+Title: WoeLab
 
 ----
 
 Text: 
 
-Premier laboratoire d’innovation sociale et technologique au Togo, le WoeLab (woe signifie « fais-le » en ewe) naît en 2012. Tête de pont d’un réseau de tech-hubs de proximité à l’échelle de la ville et de fablabs en Afrique de l’Ouest, le WoeLab promeut l’esprit du partage, facilite la mobilisation collective et incube une technologie #LowHighTech appropriable par les couches les plus modestes de la population.
-Avec pour mission de soutenir et vulgariser des technologies de rupture, le WoeLab est pensé pour être réplicable : prônant l’économie de moyens et l’innovation frugale, il incite les jeunes générations à l’apprentissage de pair à pair, au transfert et à la mutualisation des savoirs, à l’exploitation de solutions open source, au recyclage et à la créativité locale. Il organise la Woe-academy, des cours hebdomadaires gratuits en programmation, technologie libre et fabrication d’ordinateurs (projet Jerry). Il conçoit également « 3DprintAfricaEducative », des programmes de production d’objets utiles adaptés aux imprimantes 3D et fédère la communauté de makers lors des Boot(woe)Camp, des événements participatifs annuels dédiés au bricolage technologique à faible coût. Le WoeLab regroupe une trentaine de pensionnaires dont la moyenne d’âge est de 19 ans.
+**CENTRE AFRICAIN POUR LA DÉMOCRATIE TECHNOLOGIQUE
+[Lomé, Togo]**
 
-(link: http://www.woelabo.com text: www.woelabo.com )
+Fondé en 2012, le WoeLab est le premier laboratoire d’innovation sociale et technologique du Togo. Tête de pont d’un réseau de tech-hubs de proximité à l’échelle de la ville et de fablabs en Afrique de l’Ouest, ce centre promeut l’esprit du partage, facilite la mobilisation collective et incube une technologie #LowHighTech accessible aux couches les plus modestes de la population. Sa mission : soutenir et vulgariser des technologies de rupture. Pensé pour être répliqué, le WoeLab prône l’économie de moyens et l’innovation frugale, incite les jeunes générations à l’apprentissage de pair-à-pair, au transfert et à la mutualisation des savoirs, à l’exploitation de solutions open source, au recyclage et à la créativité locale. Il organise des cours en programmation, technologie libre et fabrication d’ordinateurs, conçoit des programmes de production d’objets utiles adaptés aux imprimantes 3D et fédère la communauté de makers lors d’événements participatifs annuels.
 
-----
-
-Subtitle: centre africain pour la démocratie technologique
+<a href="http://www.woelabo.com" target= "_blank">www.woelabo.com</a>
 
 ----
 
-Place: [Lomé, Togo]
+Subtitle: 
+
+----
+
+Place: 

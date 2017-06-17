@@ -1,4 +1,4 @@
-Title: What?
+Title: Project
 
 ----
 
@@ -12,24 +12,26 @@ Logo:
 
 Text: 
 
-**Background** 
+**THINKING AND TINKERING WITH ART & TECHNOLOGY**
+
+**A project by Cinekid [Amsterdam, Pays-Bas], Gaîté lyrique [Paris, France], KIKK [Namur, Belgique] and Woelab [Lomé, Togo]**
 Omnipresent and ever-changing, digital technology is changing the way we create, communicate, learn and work. Not only does digital technology offer new possibilities for connecting people, it is also vital to democracy, knowledge sharing and understanding the world. Artistic practices and scientific advances are becoming more accessible and serving as catalysts for change that give rise to new perceptive, technological and political capabilities through investigation, experimentation and storytelling. The creative use of technology is broadening the horizons of the generations growing up in our hyper-connected democratic societies.
  
-**Description** 
-La Gaîté Lyrique, Cinekid, KIKK and WoeLab are joining forces to write the collective narratives of the digital age by using art to delve into our technological world. United in their creative and critical exploration of the complexity of the 21st century, the four partners are developing a European cooperation project featuring Capitaine futur, an imaginary character whose unifying journeys inspire children to discover present-day art and learn about new media.
+**The cooperation project** 
+(link: http://gaite-lyrique.net/text: La Gaîté Lyrique), (link: http://www.cinekid.nl/text: Cinekid), (link: http://www.kikk.be/text:KIKK) and (link: http://www.woelabo.com/text: WoeLab) are joining forces to write the collective narratives of the digital age by using art to delve into our technological world. United in their creative and critical exploration of the complexity of the 21st century, the four partners are developing a European cooperation project featuring Capitaine futur, an imaginary character whose unifying journeys inspire children to discover present-day art and learn about new media.
 
-Les Voyages de Capitaine futur approaches society from three different angles: it considers children as an audience in their own right, digital technology as a cultural discipline that merits study, and art as a laboratory for the future. A testing ground for artistic and educational content, the project calls on artist-researchers’ ability to weave tales, invent original forms and prepare for what is to come. The project encourages children and their guides – culture and education professionals – to think about their relationship with technology and expand their knowledge in order to confront the changes underway proactively.
+*Les Voyages de Capitaine futur* approaches society from three different angles: it considers children as an audience in their own right, digital technology as a cultural discipline that merits study, and art as a laboratory for the future. A testing ground for artistic and educational content, the project calls on artist-researchers’ ability to weave tales, invent original forms and prepare for what is to come. The project encourages children and their guides – culture and education professionals – to think about their relationship with technology and expand their knowledge in order to confront the changes underway proactively.
 
 **Guidelines**
 Drawing from the teaching potential of media art and the possibilities for collaboration and knowledge sharing offered by digital technology, Les Voyages de Capitaine futur has developed working and creation methods based on 5 pillars:
-•	1. the active participation of children, who will pass on future experiences and practices
-•	2. the creation of narratives about the world as a means to demystify its transformation
-•	3. stimulation of the five senses in the discovery of our environments
-•	4. the importance of experimentation in the learning process
-•	5. the promotion of collaborative culture
+-The active participation of children, who will pass on future experiences and practices
+-The creation of narratives about the world as a means to demystify its transformation
+-Stimulation of the five senses in the discovery of our environments
+-The importance of experimentation in the learning process
+-The promotion of collaborative culture
  
 **Deliverables**
-A response to the societal need to instil technology culture from an early age, Les Voyages de Capitaine futur uses media art as a tool for emancipation, by helping to expand the artistic repertoire of innovative approaches to the visitor experience and developing creative learning environments. To reach these aims, Les Voyages de Capitaine futur is launching an international call for artworks and supporting the production of 3 original media artworks. Creation workshops will be designed in conjunction with the artworks as part of pilot classes in the 4 partner countries, and adapted into online tutorials so that they can be easily replicated. The cooperation project will share the Capitaine futur character under an open license and offer a unique narrative environment based on the theme “Supernatural: stories of worlds yet to come”.
+A response to the societal need to instil technology culture from an early age, *Les Voyages de Capitaine futur* uses media art as a tool for emancipation, by helping to expand the artistic repertoire of innovative approaches to the visitor experience and developing creative learning environments. To reach these aims, *Les Voyages de Capitaine futur* is launching in june 2017 **an international call for artworks **and supporting the production of 3 original media artworks. Creation workshops will be designed in conjunction with the artworks as part of pilot classes in the 4 partner countries, and adapted into online tutorials so that they can be easily replicated. The cooperation project will share the Capitaine futur character under an open license and offer a unique narrative environment based on the theme **Supernatural: stories of worlds yet to come**.
 
 ----
 
@@ -37,4 +39,4 @@ Mentions:
 
 ----
 
-Subtitle: Les Voyages de Capitaine futur, Thinking and tinkering with art & technology
+Subtitle: Les Voyages de Capitaine futur

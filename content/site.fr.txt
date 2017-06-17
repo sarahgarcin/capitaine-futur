@@ -14,7 +14,7 @@ Copyright:
 
 ----
 
-Slogan: Thinking and Tinkering <br> with art & technology
+Slogan: Thinking and Tinkering<br> with art & technology
 
 ----
 
@@ -30,7 +30,16 @@ Socialnetworks:
 
 - 
   icon: fa-facebook
-  link: facebook.com
+  link: >
+    https://www.facebook.com/capitainefutur.voyage
 - 
   icon: fa-twitter
-  link: http://twitter.com
+  link: https://twitter.com/CapitaineFutur
+- 
+  icon: fa-vimeo
+  link: >
+    https://vimeo.com/channels/capitainefutur
+
+----
+
+Teaser: (vimeo: https://vimeo.com/62345949)

@@ -14,11 +14,11 @@ Copyright:
 
 ----
 
-Slogan: Thinking and Tinkering with art & technology
+Slogan: Thinking and Tinkering <br> with art & technology
 
 ----
 
-Logo: logo3.png
+Logo: logo-cf-03.png
 
 ----
 

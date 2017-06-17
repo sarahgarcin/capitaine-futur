@@ -1,12 +1,22 @@
-Title: WoeLab: African centre for technological democracy [Lomé, Togo]
+Title: WoeLab
 
 ----
 
 Text: 
 
-Founded in 2012, WoeLab (“woe” means “do it” in the Ewe language) is the first laboratory for social and technological innovation in Togo. Spearheading a network of local tech hubs at city level and West African Fab Labs, WoeLab promotes a collaborative mindset, facilitates collective action and incubates #LowHighTech technology accessible to the most disadvantaged segments of the population.
+**AFRICAN CENTRE FOR TECHNOLOGICAL DEMOCRACY
+[Lomé, Togo]**
+
+Founded in 2012, WoeLab is the first laboratory for social and technological innovation in Togo. Spearheading a network of local tech hubs at city level and West African Fab Labs, WoeLab promotes a collaborative mindset, facilitates collective action and incubates #LowHighTech technology accessible to the most disadvantaged segments of the population.
 Replicable by design, WoeLab seeks to support and simplify disruptive technologies by advocating an economy of means and frugal innovation while encouraging younger generations to take advantage of peer-to-peer learning, knowledge transfer and pooling, open-source solutions, recycling and local creativity. 
-At the Woe-academy, the centre holds free weekly courses in programming, open-source technology and building computers (Jerry Project). It also oversees “3DprintAfricaEducative”, a series of programmes for creating practical objects that can be 3D-printed, and brings together the maker community at the Boot(woe)Camp, an annual DIY event where participants explore low-cost technologies.
-The WoeLab is run by a group of around thirty members with an average age of 19.
+At the Woe-academy, the centre holds free weekly courses in programming, open-source technology and building computers. It also oversees a series of programmes for creating practical objects that can be 3D-printed, and brings together the maker community at the Boot(woe)Camp, an annual DIY event where participants explore low-cost technologies.
 
 (link: http:// text: www.woelabo.com )
+
+----
+
+Subtitle: 
+
+----
+
+Place: 

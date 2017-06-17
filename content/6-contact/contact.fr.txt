@@ -1,52 +1,43 @@
-Title: Infos pratiques
+Title: Contacts
 
 ----
 
 Text: 
 
-**Cinekid**
+**LES VOYAGES DE CAPITAINE FUTUR**
+**Appel à oeuvres: ** (email: call@capitainefutur.voyage  text: call@capitainefutur.voyage)
+**Projet de coopération :**   (email:  info@capitainefutur.voyage  text: info@capitainefutur.voyage)
+**Presse et communication : ** (email:  press@capitainefutur.voyage  text: press@capitainefutur.voyage)
 
-Ward Janssen, directeur de la culture numérique.
-w.janssen[@]cinekid[.]nl
 
-Floor van Spaendonck, directrice générale.
-fvs[@]cinekid[.]nl
+**CINEKID**
+(email:  w.janssen@cinekid.nl  text: **Ward Janssen**), directeur de la culture numérique
+(email: fvs@cinekid.nl  text: **Floor van Spaendonck**), directrice générale
 
-**La Gaîté Lyrique**
 
-Jos Auzende, auteure de Capitaine futur et commissaire.
-jos.auzende[@]gaite-lyrique[.]net
+**GAÎTÉ LYRIQUE**
+(email: jos.auzende@gaite-lyrique.net text:**Jos Auzende**), auteure de Capitaine futur et commissaire
+(email: clemence.seurat@gaite-lyrique.net text: **Clémence Seurat**), conseillère artistique et chef de projet
 
-Clémence Seurat, conseillère artistique et chef de projet.
-clemence.seurat[@]gaite-lyrique[.]net
 
-**KIKK** 
+**KIKK**
+(email: marie@kikk.be text: **Marie Du Chastel**), coordinatrice et commissaire
+(email: flora@kikk.be text: **Flora Six**), communication manager
 
-Marie Du Chastel, coordinatrice et commissaire.
-marie[@]kikk[.]be
 
-**WoeLab**
+**WOELAB**
+(email: sename@lafricainedarchitecture.com  text: **Sénamé Koffi Agbodjinou**), fondateur
 
-Sénamé Koffi Agbodjinou, fondateur.
-sename[@]lafricainedarchitecture[.]com
+(image: footer-vert.png)
 
 ----
 
-Subtitle: Infos pratiques
+Subtitle: Contacts
 
 ----
 
 Contact: 
 
-Pour toute question concernant l'appel à projets et les candidatures, merci d'écrire à   
-(email: call@capitainefutur.voyage  text: call@capitainefutur.voyage)  
-
-Pour toute question concernant le projet de coopération européenne, merci d'écrire à  
-(email: info@capitainefutur.voyage text: info@capitainefutur.voyage)  
-
-Pour toute question concernant la presse et la communication, merci d'écrire à  
-(email: press@capitainefutur.voyage text: press@capitainefutur.voyage)
-
 ----
 
-Logos: 94c2a3c8.jpg,music-or-noise.jpg,save4.png
+Logos: 

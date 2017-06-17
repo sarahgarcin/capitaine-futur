@@ -28,6 +28,9 @@ fields:
     types:
       - image
     help: Logo du site
+  teaser:
+    label: Teaser
+    type: markdown
   socialNetworkSettings:
     label: Réseaux Sociaux
     type:  headline

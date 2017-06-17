@@ -1,4 +1,4 @@
-Title: Qui ?
+Title: Partners
 
 ----
 
@@ -11,4 +11,4 @@ Vivamus mollis urna libero, quis ornare lacus ultricies eget. Pellentesque commo
 
 ----
 
-Subtitle: Partenaires
+Subtitle: Partners

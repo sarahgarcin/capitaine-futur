@@ -41,6 +41,9 @@
 					</ul>
 				</div>
 			<?php endif ?>
+			<div class="newsletter left">
+				<a href="http://eepurl.com/cS1QX9" title="suscribe newsletter" target='_blank'>Newsletter</a>
+			</div>
 	    <div class="right">
 			  <ul class="languages">
 			    <?php foreach($site->languages() as $language): ?>
