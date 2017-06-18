@@ -169,8 +169,11 @@ header{
 						li{
 							float:none;
 							display:inline-block;
-							&.active{
-								a{text-decoration: underline;}
+							cursor: pointer; 
+							background: $jaune; 
+							@include secondMenu;
+							&.active, &:hover{
+								text-decoration: underline;
 							}
 						}
 					}

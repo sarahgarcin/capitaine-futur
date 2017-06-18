@@ -47,10 +47,10 @@
 	    <div class="right">
 			  <ul class="languages">
 			    <?php foreach($site->languages() as $language): ?>
-			    <li<?php e($site->language() == $language, ' class="active"') ?>>
-			      <a href="<?php echo $site->url($language->code()) ?>">
+			    <li<?php e($site->language() == $language, ' class="active"') ?> data-language=<?php echo $site->url($language->code())?> >
+			      <!-- <a href="<?php echo $site->url($language->code()) ?>"> -->
 			        <?php echo html($language->name()) ?>
-			      </a>
+			      <!-- </a> -->
 			    </li>
 			    <?php endforeach ?>
 			  </ul>

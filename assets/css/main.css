@@ -9540,8 +9540,15 @@ header .top-bar .top-bar-section .right {
     line-height: 1.2; }
   header .top-bar .top-bar-section .right .languages li {
     float: none;
-    display: inline-block; }
-    header .top-bar .top-bar-section .right .languages li.active a {
+    display: inline-block;
+    cursor: pointer;
+    background: yellow;
+    font-size: 0.75rem;
+    font-family: "bungee", sans-serif;
+    color: #006b00;
+    padding: 0 !important;
+    line-height: 1.2 !important; }
+    header .top-bar .top-bar-section .right .languages li.active, header .top-bar .top-bar-section .right .languages li:hover {
       text-decoration: underline; }
   header .top-bar .top-bar-section .right a {
     font-size: 0.75rem;

@@ -25,6 +25,14 @@ function init(){
 	// 	}
 	// }
 
+	// switch language
+	$('.languages li').on('click', function(){
+		var currentUrl = window.location.href ;
+		var currentHash = window.location.hash;
+		var langUrl = $(this).attr('data-language');
+		window.location.replace(langUrl+currentHash)
+	});
+
 	// teaser
 	$('.teaser .close-button').on('click', function(){
 		$('.teaser').hide();
