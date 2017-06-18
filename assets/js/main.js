@@ -57,13 +57,13 @@ function init(){
 			$(this).find('a').attr('data-menu-top', '6500');
 		}
 		if(id == "#soutiens"){
-			$(this).find('a').attr('data-menu-top', '9000');
+			$(this).find('a').attr('data-menu-top', '12000');
 		}
 		if(id == "#calendrier"){
-			$(this).find('a').attr('data-menu-top', '12500');
+			$(this).find('a').attr('data-menu-top', '14500');
 		}
 		if(id == "#contact"){
-			$(this).find('a').attr('data-menu-top', '15500');
+			$(this).find('a').attr('data-menu-top', '18000');
 		}
 		//console.log($(this), id);
 	});

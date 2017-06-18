@@ -4,7 +4,7 @@ return function($site, $pages, $page) {
   $error = null;
   if(r::method() === 'POST') {
     // The form has been sent
-    
+    // echo "The form has been sent";
    // put all the links in a one field
    $links = get('links');
    $strlinks= '';
@@ -39,98 +39,10 @@ return function($site, $pages, $page) {
     // You can also use a different page by using `page('whatever')->children()->create()`
     $p = $page->children()->create($title, 'candidat', $data);
 
-    // $upload = new Upload($p->root() . DS . '{safeFilename}', array(
-    //   'input'     => 'file',
-    //   'overwrite' => true
-    // ));
-
-    // if($file = $upload->file()) {
-
-    // dump(array(
-    //     'file'     => $file->filename(),
-    //     'mime'     => $file->mime(),
-    //     'size'     => $file->size(),
-    //     'niceSize' => $file->niceSize()
-    //   ));
-
-    // } else {
-    //   dump($upload->error());
-    // }
-    // Upload an image
-    // try {
-    //   // This uses the form field with `name="file"`
-    //   // See http://php.net/manual/en/features.file-upload.post-method.php#example-392 on how to structure your form
-    //   $upload = new Upload($p->root() . DS . '{safeFilename}');
-    // } catch(Error $e) {
-    //   switch($e->getCode()) {
-    //     case Upload::ERROR_MISSING_FILE:
-    //       // File does not exist
-    //       $error = 'No file uploaded.';
-    //       break;
-    //     // See the Upload class for other error values
-    //   }
-    // }
+    $upload = upload($p->root() . DS . '{safeName}');
+    $uploadFile = upload($p->root() . DS . '{safeName}', array('input' => 'file-folder'));
 
   }
   
   return compact('error');
 };
-
-
-
-// use Uniform\Form;
-
-// return function ($site, $pages, $page) {
-//    $form = new Form([
-//       'name' => [
-//          'rules' => ['required'],
-//          'message' => 'Name is required',
-//       ],
-//       'firstname' => [
-//          'rules' => ['required'],
-//          'message' => 'First name is required',
-//       ],
-//       'birthdate' => [
-//          'rules' => ['required'],
-//          'message' => 'Birthdate is required',
-//       ],
-//       'address' => [
-//          'rules' => ['required'],
-//          'message' => 'Address is required',
-//       ],
-//       'country' => [
-//          'rules' => ['required'],
-//          'message' => 'Country is required',
-//       ],
-//       'email' => [
-//          'rules' => ['required', 'email'],
-//          'message' => 'Email is required',
-//       ],
-
-//       'website' => [],
-//       'videoLink' => [],
-//       'resume' => [
-//          'rules' => ['required'],
-//          'message' => 'Resume is required',
-//       ],
-//       'bio' => [
-//          'rules' => ['required'],
-//          'message' => 'Bio is required',
-//       ],
-//       'supernaturel' => [
-//          'rules' => ['required'],
-//          'message' => 'Supernaturel is required',
-//       ],
-
-//    ]);
-
-//    if (r::is('POST')) {
-//       $form->emailAction([
-//          'to' => 'garcinsarah@gmail.com',
-//          'from' => 'garcinsarah@gmail.com',
-//          'subject' => 'Candidature Captitaine futur',
-//       ]);
-//    }
-
-//    return compact('form');
-// };

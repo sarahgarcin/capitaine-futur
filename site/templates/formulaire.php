@@ -1,5 +1,6 @@
 <?php snippet('header') ?>
 
+
  	<main id="<?php echo $page->uid()?>">
  		<div class='logo-form small-16 small-push-1 medium-10 medium-push-5'>
  			<img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
@@ -17,7 +18,7 @@
 			<h2><?php echo l::get('applyForm')?></h2>
 			<hr>
 			<div class="text-wrapper">
-				<form action="<?php echo $page->url() ?>" method="POST">
+				<form action="" method="POST" enctype="multipart/form-data">
 
 					 <fieldset>
 	    			<legend><?php echo l::get('aboutProject')?></legend>
@@ -45,7 +46,7 @@
 					  <label for="address"><?php echo l::get('address1')?>*</label>
 					  <input name="address" type="text" value="" required>
 					  <label for="address2"><?php echo l::get('address2')?></label>
-					  <input name="address2" type="text" value="" required>
+					  <input name="address2" type="text" value="">
 					  <label for="country"><?php echo l::get('country')?>*</label>
 					  <input name="country" type="text" value="" required>
 					  <label for="email">Email*</label>
@@ -75,8 +76,8 @@
 	    			<legend><?php echo l::get('docsToSend')?></legend>
 						<label for="file"><?php echo l::get('presentation')?>*</label>
 						<input class="upload-file" name="file" data-max-size="7000" type="file" >
-						<label for="file"><?php echo l::get('folder')?>*</label>
-						<input class="upload-file" name="file" data-max-size="7000" type="file"  >
+						<label for="file-folder"><?php echo l::get('folder')?>*</label>
+						<input class="upload-file" name="file-folder" data-max-size="7000" type="file"  >
 					</fieldset>
 				  <input type="submit" value="<?php echo l::get('submit')?>">
 				</form>

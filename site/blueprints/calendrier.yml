@@ -2,7 +2,7 @@ title: Calendrier
 
 pages:
   template: Etapes
-files: false
+files: true
 
 fields:
   title:
@@ -11,3 +11,7 @@ fields:
   subtitle:
     label: Sous-Titre
     type:  text
+  calendrier:
+    label: Image
+    type:  selector
+    mode:  single

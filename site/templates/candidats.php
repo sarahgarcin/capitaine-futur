@@ -21,6 +21,7 @@
 		    <th><?php echo l::get('links')?></th>
 		    <th><?php echo l::get('bio')?></th>
 		    <th><?php echo l::get('philosophy')?></th>
+		    <th><?php echo l::get('docsToSend')?></th>
 		  </tr>
 		  <?php foreach($pages->find('formulaire')->children() as $candidat):?>
 		  <tr>
@@ -48,6 +49,17 @@
 		    </td>
 		    <td><?php echo $candidat->bio() ?></td>
 		    <td><?php echo $candidat->philosophy() ?></td>
+		    <td>
+		    	<ul>
+			    	<?php foreach($candidat->files() as $file): ?>
+			    		<li>
+				    		<a href="<?php echo $file->url()?>" title="<?php echo $file->name()?>" target="_blank">
+				    			<?php echo $file->name()?>
+				    		</a>
+			    		</li>
+			    	<?php endforeach; ?>
+			    </ul>
+		    </td>
 		  </tr>
 		 	<?php endforeach ?>
 		</table>
