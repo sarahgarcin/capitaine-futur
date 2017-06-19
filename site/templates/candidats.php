@@ -23,7 +23,7 @@
 		    <th><?php echo l::get('philosophy')?></th>
 		    <th><?php echo l::get('docsToSend')?></th>
 		  </tr>
-		  <?php foreach($pages->find('formulaire')->children() as $candidat):?>
+		  <?php foreach($pages->find('form')->children() as $candidat):?>
 		  <tr>
 		    <td><?php echo $candidat->projectTitle() ?></td>
 		    <td><?php echo $candidat->resume() ?></td>

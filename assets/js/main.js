@@ -13,6 +13,12 @@ function init(){
 	$slide = $('.homeSlide');
 	$body = $('body');
 
+	if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		// // calculPos();
+		// $('body').bind('touchmove', function(e) {
+  //       e.preventDefault()
+  //   });
+	}
 
 	if($('body').attr('data-template') == 'home' || $('body').attr('data-template') == 'default'){
 
@@ -22,6 +28,7 @@ function init(){
 			    // Resize sections
 			    adjustWindow();
 				  $body.removeClass('loading').addClass('loaded');
+					$('.loading').fadeOut(500);
 				  
 			// }, 800);
 		});
@@ -54,6 +61,12 @@ function init(){
 		$('.teaser').show();
 	});
 
+	$(document).keyup(function(e) {
+	  if (e.keyCode === 27) {
+	  	$('.teaser').hide();
+	  }
+	});
+
 	// Menu text decoration
 	var hash = window.location.hash;
 	$('.menu .menu-el a').on('click',function(){
@@ -65,27 +78,25 @@ function init(){
 	$('.menu .menu-el').each(function(){
 		var $link = $(this).find('a');
 		var id = $(this).find('a').attr("data-id");
-		console.log(id);
 		if(id == hash){
 			$(this).find('a').addClass('active');
 		}
-		if(id == "resume-du-projet"){
-			console.log(id);
+		if(id == "project"){
 			$(this).find('a').attr('data-menu-top', '5500');
 		}
-		if(id == "appel-a-projets"){
+		if(id == "open-call"){
 			$(this).find('a').attr('data-menu-top', '10500');
 		}
-		if(id == "partenaires"){
+		if(id == "partners"){
 			$(this).find('a').attr('data-menu-top', '16000');
 		}
-		if(id == "soutiens"){
+		if(id == "supports"){
 			$(this).find('a').attr('data-menu-top', '19000');
 		}
-		if(id == "calendrier"){
-			$(this).find('a').attr('data-menu-top', '24500');
+		if(id == "planning"){
+			$(this).find('a').attr('data-menu-top', '25500');
 		}
-		if(id == "contact"){
+		if(id == "contacts"){
 			$(this).find('a').attr('data-menu-top', '28000');
 		}
 		//console.log($(this), id);
@@ -117,7 +128,9 @@ function init(){
 
 	function adjustWindow(){
 		
-		var s = skrollr.init();
+		var s = skrollr.init({
+			//forceHeight: false,
+		});
 
 		skrollr.menu.init(s, {
 			duration: function(currentTop, targetTop) {
@@ -130,6 +143,10 @@ function init(){
 			// 	console.log(hash, top);
 			// }
 		});
+
+		if (s.isMobile()) {
+		  s.destroy();
+		}
 		
 		// get window size
 	 //  winH = $window.height();
@@ -148,6 +165,23 @@ function init(){
 
 	    
 	}
+
+}
+
+function calculPos(){
+	var newPosition = 112;
+	$(".textCartel").each(function(){
+		var $prev = $(this).prev('.textCartel').find('.inner-content');
+		if($prev){
+			//prevOffsetTop = $prev.offset();
+			var prevHeight = $prev.height();
+			var step = 1000;
+			newPosition = newPosition + prevHeight + step;
+			$(this).find('.inner-content').css('top', newPosition);
+
+			console.log($prev, newPosition, prevHeight)
+		}	
+	});
 
 }
 

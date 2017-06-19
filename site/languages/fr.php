@@ -1,6 +1,7 @@
 <?php
 
 	l::set(array(
+    'video' => 'Vidéo',
     'submit' => 'Envoyer',
     'cancel' => 'Annuler',
     'thanks' => 'Merci votre candidature a bien été prise en compte !',

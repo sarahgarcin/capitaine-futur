@@ -1,5 +1,5 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
-	<div class="inner-content small-16 small-push-1 medium-16 medium-push-1 large-12 large-push-3 xlarge-8 xlarge-push-5" 
+	<div class="inner-content small-16 small-push-1 medium-12 medium-push-3 large-12 large-push-3 xlarge-8 xlarge-push-5" 
 	data-top="opacity:0; display:none;" 
 	data-bottom="opacity:0; display:none;" 
 	data--10000-bottom="opacity:0; display:block;"
@@ -17,12 +17,11 @@
 						PDF
 					</a>
 				<?php endif;?>
-				<a href="<?php echo $pages->find('formulaire')->url()?>" title="<?php echo $pages->find('formulaire')->title()?>" target="_blank">
+				<a href="<?php echo $pages->find('form')->url()?>" title="<?php echo $pages->find('form')->title()?>" target="_blank">
 					<?php echo l::get('apply')?>
 				</a>
 			</div>
 			<div class="text-inner">
-				<?php //echo $data->text()->kirbytext() ?>
 				<?php $array = str::split($data->text()->kirbytext(), "===");
 				foreach($array as $section):?>
 					<div class="appel-section">

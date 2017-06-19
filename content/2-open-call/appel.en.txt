@@ -74,7 +74,7 @@ For all inquiries regarding:
 
 ----
 
-Pdf: 
+Pdf: 20-objects-with-hair.pdf
 
 ----
 
@@ -94,3 +94,7 @@ Theme: “Supernatural: stories of worlds to come”
 Open to artists from all countries
 Deadline for submissions: 15 August 2017 at midnight
 Production budget : 15.000 € / project
+
+----
+
+Url-key: open-call

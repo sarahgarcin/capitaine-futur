@@ -18,7 +18,7 @@
 	    <!-- Left Nav Section -->
 	    <ul class="left">
 	    	<?php foreach($pages->visible() as $element):?>
-	    		<?php if($element->uid() != 'contact'):?>
+	    		<?php if($element->uid() != 'contacts'):?>
 		      	<li class="menu-el">
 		      		<?php if($page->template() != 'default'):?>
 			      		<a <?php e($element->isOpen(), ' class="active"') ?> href="#<?php echo $element->uid()?>" title="<?php echo $element->uid()?>" data-id="<?php echo $element->uid()?>">
@@ -39,7 +39,7 @@
 					<ul>
 					<?php foreach($site->socialnetworks()->toStructure() as $socialnetwork): ?>
 						<li>
-							<a href="<?php echo $socialnetwork->link() ?>" itemprop="url">
+							<a href="<?php echo $socialnetwork->link() ?>" itemprop="url" target="_blank">
 								<i class="fa <?php echo $socialnetwork->icon()->html() ?>" aria-hidden="true"></i>
 					    </a>
 						</li>
@@ -63,12 +63,12 @@
 			  <ul class="infos-menu">
 			  	<li class="menu-el">
 			  		<?php if($page->template() != 'default'):?>
-						  <a <?php e($pages->find('contact')->isOpen(), ' class="active"') ?> href="#<?php echo $pages->find('contact')?>" title="<?php echo $pages->find('contact')?>" data-id="<?php echo $pages->find('contact')?>">
-								<?php echo $pages->find('contact')->title()->html()?>
+						  <a <?php e($pages->find('contacts')->isOpen(), ' class="active"') ?> href="#<?php echo $pages->find('contacts')?>" title="<?php echo $pages->find('contacts')?>" data-id="<?php echo $pages->find('contacts')?>">
+								<?php echo $pages->find('contacts')->title()->html()?>
 							</a>
 						<?php else: ?>
-							<a href="<?php echo $site->url()?>#<?php echo $pages->find('contact')?>" title="<?php echo $pages->find('contact')?>">
-								<?php echo $pages->find('contact')->title()->html()?>
+							<a href="<?php echo $site->url()?>#<?php echo $pages->find('contacts')?>" title="<?php echo $pages->find('contacts')?>">
+								<?php echo $pages->find('contacts')->title()->html()?>
 							</a>
 						<?php endif; ?>
 					</li>

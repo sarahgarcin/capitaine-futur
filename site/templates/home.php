@@ -10,6 +10,12 @@
  		<img src="assets/images/plan-1-gauche.png" alt="">
  	</div>
 
+  <div class="loading">
+    <div class="image-wrapper">
+      <img src="<?php echo $site->url()?>/assets/images/loading.gif" alt="loading">
+    </div>
+  </div>
+
  	<main class="main-wrapper">
     <section id="slide-1" class="homeSlide">
       <div class="bcg" 
@@ -88,18 +94,9 @@
         </h2>
 
         <div class="formes">
-<!--           <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="196.505px" height="151.496px" viewBox="0 0 196.505 151.496" enable-background="new 0 0 196.505 151.496"
-             xml:space="preserve">
-          <polygon fill="#FFFFFF" points="94.339,0 40,17.496 0,72.029 0,87.496 25.339,125.496 94.339,151.496 149.339,151.496 
-            196.505,101.496 196.505,72.029 155.338,19.496 "/>
-          </svg> -->
           <div class="teaser-button">
-            Teaser
+            <?php echo l::get('video') ?>
           </div>
- <!--          <a href="#appel-a-projets" data-menu-top='4000' title="<?php echo $pages->find('appel-a-projets')->title()?>">
-            appel à<br>projets
-          </a> -->
         </div>
       
       </div>

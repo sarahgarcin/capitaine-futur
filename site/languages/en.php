@@ -1,6 +1,7 @@
 <?php
 
 l::set(array(
+    'video' => 'Video',
     'submit' => 'Submit',
     'cancel' => 'Cancel',
     'thanks' => 'Thank you !',

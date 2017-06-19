@@ -4,10 +4,10 @@
 @import "_font-awesome.scss";
 @import "_variables.scss";
 
-.skrollr, body[data-template='home']{
+body[data-template='home']{
 		overflow: hidden;
-		position:relative;
 }
+
 
 body {
 	font-size: 12px;
@@ -19,6 +19,22 @@ body[data-template='candidats']{
 		main{
 			overflow-x:scroll;
 		}
+}
+
+.loading{
+  background: #FFF; 
+  width: 100vw;
+  height: 100vh; 
+  position: fixed;
+  top:0;
+  left:0; 
+  z-index: 99999;
+  .image-wrapper{
+    width: 300px;
+    margin:auto; 
+    top: 30vh;
+    position:relative;
+  }
 }
 
 h1,h2,h3,h4,h5,h6, a{
@@ -377,6 +393,7 @@ section {
 			li:first-child{padding-left:0;}
 		}
 		.footer-menu{
+			margin-bottom: 3rem;
 			li{
 				display:inline-block;
 				&:last-child{
@@ -447,34 +464,33 @@ section {
 		}
 	}
 }
-#appel-a-projets .inner-content{
+#open-call .inner-content{
 	.appel-section{
 
 	}
 }   
 #home-appel .inner-content{z-index:20;} 
-#resume-du-projet .inner-content, #resume-du-projet-slider .inner-content{
+#project .inner-content{
 	// top: 800vh;
 	z-index:20;
 } 
-#partenaires .inner-content{z-index:20; 
+#partners .inner-content{z-index:20; 
 	// top: 1200vh;
 } 
-#calendrier .inner-content{
+#planning .inner-content{
 	z-index:10; 
 	height:auto;
 	max-height: 78vh;
 	// top: 1500vh;
 } 
-#contact .inner-content{
+#contacts .inner-content{
 	z-index:20; 
 	
 } 
+ 
+#open-call .inner-content{z-index:20;}  
 
-#contact-appel .inner-content{z-index:20;} 
-#appel-a-projets .inner-content{z-index:20;}  
-
-#partenaires .inner-content{
+#partners .inner-content{
 	.text-wrapper{
 		li.partenaire-el{
 			border-bottom: 1px solid $vert;
@@ -504,7 +520,7 @@ section {
 	}
 }
 
-#calendrier .inner-content{
+#planning .inner-content{
 	// padding-left: 5rem;
 	// padding-right: 5rem;
 	.colonne-wrapper li{
@@ -711,7 +727,7 @@ section {
 body[data-template="formulaire"]{
 	background: $jaune;
 }
-#formulaire{
+#form{
 	padding: 2rem 0 5rem 0;
 	background: $jaune;
 	.logo-form{
