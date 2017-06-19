@@ -10,8 +10,7 @@
  		<img src="assets/images/plan-1-gauche.png" alt="">
  	</div>
 
- 	<main data-anchor-target="#slide-1">
-     	 
+ 	<main class="main-wrapper">
     <section id="slide-1" class="homeSlide">
       <div class="bcg" 
       data-top="left: 0%;" 
@@ -76,15 +75,15 @@
 
     <!-- home page -->
     <section id="<?php echo $page->uid()?>" class="text-home">
-      <div class="inner-content small-16 small-push-1 medium-10 medium-push-4 xlarge-6 xlarge-push-6" 
+      <div class="inner-content small-16 small-push-1 medium-12 medium-push-3 large-10 large-push-4 xlarge-6 xlarge-push-6" 
       data-top="opacity:1; display:block;" 
       data-bottom="opacity:1; display:block;" 
       data--1000-bottom="opacity:1; display:block;"
       data--2000-bottom="opacity:0; display:none;">
-        <div class="title small-18 medium-16 large-14">
+        <div class="title small-18 medium-18 large-14">
           <img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
         </div>
-        <h2 class="small-12 small-push-3 medium-12 medium-push-3">
+        <h2 class="small-16 small-push-1 medium-16 medium-push-1 large-12 large-push-3">
           <?php echo $site->slogan()->html() ?>
         </h2>
 
@@ -123,7 +122,6 @@
 		<?php foreach($pages->visible() as $section) {
 		  snippet($section->uid(), array('data' => $section));
 		}?>
-
 
 </main>
 

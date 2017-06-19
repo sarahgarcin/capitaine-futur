@@ -1,10 +1,15 @@
 <?php
 
 return function($site, $pages, $page) {
-  $error = null;
-  if(r::method() === 'POST') {
-    // The form has been sent
-    // echo "The form has been sent";
+  $alert = null;
+  //if(r::method() === 'POST') {
+  if(r::is('post') && get('register')) {
+    if(!empty(get('website'))) {
+      // lets tell the bot that everything is ok
+      go($page->url());
+      exit;
+    }
+
    // put all the links in a one field
    $links = get('links');
    $strlinks= '';
@@ -37,12 +42,18 @@ return function($site, $pages, $page) {
     $title = get('name') . "-" . get('firstname');
     // Create a new page as child of the current page
     // You can also use a different page by using `page('whatever')->children()->create()`
-    $p = $page->children()->create($title, 'candidat', $data);
+    try {
+      $p = $page->children()->create($title, 'candidat', $data);
 
-    $upload = upload($p->root() . DS . '{safeName}');
-    $uploadFile = upload($p->root() . DS . '{safeName}', array('input' => 'file-folder'));
+      $upload = upload($p->root() . DS . '{safeName}');
+      $uploadFile = upload($p->root() . DS . '{safeName}', array('input' => 'file-folder'));
 
+      $success = l::get('sucess');
+      $data = array();
+    } catch(Exception $e) {
+      $alert = l::get('failed');
+    }
   }
   
-  return compact('error');
+  return compact('alert', 'data', 'success');
 };

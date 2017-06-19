@@ -1,4 +1,4 @@
-@media #{$small-only} {
+@media #{$small-only}, #{$medium-only}{
 	header {
 		.top-bar {
 			&.expanded{
@@ -30,16 +30,43 @@
 			}
 		}
 	}
+
 	p{
 		text-align: left;
 	}
 
-	#home .inner-content{
-		transform: translateY(-40%);
+	.textCartel > .inner-content{
+		height: 70vh;
+	}
+}
+
+@media #{$small-only} {
+
+	.textCartel > .inner-content{
+		padding: 1rem;
 	}
 
-	#calendrier .inner-content{
-		padding-left: 1rem;
-		padding-right: 1rem;
+	#home .inner-content{
+		transform: translateY(-40%);
+		h2{
+			font-size: 1rem;
+		}
+		.formes{
+			padding: 0.8em;
+			.teaser-button{
+				font-size: 0.8rem;
+			}
+		}
+	}
+
+	#formulaire .inner-form{
+		padding: 1rem;
+	}
+
+	.teaser figure.video {
+	 	iframe {
+			top: 30vh;
+			height:40vh;
+		}
 	}
 }

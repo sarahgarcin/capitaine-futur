@@ -12,6 +12,8 @@
     'aboutProject' => 'Votre projet',
     'aboutYou' => 'À propos de vous',
     'docsToSend' => 'Documents à envoyer',
+    'sucess' => 'Votre candidature a bien été envoyée, merci !',
+    'failed' => 'Votre candidature n\'a pas pu être envoyée, vérifiez vos informations et essayez à nouveau',
 
     'name' => 'Nom',
     'firstname' => 'Prénom',

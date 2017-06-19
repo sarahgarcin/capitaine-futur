@@ -4,15 +4,13 @@
 @import "_font-awesome.scss";
 @import "_variables.scss";
 
-
+.skrollr, body[data-template='home']{
+		overflow: hidden;
+}
 
 body {
 	font-size: 12px;
 	@include texteCourant;
-}
-
-body[data-template='home']{
-		overflow: hidden;
 }
 
 body[data-template='candidats']{
@@ -82,7 +80,7 @@ p a{
 }
 
 a{
-	
+	outline:none;
 	&:hover, .active{
 		text-decoration: underline;
 		color: $vert;
@@ -461,7 +459,10 @@ section {
 #partenaires .inner-content{z-index:20; 
 	// top: 1200vh;
 } 
-#calendrier .inner-content{z-index:10; 
+#calendrier .inner-content{
+	z-index:10; 
+	height:auto;
+	max-height: 78vh;
 	// top: 1500vh;
 } 
 #contact .inner-content{
@@ -706,6 +707,9 @@ section {
 }
 
 // Formulaire
+body[data-template="formulaire"]{
+	background: $jaune;
+}
 #formulaire{
 	padding: 3rem 0 5rem 0;
 	background: $jaune;
@@ -765,6 +769,11 @@ input[type="color"], textarea {
 
 textarea{
 	height: 150px;
+}
+
+.honey {
+  position: absolute;
+  left: -9999px;
 }
 
 .input_fields_wrap-links{

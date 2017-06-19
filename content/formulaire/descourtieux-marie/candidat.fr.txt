@@ -10,7 +10,7 @@ Links: ,
 
 ----
 
-Birthdate: file-folder
+Birthdate: 'sucess' => 'Your registration was successful, thank you for submitting your project',
 
 ----
 
@@ -38,28 +38,24 @@ Company: Fonds de dotation de l'Ensad
 
 ----
 
-Bio: file-folder
+Bio: 'sucess' => 'Your registration was successful, thank you for submitting your project',
 
 ----
 
-Philosophy: file-folder
+Philosophy: 'sucess' => 'Your registration was successful, thank you for submitting your project',
 
 ----
 
-Projecttitle: file-folder
+Projecttitle: 'sucess' => 'Your registration was successful, thank you for submitting your project',
 
 ----
 
-Resume: file-folder
+Resume: 'sucess' => 'Your registration was successful, thank you for submitting your project',
 
 ----
 
-Supernaturel: file-folder
+Supernaturel: 'sucess' => 'Your registration was successful, thank you for submitting your project',
 
 ----
 
-Visitors: file-folder
-
-----
-
-Space: Non
+Visitors: 'sucess' => 'Your registration was successful, thank you for submitting your project',

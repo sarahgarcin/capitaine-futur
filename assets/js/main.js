@@ -13,7 +13,20 @@ function init(){
 	$slide = $('.homeSlide');
 	$body = $('body');
 
-	// if($('body').attr('data-template') == 'home'){
+
+	if($('body').attr('data-template') == 'home' || $('body').attr('data-template') == 'default'){
+
+		//FadeIn all sections    
+		$body.imagesLoaded( function() {
+			// setTimeout(function() {
+			    // Resize sections
+			    adjustWindow();
+				  $body.removeClass('loading').addClass('loaded');
+				  
+			// }, 800);
+		});
+
+
 	// 	// Sauvegarde le scroll pour que quand on revient on soit au meme point
 	// 	$(window).unload(function() {
 	//     var scrollPosition = $("body").scrollTop();
@@ -23,7 +36,7 @@ function init(){
 	// 	if(localStorage.scrollPosition) {
 	// 	  $("body").scrollTop(localStorage.getItem("scrollPosition"));
 	// 	}
-	// }
+	}
 
 	// switch language
 	$('.languages li').on('click', function(){
@@ -78,16 +91,7 @@ function init(){
 		//console.log($(this), id);
 	});
 
-	
-    //FadeIn all sections    
-	$body.imagesLoaded( function() {
-		// setTimeout(function() {
-		    // Resize sections
-		    adjustWindow();
-			  $body.removeClass('loading').addClass('loaded');
-			  
-		// }, 800);
-	});
+
 	
 	// Formulaire
 	// Ajouter un lien
