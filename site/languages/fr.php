@@ -6,6 +6,7 @@
     'thanks' => 'Merci votre candidature a bien été prise en compte !',
     'apply' => 'Candidater',
     'applyForm' => 'Formulaire de candidature',
+    'required' => '* champs obligatoires',
     'back' => 'Retour',
     'yes' => 'Oui',
     'no' => 'Non',
@@ -24,7 +25,7 @@
     'phone' => 'Téléphone',
     'company' => 'Organisme / Structure / Collectif',
     'website' => 'Site Web',
-    'links' => 'Lien(s) (vidéos, projet, articles etc.)',
+    'links' => 'Lien(s) (vidéos, projets, articles etc.)',
     'addlink' => 'Ajouter un lien',
     'projectTitle' => 'Titre du projet',
     'summary' => 'Résumé du projet (1000 signes max)',
@@ -33,11 +34,11 @@
     'person' => 'Si ce projet est porté par un collectif ou plusieurs artistes, indiquez leur nom complet et leur rôle dans le projet',
     
 
-    'supernaturel' => 'Expliciter le lien du projet avec le thème « supernaturel » (1000 signes max)',
+    'supernaturel' => 'Explicitez le lien du projet avec le thème « supernaturel » (1000 signes max)',
     'visitors' => 'Décrivez l\'interaction des visiteurs avec votre oeuvre (500 signes max)',
-    'space' => 'Avez-vous besoin d\'un espace de travail?',
-    'presentation' => 'Présentation du projet comprenant note d’intention, schémas et informations techniques, planning, budget (7Mo max)',
-    'folder' => 'Dossier artistique de(s) artiste(s) incluant des travaux passés et un CV (7Mo max)',
+    'space' => 'Avez-vous besoin d\'un espace de travail ou d\'une résidence pour la création de l\'oeuvre ?',
+    'presentation' => 'Présentation du projet dans un dossier unique comprenant une note d’intention artistique, des visuels, des schémas et des informations techniques, un calendrier de réalisation mentionnant les différentes étapes de travail (conception, recherche-création, production) et un budget détaillé évaluant les ressources nécessaires à la création (10Mo max)',
+    'folder' => 'Dossier artistique incluant portfolio et CV (10Mo max)',
 	));
 
 ?>

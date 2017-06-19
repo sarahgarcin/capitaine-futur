@@ -55,9 +55,9 @@
 	<fieldset>
 		<legend><?php echo l::get('docsToSend')?></legend>
 		<label for="file"><?php echo l::get('presentation')?>*</label>
-		<input class="upload-file" name="file" data-max-size="7000" type="file" >
+		<input class="upload-file" name="file" data-max-size="10000" type="file" >
 		<label for="file-folder"><?php echo l::get('folder')?>*</label>
-		<input class="upload-file" name="file-folder" data-max-size="7000" type="file"  >
+		<input class="upload-file" name="file-folder" data-max-size="10000" type="file"  >
 	</fieldset>
 
 	<!-- honey field to prevent from spam -->

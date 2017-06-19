@@ -6,6 +6,7 @@
 
 .skrollr, body[data-template='home']{
 		overflow: hidden;
+		position:relative;
 }
 
 body {
@@ -711,7 +712,7 @@ body[data-template="formulaire"]{
 	background: $jaune;
 }
 #formulaire{
-	padding: 3rem 0 5rem 0;
+	padding: 2rem 0 5rem 0;
 	background: $jaune;
 	.logo-form{
 		margin-bottom: 2rem;
@@ -736,6 +737,7 @@ body[data-template="formulaire"]{
 label{
 	color: $vert;
 	margin-bottom: 0.5rem;
+	font-size: 0.9375rem;
 }
 
 fieldset{

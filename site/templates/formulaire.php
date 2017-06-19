@@ -2,10 +2,17 @@
 
 
  	<main id="<?php echo $page->uid()?>">
- 		<div class='logo-form small-16 small-push-1 medium-12 medium-push-3 large-10 large-push-5'>
- 			<img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
+ 		<div class="back-to-website small-16 small-push-1">
+ 			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
+ 			← <?php echo l::get('back')?>
+ 			</a>
  		</div>
-		<div class="inner-form small-16 small-push-1 medium-14 medium-push-2 large-10 large-push-4">
+ 		<div class='logo-form small-16 small-push-1 medium-12 medium-push-3 large-10 large-push-5 xlarge-10 xlarge-push-6'>
+ 			<a href="<?php echo $site->url()?>" title="<?php echo $site->title()?>">
+ 				<img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
+ 			</a>
+ 		</div>
+		<div class="inner-form small-16 small-push-1 medium-14 medium-push-2 large-10 large-push-4 xlarge-8 xlarge-push-5">
 			<ul class="languages">
 		    <?php foreach($site->languages() as $language): ?>
 		    <li<?php e($site->language() == $language, ' class="active"') ?>>
@@ -16,6 +23,7 @@
 		    <?php endforeach ?>
 		  </ul>
 			<h2><?php echo l::get('applyForm')?></h2>
+			<p><?php echo l::get('required')?></p>
 			<hr>
 			<div class="text-wrapper">
 			<?php

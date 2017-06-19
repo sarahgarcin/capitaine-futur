@@ -38,6 +38,10 @@
 	.textCartel > .inner-content{
 		height: 70vh;
 	}
+
+	body[data-template="home"] {
+    overflow: hidden!important;
+  }
 }
 
 @media #{$small-only} {

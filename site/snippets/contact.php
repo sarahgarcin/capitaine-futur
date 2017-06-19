@@ -1,5 +1,5 @@
 <section id="<?php echo $data->uid()?>" class="textCartel">
-	<div class="inner-content small-16 small-push-1 medium-12 medium-push-3 large-8 large-push-5" 
+	<div class="inner-content small-16 small-push-1 medium-12 medium-push-3 large-8 large-push-5 xlarge-6 xlarge-push-6" 
 	data-top="opacity:0;display:none;" 
 	data--27000-bottom="opacity:0;display:block;" 
 	data--27500-bottom="opacity:1;display:block;">

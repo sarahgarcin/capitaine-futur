@@ -9411,7 +9411,8 @@ th.hide-for-touch {
     left: auto; } }
 
 .skrollr, body[data-template='home'] {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 body {
   font-size: 12px;
@@ -9917,7 +9918,7 @@ body[data-template="formulaire"] {
   background: yellow; }
 
 #formulaire {
-  padding: 3rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   background: yellow; }
   #formulaire .logo-form {
     margin-bottom: 2rem; }
@@ -9937,7 +9938,8 @@ body[data-template="formulaire"] {
 
 label {
   color: #006b00;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem; }
 
 fieldset {
   border: none;
@@ -10046,7 +10048,9 @@ tr td {
   p {
     text-align: left; }
   .textCartel > .inner-content {
-    height: 70vh; } }
+    height: 70vh; }
+  body[data-template="home"] {
+    overflow: hidden !important; } }
 
 @media only screen and (max-width: 40em) {
   .textCartel > .inner-content {
