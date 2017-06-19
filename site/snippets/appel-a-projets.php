@@ -2,19 +2,21 @@
 	<div class="inner-content small-16 small-push-1 medium-16 medium-push-1 large-12 large-push-3 xlarge-8 xlarge-push-5" 
 	data-top="opacity:0; display:none;" 
 	data-bottom="opacity:0; display:none;" 
-	data--7000-bottom="opacity:0; display:block;"
-	data--8000-bottom="opacity:1; display:block;"
-	data--9000-bottom="opacity:1; display:block;"
-	data--10000-bottom="opacity:0; display:none;" >
+	data--10000-bottom="opacity:0; display:block;"
+	data--10500-bottom="opacity:1; display:block;"
+	data--11000-bottom="opacity:1; display:block;"
+	data--11500-bottom="opacity:0; display:none;" >
 		<div class="text-wrapper">
 			<div class="entete-text">
 				<?php echo $data->entete()->kirbytext() ?>
 			</div>
 			<div class="appel-liens">
-				<?php $file = $data->pdf()->toFile();?>
-				<a href="<?php echo $file->url()?>" title="<?php echo $file->name()?>" target="_blank">
-					PDF
-				</a>
+				<?php if($data->pdf()->isNotEmpty()):?>
+					<?php $file = $data->pdf()->toFile();?>
+					<a href="<?php echo $file->url()?>" title="<?php echo $file->name()?>" target="_blank">
+						PDF
+					</a>
+				<?php endif;?>
 				<a href="<?php echo $pages->find('formulaire')->url()?>" title="<?php echo $pages->find('formulaire')->title()?>" target="_blank">
 					<?php echo l::get('apply')?>
 				</a>

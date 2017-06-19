@@ -27,12 +27,12 @@
     'projectTitle' => 'Titre du projet',
     'summary' => 'Résumé du projet (1000 signes max)',
     'bio' => 'Biographie de l’artiste (500 signes max)',
-    'philosophy' => 'Philosophie de l\'artiste (500 signes max)',
-    'person' => 'Autre(s) personne(s) impliquée(s) dans le projet',
+    'philosophy' => 'Démarche artistique (500 signes max)',
+    'person' => 'Si ce projet est porté par un collectif ou plusieurs artistes, indiquez leur nom complet et leur rôle dans le projet',
     
 
-    'supernaturel' => 'Expliciter le lien du projet avec le sujet « supernaturel » (1000 signes max)',
-    'visitors' => 'Décrivrez l\'interaction des visiteurs avec votre oeuvre (500 signes max)',
+    'supernaturel' => 'Expliciter le lien du projet avec le thème « supernaturel » (1000 signes max)',
+    'visitors' => 'Décrivez l\'interaction des visiteurs avec votre oeuvre (500 signes max)',
     'space' => 'Avez-vous besoin d\'un espace de travail?',
     'presentation' => 'Présentation du projet comprenant note d’intention, schémas et informations techniques, planning, budget (7Mo max)',
     'folder' => 'Dossier artistique de(s) artiste(s) incluant des travaux passés et un CV (7Mo max)',

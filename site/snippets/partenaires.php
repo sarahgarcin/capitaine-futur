@@ -3,10 +3,10 @@
 	  <div class="inner-content small-16 small-push-1 medium-8 medium-push-8 xlarge-5 xlarge-push-12" 
 		data-top="opacity:0;display:none;" 
 		data-bottom="opacity:0;display:none;" 
-		data--6000-bottom="opacity:0;display:block;" 
-		data--6500-bottom="opacity:1;display:block;"
-		data--7000-bottom="opacity:1;display:block;"
-		data--7500-bottom="opacity:0;display:none;">
+		data--15500-bottom="opacity:0;display:block;" 
+		data--16000-bottom="opacity:1;display:block;"
+		data--16500-bottom="opacity:1;display:block;"
+		data--17000-bottom="opacity:0;display:none;">
 	  <div class="text-wrapper">
 	  	<ul>
 	  		<?php foreach($data->children()->visible() as $part):?>

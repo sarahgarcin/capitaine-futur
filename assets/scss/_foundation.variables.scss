@@ -48,6 +48,9 @@ $topbar-link-color-active: $vert;
 $topbar-link-bg-active: $jaune;
 $topbar-link-bg-active-hover: $jaune;
 
+$topbar-breakpoint: (1200px) !default; // Change to 9999px for always mobile layout
+$topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
+
 
 
 

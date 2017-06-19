@@ -28,7 +28,7 @@ l::set(array(
     'summary' => 'Project summary (max. 1,000 characters)',
     'bio' => 'Artist biographie(s) (max. 500 characters)',
     'philosophy' => 'Artistic philosophy (max. 500 characters)',
-    'person' => 'Person(s) involved',
+    'person' => 'Si ce projet est porté par un collectif ou plusieurs artistes, indiquez leur nom complet et leur rôle dans le projet',
     
     'supernaturel' => 'Explanation of how your project relates to the theme <<Supernatural>> (max. 1,000 characters)',
     'visitors' => 'Describe how visitors will experience the artwork (max. 500 characters)',

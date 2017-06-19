@@ -305,7 +305,7 @@ main {
 
 /* Slide 6 */
 #slide-6 .bcg {
-	background-image:url('../images/plan-5.png');
+	background-image:url('../images/plan-5.jpg');
 	z-index:1;
 	top: $topbar-height;
 }
@@ -354,6 +354,10 @@ main {
 // 	position:relative;
 // }
 
+body[data-template="default"]{
+	margin-top: 3rem;
+}
+
 section {
 	.inner-content{
 		opacity:0;
@@ -372,6 +376,22 @@ section {
 		.logos{
 			margin-top: 2em;
 			li:first-child{padding-left:0;}
+		}
+		.footer-menu{
+			li{
+				display:inline-block;
+				&:last-child{
+					&::after{content: "";}
+				} 
+				&::after{
+					content: "|";
+					padding-right: 1em;
+				}
+				a{
+					text-decoration: underline;
+					padding-right: 1em;
+				}
+			}
 		}
 	}
 }
@@ -444,9 +464,11 @@ section {
 #calendrier .inner-content{z-index:10; 
 	// top: 1500vh;
 } 
-#contact .inner-content{z-index:20; 
-	// top: 1800vh;
+#contact .inner-content{
+	z-index:20; 
+	
 } 
+
 #contact-appel .inner-content{z-index:20;} 
 #appel-a-projets .inner-content{z-index:20;}  
 
@@ -610,40 +632,40 @@ section {
   100% { background-position: 0 -5000px; }
 }
 
-#oiseaux .anim{
-  width: 50px;
-  height: 49px;
-  position: fixed;
-	top: 60px;
-	left: 58%;
-	z-index:1;
-  margin: 2em auto; 
-  background:  transparent url('../images/oiseaux3/sprites3.png') 0 0 no-repeat;
-  animation: oiseau 2.5s steps(26) infinite;
-}
+// #oiseaux .anim{
+//   width: 50px;
+//   height: 49px;
+//   position: fixed;
+// 	top: 60px;
+// 	left: 58%;
+// 	z-index:1;
+//   margin: 2em auto; 
+//   background:  transparent url('../images/oiseaux3/sprites3.png') 0 0 no-repeat;
+//   animation: oiseau 2.5s steps(26) infinite;
+// }
 
 
-@keyframes oiseau {
-  100% { background-position: 0 -1263px; }
-}
+// @keyframes oiseau {
+//   100% { background-position: 0 -1263px; }
+// }
 
-#arbre .anim{
-  width: 160px;
-  height: 227px;
-  position: fixed;
-  top: 15vh;
-	//top: 20px;
-	left: 28.7%;
-	z-index:1;
-  margin: 2em auto; 
-  background:  transparent url('../images/arbre/sprites3.png') 0 0 no-repeat;
-  animation: arbre 3.5s steps(51) infinite;
-}
+// #arbre .anim{
+//   width: 160px;
+//   height: 227px;
+//   position: fixed;
+//   top: 15vh;
+// 	//top: 20px;
+// 	left: 28.7%;
+// 	z-index:1;
+//   margin: 2em auto; 
+//   background:  transparent url('../images/arbre/sprites3.png') 0 0 no-repeat;
+//   animation: arbre 3.5s steps(51) infinite;
+// }
 
 
-@keyframes arbre {
-  100% { background-position: 0 -11569px; }
-}
+// @keyframes arbre {
+//   100% { background-position: 0 -11569px; }
+// }
 
 //vimeo 
 
@@ -798,6 +820,21 @@ tr td{
 	word-wrap: break-word;
 	width: 200px;
 }
+
+// changing top bar break point
+// meta.foundation-mq-topbar {
+//   font-family: "/only screen and (min-width:1200px/";
+//   width: 1200px;
+// }
+
+// @media only screen and (min-width: 1200px) {
+//   .top-bar {
+//     *zoom: 1;
+//     overflow: visible;
+//   }
+// }
+
+
 
 
 @import "mobile.scss";

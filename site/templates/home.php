@@ -2,7 +2,7 @@
 <?php snippet('menu') ?>
 
  	<div id="preloader">
- 		<img src="assets/images/plan-5.png" alt="">
+ 		<img src="assets/images/plan-5.jpg" alt="">
  		<img src="assets/images/plan-4.png" alt="">
  		<img src="assets/images/plan-3.png" alt="">
  		<img src="assets/images/plan-2.png" alt="">
@@ -32,10 +32,10 @@
       	<div class="bcg" 
         data-top="top: 100%;" 
         data-bottom="top: 100%;"
-        data--4000-bottom="top: 100%;"
-        data--5000-bottom="top: 0%;" 
-        data--7000-bottom="top: 0%;"  
-        data--8000-bottom="top: 100%;" >
+        data--13000-bottom="top: 100%;"
+        data--14000-bottom="top: 0%;" 
+        data--16000-bottom="top: 0%;"  
+        data--17000-bottom="top: 100%;" >
         </div>
     </section>
 
@@ -44,18 +44,18 @@
         data-top="top: 100%;" 
         data--3000-bottom="top: 100%;"
         data--4000-bottom="top: 0%;"
-        data--6500-bottom="top: 0%;"
-        data--7500-bottom="top: 100%;">
+        data--7000-bottom="top: 0%;"
+        data--8000-bottom="top: 100%;">
         </div>
     </section>
 
     <section id="slide-5" class="homeSlide">
       	<div class="bcg" data-top="top: 100%;" 
       	data-bottom="top: 100%;" 
-      	data--9500-bottom="top: 100%;"
-      	data--11000-bottom="top: 10%;"
-      	data--13500-bottom="top: 10%;" 
-        data--14000-bottom="top: 100%;" >
+      	data--21000-bottom="top: 100%;"
+      	data--22500-bottom="top: 10%;"
+      	data--25500-bottom="top: 10%;" 
+        data--26500-bottom="top: 100%;" >
         </div>
     </section>
 
@@ -63,12 +63,12 @@
       	<div class="bcg small-18"
         data-top="width:100%; height:100%; left:0%;" 
         data--3000-bottom="width:170%; height:170%; left:0%;"
-        data--6500-bottom="width:170%; height:170%; left:0%;"
-        data--9000-bottom="width:170%; height:170%; left:-65%;"
+        data--8000-bottom="width:170%; height:170%; left:0%;"
         data--10000-bottom="width:170%; height:170%; left:-65%;"
-        data--11000-bottom="width:130%; height:130%; left:-25%;"
-        data--12000-bottom="width:130%; height:130%; left:-25%;"
-        data--13000-bottom="width:100%; height:100%; left:0%;">
+        data--12000-bottom="width:170%; height:170%; left:-65%;"
+        data--13000-bottom="width:130%; height:130%; left:-25%;"
+        data--17000-bottom="width:130%; height:130%; left:-25%;"
+        data--18000-bottom="width:100%; height:100%; left:0%;">
         </div>
     </section>
 
@@ -81,10 +81,10 @@
       data-bottom="opacity:1; display:block;" 
       data--1000-bottom="opacity:1; display:block;"
       data--2000-bottom="opacity:0; display:none;">
-        <div class="title small-16 medium-16 large-14">
+        <div class="title small-18 medium-16 large-14">
           <img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
         </div>
-        <h2 class="medium-12 medium-push-3">
+        <h2 class="small-12 small-push-3 medium-12 medium-push-3">
           <?php echo $site->slogan()->html() ?>
         </h2>
 

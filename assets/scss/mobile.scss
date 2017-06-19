@@ -6,20 +6,26 @@
 				position: fixed;
 			}
 			.title-area{
-				margin-left:1.66667rem;
+				margin-left:0.8rem;
 			}
 			.top-bar-section {
-				ul li{background:$jaune;}
+				ul li{
+					background:$jaune;
+					margin-bottom: 0.5em;
+				}
 				.left{
 					margin-left: 0;
-					&.social-network{
+
+					&.social-network, &.newsletter{
 						float:none !important;
+						line-height: 1.2;
 						li{display:inline-block;}
 					}
 				}
 				.right{
 					float:none !important;
 					padding-bottom: 2em;
+					padding-left: 0.8rem;
 				}
 			}
 		}

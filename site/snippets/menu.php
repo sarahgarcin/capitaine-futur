@@ -17,12 +17,18 @@
 	  <section class="top-bar-section menu">
 	    <!-- Left Nav Section -->
 	    <ul class="left">
-	    	<?php foreach($pages->visible() as $page):?>
-	    		<?php if($page->uid() != 'contact'):?>
+	    	<?php foreach($pages->visible() as $element):?>
+	    		<?php if($element->uid() != 'contact'):?>
 		      	<li class="menu-el">
-		      		<a <?php e($page->isOpen(), ' class="active"') ?> href="#<?php echo $page->uid()?>" title="<?php echo $page->uid()?>">
-								<?php echo $page->title()->html()?>
-							</a>
+		      		<?php if($page->template() != 'default'):?>
+			      		<a <?php e($element->isOpen(), ' class="active"') ?> href="#<?php echo $element->uid()?>" title="<?php echo $element->uid()?>" data-id="<?php echo $element->uid()?>">
+									<?php echo $element->title()->html()?>
+								</a>
+							<?php else: ?>
+								<a href="<?php echo $site->url()?>#<?php echo $element->uid()?>" title="<?php echo $element->uid()?>">
+									<?php echo $element->title()->html()?>
+								</a>
+							<?php endif; ?>
 						</li>
 					<?php endif ?>
 	    	<?php endforeach ?>
@@ -56,9 +62,15 @@
 			  </ul>
 			  <ul class="infos-menu">
 			  	<li class="menu-el">
-					  <a <?php e($page->isOpen(), ' class="active"') ?> href="#<?php echo $pages->find('contact')?>" title="<?php echo $pages->find('contact')?>">
-							<?php echo $pages->find('contact')->title()->html()?>
-						</a>
+			  		<?php if($page->template() != 'default'):?>
+						  <a <?php e($pages->find('contact')->isOpen(), ' class="active"') ?> href="#<?php echo $pages->find('contact')?>" title="<?php echo $pages->find('contact')?>" data-id="<?php echo $pages->find('contact')?>">
+								<?php echo $pages->find('contact')->title()->html()?>
+							</a>
+						<?php else: ?>
+							<a href="<?php echo $site->url()?>#<?php echo $pages->find('contact')?>" title="<?php echo $pages->find('contact')?>">
+								<?php echo $pages->find('contact')->title()->html()?>
+							</a>
+						<?php endif; ?>
 					</li>
 				</ul>
 			</div>
