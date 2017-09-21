@@ -1,4 +1,4 @@
-title: Page
+title: Article
 
 pages: false
 files: true
@@ -11,6 +11,34 @@ fields:
   title:
     label: Titre
     type:  text
+  description:
+    label: Description
+    type:  text
+    help: Texte de moins de 10 mots qui s'affiche à l'ouverture du sous-menu
+  thumb:
+    label: Image de couverture
+    type: selector
+    mode: single
+  links: 
+    label: Liens rapides 
+    type: structure
+    fields:
+      linktitle:
+        label: Titre du lien
+        type:  text
+        width: 1/2
+      link:
+        label: Lien
+        type: multiselect
+        required: true
+        search: true
+        options: query
+        query:
+          page: /
+          fetch: pages
+        width: 1/2
+        icon:  link
+
   text:
     label: Texte
     type:  markdown

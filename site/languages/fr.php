@@ -2,6 +2,7 @@
 
 	l::set(array(
     'video' => 'Vidéo',
+    'appel-date' => "Appel à oeuvres prolongé > 06.09.17 ",
     'submit' => 'Envoyer',
     'cancel' => 'Annuler',
     'thanks' => 'Merci votre candidature a bien été prise en compte !',

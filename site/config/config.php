@@ -15,7 +15,8 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', 'K2-PRO-00000c0000c00b0cd00f000d0000f000');
+
 
 /*
 
@@ -59,8 +60,8 @@ c::get('smartypants.space.frenchquote', '&#160;');                              
 
 
 // resize image on upload
-kirby()->hook('panel.file.upload', 'resizeImage');
-kirby()->hook('panel.file.replace', 'resizeImage');
+// kirby()->hook('panel.file.upload', 'resizeImage');
+// kirby()->hook('panel.file.replace', 'resizeImage');
 
 function resizeImage($file) {
   // set a max. dimension

@@ -1,0 +1,43 @@
+title: Voyage
+
+pages: false
+files: true
+  fields:
+    caption:
+      label: Caption
+      type: markdown
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  subtitle:
+    label: Sous-Titre
+    type:  text
+  thumb:
+    label: Image de couverture
+    type: selector
+    mode: single
+  links: 
+    label: Liens rapides 
+    type: structure
+    fields:
+      linktitle:
+        label: Titre du lien
+        type:  text
+        width: 1/2
+      link:
+        label: Lien
+        type: multiselect
+        required: true
+        search: true
+        options: query
+        query:
+          page: /
+          fetch: pages
+        width: 1/2
+        icon:  link
+
+  text:
+    label: Texte
+    type:  markdown

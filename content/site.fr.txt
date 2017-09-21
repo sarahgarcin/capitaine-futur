@@ -6,7 +6,7 @@ Author:
 
 ----
 
-Description: Thinking and Tinkering with art & technology
+Description: L'art pour apprivoiser les technologies
 
 ----
 
@@ -14,7 +14,7 @@ Copyright:
 
 ----
 
-Slogan: Thinking and Tinkering<br> with art & technology
+Slogan: L'art pour apprivoiser <br> les technologies
 
 ----
 
@@ -42,4 +42,4 @@ Socialnetworks:
 
 ----
 
-Teaser: (vimeo: https://vimeo.com/62345949)
+Teaser: (vimeo: https://vimeo.com/221595382)

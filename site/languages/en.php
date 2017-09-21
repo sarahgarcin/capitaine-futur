@@ -2,6 +2,7 @@
 
 l::set(array(
     'video' => 'Video',
+    'appel-date' => "Open call extended > 6 Sept 2017",
     'submit' => 'Submit',
     'cancel' => 'Cancel',
     'thanks' => 'Thank you !',
@@ -34,11 +35,11 @@ l::set(array(
     'philosophy' => 'Artistic philosophy (max. 500 characters)',
     'person' => 'Please specify the full name and the role of every person involved in the project and/or the collective presenting the application',
     
-    'supernaturel' => 'Explain how your project relates to the theme "Supernatural" (max. 1,000 characters)',
+    'supernaturel' => 'Explain how your project relates to the theme "Super-natural" (max. 1,000 characters)',
     'visitors' => 'Describe how visitors will experience the artwork (max. 500 characters)',
     'space' => 'Do you require studio space or art residency to produce your artwork?',
-    'presentation' => 'Please provide a description of the project with an artist’s statement, visuals/diagrams, technical information, a project timetable indicating the various steps in the process (design, research-creation and production) and a detailed budget with estimates of the resources required',
-    'folder' => 'Portfolio with previous projects and CV',
+    'presentation' => 'Please provide a description of the project with an artist’s statement, visuals/diagrams, technical information, a project timetable indicating the various steps in the process (design, research-creation and production) and a detailed budget with estimates of the resources required (max. 10Mo)',
+    'folder' => 'Portfolio with previous projects and CV (max. 10Mo)',
 
 ));
 

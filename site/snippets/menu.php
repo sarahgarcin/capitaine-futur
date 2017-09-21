@@ -1,81 +1,59 @@
-<header id="header" class="fixed">
-
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	    	<!-- <a href="<?php e($page->template() != 'home', $site->url(), '#')?>"> -->
-	    	<a href="<?php echo $site->url()?>" alt="<?php echo $site->title()?>">
-	    		<img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
-	    	</a>
-	      <h1><?php echo $site->title()->html()?></h1>
-	    	
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-	  </ul>
-
-	  <section class="top-bar-section menu">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	    	<?php foreach($pages->visible() as $element):?>
-	    		<?php if($element->uid() != 'contacts'):?>
-		      	<li class="menu-el">
-		      		<?php if($page->template() != 'default'):?>
-			      		<a <?php e($element->isOpen(), ' class="active"') ?> href="#<?php echo $element->uid()?>" title="<?php echo $element->uid()?>" data-id="<?php echo $element->uid()?>">
-									<?php echo $element->title()->html()?>
+<header id="header">
+	<div class="title siteName">
+		<a href="<?php echo $site->url()?>" alt="<?php echo $site->title()?>">
+		  <img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
+		</a>
+		<h1><?php echo $site->title()->html()?></h1>
+		
+	</div>
+	<nav>
+		<ul>
+			<?php foreach($pages->visible() as $menu):?>
+				<li>
+					<a <?php e($menu->isOpen(), ' class="active"') ?> href="#" title="<?php echo $menu->title()?>">
+						<?php echo $menu->title()->html();?>
+					</a>
+					<ul class="submenu">
+						<?php foreach($menu->children()->visible() as $submenu):?>
+							<li>
+								<a <?php e($submenu->isOpen(), ' class="active"') ?> href="<?php echo $submenu->url()?>" title="<?php echo $submenu->title()?>">
+									<?php echo $submenu->title()->html();?>
 								</a>
-							<?php else: ?>
-								<a href="<?php echo $site->url()?>#<?php echo $element->uid()?>" title="<?php echo $element->uid()?>">
-									<?php echo $element->title()->html()?>
-								</a>
-							<?php endif; ?>
-						</li>
-					<?php endif ?>
-	    	<?php endforeach ?>
-
-	    </ul>
-	   <?php if($site->socialnetworks()->isNotEmpty()): ?>
-				<div class="social-network left">
-					<ul>
-					<?php foreach($site->socialnetworks()->toStructure() as $socialnetwork): ?>
-						<li>
-							<a href="<?php echo $socialnetwork->link() ?>" itemprop="url" target="_blank">
-								<i class="fa <?php echo $socialnetwork->icon()->html() ?>" aria-hidden="true"></i>
-					    </a>
-						</li>
-					<?php endforeach ?>
+								<span><?php echo $submenu->description()->html()?></span>
+							</li>
+						<?php endforeach?>
 					</ul>
-				</div>
-			<?php endif ?>
-			<div class="newsletter left">
-				<a href="http://eepurl.com/cS1QX9" title="suscribe newsletter" target='_blank'>Newsletter</a>
-			</div>
-	    <div class="right">
-			  <ul class="languages">
-			    <?php foreach($site->languages() as $language): ?>
-			    <li<?php e($site->language() == $language, ' class="active"') ?> data-language=<?php echo $site->url($language->code())?> >
-			      <!-- <a href="<?php echo $site->url($language->code()) ?>"> -->
-			        <?php echo html($language->name()) ?>
-			      <!-- </a> -->
-			    </li>
-			    <?php endforeach ?>
-			  </ul>
-			  <ul class="infos-menu">
-			  	<li class="menu-el">
-			  		<?php if($page->template() != 'default'):?>
-						  <a <?php e($pages->find('contacts')->isOpen(), ' class="active"') ?> href="#<?php echo $pages->find('contacts')?>" title="<?php echo $pages->find('contacts')?>" data-id="<?php echo $pages->find('contacts')?>">
-								<?php echo $pages->find('contacts')->title()->html()?>
-							</a>
-						<?php else: ?>
-							<a href="<?php echo $site->url()?>#<?php echo $pages->find('contacts')?>" title="<?php echo $pages->find('contacts')?>">
-								<?php echo $pages->find('contacts')->title()->html()?>
-							</a>
-						<?php endif; ?>
-					</li>
-				</ul>
-			</div>
-	  </section>
+				</li>
+			<?php endforeach ?>
+		</ul>
 	</nav>
-<!-- 	<div id="bar"></div>
-	 -->
+
+	<ul class="menu-secondaire">
+		<li class="languages">
+	    <?php foreach($site->languages() as $language): ?>
+	    <span<?php e($site->language() == $language, ' class="active"') ?>?>
+	      <a href="<?php echo $page->url($language->code()) ?>">
+	       <?php echo html($language->name()) ?>
+	      </a>
+	    </span>
+	    <?php endforeach ?>
+		</li>
+		<li><a href="<?php echo $pages->find('contact')->url()?>" title="<?php echo $pages->find('contact')->title()?>"><?php echo $pages->find('contact')->title()->html()?></a></li>
+		<li><a href="http://eepurl.com/cS1QX9" title="suscribe newsletter" target='_blank'>Newsletter</a></li>
+		
+	</ul>
+
+  <?php if($site->socialnetworks()->isNotEmpty()): ?>
+		<ul class="social-network">
+			<?php foreach($site->socialnetworks()->toStructure() as $socialnetwork): ?>
+				<li>
+					<a href="<?php echo $socialnetwork->link() ?>" itemprop="url" target="_blank">
+						<i class="fa <?php echo $socialnetwork->icon()->html() ?>" aria-hidden="true"></i>
+			    </a>
+				</li>
+			<?php endforeach ?>
+		</ul>
+	<?php endif ?>
+
+	
 </header><!-- /header -->

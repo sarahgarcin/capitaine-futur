@@ -1,6 +1,9 @@
 title: Site
 
-pages: true
+pages: 
+  template: 
+    - menu
+    - default
 
 fields:
   title:

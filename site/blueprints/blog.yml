@@ -1,0 +1,17 @@
+title: Blog
+
+pages: 
+  template: 
+    - sectionblog 
+files: false
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  authors:
+    label: Auteur(s)
+    type:  text
+  description:
+    label: Description
+    type: markdown

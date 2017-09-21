@@ -1,9 +1,0 @@
-title: Formulaire
-
-pages: true
-files: true
-
-fields:
-  title:
-    label: Titre
-    type:  text

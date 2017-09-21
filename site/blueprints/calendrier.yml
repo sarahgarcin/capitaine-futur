@@ -1,17 +1,39 @@
 title: Calendrier
 
-pages:
-  template: Etapes
-files: true
+pages: article
+files: false
 
 fields:
   title:
     label: Titre
     type:  text
-  subtitle:
-    label: Sous-Titre
+  description:
+    label: Description
     type:  text
-  calendrier:
-    label: Image
-    type:  selector
-    mode:  single
+    help: Texte de moins de 10 mots qui s'affiche à l'ouverture du sous-menu
+  events:
+    label: Évènements
+    type: structure
+    entry: >
+      {{eventtitle}}<br />
+      {{datestart}} — {{dateend}}<br />
+      {{link}}
+    fields:
+      eventtitle:
+        label: Titre
+        type: text
+      datestart:
+        label: Date de début
+        type: date
+      dateend:
+        label: Date de fin
+        type: date
+      link:
+        label: Lien de la page de l'évènement
+        type: select
+        options: query
+        sort: asc
+        query:
+          page: /
+          fetch: pages
+        icon:  link

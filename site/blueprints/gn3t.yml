@@ -1,0 +1,13 @@
+title: Gallerie Texte
+
+pages: article
+files: false
+
+fields:
+  title:
+    label: Titre
+    type:  text
+  description:
+    label: Description
+    type:  text
+    help: Texte de moins de 10 mots qui s'affiche à l'ouverture du sous-menu
