@@ -66,3 +66,5 @@
    data-login="<?php e($site->user(),'true', 'false') ?>"
    data-template="<?php echo $page->template() ?>"
    data-intended-template="<?php echo $page->intendedTemplate() ?>">
+
+   <?php snippet('menu') ?>

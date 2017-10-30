@@ -1,4 +1,4 @@
-title: Article
+title: Page
 
 pages: false
 files: true
@@ -42,3 +42,8 @@ fields:
   text:
     label: Texte
     type:  markdown
+
+  imagesLeft:
+    label: Images à afficher dans la colonne de gauche
+    type: selector
+    mode: multiple  

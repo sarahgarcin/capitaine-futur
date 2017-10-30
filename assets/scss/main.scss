@@ -33,7 +33,7 @@ h2,h3,h4,p{
 }
 
 h1{
-	font-size: 1.9em;
+	@include H1;
 }
 h2{
 	@include H2;
@@ -93,10 +93,17 @@ a{
 	padding:0 !important;
 }
 
-img{
-	//width: 100%; 
-	max-width:100%;
+figcaption{
+	text-align:right;
+	padding-top: 0.3rem;
+	p, a, li{
+		font-size: rem-calc(13);
+	}
 }
+
+// img{
+// 	max-width:100%;
+// }
 
 header{
 	display: flex;
@@ -104,7 +111,7 @@ header{
   justify-content: center;
 	padding: 1rem;
 	background: $jaune;
-	height: 5rem;
+	height: $header-height;
 	position: fixed;
 	width: 100%;
 	z-index:10;
@@ -127,12 +134,12 @@ header{
 	      	font-size: rem-calc(14);
 					font-family: $bungee;
 	      }
-	   //    &:hover ul{
-				// 	display:block;
-				// }
+	      &:hover ul{
+					//display:block;
+				}
 	      > ul{
 	      	position:absolute;
-	      	top: 5rem;
+	      	top: $header-height;
 	      	left:0;
 	      	width: 100%;
 	      	margin:0;
@@ -159,8 +166,76 @@ header{
 }
 
 main{
-	padding-top: 8rem;
+	padding-top: $header-height + 1;
 	padding-bottom: 8rem;
+}
+
+.wrap{
+	width: 100%;
+	max-width:64rem;
+}
+
+.page-trame{
+	position:fixed;
+	z-index:-1;
+	top: 0;
+	right:0;
+}
+
+.page-leftCol{
+	figure.page-thumbnail{
+		margin-top: 0;
+	}
+	figure{
+		.image-wrapper{
+			@include monochrome($vert)
+			&:hover{
+				background:transparent;
+				img{
+					filter: none;
+					mix-blend-mode: normal;
+				}
+			}
+		}
+	}
+	.page-links{
+		h3, li{
+			@include texteCourant;
+			text-align: right;
+		}
+		h3{
+			font-weight:bold;
+			margin-bottom: 0;
+		}
+	}
+}
+
+body[data-template='home']{
+	overflow: hidden;
+	main{
+		background: url('../images/illu-jour.jpg');
+		background-repeat:no-repeat;
+		background-size:cover; 
+		background-position:100% 0%;
+		height:100vh;
+	}
+	.wrap{
+		position:absolute;
+		top: 30%;
+		left:50%;
+		transform: translate(-50%);
+		//transform: translateX(-50%);
+		text-align: center; 
+		.title{
+			position:relative;
+			margin:auto;
+			margin-bottom: 0.5em;
+		}
+		h2{
+			font-size: rem-calc(22);
+			text-align: center;
+		}
+	}
 }
 
 

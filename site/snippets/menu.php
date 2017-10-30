@@ -6,7 +6,7 @@
 		<h1><?php echo $site->title()->html()?></h1>
 		
 	</div>
-	<nav>
+	<nav class="navigation" role="navigation">
 		<ul>
 			<?php foreach($pages->visible() as $menu):?>
 				<li>
