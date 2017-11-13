@@ -10,9 +10,7 @@
 			<?php echo $page->text()->kirbytext()?>
 		</div>
 	</div>
-	<div class="page-trame">
-		<img src="<?php echo $site->url()?>/assets/images/trame-article.png" alt="">
-	</div>
+	<?php snippet('trame') ?>
 </main>
 <div class="blur"></div>
 

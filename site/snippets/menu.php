@@ -16,7 +16,7 @@
 					<ul class="submenu">
 						<?php foreach($menu->children()->visible() as $submenu):?>
 							<li>
-								<a <?php e($submenu->isOpen(), ' class="active"') ?> href="<?php if($submenu->template() == 'gn3t'):echo $submenu->children()->first()->url(); else:echo $submenu->url(); endif;?>" title="<?php echo $submenu->title()?>">
+								<a <?php e($submenu->isOpen(), ' class="active"') ?> href="<?php if($submenu->intendedTemplate() == 'gn3t'):echo $submenu->children()->first()->url(); else:echo $submenu->url(); endif;?>" title="<?php echo $submenu->title()?>">
 									<span class="sub-title">
 										<?php echo $submenu->title()->html();?>
 									</span>
