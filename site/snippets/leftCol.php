@@ -12,10 +12,9 @@
 			</ul>
 		</nav>
 	<?php endif ?>
-	<figure class="page-thumbnail">
-		<?php 
-			if($page->thumb()->isNotEmpty()):
+		<?php if($page->thumb()->isNotEmpty()):
 				$thumb = $page->thumb()->toFile();?>
+			<figure class="page-thumbnail">
 				<div class="image-wrapper">
 					<?php echo thumb($thumb);?>
 				</div>
@@ -24,8 +23,8 @@
 						<?php echo  $thumb->caption()->kirbytext();?>
 					</figcaption>
 				<?php endif;?>
-			<?php endif;?>
-	</figure>
+			</figure>
+		<?php endif;?>
 	<!-- Liens rapides -->
 	<?php if($page->links()->isNotEmpty()):?>
 		<nav class="page-links">

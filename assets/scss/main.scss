@@ -80,9 +80,24 @@ p a{
 
 a{
 	outline:none;
-	&:hover, .active{
-		text-decoration: underline;
+	&:hover, &.active, &:active{
+		// text-decoration: underline;
 		color: $vert;
+		// text-shadow: $jaune 0 0 20px;
+		position: relative;
+		// color: #FFF;
+		&:before{
+			content:"";
+			position: absolute;
+			top:20%;
+			left:-5%;
+			height:60%;
+			width:110%;
+			background:$jaune;
+			z-index: -1;
+			filter: blur(10px);
+
+		}
 	}
 	&:visited{
 		color: $vert;
@@ -115,8 +130,10 @@ header{
 	position: fixed;
 	width: 100%;
 	z-index:10;
+	padding-left: 20px;
+	padding-right: 40px;
 	.siteName{
-		width: 300px;
+		width: 400px;
 		min-width: 200px;
 		h1 {
 			display:none;
@@ -131,8 +148,21 @@ header{
 	    > li {
 	      flex: 1 1 auto;
 	      > a{
-	      	font-size: rem-calc(14);
+	      	font-size: rem-calc(15);
 					font-family: $bungee;
+					&:hover, &.active{
+						&:before{
+							content:"";
+							position: absolute;
+							top:10%;
+							left:-10%;
+							height:80%;
+							width:120%;
+							background:#FFF;
+							z-index: -1;
+							filter: blur(10px);
+						}
+					}
 	      }
 	      &:hover ul{
 					//display:block;
@@ -156,6 +186,8 @@ header{
 		      		span.sub-title{
 		      			font-size: rem-calc(30);
 		      			font-family: $bungee;
+		      			position:relative;
+		      			z-index: 2;
 		      		}
 		      		span.sub-des {
 		      			font-size: rem-calc(20);
@@ -163,16 +195,59 @@ header{
 		      			//position:absolute;
 		      			margin-left: 2rem;
 		      		}
+		      		&:hover, &.active{
+								span.sub-title::before{
+									content:"";
+									position: absolute;
+									top:10%;
+									left:-10%;
+									height:80%;
+									width:120%;
+									background:#FFF;
+									filter: blur(20px);
+									z-index: -1;
+								}
+							}
 		      	}
 	      	}
 	      }
 	    }
 	  }
 	}
+	.menu-secondaire{
+		text-align: right;
+		text-transform:uppercase;
+		margin-right: 1em;
+		li{line-height:1;}
+		a{
+			font-size: rem-calc(12);
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.languages{
+			span::after{
+				content: "|";
+				font-size: rem-calc(12);
+			}
+			span:last-child::after{
+				content:"";
+			}
+			span.active{
+				text-decoration: underline;
+			}
+		}
+	}
+	.social-network{
+		li{line-height: 0.9;}
+		a{
+			font-size: rem-calc(13);
+		}
+	}
 }
 
 main{
-	padding-top: $header-height + 1;
+	// padding-top: 1em;
 	padding-bottom: 8rem;
 }
 
@@ -183,7 +258,7 @@ main{
 
 .page-trame{
 	position:fixed;
-	z-index:-1;
+	z-index:-2;
 	top: 0;
 	right:0;
 }
@@ -200,6 +275,23 @@ main{
 	opacity: 1;
 	transition: background 250ms , color 250ms , opacity 250ms;
 	pointer-events: none;
+}
+
+.breadcrumb{
+	// padding: 0.5em 0.5em;
+	padding: $header-height +0.5 0.5em 0.5em 0.5em;
+	z-index:3;
+	li{
+		display:inline-block;
+		font-size: rem-calc(15);
+		&::before{
+			content: "→";
+			color: $vert;
+		}
+		&:first-child::before{
+			content: "";
+		}
+	}
 }
 
 .page-leftCol{
@@ -242,18 +334,49 @@ main{
 	}
 }
 
+.menu-image{
+	margin: 2em;
+	ul{
+		li{
+			margin-bottom: 1.5em;
+			.showcase-date{
+				font-family: $karla;
+				font-size: rem-calc(18);
+				margin-bottom: 0;
+				margin-top: 0.5em;
+			}
+			.showcase-title{
+				font-size: rem-calc(18);
+				line-height: 1.2;
+			}
+		}
+	}
+	.image-wrapper{
+		@include monochrome($vert)
+		&:hover{
+			background:transparent;
+			img{
+				filter: none;
+				mix-blend-mode: normal;
+			}
+		}
+	}
+}
+
 body[data-template='home']{
 	overflow: hidden;
+	position:relative;
 	main{
 		background: url('../images/illu-jour.jpg');
 		background-repeat:no-repeat;
 		background-size:cover; 
 		background-position:100% 0%;
 		height:100vh;
+
 	}
 	.wrap{
 		position:absolute;
-		top: 30%;
+		top: 35%;
 		left:50%;
 		transform: translate(-50%);
 		//transform: translateX(-50%);
@@ -262,10 +385,79 @@ body[data-template='home']{
 			position:relative;
 			margin:auto;
 			margin-bottom: 0.5em;
+			img{
+				width:100%;
+			}
 		}
 		h2{
-			font-size: rem-calc(22);
+			font-size: rem-calc(25);
 			text-align: center;
+		}
+	}
+	.plan-droite, .plan-gauche{
+		position: absolute;
+		// height: 80vh;	
+		width:88%;
+		top:$header-height;
+		z-index: 6;
+	}
+	.plan-droite{
+		right:0;
+	}
+	.plan-gauche{
+		left:0;
+	}
+}
+
+body[data-template='voyage']{
+	.breadcrumb{
+		padding: 0.5em 0.5em;
+		&.no-cover{
+			padding: $header-height +0.5 0.5em 0.5em 0.5em;
+		}
+	}
+	.big-cover{
+		width: 100%;
+		padding-top: 5rem;
+		height: 500px;
+		overflow:hidden;
+		img{
+			width: 100%;
+			transform:translateY(-50%);
+		}
+	}
+
+	.page-menu-parent{
+		// margin-top: 0.2em;
+		nav{
+			h3, li{
+				@include texteCourant;
+				text-align: right;
+				margin-bottom: 0.3em;
+			}
+			h3{
+				font-weight:bold;
+				margin-bottom: 0;
+				margin-top: -1px;
+			}
+		}
+	}
+
+	main{
+		padding-top: 0.5rem;
+		.page-title{
+			h1{
+				line-height: 1;
+				margin-bottom: 0;
+			}
+			h2{
+				margin-bottom: 2em;
+			}
+			h4{
+				// font-family: $karla;
+				// font-size: rem-calc(18);
+				margin-bottom: 0;
+			}
 		}
 	}
 }
@@ -273,8 +465,8 @@ body[data-template='home']{
 
 // slider
 .slider{
-  overflow:hidden;
-  margin: 2rem 0 2rem 0; 
+  // overflow:hidden;
+  margin: 1rem 0 1rem 0; 
   // &:hover button{
   // 	display:block;
   // }
@@ -295,10 +487,10 @@ body[data-template='home']{
     outline: none;
     //display:none;
     &.slick-prev{
-      left:10px;
+      left:-45px;
     }
     &.slick-next{
-      right:10px;
+      right:-45px;
     }
   }
   .slick-dots{

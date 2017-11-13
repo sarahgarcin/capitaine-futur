@@ -2,11 +2,7 @@
 <?php snippet('breadcrumb') ?>
 <main class="wrap">
 	<div class="page-title small-push-4">
-		<?php if($page->parent()->intendedTemplate() == "gn3t"):?>
-			<h1><?php echo $page->parent()->title()->html()?></h1>
-		<?php else: ?>
-			<h1><?php echo $page->title()->html()?></h1>
-		<?php endif;?>
+		<h1><?php echo $page->title()->html()?></h1>
 	</div>
 	<div class="row">
 		<?php snippet('leftCol');?>
@@ -14,7 +10,8 @@
 			<?php echo $page->text()->kirbytext()?>
 		</div>
 	</div>
-	<?php snippet('trame') ?>
+	<?php snippet('galerie-image');
+	snippet('trame') ?>
 </main>
 <div class="blur"></div>
 

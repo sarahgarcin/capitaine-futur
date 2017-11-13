@@ -14,30 +14,20 @@ fields:
   subtitle:
     label: Sous-Titre
     type:  text
+  year:
+    label: Dates
+    type:  text
   thumb:
     label: Image de couverture
     type: selector
     mode: single
-  links: 
-    label: Liens rapides 
-    type: structure
-    fields:
-      linktitle:
-        label: Titre du lien
-        type:  text
-        width: 1/2
-      link:
-        label: Lien
-        type: multiselect
-        required: true
-        search: true
-        options: query
-        query:
-          page: /
-          fetch: pages
-        width: 1/2
-        icon:  link
-
+  description:
+    label: Résumé
+    type:  markdown
   text:
     label: Texte
     type:  markdown
+  imagesSlider:
+    label: Images pour le caroussel
+    type: selector
+    mode: multiple

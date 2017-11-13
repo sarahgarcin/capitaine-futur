@@ -7,11 +7,12 @@ $(document).ready(function(){
 
 function init(){
 
-	console.log('yo');
 	// open menu
 	$('header nav > ul > li').on('click', function(e){
 		var $el = $(this).find('ul');
-		var $allEl = $('header nav > ul > li > ul')
+		var $allEl = $('header nav > ul > li > ul');
+		$('header nav > ul > li > a').removeClass('active');
+		$(this).children('a').addClass('active');
 		if($el.hasClass('active')){
 			$el.fadeOut(400);
 			$el.removeClass('active');

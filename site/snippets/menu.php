@@ -34,7 +34,7 @@
 	<ul class="menu-secondaire">
 		<li class="languages">
 	    <?php foreach($site->languages() as $language): ?>
-	    <span<?php e($site->language() == $language, ' class="active"') ?>?>
+	    <span<?php e($site->language() == $language, ' class="active"')?>>
 	      <a href="<?php echo $page->url($language->code()) ?>">
 	       <?php echo html($language->name()) ?>
 	      </a>

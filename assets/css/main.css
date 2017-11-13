@@ -9495,9 +9495,20 @@ p a {
 
 a {
   outline: none; }
-  a:hover, a .active {
-    text-decoration: underline;
-    color: #006b00; }
+  a:hover, a.active, a:active {
+    color: #006b00;
+    position: relative; }
+    a:hover:before, a.active:before, a:active:before {
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: -5%;
+      height: 60%;
+      width: 110%;
+      background: yellow;
+      z-index: -1;
+      -webkit-filter: blur(10px);
+      filter: blur(10px); }
   a:visited {
     color: #006b00; }
 
@@ -9522,9 +9533,11 @@ header {
   height: 5rem;
   position: fixed;
   width: 100%;
-  z-index: 10; }
+  z-index: 10;
+  padding-left: 20px;
+  padding-right: 40px; }
   header .siteName {
-    width: 300px;
+    width: 400px;
     min-width: 200px; }
     header .siteName h1 {
       display: none; }
@@ -9539,8 +9552,19 @@ header {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto; }
         header nav > ul > li > a {
-          font-size: 0.875rem;
+          font-size: 0.9375rem;
           font-family: "bungee", sans-serif; }
+          header nav > ul > li > a:hover:before, header nav > ul > li > a.active:before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: -10%;
+            height: 80%;
+            width: 120%;
+            background: #FFF;
+            z-index: -1;
+            -webkit-filter: blur(10px);
+            filter: blur(10px); }
         header nav > ul > li > ul {
           position: absolute;
           top: 5rem;
@@ -9559,14 +9583,47 @@ header {
               display: block; }
               header nav > ul > li > ul > li > a span.sub-title {
                 font-size: 1.875rem;
-                font-family: "bungee", sans-serif; }
+                font-family: "bungee", sans-serif;
+                position: relative;
+                z-index: 2; }
               header nav > ul > li > ul > li > a span.sub-des {
                 font-size: 1.25rem;
                 font-style: italic;
                 margin-left: 2rem; }
+              header nav > ul > li > ul > li > a:hover span.sub-title::before, header nav > ul > li > ul > li > a.active span.sub-title::before {
+                content: "";
+                position: absolute;
+                top: 10%;
+                left: -10%;
+                height: 80%;
+                width: 120%;
+                background: #FFF;
+                -webkit-filter: blur(20px);
+                filter: blur(20px);
+                z-index: -1; }
+  header .menu-secondaire {
+    text-align: right;
+    text-transform: uppercase;
+    margin-right: 1em; }
+    header .menu-secondaire li {
+      line-height: 1; }
+    header .menu-secondaire a {
+      font-size: 0.75rem; }
+      header .menu-secondaire a:hover {
+        text-decoration: underline; }
+    header .menu-secondaire .languages span::after {
+      content: "|";
+      font-size: 0.75rem; }
+    header .menu-secondaire .languages span:last-child::after {
+      content: ""; }
+    header .menu-secondaire .languages span.active {
+      text-decoration: underline; }
+  header .social-network li {
+    line-height: 0.9; }
+  header .social-network a {
+    font-size: 0.8125rem; }
 
 main {
-  padding-top: 6rem;
   padding-bottom: 8rem; }
 
 .wrap {
@@ -9575,7 +9632,7 @@ main {
 
 .page-trame {
   position: fixed;
-  z-index: -1;
+  z-index: -2;
   top: 0;
   right: 0; }
 
@@ -9592,6 +9649,18 @@ main {
   opacity: 1;
   transition: background 250ms , color 250ms , opacity 250ms;
   pointer-events: none; }
+
+.breadcrumb {
+  padding: 5.5rem 0.5em 0.5em 0.5em;
+  z-index: 3; }
+  .breadcrumb li {
+    display: inline-block;
+    font-size: 0.9375rem; }
+    .breadcrumb li::before {
+      content: "→";
+      color: #006b00; }
+    .breadcrumb li:first-child::before {
+      content: ""; }
 
 .page-leftCol nav.gn3t-menu {
   margin-top: 0.2em; }
@@ -9631,8 +9700,35 @@ main {
   font-weight: bold;
   margin-bottom: 0; }
 
+.menu-image {
+  margin: 2em; }
+  .menu-image ul li {
+    margin-bottom: 1.5em; }
+    .menu-image ul li .showcase-date {
+      font-family: "karla", sans-serif;
+      font-size: 1.125rem;
+      margin-bottom: 0;
+      margin-top: 0.5em; }
+    .menu-image ul li .showcase-title {
+      font-size: 1.125rem;
+      line-height: 1.2; }
+  .menu-image .image-wrapper {
+    background: #006b00; }
+    .menu-image .image-wrapper img {
+      mix-blend-mode: screen;
+      -webkit-filter: grayscale(100%) contrast(200%);
+      filter: grayscale(100%) contrast(200%);
+      opacity: 1; }
+    .menu-image .image-wrapper:hover {
+      background: transparent; }
+      .menu-image .image-wrapper:hover img {
+        -webkit-filter: none;
+        filter: none;
+        mix-blend-mode: normal; }
+
 body[data-template='home'] {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   body[data-template='home'] main {
     background: url("../images/illu-jour.jpg");
     background-repeat: no-repeat;
@@ -9641,7 +9737,7 @@ body[data-template='home'] {
     height: 100vh; }
   body[data-template='home'] .wrap {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     -ms-transform: translate(-50%);
     transform: translate(-50%);
@@ -9650,13 +9746,61 @@ body[data-template='home'] {
       position: relative;
       margin: auto;
       margin-bottom: 0.5em; }
+      body[data-template='home'] .wrap .title img {
+        width: 100%; }
     body[data-template='home'] .wrap h2 {
-      font-size: 1.375rem;
+      font-size: 1.5625rem;
       text-align: center; }
+  body[data-template='home'] .plan-droite, body[data-template='home'] .plan-gauche {
+    position: absolute;
+    width: 88%;
+    top: 5rem;
+    z-index: 6; }
+  body[data-template='home'] .plan-droite {
+    right: 0; }
+  body[data-template='home'] .plan-gauche {
+    left: 0; }
+
+body[data-template='voyage'] .breadcrumb {
+  padding: 0.5em 0.5em; }
+  body[data-template='voyage'] .breadcrumb.no-cover {
+    padding: 5.5rem 0.5em 0.5em 0.5em; }
+
+body[data-template='voyage'] .big-cover {
+  width: 100%;
+  padding-top: 5rem;
+  height: 500px;
+  overflow: hidden; }
+  body[data-template='voyage'] .big-cover img {
+    width: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+body[data-template='voyage'] .page-menu-parent nav h3, body[data-template='voyage'] .page-menu-parent nav li {
+  font-family: "karla", sans-serif;
+  color: #006b00;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  text-align: right;
+  margin-bottom: 0.3em; }
+
+body[data-template='voyage'] .page-menu-parent nav h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: -1px; }
+
+body[data-template='voyage'] main {
+  padding-top: 0.5rem; }
+  body[data-template='voyage'] main .page-title h1 {
+    line-height: 1;
+    margin-bottom: 0; }
+  body[data-template='voyage'] main .page-title h2 {
+    margin-bottom: 2em; }
+  body[data-template='voyage'] main .page-title h4 {
+    margin-bottom: 0; }
 
 .slider {
-  overflow: hidden;
-  margin: 2rem 0 2rem 0; }
+  margin: 1rem 0 1rem 0; }
   .slider img {
     margin: auto;
     max-width: 100%; }
@@ -9673,9 +9817,9 @@ body[data-template='home'] {
     z-index: 999;
     outline: none; }
     .slider button.slick-prev {
-      left: 10px; }
+      left: -45px; }
     .slider button.slick-next {
-      right: 10px; }
+      right: -45px; }
   .slider .slick-dots {
     margin-top: 0.5rem; }
     .slider .slick-dots li {
