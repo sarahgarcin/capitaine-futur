@@ -295,6 +295,7 @@ main{
 }
 
 .page-leftCol{
+	.empty-div{opacity:0;}
 	nav.gn3t-menu{
 		margin-top: 0.2em;
 		li{
@@ -363,6 +364,15 @@ main{
 	}
 }
 
+.page-text{
+	.slider{
+		width: 90%;
+		margin:auto;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+}
+
 body[data-template='home']{
 	overflow: hidden;
 	position:relative;
@@ -372,6 +382,16 @@ body[data-template='home']{
 		background-size:cover; 
 		background-position:100% 0%;
 		height:100vh;
+		&.night-mode{
+			background: url('../images/illu-nuit2.jpg');
+			background-repeat:no-repeat;
+			background-size:cover; 
+			background-position:100% 0%;
+			.wrap h2{
+				color: #FFF;
+				font-weight:normal;
+			}
+		}
 
 	}
 	.wrap{
@@ -392,6 +412,7 @@ body[data-template='home']{
 		h2{
 			font-size: rem-calc(25);
 			text-align: center;
+			font-weight:normal;
 		}
 	}
 	.plan-droite, .plan-gauche{
@@ -487,10 +508,10 @@ body[data-template='voyage']{
     outline: none;
     //display:none;
     &.slick-prev{
-      left:-45px;
+      left:-35px;
     }
     &.slick-next{
-      right:-45px;
+      right:-35px;
     }
   }
   .slick-dots{
