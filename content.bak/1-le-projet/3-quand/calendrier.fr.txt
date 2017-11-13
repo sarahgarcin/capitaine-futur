@@ -1,0 +1,25 @@
+Title: Quand ?
+
+----
+
+Events: 
+
+- 
+  eventtitle: Test de calendirer
+  datestart: 2017-10-14
+  dateend: 2017-11-19
+  link: quoi
+- 
+  eventtitle: Un autre test
+  datestart: 2017-09-23
+  dateend: 2017-09-24
+  link: un-evenement
+- 
+  eventtitle: test youpi
+  datestart: 2017-09-23
+  dateend: 2017-09-24
+  link: qui
+
+----
+
+Description: Les grand rendez-vous

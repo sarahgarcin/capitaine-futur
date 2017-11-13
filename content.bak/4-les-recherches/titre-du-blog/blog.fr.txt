@@ -1,0 +1,9 @@
+Title: Titre du blog
+
+----
+
+Authors: Amel Bent
+
+----
+
+Description: Les Voyages de Capitaine futur est un projet de coopération européenne porté par Cinekid [Amsterdam, Pays-Bas], la Gaîté lyrique [Paris, France], KIKK [Namur, Belgique] et Woelab [Lomé, Togo] qui produit des oeuvres originales de media art, des ateliers de fabrication, des tutoriels en ligne et une publication de recherche.

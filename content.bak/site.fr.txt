@@ -1,0 +1,45 @@
+Title: Les voyages de Capitaine futur
+
+----
+
+Author: 
+
+----
+
+Description: L'art pour apprivoiser les technologies
+
+----
+
+Copyright: 
+
+----
+
+Slogan: L'art pour apprivoiser <br> les technologies
+
+----
+
+Logo: logo-cf-03.png
+
+----
+
+Ogimage: 
+
+----
+
+Socialnetworks: 
+
+- 
+  icon: fa-facebook
+  link: >
+    https://www.facebook.com/capitainefutur.voyage
+- 
+  icon: fa-twitter
+  link: https://twitter.com/CapitaineFutur
+- 
+  icon: fa-vimeo
+  link: >
+    https://vimeo.com/channels/capitainefutur
+
+----
+
+Teaser: (vimeo: https://vimeo.com/221595382)

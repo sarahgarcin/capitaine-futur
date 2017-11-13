@@ -11,8 +11,9 @@
 		</div>
 	</div>
 	<div class="page-trame">
-		<img src="/assets/images/trame-article.png" alt="">
+		<img src="<?php echo $site->url()?>/assets/images/trame-article.png" alt="">
 	</div>
 </main>
+<div class="blur"></div>
 
 <?php snippet('footer') ?>

@@ -1,4 +1,17 @@
 <div class="page-leftCol small-18 large-5 large-push-2 columns">
+	<?php if($page->parent()->intendedTemplate() == "gn3t"):?>
+		<nav class="gn3t-menu">
+			<ul>
+			<?php foreach($page->parent()->children()->visible() as $child):?>
+			<li>
+				<a <?php e($child->isOpen(), ' class="active"') ?> href="<?php echo $child->url()?>" title="<?php echo $child->title()?>">
+					<?php echo $child->title()->html();?>
+				</a>			
+			</li>
+			<?php endforeach ?>
+			</ul>
+		</nav>
+	<?php endif ?>
 	<figure class="page-thumbnail">
 		<?php 
 			if($page->thumb()->isNotEmpty()):

@@ -16,10 +16,13 @@
 					<ul class="submenu">
 						<?php foreach($menu->children()->visible() as $submenu):?>
 							<li>
-								<a <?php e($submenu->isOpen(), ' class="active"') ?> href="<?php echo $submenu->url()?>" title="<?php echo $submenu->title()?>">
-									<?php echo $submenu->title()->html();?>
+								<a <?php e($submenu->isOpen(), ' class="active"') ?> href="<?php if($submenu->template() == 'gn3t'):echo $submenu->children()->first()->url(); else:echo $submenu->url(); endif;?>" title="<?php echo $submenu->title()?>">
+									<span class="sub-title">
+										<?php echo $submenu->title()->html();?>
+									</span>
+									<span class="sub-des"><?php echo $submenu->description()->html()?></span>
 								</a>
-								<span><?php echo $submenu->description()->html()?></span>
+								
 							</li>
 						<?php endforeach?>
 					</ul>
