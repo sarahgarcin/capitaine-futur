@@ -257,9 +257,9 @@ main{
 }
 
 .page-trame{
-	position:fixed;
+	position:absolute;
 	z-index:-2;
-	top: 0;
+	top: 4rem;
 	right:0;
 }
 
@@ -383,7 +383,7 @@ body[data-template='home']{
 		background-position:100% 0%;
 		height:100vh;
 		&.night-mode{
-			background: url('../images/illu-nuit2.jpg');
+			background: url('../images/illu-nuit.jpg');
 			background-repeat:no-repeat;
 			background-size:cover; 
 			background-position:100% 0%;
@@ -483,6 +483,57 @@ body[data-template='voyage']{
 	}
 }
 
+.calendar{
+	>table{
+		display:inline-block;
+		// height:50vh;
+	}
+	.year-2017{
+		.months{
+			.month{
+				&:first-child,&:nth-child(1),&:nth-child(2),&:nth-child(3){
+					display:none;
+				}
+			}
+		}
+	}
+	.year-2019{
+		.months{
+			.month{
+				&:last-child,&:nth-child(11),&:nth-child(10),&:nth-child(9),&:nth-child(8),&:nth-child(7){
+					display:none;
+				}
+			}
+		}
+	}
+	.day, .today{
+		// font-size: 1px;
+		padding:0px;
+		// display:none;
+		padding-right:0.5px;
+		border-right: 1px solid $vert;
+		height:30vh; 
+	}
+
+	tr{
+		background:transparent !important;
+		border:none;
+	}
+	td{
+		padding: 0;
+	}
+	table{
+		margin:0;
+		border:none;
+		border-bottom: 2px solid $vert;
+	}
+	.month{
+		border-left: 2px solid $vert;
+		height:30vh;
+		vertical-align:top;
+	}
+}
+
 
 // slider
 .slider{
@@ -531,6 +582,16 @@ body[data-template='voyage']{
     }
     button{display:none;}
   }
+}
+
+.mosaic{
+	display:flex; 
+	margin-top: 1em; 
+	margin-bottom: 1em;
+	li{
+		width: 20%;
+		padding: 0.5em;
+	}
 }
 
 

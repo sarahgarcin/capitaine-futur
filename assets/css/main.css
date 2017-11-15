@@ -9631,9 +9631,9 @@ main {
   max-width: 64rem; }
 
 .page-trame {
-  position: fixed;
+  position: absolute;
   z-index: -2;
-  top: 0;
+  top: 4rem;
   right: 0; }
 
 .blur {
@@ -9745,7 +9745,7 @@ body[data-template='home'] {
     background-position: 100% 0%;
     height: 100vh; }
     body[data-template='home'] main.night-mode {
-      background: url("../images/illu-nuit2.jpg");
+      background: url("../images/illu-nuit.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 100% 0%; }
@@ -9817,6 +9817,38 @@ body[data-template='voyage'] main {
   body[data-template='voyage'] main .page-title h4 {
     margin-bottom: 0; }
 
+.calendar > table {
+  display: inline-block; }
+
+.calendar .year-2017 .months .month:first-child, .calendar .year-2017 .months .month:nth-child(1), .calendar .year-2017 .months .month:nth-child(2), .calendar .year-2017 .months .month:nth-child(3) {
+  display: none; }
+
+.calendar .year-2019 .months .month:last-child, .calendar .year-2019 .months .month:nth-child(11), .calendar .year-2019 .months .month:nth-child(10), .calendar .year-2019 .months .month:nth-child(9), .calendar .year-2019 .months .month:nth-child(8), .calendar .year-2019 .months .month:nth-child(7) {
+  display: none; }
+
+.calendar .day, .calendar .today {
+  padding: 0px;
+  padding-right: 0.5px;
+  border-right: 1px solid #006b00;
+  height: 30vh; }
+
+.calendar tr {
+  background: transparent !important;
+  border: none; }
+
+.calendar td {
+  padding: 0; }
+
+.calendar table {
+  margin: 0;
+  border: none;
+  border-bottom: 2px solid #006b00; }
+
+.calendar .month {
+  border-left: 2px solid #006b00;
+  height: 30vh;
+  vertical-align: top; }
+
 .slider {
   margin: 1rem 0 1rem 0; }
   .slider img {
@@ -9853,6 +9885,15 @@ body[data-template='voyage'] main {
         background: yellow; }
     .slider .slick-dots button {
       display: none; }
+
+.mosaic {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  .mosaic li {
+    width: 20%;
+    padding: 0.5em; }
 
 @media only screen and (max-width: 40em), only screen and (min-width: 40.0625em) and (max-width: 64em) {
   p, li, a, ul li {
