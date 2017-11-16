@@ -60,3 +60,4 @@
 
 	
 </header><!-- /header -->
+<div class="page-overlay"></div>

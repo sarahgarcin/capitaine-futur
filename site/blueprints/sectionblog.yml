@@ -3,7 +3,8 @@ title: Section de Blog
 pages: 
   template: 
     - article
-  sort: num
+  num: date desc
+  format: dmY
 files: true
 
 fields:
