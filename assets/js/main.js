@@ -62,7 +62,7 @@ function init(){
 	});
 
 	var numberOfSlides = $('.slider .slider-image').length;
-	console.log(numberOfSlides);
+	
 	$('.slider').on('afterChange', function (event, slick, currentSlide) {
 
     if(currentSlide === numberOfSlides-1) {
@@ -79,6 +79,43 @@ function init(){
       $('.slick-prev').removeClass('hidden');
     }  
   })
+
+  // CALENDAR
+  var container = document.getElementById('calendar');
+
+  // Create a DataSet (allows two way data-binding)
+  var items = new vis.DataSet([
+    // {id: 1, content: 'item 1', start: '2013-04-20'},
+    // {id: 2, content: 'item 2', start: '2013-04-14'},
+    // {id: 3, content: 'item 3', start: '2013-04-18'},
+    // {id: 4, content: 'item 4', start: '2013-04-16', end: '2013-04-19'},
+    // {id: 5, content: 'item 5', start: '2013-04-25'},
+    // {id: 6, content: 'item 6', start: '2013-04-27'}
+  ]);
+  // var items = [];
+
+  $("#calendar .calendar-event").each(function(i){
+  	if($(this).attr("data-end") != undefined){
+			var objectToAdd = {id: i+1, content: $(this).attr("data-content"), start: $(this).attr("data-start"), end: $(this).attr("data-end")};
+  	}
+  	else{
+  		var objectToAdd = {id: i+1, content: $(this).attr("data-content"), start: $(this).attr("data-start")};
+  	}
+  	items.add(objectToAdd);
+  	//items[i] = objectToAdd;
+  	console.log(i);
+  });
+
+  // Configuration for the Timeline
+  var options = {
+  	height: "300px",
+  	horizontalScroll: true,
+  	width: "80%"
+
+  };
+
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, options);
 
 }
 

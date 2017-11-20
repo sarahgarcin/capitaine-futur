@@ -11,6 +11,7 @@
   <?php if ( c::get('environment') == 'local' ) : ?>
 
   <?= js('assets/js/plugins.js') ?>
+  <?= js('bower_components/vis/dist/vis.min.js')?>
   <?= js('assets/js/main.js') ?>
 
   <?php else: ?>

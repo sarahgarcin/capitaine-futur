@@ -5,7 +5,8 @@ kirbytext::$tags['mosaic'] = array(
 
     // $html  = '<div class="slider js_slider">';
     // $html .= '<div class="frame js_frame">';
-    $html = '<ul class="mosaic">';
+
+    $html = '<ul class="mosaic clearing-thumbs" data-clearing>';
 
     foreach($tag->page()->images()->filterBy('filename', '*=', $tag->attr('mosaic')) as $slide) {
       $html .= '<li class="mosaic-image">';

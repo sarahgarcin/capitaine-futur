@@ -1,5 +1,5 @@
-<div class="menu-image">
-	<ul class="row large-push-3">
+<div class="menu-image large-push-3">
+	<ul class="row">
 	  <?php foreach($page->children()->visible()->flip() as $project): ?>
 	    <li class="small-18 medium-9 large-6 column end">
 	        <a href="<?= $project->url() ?>">

@@ -355,7 +355,7 @@ main{
 }
 
 .menu-image{
-	margin: 2em;
+	margin: 4em 3em;
 	ul{
 		li{
 			margin-bottom: 1.5em;
@@ -502,6 +502,29 @@ body[data-template='voyage']{
 	}
 }
 
+.page-author{
+	padding-left:0;
+}
+
+body[data-template='sectionblog']{
+	h2:first-child{
+		margin-bottom:0;
+	}
+	h3.dates{
+		@include texteCourant;
+		color: #A6A6A6;
+		margin-top:0;
+		margin-bottom:1.5em;
+	}
+	.section-article{
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		padding-top: 1.5em;
+		padding-bottom: 1em;
+		border-top:3px solid $vert;
+	}
+}
+
 .calendar{
 	>table{
 		display:inline-block;
@@ -614,6 +637,37 @@ body[data-template='voyage']{
 	li{
 		width: 20%;
 		padding: 0.5em;
+	}
+}
+
+// Clearing box fundation
+.clearing-blackout{
+	background: rgba(0,107,0, 0.6);
+}
+
+.clearing-assembled .clearing-container .visible-img{
+	background: rgba(0,107,0, 0.6);
+}
+
+.clearing-assembled .clearing-container .carousel{
+	background: rgba(0,107,0, 0.6);
+	margin-top:0;
+	padding-top: 0px;
+}
+
+.clearing-container{
+	.clearing-main-prev, .clearing-main-next{
+		&:hover{
+			position:absolute;
+		}
+	}
+}
+
+.clearing-close{
+	&:hover{
+		&:before{
+			background:transparent;
+		}
 	}
 }
 

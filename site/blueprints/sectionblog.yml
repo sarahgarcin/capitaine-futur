@@ -4,7 +4,7 @@ pages:
   template: 
     - article
   num: date desc
-  format: dmY
+  format: dmY 
 files: true
 
 fields:
