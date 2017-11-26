@@ -49,36 +49,40 @@ function init(){
 	})
 
 		//init slider
-	$('.slider').slick({  
+	$slideshow = $('.slider').slick({  
 		dots: true,
-	  infinite: false,
+	  infinite: true,
 	  speed: 400,
 	  // centerMode: true,
   	// centerPadding: '60px',
   	// variableWidth: true;
 	  slidesToShow: 1,
-	  prevArrow: '<button type="button" class="slick-prev hidden"><</button>',
+	  prevArrow: '<button type="button" class="slick-prev"><</button>',
 	  nextArrow: '<button type="button" class="slick-next">></button>'
 	});
 
+	$('.slider-image').click(function() {
+    $slideshow.slick('slickGoTo', parseInt($slideshow.slick('slickCurrentSlide'))+1);
+   });
+
 	var numberOfSlides = $('.slider .slider-image').length;
 	
-	$('.slider').on('afterChange', function (event, slick, currentSlide) {
+	// $('.slider').on('afterChange', function (event, slick, currentSlide) {
 
-    if(currentSlide === numberOfSlides-1) {
-      $('.slick-next').addClass('hidden');
-    }
-    else {
-      $('.slick-next').removeClass('hidden');
-    }
+ //    if(currentSlide === numberOfSlides-1) {
+ //      $('.slick-next').addClass('hidden');
+ //    }
+ //    else {
+ //      $('.slick-next').removeClass('hidden');
+ //    }
 
-    if(currentSlide === 0) {
-      $('.slick-prev').addClass('hidden');
-    }
-    else {
-      $('.slick-prev').removeClass('hidden');
-    }  
-  })
+ //    if(currentSlide === 0) {
+ //      $('.slick-prev').addClass('hidden');
+ //    }
+ //    else {
+ //      $('.slick-prev').removeClass('hidden');
+ //    }  
+ //  })
 
   // CALENDAR
   var container = document.getElementById('calendar');
@@ -95,11 +99,20 @@ function init(){
   // var items = [];
 
   $("#calendar .calendar-event").each(function(i){
-  	if($(this).attr("data-end") != undefined){
-			var objectToAdd = {id: i+1, content: $(this).attr("data-content"), start: $(this).attr("data-start"), end: $(this).attr("data-end")};
+  	var evTitle = $(this).attr("data-content");
+  	var evLink = $(this).attr("data-link");
+  	var evStart = $(this).attr("data-start");
+  	var evEnd = $(this).attr("data-end");
+  	var evStartFormat = $(this).attr("data-start-format");
+  	var evEndFormat = $(this).attr("data-end-format");
+  	
+  	var evContent = '<a href="'+evLink+'" title="'+evTitle+'">'+evStartFormat+' — '+evEndFormat+'<br>'+evTitle+'</a>'
+
+  	if(evEnd != undefined){
+			var objectToAdd = {id: i+1, content: evContent, start: evStart, end: evEnd};
   	}
   	else{
-  		var objectToAdd = {id: i+1, content: $(this).attr("data-content"), start: $(this).attr("data-start")};
+  		var objectToAdd = {id: i+1, content: evContent, start: evStart};
   	}
   	items.add(objectToAdd);
   	//items[i] = objectToAdd;
@@ -110,7 +123,6 @@ function init(){
   var options = {
   	height: "300px",
   	horizontalScroll: true,
-  	width: "80%"
 
   };
 

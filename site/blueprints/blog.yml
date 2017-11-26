@@ -7,11 +7,17 @@ files: false
 
 fields:
   title:
-    label: Titre
+    label: 
+      fr: Titre
+      en: Title
     type:  text
   authors:
-    label: Auteur(s)
+    label: 
+      fr: Auteur(s)
+      en: Author(s)
     type:  text
   description:
-    label: Description
+    label: 
+      fr: Description
+      en: Summary
     type: markdown

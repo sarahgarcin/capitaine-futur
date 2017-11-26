@@ -10,8 +10,12 @@ Links:
 
 ----
 
-Text: 
+Text: **CRI (Centre de Recherches Interdisciplinaires)**
 
 ----
 
 Description: 
+
+----
+
+Imagesleft: 

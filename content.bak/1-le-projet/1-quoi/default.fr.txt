@@ -2,22 +2,19 @@ Title: Quoi ?
 
 ----
 
-Thumb: 6acb8ddc41d7af08a8b06850dfaca87d.jpg
+Thumb: 1.capitaine-futur-by-vinciane-verguethen-the-giant-map.jpg
 
 ----
 
 Links: 
 
 - 
-  linktitle: Qui ?
-  link: qui
-- 
-  linktitle: Capitaine Futur
-  link: le-personnage
-- 
   lientitle: Test
   link: contact
   linktitle: Contact
+- 
+  linktitle: Qui ?
+  link: qui
 
 ----
 
@@ -25,14 +22,14 @@ Text:
 
 **L'ART POUR APPRIVOISER LES TECHNOLOGIES**
 
-***Les Voyages de Capitaine futur* est un projet de coopération européenne porté par Cinekid [Amsterdam, Pays-Bas], la Gaîté lyrique [Paris, France], KIKK [Namur, Belgique] et Woelab [Lomé, Togo] qui produit des oeuvres originales de media art, des ateliers de fabrication, des tutoriels en ligne et une publication de recherche.**
+***Les Voyages de Capitaine futur* est un projet de coopération européenne porté par Cinekid (Pays-Bas), la Gaîté lyrique (France), KIKK (Belgique) et Woelab (Togo) qui produit des oeuvres originales de media art, des ateliers de fabrication, des tutoriels en ligne et une publication de recherche.**
 
 Omniprésentes et évolutives, les technologies numériques modifient notre façon de créer, de communiquer, d’apprendre et de travailler. Au-delà de leurs possibilités techniques reliant les individus, elles représentent un enjeu essentiel en termes de démocratie, de partage de connaissances et de compréhension du monde. De plus en plus accessibles, les pratiques artistiques et les avancées scientifiques sont des leviers de transformation qui font naître de nouvelles capacités sensibles, technologiques et politiques par le questionnement, l’expérimentation et la mise en récit. Dans nos sociétés démocratiques hyper-connectées, l’usage créatif des technologies déploie de nouveaux horizons pour les générations qui grandissent aujourd’hui.
 
 (slider: img)
  
 **La coopération** 
-Pour écrire les récits collectifs de l’ère numérique, (link: http://gaite-lyrique.net/text: La Gaîté Lyrique), (link: http://www.cinekid.nl/text: Cinekid), (link: http://www.kikk.be/text:KIKK) et (link: http://www.woelabo.com/text: WoeLab) proposent des explorations de notre monde technologique par l’art. Engagés dans une découverte créative et critique de la complexité du XXIe siècle, les quatre partenaires construisent leur projet autour d’un personnage imaginaire, Capitaine futur, dont les voyages entraînent les enfants dans une initiation à l’art d’aujourd’hui et à l’apprentissage des nouveaux médias.
+Pour écrire les récits collectifs de l’ère numérique, (link: http://gaite-lyrique.net/text: La Gaîté Lyrique target: _blank), (link: http://www.cinekid.nl/text: Cinekid target: _blank), (link: http://www.kikk.be/text:KIKK target: _blank) et (link: http://www.woelabo.com/text: WoeLab target: _blank) proposent des explorations de notre monde technologique par l’art. Engagés dans une découverte créative et critique de la complexité du XXIe siècle, les quatre partenaires construisent leur projet autour d’un personnage imaginaire, Capitaine futur, dont les voyages entraînent les enfants dans une initiation à l’art d’aujourd’hui et à l’apprentissage des nouveaux médias.
 
 *Les Voyages de Capitaine futur* considère les enfants comme un public à part entière, le numérique comme une matière culturelle à interroger et l’art comme le laboratoire du futur. Banc d’essai de contenus artistiques et pédagogiques, le projet sollicite la capacité des artistes-chercheurs à fabriquer des histoires, à imaginer des formes originales et à préparer l’à-venir. Il invite les enfants et les professionnels de la culture et de l’éducation qui les accompagnent à interroger leur rapport aux technologies et à augmenter leurs connaissances pour s’approprier les changements en cours.
 
@@ -53,4 +50,4 @@ Description: Une coopération à l’échelle européenne
 
 ----
 
-Imagesleft: img_1.jpg,img_2.jpg,img_3.jpg
+Imagesleft: img_1.jpg,img_2.jpg

@@ -1,7 +1,7 @@
 <div class="page-leftCol small-18 large-5 large-push-2 columns">
-	<div class="empty-div">
-		<p><?php echo $page->title()->html()?></p>
-	</div>
+<!-- 	<div class="empty-div">
+		<p><?php //echo $page->title()->html()?></p>
+	</div> -->
 	<?php if($page->parent()->intendedTemplate() == "gn3t"):?>
 		<nav class="gn3t-menu">
 			<ul>

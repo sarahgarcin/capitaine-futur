@@ -4,15 +4,15 @@
 	font-family:$bungeeShade;
 	color: $vert;
 	line-height: 1.2;
-	//text-align: center;
+
 }
 
 @mixin texteCourant{
 	font-family: $karla;
 	color: $vert;
-	font-size: rem-calc(20);
+	font-size: rem-calc(18);
 	line-height:1.3;
-	//text-align: justify;
+	// text-align: justify;
 }
 
 @mixin encart{

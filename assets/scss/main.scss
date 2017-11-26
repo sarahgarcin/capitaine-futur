@@ -82,7 +82,8 @@ a{
 	outline:none;
 	&:hover, &.active, &:active{
 		// text-decoration: underline;
-		color: $vert;
+		// color: $vert;
+		color: #FFF;
 		// text-shadow: $jaune 0 0 20px;
 		position: relative;
 		// color: #FFF;
@@ -93,11 +94,14 @@ a{
 			left:-5%;
 			height:60%;
 			width:110%;
-			background:$jaune;
+			background:$vert;
 			z-index: -1;
 			filter: blur(10px);
 
 		}
+		// &:visited{
+		// 	color: #FFF;
+		// }
 	}
 	&:visited{
 		color: $vert;
@@ -148,9 +152,11 @@ header{
 	    > li {
 	      flex: 1 1 auto;
 	      > a{
-	      	font-size: rem-calc(15);
+	      	font-size: rem-calc(16.5);
 					font-family: $bungee;
+					color: $vert;
 					&:hover, &.active{
+						color:$vert;
 						&:before{
 							content:"";
 							position: absolute;
@@ -196,6 +202,7 @@ header{
 		      			margin-left: 2rem;
 		      		}
 		      		&:hover, &.active{
+		      			color: $vert;
 								span.sub-title::before{
 									content:"";
 									position: absolute;
@@ -300,6 +307,9 @@ main{
     -1px 1px 0 #FFF,
     1px 1px 0 #FFF;  
 		//text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+		a:hover, a.active{
+			color:#FFF;
+		}
 		&::before{
 			content: "→";
 			color: $vert;
@@ -325,6 +335,13 @@ main{
 		a{
 			font-family:$bungee;
 			font-size: rem-calc(18);
+			letter-spacing: 0.05em;
+			&:hover, &.active, &:active{
+				color: #FFF;
+				&:before{
+					background: $vert;
+				}
+			}
 		}
 	}
 	figure.page-thumbnail{
@@ -346,6 +363,7 @@ main{
 		h3, li{
 			@include texteCourant;
 			text-align: right;
+			font-size: rem-calc(15);
 		}
 		h3{
 			font-weight:bold;
@@ -385,7 +403,7 @@ main{
 
 .page-text{
 	.slider{
-		width: 90%;
+		width: 100%;
 		margin:auto;
 		margin-bottom: 2rem;
 		margin-top: 2rem;
@@ -525,54 +543,93 @@ body[data-template='sectionblog']{
 	}
 }
 
-.calendar{
-	>table{
-		display:inline-block;
-		// height:50vh;
-	}
-	.year-2017{
-		.months{
-			.month{
-				&:first-child,&:nth-child(1),&:nth-child(2),&:nth-child(3){
-					display:none;
-				}
-			}
-		}
-	}
-	.year-2019{
-		.months{
-			.month{
-				&:last-child,&:nth-child(11),&:nth-child(10),&:nth-child(9),&:nth-child(8),&:nth-child(7){
-					display:none;
-				}
-			}
-		}
-	}
-	.day, .today{
-		// font-size: 1px;
-		padding:0px;
-		// display:none;
-		padding-right:0.5px;
-		border-right: 1px solid $vert;
-		height:30vh; 
-	}
+// .calendar{
+// 	>table{
+// 		display:inline-block;
+// 		// height:50vh;
+// 	}
+// 	.year-2017{
+// 		.months{
+// 			.month{
+// 				&:first-child,&:nth-child(1),&:nth-child(2),&:nth-child(3){
+// 					display:none;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.year-2019{
+// 		.months{
+// 			.month{
+// 				&:last-child,&:nth-child(11),&:nth-child(10),&:nth-child(9),&:nth-child(8),&:nth-child(7){
+// 					display:none;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.day, .today{
+// 		// font-size: 1px;
+// 		padding:0px;
+// 		// display:none;
+// 		padding-right:0.5px;
+// 		border-right: 1px solid $vert;
+// 		height:30vh; 
+// 	}
 
-	tr{
-		background:transparent !important;
-		border:none;
-	}
-	td{
-		padding: 0;
-	}
-	table{
-		margin:0;
-		border:none;
-		border-bottom: 2px solid $vert;
-	}
-	.month{
-		border-left: 2px solid $vert;
-		height:30vh;
-		vertical-align:top;
+// 	tr{
+// 		background:transparent !important;
+// 		border:none;
+// 	}
+// 	td{
+// 		padding: 0;
+// 	}
+// 	table{
+// 		margin:0;
+// 		border:none;
+// 		border-bottom: 2px solid $vert;
+// 	}
+// 	.month{
+// 		border-left: 2px solid $vert;
+// 		height:30vh;
+// 		vertical-align:top;
+// 	}
+// }
+
+#calendar{
+	.vis-timeline{
+		border: none;
+		.vis-panel{
+			border-color: $vert;
+		}
+		.vis-item {
+      border: none;
+      background-color: $vert;
+      min-height: 60px;
+      min-width: 100px;
+      padding: 5px 2px 5px 2px;
+      // text-align:center;
+      a{
+      	color: #FFF;
+      	// text-transform: uppercase;
+      }
+    }
+    .vis-time-axis .vis-grid.vis-minor {
+      border-width: 2px;
+      border-color: $vert;
+    }
+
+    .vis-time-axis .vis-grid.vis-major {
+      border-width: 2px;
+      border-color: $vert;
+    }
+
+    .vis-text{
+    	color: $vert;
+    	padding-left: 5px;
+    }
+
+    .vis-text.vis-major{
+    	font-weight: bold;
+    }
 	}
 }
 
@@ -642,15 +699,18 @@ body[data-template='sectionblog']{
 
 // Clearing box fundation
 .clearing-blackout{
-	background: rgba(0,107,0, 0.6);
+	background: rgba(0,107,0, 0.4);
+	// background: rgba(0,0,0, 0.6);
 }
 
 .clearing-assembled .clearing-container .visible-img{
-	background: rgba(0,107,0, 0.6);
+	// background: rgba(0,0,0, 0.6);
+	background: rgba(0,107,0, 0.4);
 }
 
 .clearing-assembled .clearing-container .carousel{
-	background: rgba(0,107,0, 0.6);
+	// background: rgba(0,0,0, 0.6);
+	background: rgba(0,107,0, 0.4);
 	margin-top:0;
 	padding-top: 0px;
 }

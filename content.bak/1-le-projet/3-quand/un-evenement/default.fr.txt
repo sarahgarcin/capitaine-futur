@@ -1,4 +1,4 @@
-Title: Un évènement
+Title: Festival Cinekid
 
 ----
 
@@ -11,3 +11,11 @@ Links:
 ----
 
 Text: 
+
+----
+
+Description: 
+
+----
+
+Imagesleft: 

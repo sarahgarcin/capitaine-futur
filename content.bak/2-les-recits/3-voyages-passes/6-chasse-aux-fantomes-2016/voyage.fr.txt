@@ -1,4 +1,4 @@
-Title: Chasse aux fantômes ! (2016)
+Title: Chasse aux fantômes !
 
 ----
 
@@ -6,7 +6,7 @@ Subtitle: A-t-on le droit d’avoir peur ?
 
 ----
 
-Thumb: 
+Thumb: capitaine_j.callioni_0.jpg
 
 ----
 
@@ -15,3 +15,30 @@ Links:
 ----
 
 Text: 
+
+Tandis que la dématérialisation avance à grad pas, voici venir l’heure des inventions techniques irrationnelles qui repoussent chaque fois les limites des capacités humaines. Les yeux rivés sur sa boussole, Capitaine futur avance à tâtons dans l’histoire de découvertes qui enflamment l’imaginaire. Il s’interroge sur les pouvoirs surnaturels des technologies, les spectres qui les hantent et les nouvelles croyances qu’elles engendrent. Âmes errantes, ectoplasmes radio-électriques, comètes évanouies, sens cachés ou éclairs de pensée : bienvenue dans un au-delà coloré, avec ses brouillards électromagnétiques, ses flux d’interférences, ses immensités invisibles peuplés d’impalpables habitants. Place à la grande chasse aux fantômes !
+
+**La lettre de Capitaine futur**
+
+*Chers amis,
+Je sors de ma retraite technologique et laisse derrière moi les joies du camping sauvage, 
+À bord du Capsulo, mon vaisseau rebondissant porté par des courants très musicaux, j’opère un virage temporel vers l’au-delà connecté 
+Entre l’ici et l’ailleurs, là où les apparitions se multiplient, je me dématérialise !
+Pour capter ce que mes oreilles et mes yeux ne peuvent saisir,
+je me lance dans une chasse aux fantômes, super-illusions, âmes errantes,
+spectres radioélectriques, comètes évanouies, sens cachés ou éclairs de pensée.
+Croyez au pouvoir des histoires sur les esprits,
+Et approchez-vousi de ces silhouettes floues pour construire de nouvelles réalités.
+Capitaine futur    *
+
+----
+
+Year: 2016
+
+----
+
+Description: 
+
+----
+
+Imagesslider: capitaine_j.callioni_0.jpg,concert-capitaine-futurthe-wold-under-the-moon.jpg,mai-reforme-graphique.jpg

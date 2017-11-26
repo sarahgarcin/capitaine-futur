@@ -5,8 +5,12 @@ files: true
 
 fields:
   title:
-    label: Titre
+    label: 
+      fr: Titre
+      en: Title
     type:  text
   texte: 
-    label: Texte
+    label: 
+      fr: Texte
+      en: Text
     type: markdown

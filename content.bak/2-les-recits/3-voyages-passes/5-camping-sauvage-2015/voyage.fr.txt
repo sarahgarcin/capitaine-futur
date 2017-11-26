@@ -1,4 +1,4 @@
-Title: Camping Sauvage ! (2015)
+Title: Camping Sauvage !
 
 ----
 
@@ -6,7 +6,7 @@ Subtitle: Comment rester ouvert à l’inconnu ?
 
 ----
 
-Thumb: 
+Thumb: camping-sauvage-sophie-guerrive-pour-capitaine-futur.jpg
 
 ----
 
@@ -14,4 +14,16 @@ Links:
 
 ----
 
-Text: 
+Text: Après un long séjour parmi le peuple terrien, Capitaine futur retourne à la nature se détechnologiser et prendre congé du genre humain. Cap sur les grands espaces du contre-ciel et les joies du camping sauvage à la rencontre d’espèces rares pour rester ouvert à l’inconnu. Dans les soutes du Capsulo, quelques affaires, le strict minimum de l'aventurier du quotidien : une grande loupe, un plaid bigarré, un filet qui ne retient pas trop les papillons et les poissons qui eux ne sont pas en vacances, un cahier à transformer en herbier, quelques pipettes, un pinceau d'archéologue, quelques contemplations de scientifiques, un panier à pique-nique, une grande nappe brodée d'une rose des vents qui ne cesse d'éclore, un feu de camp télé-transportable et des marshmallows impérissables, un dictionnaire pour se faire l’interprète des animaux de fantaisie, une boussole pour perdre le nord et des bottines qui connaissent la direction des spécimens encore inconnus, des tourbillons de danse et des rivières de sons.
+
+----
+
+Year: 2015
+
+----
+
+Description: 
+
+----
+
+Imagesslider: 1.-capitaine-futur-kumisho-v.verguethen.jpg,2.capitaine-futur-concert-kinrisu-by-vinciane-verguethen.jpg,3.-capitaine-futur-concert-ceci-n-est-pas-un-cheval-blevin-blectumv.verguethen.jpg,4.capitaine-futur-le-club-des-chatsyassine-devos.jpg,camping-sauvage-sophie-guerrive-pour-capitaine-futur.jpg

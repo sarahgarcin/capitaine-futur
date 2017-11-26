@@ -2,16 +2,46 @@ Title: 4 partenaires engagés
 
 ----
 
-Thumb: 
+Thumb: capitaine-futur-by-vinciane-verguethen-vue-d-exposition.jpg
 
 ----
 
 Links: 
 
+- 
+  linktitle: Quoi ?
+  link: quoi
+
 ----
 
 Text: 
 
+** (link: http://www.cinekid.nl text: CINEKID target: _blank)** [Amsterdam, Pays-Bas]
+** FESTIVAL INTERNATIONAL DE FILMS POUR ENFANTS **
+
+Depuis 30 ans, Cinekid organise un festival annuel du cinéma, de la télévision et des nouveaux médias à Amsterdam et dans 40 villes des Pays-Bas. Il rassemble 60 000 visiteurs autour d’un marché professionnel, de conférences et de masterclasses. Au sein de son MediaLab, Cinekid s’intéresse à l’évolution des technologies audiovisuelles, de l’art, du jeu, de l’écriture, des médias, afin d’anticiper leurs développements, leurs usages et les opportunités qu’ils présentent.
+Par ses expositions thématiques au carrefour de l’art, de la science et de la technologie, le Cinekid MediaLab engage les enfants dans une découverte active et créative des médias : installations manipulables, jeux, applications et ateliers donnent un aperçu des recherches à la pointe.
+
+(link: http://www.gaite-lyrique.net text: **GAÎTÉ LYRIQUE** target: _blank) [Paris, France]
+**LIEU DES CULTURES NUMÉRIQUES**
+
+La Gaîté Lyrique est l’institution culturelle parisienne spécialisée dans les cultures numériques émergentes et le dialogue entre l’art, les technologies, la recherche et la société : issue d’une nouvelle génération de lieux-tiers d’initiation, elle propose un accès démystifié à la culture, aux outils et aux savoirs, incluant enfants et adultes. À travers ses expositions, concerts, conférences, projections, ateliers, la Gaîté Lyrique fraie un chemin dans la complexité d’un monde fait d’informations, de flux et de chiffres et interroge l’impact des technologies et nos choix de développement dans une société en perpétuelle mutation.
+Interprétant le numérique comme un enjeu citoyen dont il faut faire l’apprentissage dans une perspective d’empowerment, la Gaîté lyrique explore des approches sensibles d’être, de faire ensemble et de s’approprier les changements en cours.
+
+(link: http://www.kikk.be text: **KIKK** target: _blank) [Namur, Belgique]
+**FESTIVAL, PLATEFORME CRÉATIVE ET FABLAB**
+
+Créée en 2011, l’association KIKK jette des ponts entre les mondes de l’art, la culture, les sciences et les technologies. KIKK conçoit des événements, accompagne la production d’œuvres artistiques et initie des projets éducatifs. Elle diffuse l’idée auprès du grand public, des entreprises et des étudiants, que l’art, la culture, l’innovation technologique et la créativité constituent des leviers pour le développement économique. KIKK, c’est d’abord un festival international annuel des cultures créatives et numériques qui s’articule autour d’expositions et de conférences, d’ateliers et d’un marché des innovations. Attentif à la nécessité de décloisonner les domaines, le festival met en réseau des artistes, makers, entrepreneurs et développeurs. KIKK est également partenaire fondateur du hub créatif & Fab Lab Trakk et du Smart Gastronomy Lab, premier living lab belge qui envisage la gastronomie à l’aune des technologies.
+
+(link: http://www.woelabo.com text: **WOELAB** target: _blank) [Lomé, Togo]
+**CENTRE AFRICAIN POUR LA DÉMOCRATIE TECHNOLOGIQUE**
+
+Fondé en 2012, le WoeLab est le premier laboratoire d’innovation sociale et technologique du Togo. Tête de pont d’un réseau de tech-hubs de proximité à l’échelle de la ville et de fablabs en Afrique de l’Ouest, ce centre promeut l’esprit du partage, facilite la mobilisation collective et incube une technologie #LowHighTech accessible aux couches les plus modestes de la population. Sa mission : soutenir et vulgariser des technologies de rupture. Pensé pour être répliqué, le WoeLab prône l’économie de moyens et l’innovation frugale, incite les jeunes générations à l’apprentissage de pair-à-pair, au transfert et à la mutualisation des savoirs, à l’exploitation de solutions open source, au recyclage et à la créativité locale. Il organise des cours en programmation, technologie libre et fabrication d’ordinateurs, conçoit des programmes de production d’objets utiles adaptés aux imprimantes 3D et fédère la communauté de makers lors d’événements participatifs annuels.
+
 ----
 
 Description: 
+
+----
+
+Imagesleft: capitaine-futur-by-vinciane-verguethen-vue-d-exposition.jpg,ck-install.arthur-de-smidt.jpg,ck-medialab-vuegerlinde-de-geus.jpg,kk-festival-batiment.jpg,presentation-woelab-page-35.jpg

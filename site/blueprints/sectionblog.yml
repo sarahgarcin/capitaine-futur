@@ -9,9 +9,13 @@ files: true
 
 fields:
   title:
-    label: Titre
+    label: 
+      fr: Titre
+      en: Title
     type:  text
   thumb:
-    label: Image de couverture
+    label: 
+      fr: Image de couverture
+      en: Cover picture
     type: selector
     mode: single

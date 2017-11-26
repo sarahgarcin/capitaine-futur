@@ -17,7 +17,7 @@ fields:
     entry: >
       {{eventtitle}}<br />
       {{datestart}} — {{dateend}}<br />
-      {{link}}
+      {{link}} {{linkExt}}
     fields:
       eventtitle:
         label: Titre
@@ -37,3 +37,6 @@ fields:
           page: /
           fetch: pages
         icon:  link
+      linkExt:
+        label: Lien de la page extérieure de l'évènement
+        type: url

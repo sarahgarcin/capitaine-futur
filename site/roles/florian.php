@@ -1,6 +1,6 @@
 <?php
  return [
-   'name'        => 'Miranda',
+   'name'        => 'Florian',
    'default'     => false,
    'permissions' => [
      'panel.page.*' => false,
