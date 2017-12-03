@@ -1,4 +1,4 @@
-<header id="header" class="header-for-desktop">
+<header id="header" class="header-for-mobile">
 	<div class="title siteName">
 		<a href="<?php echo $site->url()?>" alt="<?php echo $site->title()?>">
 		  <img src="<?php echo $site->logo()->toFile()->url()?>" alt="<?php echo $site->logo()->title()?>">
@@ -6,8 +6,10 @@
 		<h1><?php echo $site->title()->html()?></h1>
 		
 	</div>
-
-	<!-- <div class="menus-wrapper"> -->
+	<div class="icon-mobile-wrapper">
+		<a href="#" class="menu-icon hide-for-large-up">&#9776;</a>
+	</div>
+	<div class="menus-wrapper">
 
 		<nav class="navigation" role="navigation">
 			<ul>
@@ -68,7 +70,7 @@
 				<?php endforeach ?>
 			</ul>
 		<?php endif ?>
-	<!-- </div> -->
+	</div>
 
 	
 </header><!-- /header -->

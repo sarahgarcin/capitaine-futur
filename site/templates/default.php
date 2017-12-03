@@ -2,7 +2,7 @@
 <?php snippet('breadcrumb') ?>
 <main class="wrap">
 
-	<div class="page-title medium-push-4 medium-14">
+	<div class="page-title medium-push-4 medium-14 xlarge-push-10">
 		<?php if($page->parent()->intendedTemplate() == "gn3t"):?>
 			<h1><?php echo $page->parent()->title()->html()?></h1>
 		<?php else: ?>
@@ -12,7 +12,7 @@
 	<div class="row">
 		<?php snippet('leftCol');?>
 		
-		<div class="page-text small-18 medium-12 large-12 large-push-2 columns end <?php if($page->uid() == 'le-personnage'):?>capitaine-futur<?php endif ?>">
+		<div class="page-text small-18 medium-12 large-12 large-push-2 xlarge-push-8 columns end <?php if($page->uid() == 'le-personnage'):?>capitaine-futur<?php endif ?>">
 			<?php echo $page->text()->kirbytext()?>
 		</div>
 	</div>

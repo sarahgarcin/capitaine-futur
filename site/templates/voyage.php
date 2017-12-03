@@ -10,14 +10,14 @@
 <?php endif?>
 <?php snippet("breadcrumb");?>
 <main class="wrap">
-	<div class="page-title medium-push-4 medium-14">
+	<div class="page-title medium-push-4 medium-14 xlarge-push-10">
 		<h4><?php echo $page->year()->html()?></h4>
 		<h1><?php echo $page->title()->html()?></h1>
 		<h2><?php echo $page->subtitle()->html()?></h2>
 	</div>
 	<div class="row">
 		<?php snippet('menu-parent');?>
-		<div class="page-text small-18 medium-12 large-12 large-push-2 columns end">
+		<div class="page-text small-18 medium-12 large-12 large-push-2 xlarge-push-8 columns end">
 			<div class="description">
 				<?php echo $page->description()->kirbytext()?>
 			</div>

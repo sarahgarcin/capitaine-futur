@@ -9509,6 +9509,12 @@ figcaption {
   figcaption p, figcaption a, figcaption li {
     font-size: 0.8125rem; }
 
+.page-title {
+  margin-bottom: 1em; }
+
+.header-for-mobile {
+  display: none; }
+
 header {
   display: -ms-flexbox;
   display: flex;
@@ -9520,7 +9526,7 @@ header {
   background: yellow;
   height: 5rem;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
   padding-left: 20px;
   padding-right: 40px; }
@@ -9636,7 +9642,8 @@ main {
 
 .wrap {
   width: 100%;
-  max-width: 64rem; }
+  max-width: 64rem;
+  margin-top: 1.5em; }
 
 .page-trame {
   position: absolute;
@@ -9996,29 +10003,61 @@ body[data-template='sectionblog'] .section-article {
   padding-bottom: 1em;
   border-top: 3px solid #006b00; }
 
-#calendar .vis-timeline {
-  border: none; }
-  #calendar .vis-timeline .vis-panel {
-    border-color: #006b00; }
-  #calendar .vis-timeline .vis-item {
-    border: none;
-    background-color: #006b00;
-    min-height: 60px;
-    min-width: 100px;
-    padding: 5px 2px 5px 2px; }
-    #calendar .vis-timeline .vis-item a {
-      color: #FFF; }
-  #calendar .vis-timeline .vis-time-axis .vis-grid.vis-minor {
-    border-width: 2px;
-    border-color: #006b00; }
-  #calendar .vis-timeline .vis-time-axis .vis-grid.vis-major {
-    border-width: 2px;
-    border-color: #006b00; }
-  #calendar .vis-timeline .vis-text {
-    color: #006b00;
-    padding-left: 5px; }
-  #calendar .vis-timeline .vis-text.vis-major {
-    font-weight: bold; }
+body[data-template='sectionblog'] .pagination {
+  border-top: 1px solid #006b00;
+  padding-top: 2em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  body[data-template='sectionblog'] .pagination ul {
+    width: auto; }
+  body[data-template='sectionblog'] .pagination li {
+    display: inline-block;
+    text-align: center;
+    padding-right: 20px; }
+  body[data-template='sectionblog'] .pagination a {
+    font-size: 30px; }
+    body[data-template='sectionblog'] .pagination a.active, body[data-template='sectionblog'] .pagination a:hover {
+      color: #FFF;
+      position: relative; }
+      body[data-template='sectionblog'] .pagination a.active:before, body[data-template='sectionblog'] .pagination a:hover:before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: -10%;
+        height: 80%;
+        width: 120%;
+        background: #006b00;
+        z-index: -1;
+        -webkit-filter: blur(10px);
+        filter: blur(10px); }
+
+#calendar {
+  margin-top: 3em; }
+  #calendar .vis-timeline {
+    border: none; }
+    #calendar .vis-timeline .vis-panel {
+      border-color: #006b00; }
+    #calendar .vis-timeline .vis-item {
+      border: none;
+      background-color: #006b00;
+      min-height: 60px;
+      min-width: 100px;
+      padding: 5px 2px 5px 2px; }
+      #calendar .vis-timeline .vis-item a {
+        color: #FFF; }
+    #calendar .vis-timeline .vis-time-axis .vis-grid.vis-minor {
+      border-width: 2px;
+      border-color: #006b00; }
+    #calendar .vis-timeline .vis-time-axis .vis-grid.vis-major {
+      border-width: 2px;
+      border-color: #006b00; }
+    #calendar .vis-timeline .vis-text {
+      color: #006b00;
+      padding-left: 5px; }
+    #calendar .vis-timeline .vis-text.vis-major {
+      font-weight: bold; }
 
 .slider {
   margin: 1rem 0 1rem 0; }
@@ -10086,7 +10125,69 @@ body[data-template='sectionblog'] .section-article {
   .page-title {
     word-wrap: break-word; }
     .page-title h1 {
-      word-wrap: break-word; } }
+      word-wrap: break-word; }
+  .header-for-desktop {
+    display: none; }
+  header {
+    padding-right: 20px; }
+    header .menus-wrapper {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 4.8rem;
+      left: 0;
+      background: yellow;
+      padding: 0 1em 1em 1em;
+      z-index: 10;
+      max-height: 100vh;
+      overflow: scroll; }
+    header nav {
+      margin: 0; }
+      header nav > ul {
+        display: block; }
+        header nav > ul > li a {
+          font-size: 1.125rem;
+          line-height: 1.8; }
+        header nav > ul > li > ul {
+          position: relative;
+          top: 0; }
+          header nav > ul > li > ul > li > a {
+            padding: 0.5em 2em; }
+            header nav > ul > li > ul > li > a span.sub-title {
+              line-height: 0.8; }
+            header nav > ul > li > ul > li > a span.sub-des {
+              display: block;
+              margin-left: 0;
+              line-height: 1.2; }
+    header.header-for-mobile {
+      display: block; }
+      header.header-for-mobile .menus-wrapper {
+        display: none; }
+        header.header-for-mobile .menus-wrapper.active {
+          display: block; }
+    header .siteName {
+      width: 80%;
+      max-width: 250px;
+      float: left; }
+    header .icon-mobile-wrapper {
+      float: right;
+      vertical-align: top; }
+      header .icon-mobile-wrapper a {
+        font-size: 30px;
+        padding-top: 3px; }
+    header .menu-secondaire {
+      margin-top: 1em; }
+      header .menu-secondaire li {
+        padding-bottom: 0.2em; }
+        header .menu-secondaire li a {
+          font-size: 0.9375rem; }
+    header .social-network {
+      margin-top: 1em; }
+      header .social-network li {
+        display: inline-block;
+        padding-right: 0.5em; }
+        header .social-network li a {
+          font-size: 1.25rem; } }
 
 @media only screen and (max-width: 40em) {
   body[data-template='home'] .wrap {
@@ -10114,6 +10215,10 @@ body[data-template='sectionblog'] .section-article {
     margin-bottom: 1em; }
     body[data-template='voyage'] .page-menu-parent nav li, body[data-template='voyage'] .page-menu-parent nav h3 {
       text-align: left; } }
+
+@media only screen and (min-width: 90.0625em) {
+  header nav > ul > li > a {
+    font-size: 1.25rem; } }
 
 @media screen and (max-width: 1200px) {
   header .top-bar.expanded {

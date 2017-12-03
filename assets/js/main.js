@@ -18,6 +18,19 @@ function init(){
 		}
 	}
 
+	// open menu on mobile only
+	$('.menu-icon').on('click', function(e){
+		var $menu = $(".menus-wrapper");
+		if($menu.hasClass('active')){
+			$menu.removeClass('active');
+			$('.page-overlay').fadeOut(400);
+		}
+		else{
+			$menu.addClass('active');
+			$('.page-overlay').fadeIn(400);
+		}
+	});
+
 	// open menu
 	$('header nav > ul > li').on('click', function(e){
 		var $el = $(this).find('ul');

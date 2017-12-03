@@ -69,3 +69,4 @@
    data-intended-template="<?php echo $page->intendedTemplate() ?>">
 
    <?php snippet('menu') ?>
+   <?php snippet('menu-mobile') ?>
