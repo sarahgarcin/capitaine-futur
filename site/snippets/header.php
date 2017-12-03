@@ -11,7 +11,7 @@
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
 
   <?php echo css('bower_components/slick-carousel/slick/slick.css') ?>
-  <?php echo css('bower_components/vis/dist/vis-timeline-graph2D.min.css') ?>
+  <?php echo css('bower_components/vis/dist/vis-timeline-graph2d.min.css') ?>
   <?php if ( c::get('environment') == 'local' ) : ?>
 
   <?php echo css('assets/css/main.css') ?>

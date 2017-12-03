@@ -6,6 +6,9 @@ files: true
     caption:
       label: Caption
       type: markdown
+    focus:
+      label: Choisir le point de focus
+      type: focus
 
 fields:
   title:

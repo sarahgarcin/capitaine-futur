@@ -85,49 +85,51 @@ function init(){
  //  })
 
   // CALENDAR
-  var container = document.getElementById('calendar');
+  if($('body').attr('data-template') == 'calendrier'){
+	  var container = document.getElementById('calendar');
 
-  // Create a DataSet (allows two way data-binding)
-  var items = new vis.DataSet([
-    // {id: 1, content: 'item 1', start: '2013-04-20'},
-    // {id: 2, content: 'item 2', start: '2013-04-14'},
-    // {id: 3, content: 'item 3', start: '2013-04-18'},
-    // {id: 4, content: 'item 4', start: '2013-04-16', end: '2013-04-19'},
-    // {id: 5, content: 'item 5', start: '2013-04-25'},
-    // {id: 6, content: 'item 6', start: '2013-04-27'}
-  ]);
-  // var items = [];
+	  // Create a DataSet (allows two way data-binding)
+	  var items = new vis.DataSet([
+	    // {id: 1, content: 'item 1', start: '2013-04-20'},
+	    // {id: 2, content: 'item 2', start: '2013-04-14'},
+	    // {id: 3, content: 'item 3', start: '2013-04-18'},
+	    // {id: 4, content: 'item 4', start: '2013-04-16', end: '2013-04-19'},
+	    // {id: 5, content: 'item 5', start: '2013-04-25'},
+	    // {id: 6, content: 'item 6', start: '2013-04-27'}
+	  ]);
+	  // var items = [];
 
-  $("#calendar .calendar-event").each(function(i){
-  	var evTitle = $(this).attr("data-content");
-  	var evLink = $(this).attr("data-link");
-  	var evStart = $(this).attr("data-start");
-  	var evEnd = $(this).attr("data-end");
-  	var evStartFormat = $(this).attr("data-start-format");
-  	var evEndFormat = $(this).attr("data-end-format");
-  	
-  	var evContent = '<a href="'+evLink+'" title="'+evTitle+'">'+evStartFormat+' — '+evEndFormat+'<br>'+evTitle+'</a>'
+	  $("#calendar .calendar-event").each(function(i){
+	  	var evTitle = $(this).attr("data-content");
+	  	var evLink = $(this).attr("data-link");
+	  	var evStart = $(this).attr("data-start");
+	  	var evEnd = $(this).attr("data-end");
+	  	var evStartFormat = $(this).attr("data-start-format");
+	  	var evEndFormat = $(this).attr("data-end-format");
+	  	
+	  	var evContent = '<a href="'+evLink+'" title="'+evTitle+'">'+evStartFormat+' — '+evEndFormat+'<br>'+evTitle+'</a>'
 
-  	if(evEnd != undefined){
-			var objectToAdd = {id: i+1, content: evContent, start: evStart, end: evEnd};
-  	}
-  	else{
-  		var objectToAdd = {id: i+1, content: evContent, start: evStart};
-  	}
-  	items.add(objectToAdd);
-  	//items[i] = objectToAdd;
-  	console.log(i);
-  });
+	  	if(evEnd != undefined){
+				var objectToAdd = {id: i+1, content: evContent, start: evStart, end: evEnd};
+	  	}
+	  	else{
+	  		var objectToAdd = {id: i+1, content: evContent, start: evStart};
+	  	}
+	  	items.add(objectToAdd);
+	  	//items[i] = objectToAdd;
+	  	console.log(i);
+	  });
 
-  // Configuration for the Timeline
-  var options = {
-  	height: "300px",
-  	horizontalScroll: true,
+	  // Configuration for the Timeline
+	  var options = {
+	  	height: "300px",
+	  	horizontalScroll: true,
 
-  };
+	  };
 
-  // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options);
+	  // Create a Timeline
+	  var timeline = new vis.Timeline(container, items, options);
+	}
 
 }
 

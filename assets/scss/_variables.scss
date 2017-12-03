@@ -50,6 +50,7 @@
 	margin-bottom: 0.3em;
 	margin-top:0;
 	text-align: left;
+	line-height: 1;
 }
 
 
@@ -104,6 +105,24 @@
 	  -webkit-filter: grayscale(100%) contrast(200%);
 	  filter: grayscale(100%) contrast(200%);
 	  opacity: 1;
+	}
+}
+
+
+@mixin brume($textColor, $brumeColor, $top, $left, $height, $width, $blur){
+	color: $textColor;
+	position: relative;
+	&:before{
+		content:"";
+		position: absolute;
+		top:$top;
+		left:$left;
+		height:$height;
+		width:$width;
+		background:$brumeColor;
+		z-index: -1;
+		filter: blur($blur);
+
 	}
 }
 

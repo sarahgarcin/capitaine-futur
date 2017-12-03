@@ -1,4 +1,4 @@
-<div class="page-menu-parent small-18 large-5 large-push-2 columns">
+<div class="page-menu-parent small-18 medium-5 large-5 large-push-2 columns">
 
 	<nav>
 		<h3><?php echo $site->index()->findBy('uid','voyages-passes')->title()?></h3>

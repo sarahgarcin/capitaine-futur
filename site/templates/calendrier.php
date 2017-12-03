@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 <?php snippet('breadcrumb') ?>
 <main class="">
-	<div class="page-title small-push-4">
+	<div class="page-title medium-push-4 medium-14">
 		<?php if($page->parent()->intendedTemplate() == "gn3t"):?>
 			<h1><?php echo $page->parent()->title()->html()?></h1>
 		<?php else: ?>

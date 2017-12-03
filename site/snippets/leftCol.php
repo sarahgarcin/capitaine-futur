@@ -1,4 +1,4 @@
-<div class="page-leftCol small-18 large-5 large-push-2 columns">
+<div class="page-leftCol small-18 medium-5 large-5 large-push-2 columns">
 <!-- 	<div class="empty-div">
 		<p><?php //echo $page->title()->html()?></p>
 	</div> -->
@@ -35,7 +35,14 @@
 			<ul>
 				<?php foreach($page->links()->toStructure() as $link): ?>
 					<li>
-						<a href="<?php echo $link->link()?>" title="<?php echo $link->linktitle()?>">
+						<?php 
+							$uid = strval($link->link());
+							if($site->index()->findBy('uid', $uid)->intendedTemplate() == 'gn3t'):
+								$linkUrl = $site->index()->findBy('uid', $uid)->children()->first()->url(); 
+							else:
+								$linkUrl = $site->index()->findBy('uid', $uid)->url(); 
+							endif;?>
+						<a href="<?php echo $linkUrl?>" title="<?php echo $link->linktitle()?>">
 							<?php echo $link->linktitle()?>
 						</a>
 					</li>

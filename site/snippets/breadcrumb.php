@@ -1,8 +1,8 @@
-<nav class="breadcrumb small-push-3 <?php if($page->thumb()->isEmpty()):?>no-cover<?php endif?>">
+<nav class="breadcrumb  medium-push-3 <?php if($page->thumb()->isEmpty()):?>no-cover<?php endif?>">
   <ul>
     <?php foreach($site->breadcrumb() as $crumb): ?>
-    <li<?php e($crumb->isActive(), ' class="is-active"') ?>>
-    	<a href="<?php echo $crumb->url() ?>">
+    <li>
+    	<a <?php e($crumb->isActive(), ' class="active"') ?> href="<?php if($crumb->intendedTemplate() == 'gn3t'):echo $crumb->children()->first()->url(); else:echo $crumb->url(); endif;?>">
     		<?php echo $crumb->title()->html() ?>
     	</a>
     </li>

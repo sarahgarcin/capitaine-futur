@@ -6,6 +6,7 @@
 
 body {
 	font-size: 12px;
+	overflow-x: hidden;
 	@include texteCourant;
 }
 
@@ -80,32 +81,7 @@ p a{
 
 a{
 	outline:none;
-	&:hover, &.active, &:active{
-		// text-decoration: underline;
-		// color: $vert;
-		color: #FFF;
-		// text-shadow: $jaune 0 0 20px;
-		position: relative;
-		// color: #FFF;
-		&:before{
-			content:"";
-			position: absolute;
-			top:20%;
-			left:-5%;
-			height:60%;
-			width:110%;
-			background:$vert;
-			z-index: -1;
-			filter: blur(10px);
-
-		}
-		// &:visited{
-		// 	color: #FFF;
-		// }
-	}
-	&:visited{
-		color: $vert;
-	}
+	&:hover{color: $vert;}
 }
 
 .FigureImage-lazy {
@@ -119,10 +95,6 @@ figcaption{
 		font-size: rem-calc(13);
 	}
 }
-
-// img{
-// 	max-width:100%;
-// }
 
 header{
 	display: flex;
@@ -155,24 +127,13 @@ header{
 	      	font-size: rem-calc(16.5);
 					font-family: $bungee;
 					color: $vert;
-					&:hover, &.active{
-						color:$vert;
-						&:before{
-							content:"";
-							position: absolute;
-							top:10%;
-							left:-10%;
-							height:80%;
-							width:120%;
-							background:#FFF;
-							z-index: -1;
-							filter: blur(10px);
-						}
+					&:hover, &.active, &:active{
+						@include brume($vert, #FFF, 10%, -10%, 80%, 120%, 10px);
+					}
+					&:visited{
+						color: $vert;
 					}
 	      }
-	      &:hover ul{
-					//display:block;
-				}
 	      > ul{
 	      	position:absolute;
 	      	top: $header-height;
@@ -201,18 +162,10 @@ header{
 		      			//position:absolute;
 		      			margin-left: 2rem;
 		      		}
-		      		&:hover, &.active{
+							&:hover, &.active{
 		      			color: $vert;
-								span.sub-title::before{
-									content:"";
-									position: absolute;
-									top:10%;
-									left:-10%;
-									height:80%;
-									width:120%;
-									background:#FFF;
-									filter: blur(20px);
-									z-index: -1;
+								span.sub-title{
+									@include brume($vert, #FFF, 10%, -10%, 80%, 120%, 20px);
 								}
 							}
 		      	}
@@ -306,9 +259,9 @@ main{
     1px -1px 0 #FFF,
     -1px 1px 0 #FFF,
     1px 1px 0 #FFF;  
-		//text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 		a:hover, a.active{
-			color:#FFF;
+			@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 10px);
+			text-shadow:none;
 		}
 		&::before{
 			content: "→";
@@ -317,13 +270,11 @@ main{
 		&:first-child::before{
 			content: "";
 		}
-		a:hover{
-			text-shadow:none;
-		}
 	}
 }
 
 .page-leftCol{
+	min-height: 50px;
 	.empty-div{opacity:0;}
 	nav.gn3t-menu{
 		margin-top: 0.2em;
@@ -337,10 +288,7 @@ main{
 			font-size: rem-calc(18);
 			letter-spacing: 0.05em;
 			&:hover, &.active, &:active{
-				color: #FFF;
-				&:before{
-					background: $vert;
-				}
+				@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 10px);
 			}
 		}
 	}
@@ -368,6 +316,11 @@ main{
 		h3{
 			font-weight:bold;
 			margin-bottom: 0;
+		}
+		a{
+			&:hover{
+				@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 10px);
+			}
 		}
 	}
 }
@@ -402,13 +355,73 @@ main{
 }
 
 .page-text{
-	.slider{
-		width: 100%;
-		margin:auto;
-		margin-bottom: 2rem;
+	p + .slider, .mosaic + .slider{
 		margin-top: 2rem;
 	}
+	.slider{
+		width: 90%;
+		margin:auto;
+		margin-bottom: 2rem;
+		padding-left: 0;
+		li{
+			&::before{
+				content: "";
+				display:none;
+			}
+		}
+	}
+	.mosaic{
+		display:flex; 
+		margin-top: 1em; 
+		margin-bottom: 1em;
+		padding-left: 0;
+		li{
+			width: 20%;
+			padding: 0.5em;
+			&:first-child{
+				padding-left: 0;
+			}
+			&::before{
+				content: "";
+				display:none;
+			}
+		}
+	}
+	blockquote{
+		border: 1px solid $vert; 
+		padding: 2em 3em;
+		color: $vert;
+		margin-bottom: 2em;
+		margin-top: 1em;
+		p{
+			color: $vert;
+			font-style:italic;
+		}
+	}
+	a{
+		&:hover{
+			@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 10px);
+			text-decoration:none;
+		}
+	}
+	ul{
+		padding-left: 20px;
+	}
+	ul + p {
+		margin-top: 1.25em;
+	}
+	li{
+		&::before{
+			content:"—";
+			margin-right: 10px;
+		}
+	}
+	&.capitaine-futur{
+		border: 1px solid $vert; 
+		padding: 2em 3em;
+	}
 }
+
 
 body[data-template='home']{
 	overflow: hidden;
@@ -467,6 +480,31 @@ body[data-template='home']{
 	}
 }
 
+body[data-template='menu']{
+	.wrap .submenu {
+		li{
+			margin-bottom: 1em;
+		}
+		a{
+			span.sub-title{
+				font-size: rem-calc(50);
+				font-family: $bungee;
+				position:relative;
+			}
+			span.sub-des {
+				font-size: rem-calc(20);
+				font-style: italic;
+				display:block;
+			}
+			&:hover, &.active{
+				span.sub-title{
+					@include brume(#FFF, $vert, 25%, -8%, 50%, 110%, 30px);
+				}
+			}
+		}
+	}
+}
+
 body[data-template='voyage']{
 	.breadcrumb{
 		padding: 0.5em 0.5em;
@@ -481,7 +519,7 @@ body[data-template='voyage']{
 		overflow:hidden;
 		img{
 			width: 100%;
-			transform:translateY(-50%);
+			//transform:translateY(-50%);
 		}
 	}
 
@@ -495,8 +533,11 @@ body[data-template='voyage']{
 			}
 			h3{
 				font-weight:bold;
-				margin-bottom: 0;
+				margin-bottom: 0.5em;
 				margin-top: -1px;
+			}
+			a:hover{
+				@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 10px);
 			}
 		}
 	}
@@ -505,7 +546,6 @@ body[data-template='voyage']{
 		padding-top: 0.5rem;
 		.page-title{
 			h1{
-				line-height: 1;
 				margin-bottom: 0;
 			}
 			h2{
@@ -525,6 +565,17 @@ body[data-template='voyage']{
 }
 
 body[data-template='sectionblog']{
+	.page-title{
+		a{
+			&:hover, &.active, &:active{
+				color: $vert;
+				&:before{
+					background: transparent;
+				}
+
+			}
+		}
+	}
 	h2:first-child{
 		margin-bottom:0;
 	}
@@ -670,6 +721,7 @@ body[data-template='sectionblog']{
   }
   .slick-dots{
     margin-top:0.5rem;
+    padding-left: 0;
     li{
       width: 15px;
       height:15px;
@@ -687,15 +739,6 @@ body[data-template='sectionblog']{
   }
 }
 
-.mosaic{
-	display:flex; 
-	margin-top: 1em; 
-	margin-bottom: 1em;
-	li{
-		width: 20%;
-		padding: 0.5em;
-	}
-}
 
 // Clearing box fundation
 .clearing-blackout{

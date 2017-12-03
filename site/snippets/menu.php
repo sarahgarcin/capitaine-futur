@@ -20,7 +20,16 @@
 									<span class="sub-title">
 										<?php echo $submenu->title()->html();?>
 									</span>
-									<span class="sub-des"><?php echo $submenu->description()->html()?></span>
+									<span class="sub-des">
+										<?php if($submenu->intendedTemplate() == 'blog'):
+											echo $submenu->authors()->html();
+										elseif($submenu->intendedTemplate() == 'voyage'):
+											echo $submenu->subtitle()->html();
+										else:
+											echo $submenu->description()->html();
+										endif;?>
+											
+										</span>
 								</a>
 								
 							</li>

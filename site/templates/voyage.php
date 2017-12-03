@@ -2,20 +2,22 @@
 
 <?php if($page->thumb()->isNotEmpty()):?>
 <div class="big-cover">
-	<?php $image = $page->thumb()->toFile();?>
-	<img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>"/>
+	<?php $image = $page->thumb()->toFile();
+	echo $image->focusCrop(3000,2000);
+	?>
+
 </div>
 <?php endif?>
 <?php snippet("breadcrumb");?>
 <main class="wrap">
-	<div class="page-title small-push-4">
+	<div class="page-title medium-push-4 medium-14">
 		<h4><?php echo $page->year()->html()?></h4>
 		<h1><?php echo $page->title()->html()?></h1>
 		<h2><?php echo $page->subtitle()->html()?></h2>
 	</div>
 	<div class="row">
 		<?php snippet('menu-parent');?>
-		<div class="page-texte small-18 large-12 large-push-2 columns end">
+		<div class="page-text small-18 medium-12 large-12 large-push-2 columns end">
 			<div class="description">
 				<?php echo $page->description()->kirbytext()?>
 			</div>
@@ -37,6 +39,16 @@
 			<div class="texte">
 				<?php echo $page->text()->kirbytext()?>
 			</div>
+			<?php if($page->hasAudio()):?>
+			<div class="audio">
+				<h2>Le mot de Capitaine Futur</h2>
+				<?php foreach($page->audio() as $audio): ?>
+					<audio controls>
+					  <source src="<?php echo $audio->url() ?>" type="<?php echo $audio->mime() ?>">
+					</audio>
+				<?php endforeach ?>
+			</div>
+			<?php endif ?>
 		</div>
 
 	</div>
