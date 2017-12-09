@@ -72,7 +72,7 @@ figure{
 }
 
 p + ul {
-	margin-top: -1.25rem;
+	margin-top: -0.5rem;
 }
 
 p a{
@@ -414,6 +414,7 @@ main{
 	}
 	ul{
 		padding-left: 20px;
+		//margin-top: 0.5em;
 	}
 	ul + p {
 		margin-top: 1.25em;
@@ -427,6 +428,7 @@ main{
 	&.capitaine-futur{
 		border: 1px solid $vert; 
 		padding: 2em 3em;
+		background-color: #FFF;
 	}
 }
 
@@ -537,7 +539,8 @@ body[data-template='voyage']{
 			h3, li{
 				@include texteCourant;
 				text-align: right;
-				margin-bottom: 0.3em;
+				margin-bottom: 0.8em;
+				font-size: rem-calc(15);
 			}
 			h3{
 				font-weight:bold;
@@ -570,6 +573,7 @@ body[data-template='voyage']{
 
 .page-author{
 	padding-left:0;
+	p{text-align: right;}
 }
 
 body[data-template='sectionblog']{
@@ -687,8 +691,13 @@ body[data-template='sectionblog']{
       min-width: 100px;
       padding: 5px 2px 5px 2px;
       // text-align:center;
+      .vis-item-content{
+      	white-space: normal; 
+      }
       a{
       	color: #FFF;
+      	line-height: 1;
+      	font-size: rem-calc(15);
       	// text-transform: uppercase;
       }
     }
@@ -711,6 +720,28 @@ body[data-template='sectionblog']{
     	font-weight: bold;
     }
 	}
+	.menu {
+		position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    z-index: 100;
+
+		input{
+			background: #FFF;
+			border: 1px solid $vert;
+			border-radius:0;
+			outline:none;
+			//display:block;
+			width: 30px;
+			height: 30px;
+			text-align:center;
+			&:hover{
+				background: $vert;
+				color: #FFF;
+			}
+		}
+	}
 }
 
 
@@ -729,7 +760,7 @@ body[data-template='sectionblog']{
     background: transparent;
     padding: 0;
     color: $vert;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 100;
     position:absolute;
     top: 45%;

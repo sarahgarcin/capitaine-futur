@@ -1,4 +1,8 @@
 <div id="calendar" class="small-16 small-push-1 medium-16 medium-push-2 large-14 large-push-2">
+   <div class="menu">
+      <input type="button" id="zoomIn" value="+"/>
+      <input type="button" id="zoomOut" value="-"/>
+  </div>
 	<?php foreach($page->events()->toStructure() as $event):?>
 		<?php 
 		$startFormat = strtotime($event->datestart);

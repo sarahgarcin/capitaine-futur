@@ -70,8 +70,8 @@ function init(){
   	// centerPadding: '60px',
   	// variableWidth: true;
 	  slidesToShow: 1,
-	  prevArrow: '<button type="button" class="slick-prev"><</button>',
-	  nextArrow: '<button type="button" class="slick-next">></button>'
+	  prevArrow: '<button type="button" class="slick-prev">←</button>',
+	  nextArrow: '<button type="button" class="slick-next">→</button>'
 	});
 
 	$('.slider-image').click(function() {
@@ -100,6 +100,8 @@ function init(){
   // CALENDAR
   if($('body').attr('data-template') == 'calendrier'){
 	  var container = document.getElementById('calendar');
+	  document.getElementById('zoomIn').onclick    = function () { timeline.zoomIn( 0.5); };
+    document.getElementById('zoomOut').onclick   = function () { timeline.zoomOut( 0.5); };
 
 	  // Create a DataSet (allows two way data-binding)
 	  var items = new vis.DataSet([
@@ -134,10 +136,27 @@ function init(){
 	  });
 
 	  // Configuration for the Timeline
-	  var options = {
-	  	height: "300px",
-	  	horizontalScroll: true,
+	  // var options = {
+	  // 	height: "300px",
+	  // 	horizontalScroll: true,
 
+	  // };
+	   var options = {
+	    stack: true,
+	    height: 350,
+	    horizontalScroll: true,
+	    zoomKey: 'cmdKey',
+	    start: new Date(),
+	    end: new Date(2020, 0, 1),
+	    margin: {
+	      item: 10, // minimal margin between items
+	      axis: 5   // minimal margin between items and the axis
+	    },
+	    min: new Date(2017, 0, 1),                // lower limit of visible range
+	    max: new Date(2020, 0, 1),                // upper limit of visible range
+	    zoomMin: 1000 * 60 * 60 * 24,             // one day in milliseconds
+	    zoomMax: 1000 * 60 * 60 * 24 * 31 * 40     // about three months in milliseconds
+	    //orientation: 'top'
 	  };
 
 	  // Create a Timeline
