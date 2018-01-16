@@ -15,6 +15,7 @@
 			</ul>
 		</nav>
 	<?php endif ?>
+	<?php if ($page->intendedTemplate() != "voyage"): ?>
 		<?php if($page->thumb()->isNotEmpty()):
 				$thumb = $page->thumb()->toFile();?>
 			<figure class="page-thumbnail">
@@ -28,6 +29,7 @@
 				<?php endif;?>
 			</figure>
 		<?php endif;?>
+	<?php endif ?>
 	<!-- Liens rapides -->
 	<?php if($page->links()->isNotEmpty()):?>
 		<nav class="page-links">

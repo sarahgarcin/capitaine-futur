@@ -16,7 +16,12 @@
 		<h2><?php echo $page->subtitle()->html()?></h2>
 	</div>
 	<div class="row">
-		<?php snippet('menu-parent');?>
+		<?php if($page->parent()->intendedTemplate() == "gn3i"): ?>
+			<?php snippet('menu-parent');?>
+		<?php else: ?>
+			<?php snippet('leftCol');?>
+		<?php endif ?>
+
 		<div class="page-text small-18 medium-12 large-12 large-push-2 xlarge-push-8 columns end">
 			<div class="description">
 				<?php echo $page->description()->kirbytext()?>

@@ -6,7 +6,8 @@
 	.plan-gauche, .plan-droite{display:none;}
 	.page-title{
 		word-wrap: break-word;
-		h1{word-wrap: break-word;}
+		hyphens: auto;
+		h1{word-wrap: break-word;hyphens: auto;}
 	}
 	.header-for-desktop{
 		display:none;
@@ -55,18 +56,11 @@
 				}
 			}
 		}
-		&.header-for-mobile{
-			display:block;
-			.menus-wrapper{
-				display:none;
-				&.active{
-					display:block;
-				}
-			}
-		}
+
 		.siteName{
-			width: 80%;
-			max-width: 250px;
+			// width: 80%;
+			// max-width: 250px;
+			width: 280px;
 			float:left;
 		}
 		.icon-mobile-wrapper{
@@ -93,26 +87,21 @@
 			}
 		}
 	}
-	// header{
-	// 	> nav {
-	// 		//position:relative;
-	// 		background: $jaune;
-	// 		top:5rem;
-	// 		left: 0;
-	// 		position:absolute;
-	// 		margin:0;
-	// 		> ul{
-	// 			display: block;
-
-	// 			>li{
-
-	// 			}
-	// 		}
-	// 	}
-	//}
+	header.header-for-mobile{
+		display:block;
+		.menus-wrapper{
+			display:none;
+			&.active{
+				display:block;
+			}
+		}
+	}
 }
 
+
+
 @media #{$small-only} {
+	
 	body[data-template='home'] {
 		.wrap{
 			top: 40%;

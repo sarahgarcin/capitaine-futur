@@ -17,16 +17,38 @@ fields:
   subtitle:
     label: Sous-Titre
     type:  text
+    help: Le sous-titre s'affiche dans la barre de menu et sur la page
   year:
     label: Dates
     type:  text
+    help: À remplir seulement si l'évènement est lié à des dates
   thumb:
     label: Image de couverture
     type: selector
     mode: single
+    help: Image s'affichant en haut en bandeau
   description:
     label: Résumé
     type:  markdown
+  links: 
+    label: Liens rapides 
+    type: structure
+    fields:
+      linktitle:
+        label: Titre du lien
+        type:  text
+        width: 1/2
+      link:
+        label: Lien
+        type: multiselect
+        required: true
+        search: true
+        options: query
+        query:
+          page: /
+          fetch: pages
+        width: 1/2
+        icon:  link
   text:
     label: Texte
     type:  markdown

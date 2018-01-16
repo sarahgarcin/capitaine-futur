@@ -1,6 +1,6 @@
 <div class="menu-image large-push-3">
 	<ul class="row">
-	  <?php foreach($page->children()->visible()->flip() as $project): ?>
+	  <?php foreach($page->children()->visible() as $project): ?>
 	    <li class="small-18 medium-9 large-6 xlarge-push-6 column end">
 	        <a href="<?= $project->url() ?>">
 	          <?php if($image = $project->thumb()->toFile()): $thumb = $image->crop(640, 460); ?>

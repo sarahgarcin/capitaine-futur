@@ -142,10 +142,9 @@ function init(){
 
 	  // };
 	   var options = {
-	    stack: true,
 	    height: 350,
 	    horizontalScroll: true,
-	    zoomKey: 'cmdKey',
+	    zoomKey: 'ctrlKey',
 	    start: new Date(),
 	    end: new Date(2020, 0, 1),
 	    margin: {
@@ -155,12 +154,12 @@ function init(){
 	    min: new Date(2017, 0, 1),                // lower limit of visible range
 	    max: new Date(2020, 0, 1),                // upper limit of visible range
 	    zoomMin: 1000 * 60 * 60 * 24,             // one day in milliseconds
-	    zoomMax: 1000 * 60 * 60 * 24 * 31 * 40     // about three months in milliseconds
-	    //orientation: 'top'
+	    zoomMax: 1000 * 60 * 60 * 24 * 31 * 40,     // about three months in milliseconds
 	  };
 
 	  // Create a Timeline
 	  var timeline = new vis.Timeline(container, items, options);
+	  
 	}
 
 }
