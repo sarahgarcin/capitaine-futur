@@ -12,6 +12,8 @@
 
   <?= js('assets/js/plugins.js') ?>
   <?= js('bower_components/vis/dist/vis.min.js')?>
+  <?= js('assets/js/libs/photoswipe.min.js')?>
+  <?= js('assets/js/libs/photoswipe-ui-default.min.js')?>
   <?= js('assets/js/main.js') ?>
 
   <?php else: ?>
@@ -19,6 +21,7 @@
   <?= js('assets/production/all.min.js') ?>
 
   <?php endif ?>
-
+  <!-- init photoswipe -->
+  <?= \ka\kirby\PhotoSwipe::init(); ?>
 </body>
 </html>

@@ -68,6 +68,10 @@ a{
 	&:hover{color: $vert;}
 }
 
+button:hover, button:focus, .button:hover, .button:focus{
+	background-color:transparent;
+}
+
 .FigureImage-lazy {
 	padding:0 !important;
 }
@@ -437,29 +441,35 @@ main{
 
 
 body[data-template='home']{
-	overflow: hidden;
+	// overflow: hidden;
 	position:relative;
-	main{
-		background: url('../images/illu-jour.jpg');
-		background-repeat:no-repeat;
-		background-size:cover; 
-		background-position:100% 0%;
-		height:100vh;
-		&.night-mode{
-			background: url('../images/illu-nuit.jpg');
-			background-repeat:no-repeat;
-			background-size:cover; 
-			background-position:100% 0%;
-			.wrap h2{
-				color: #FFF;
-				font-weight:normal;
-			}
-		}
+	// main{
+	// 	background: url('../images/illu-jour.jpg');
+	// 	background-repeat:no-repeat;
+	// 	background-size:cover; 
+	// 	background-position:100% 0%;
+	// 	height:100vh;
+	// 	&.night-mode{
+	// 		background: url('../images/illu-nuit.jpg');
+	// 		background-repeat:no-repeat;
+	// 		background-size:cover; 
+	// 		background-position:100% 0%;
+	// 		.wrap h2{
+	// 			color: #FFF;
+	// 			font-weight:normal;
+	// 		}
+	// 	}
 
+	// }
+	.home-illustration{
+		opacity: 0.8;
+		height: 70vh; 
+		padding-top: $header-height;
+		overflow:hidden;
 	}
 	.wrap{
 		position:absolute;
-		top: 35%;
+		top: 25%;
 		left:50%;
 		transform: translate(-50%);
 		//transform: translateX(-50%);
@@ -478,18 +488,59 @@ body[data-template='home']{
 			font-weight:normal;
 		}
 	}
-	.plan-droite, .plan-gauche{
-		position: absolute;
-		// height: 80vh;	
-		width:88%;
-		top:$header-height;
-		z-index: 6;
+	// .plan-droite, .plan-gauche{
+	// 	position: absolute;
+	// 	// height: 80vh;	
+	// 	width:88%;
+	// 	top:$header-height;
+	// 	z-index: 6;
+	// }
+	// .plan-droite{
+	// 	right:0;
+	// }
+	// .plan-gauche{
+	// 	left:0;
+	// }
+	.description{
+		padding: 30px 10px 20px 20px;
+		h3{
+			font-family: $karla;
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+		a{
+			text-decoration: underline;
+			&:hover{
+				@include brume(#FFF, $vert, 10%, -10%, 80%, 120%, 10px);
+				text-decoration:none;
+			}
+		}
 	}
-	.plan-droite{
-		right:0;
-	}
-	.plan-gauche{
-		left:0;
+
+	.news{
+		margin-top: 60px;
+		h2{
+			padding-left: 15px;
+			margin-bottom:20px;
+			font-family: $karla;
+			text-decoration:underline;
+		}
+		li{
+			&:hover .image-wrapper{
+				background:transparent;
+				img{
+					filter: none;
+					mix-blend-mode: normal;
+				}
+			}
+			.image-wrapper{
+				@include monochrome($vert);
+
+			}
+			h3{
+				margin-top:20px;
+			}
+		}
 	}
 }
 
@@ -514,6 +565,34 @@ body[data-template='menu']{
 					@include brume(#FFF, $vert, 25%, -8%, 50%, 110%, 30px);
 				}
 			}
+		}
+	}
+}
+
+body[data-template='qui']{
+	.qui-section{
+		margin-top: 30px;
+		li{
+			&:first-child{
+				padding-left:0;
+			}
+			&:hover .image-wrapper{
+				background:transparent;
+				img{
+					filter: none;
+					mix-blend-mode: normal;
+				}
+			}
+		}
+		h3{
+			font-family: $karla;
+			text-decoration:underline;
+			text-transform:uppercase;
+			margin-bottom: 20px;
+		}
+		.image-wrapper{
+			margin-bottom: 10px;
+			@include monochrome($vert);
 		}
 	}
 }

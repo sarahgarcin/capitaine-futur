@@ -18,6 +18,14 @@ fields:
     label: Sous-Titre
     type:  text
     help: Le sous-titre s'affiche dans la barre de menu et sur la page
+  actu:
+    label: Afficher la page sur la page d'Accueil ? 
+    type: radio
+    default: non
+    options:
+      oui: oui
+      non: non
+
   year:
     label: Dates
     type:  text

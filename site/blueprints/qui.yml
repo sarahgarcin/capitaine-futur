@@ -1,0 +1,17 @@
+title: Qui ? 
+
+pages: 
+  template: 
+    - quisection 
+files: false
+
+fields:
+  title:
+    label: 
+      fr: Titre
+      en: Title
+    type:  text
+  description:
+    label: Description
+    type:  text
+    help: Texte de moins de 10 mots qui s'affiche à l'ouverture du sous-menu

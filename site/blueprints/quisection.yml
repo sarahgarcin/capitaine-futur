@@ -1,0 +1,13 @@
+title: Section qui ?  
+
+pages: 
+  template: 
+    - voyage 
+files: false
+
+fields:
+  title:
+    label: 
+      fr: Titre
+      en: Title
+    type:  text

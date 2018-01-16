@@ -12,6 +12,9 @@
 
   <?php echo css('bower_components/slick-carousel/slick/slick.css') ?>
   <?php echo css('bower_components/vis/dist/vis-timeline-graph2d.min.css') ?>
+  <?php echo css('assets/css/photoswipe.css') ?>
+  <?php echo css('assets/css/default-skin/default-skin.css') ?>
+ 
   <?php if ( c::get('environment') == 'local' ) : ?>
 
   <?php echo css('assets/css/main.css') ?>
