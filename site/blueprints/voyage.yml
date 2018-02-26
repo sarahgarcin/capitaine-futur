@@ -25,11 +25,15 @@ fields:
     options:
       oui: oui
       non: non
-
   year:
     label: Dates
     type:  text
     help: À remplir seulement si l'évènement est lié à des dates
+  thumbnail:
+    label: Thumbnail
+    type: selector
+    mode: single
+    help: Image s'affichant sur le menu 
   thumb:
     label: Image de couverture
     type: selector
@@ -64,3 +68,7 @@ fields:
     label: Images pour le caroussel
     type: selector
     mode: multiple
+  imagesLeft:
+    label: Images à afficher dans la colonne de gauche
+    type: selector
+    mode: multiple 

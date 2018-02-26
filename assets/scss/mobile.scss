@@ -101,17 +101,33 @@
 
 
 @media #{$small-only} {
+	.page-title, .breadcrumb{padding-left:0;}
 	
 	body[data-template='home'] {
 		.wrap{
-			top: 40%;
+			top: 15%;
+			.title{
+				display:none;
+			}
 			h2{
 				font-size: rem-calc(20);
 			}
 		}
-	}
-	.page-title{
-		padding-left: 0.5em;
+		.home-illustration{
+			//width: 120%;
+			height: 200px;
+		}
+		.news{
+			li{
+				.image-wrapper{
+					background:transparent;
+					img{
+						filter: none;
+						mix-blend-mode: normal;
+					}
+				}
+			}
+		}
 	}
 	.page-trame{
 		left:0;
@@ -127,13 +143,6 @@
 				text-align: left;
 			}
 		}
-	}
-	.page-author{
-		padding-left: 0.8em;
-		p{text-align: left;}
-	}
-	.section-content{
-		padding: 0.8em;
 	}
 
 	body[data-template='voyage']{

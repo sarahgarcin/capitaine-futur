@@ -2,7 +2,7 @@
 	
 <main class="small-18">
 	<div class="home-illustration">
-		<img src="<?php echo $site->url()?>/assets/images/accueil-final-crop2.png" alt="Les voyages de Capitaine Futur">
+		<img src="<?php echo $site->url()?>/assets/images/illu-jour-crop-sans-tete.png" alt="Les voyages de Capitaine Futur">
 	</div>
 	<div class="wrap small-18">
 		<div class="title small-16 medium-14 large-12 xlarge-16">
@@ -22,14 +22,15 @@
 				<?php $news = getAllNews($site, $pages); ?>
 				<?php foreach($page->actualites()->split(',') as $actualite): ?>
 					<?php if($pages->find($news[$actualite])):?>
-						<li class="small-12 medium-6 columns end">
+						<li class="small-16 medium-6 columns end">
 							<a href="<?php echo $pages->find($news[$actualite])->url() ?>" title="<?php echo $pages->find($news[$actualite])->title()?>">
 								<?php $formatedTitle = str_replace( "<br>", "", $pages->find($news[$actualite])->title()->html()); 
-									$thumb = $pages->find($news[$actualite])->thumb()->toFile();
+									$thumb = $pages->find($news[$actualite])->thumbnail()->toFile();
+
 								?>
 								<?php if($thumb):?>
 									<div class="image-wrapper">
-										<img src="<?php echo $thumb->url()?>" alt="<?php echo $pages->find($news[$actualite])->title()?>">
+										<img src="<?php echo $thumb->crop(640,480)->url()?>" alt="<?php echo $pages->find($news[$actualite])->title()?>">
 									</div>
 								<?php endif; ?>
 								<h3><?php echo $formatedTitle ?></h3>

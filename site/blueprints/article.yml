@@ -4,6 +4,8 @@ pages: false
 files: true
 
 fields:
+  gallerygrid:
+    type: gallerygrid
   title:
     label: 
       fr: Titre

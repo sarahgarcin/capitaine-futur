@@ -1,4 +1,4 @@
-<div class="page-leftCol small-18 medium-5 large-5 large-push-2 xlarge-push-8 columns">
+<div class="page-leftCol small-16 medium-3 columns">
 <!-- 	<div class="empty-div">
 		<p><?php //echo $page->title()->html()?></p>
 	</div> -->

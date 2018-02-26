@@ -1,28 +1,31 @@
 <?php snippet('header') ?>
 
 <?php if($page->thumb()->isNotEmpty()):?>
-<div class="big-cover">
-	<?php $image = $page->thumb()->toFile();
-	echo $image->focusCrop(3000,2000);
-	?>
+	<div class="big-cover">
+		<?php $image = $page->thumb()->toFile();
+		echo $image->focusCrop(3000,2000);
+		?>
 
-</div>
+	</div>
 <?php endif?>
-<?php snippet("breadcrumb");?>
-<main class="wrap">
-	<div class="page-title medium-push-4 medium-14 xlarge-push-10">
+
+<main class="wrap small-push-1 medium-push-4 xlarge-push-6">
+	<?php snippet("breadcrumb");?>
+	<div class="page-title small-16 medium-14">
 		<h4><?php echo $page->year()->html()?></h4>
 		<h1><?php echo $page->title()->html()?></h1>
 		<h2><?php echo $page->subtitle()->html()?></h2>
 	</div>
 	<div class="row">
 		<?php if($page->parent()->intendedTemplate() == "gn3i"): ?>
-			<?php snippet('menu-parent');?>
+			<div class="hide-for-small-only">			
+				<?php snippet('menu-parent');?>
+			</div>
 		<?php else: ?>
 			<?php snippet('leftCol');?>
 		<?php endif ?>
 
-		<div class="page-text small-18 medium-12 large-12 large-push-2 xlarge-push-8 columns end">
+		<div class="page-text small-16 medium-12 large-12 columns end">
 			<div class="description">
 				<?php echo $page->description()->kirbytext()?>
 			</div>
@@ -55,7 +58,11 @@
 			</div>
 			<?php endif ?>
 		</div>
-
+			<?php if($page->parent()->intendedTemplate() == "gn3i"): ?>
+				<div class="show-for-small-only">			
+					<?php snippet('menu-parent');?>
+				</div>
+			<?php endif ?>
 	</div>
 </main>
 <div class="blur"></div>

@@ -1,7 +1,7 @@
 title: Calendrier
 
 pages: article
-files: false
+files: true
 
 fields:
   title:
@@ -11,6 +11,10 @@ fields:
     label: Description
     type:  text
     help: Texte de moins de 10 mots qui s'affiche à l'ouverture du sous-menu
+  calendrier:
+    label: Calendrier
+    type: selector
+    mode: single 
   events:
     label: Évènements
     type: structure

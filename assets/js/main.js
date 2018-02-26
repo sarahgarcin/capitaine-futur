@@ -70,8 +70,8 @@ function init(){
   	// centerPadding: '60px',
   	// variableWidth: true;
 	  slidesToShow: 1,
-	  prevArrow: '<button type="button" class="slick-prev">←</button>',
-	  nextArrow: '<button type="button" class="slick-next">→</button>'
+	  prevArrow: '<button type="button" class="slick-prev"><</button>',
+	  nextArrow: '<button type="button" class="slick-next">></button>'
 	});
 
 	$('.slider-image').click(function() {

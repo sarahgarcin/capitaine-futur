@@ -1,20 +1,22 @@
 <?php snippet('header') ?>
-<?php snippet('breadcrumb') ?>
-<main class="wrap">
-	<div class="page-title medium-push-4 medium-14 xlarge-push-10">
+
+<main class="wrap small-push-1 medium-push-4 xlarge-push-5">
+	<?php snippet('breadcrumb') ?>
+	<div class="page-title small-16 medium-14">
 		<h1><?php echo $page->title()->html()?></h1>
 	</div>
-	<div class="row blog-description">
-		<div class="page-author small-18 medium-4 medium-push-1 large-4 large-push-2 xlarge-push-8 columns">
-			<?php echo $page->authors()->kirbytext()?>
-		</div>
-		<div class="page-text small-18 medium-12 medium-push-1 large-12 large-push-2 xlarge-push-8 columns end">
-			<?php echo $page->description()->kirbytext()?>
-		</div>
+	<div class="blog-description small-16 medium-12 large-12">
+			<div class="page-author">
+				<?php echo $page->authors()->kirbytext()?>
+			</div>
+			<div class="page-text">
+				<?php echo $page->description()->kirbytext()?>
+			</div>
 	</div>
 	<?php snippet('galerie-image')?>
-	<?php snippet('trame') ?>
+	
 </main>
+<?php snippet('trame') ?>
 <div class="blur"></div>
 
 <?php snippet('footer') ?>

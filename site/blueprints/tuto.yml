@@ -1,0 +1,70 @@
+title: Tutoriel
+
+pages: false
+files: true
+
+fields:
+  gallerygrid:
+    type: gallerygrid
+  title:
+    label: 
+      fr: Titre
+      en: Title
+    type:  text
+  synopsis: 
+    label: Synopsis
+    type: markdown
+  objectives: 
+    label: 
+      fr: Objectifs
+      en: Objectives
+    type: markdown
+  ingredients: 
+    label: 
+      fr: Matériel
+      en: Ingredient
+    type: structure
+    fields:
+      text:
+        label: 
+          fr: Élément
+          en: Ingredient
+        type:  markdown
+      pic:
+        label: 
+          fr: Image
+          en: Picture
+        type: selector
+        mode: single
+  tools: 
+    label: 
+      fr: Outils
+      en: Tools
+    type: structure
+    fields:
+      text:
+        label: 
+          fr: Outil
+          en: Tool
+        type:  markdown
+      pic:
+        label: 
+          fr: Image
+          en: Picture
+        type: selector
+        mode: single
+  cost: 
+    label: 
+      fr: Coût
+      en: Cost
+    type: text
+  length: 
+    label: 
+      fr: Durée
+      en: Length
+    type: text
+  text: 
+    label: 
+      fr: Texte
+      en: Text
+    type: markdown

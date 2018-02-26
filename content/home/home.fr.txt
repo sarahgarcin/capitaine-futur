@@ -19,7 +19,7 @@ Capitaine futur
 
 ----
 
-Description: Les Voyages de Capitaine futur est un projet de coopération européenne porté par Cinekid (Pays-Bas), la Gaîté lyrique (France), KIKK (Belgique) et Woelab (Togo) qui produit des oeuvres originales de media art, des ateliers de fabrication, des tutoriels en ligne et une publication de recherche.
+Description: Un projet de coopération européenne porté par Cinekid, la Gaîté Lyrique, KIKK et WoeLab qui produit des oeuvres originales de media art pour les enfants, des ateliers de fabrication, des tutoriels en ligne et une publication de recherche.
 
 ----
 

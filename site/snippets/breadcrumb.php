@@ -1,4 +1,4 @@
-<nav class="breadcrumb medium-push-3 xlarge-push-5 <?php if($page->thumb()->isEmpty()):?>no-cover<?php endif?>">
+<nav class="breadcrumb  <?php if($page->thumb()->isEmpty()):?>no-cover<?php endif?>">
   <ul>
     <?php foreach($site->breadcrumb() as $crumb): ?>
     <li>

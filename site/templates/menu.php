@@ -8,7 +8,7 @@
 			<h1><?php echo $page->title()->html()?></h1>
 		<?php endif;?>
 	</div>
-	<div class="small-push-1 medium-push-6">
+	<div class="small-push-1 medium-push-4">
 		<ul class="submenu">
 			<?php foreach($page->children()->visible() as $submenu):?>
 				<li>

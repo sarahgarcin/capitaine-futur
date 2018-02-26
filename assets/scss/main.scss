@@ -103,6 +103,7 @@ figcaption{
 }
 
 .page-title{
+	margin-top: 1.5em;
 	margin-bottom: 1em;
 }
 .header-for-mobile{
@@ -124,6 +125,7 @@ header{
 	.siteName{
 		width: 33vw;
 		min-width: 250px;
+		max-width: 320px;
 		h1 {
 			display:none;
 		}
@@ -238,7 +240,7 @@ main{
 .wrap{
 	width: 100%;
 	max-width:64rem;
-	margin-top: 1.5em;
+	//margin-top: 1.5em;
 }
 
 .page-trame{
@@ -289,8 +291,9 @@ main{
 }
 
 .page-leftCol{
-	min-height: 50px;
-	.empty-div{opacity:0;}
+	//min-height: 50px;
+	// .empty-div{opacity:0;}
+	padding-left:0;
 	nav.gn3t-menu{
 		margin-top: 0.2em;
 		li{
@@ -325,7 +328,7 @@ main{
 	.page-links{
 		h3, li{
 			@include texteCourant;
-			text-align: right;
+			// text-align: right;
 			font-size: rem-calc(15);
 		}
 		h3{
@@ -341,10 +344,15 @@ main{
 }
 
 .menu-image{
-	margin: 4em 3em;
+	margin: 4em 0em;
 	ul{
 		li{
-			margin-bottom: 1.5em;
+			//margin-bottom: 1.5em;
+			min-height: 350px;
+			padding-left:0;
+			&:first{
+				padding-left:0;
+			}
 			.showcase-date{
 				font-family: $karla;
 				font-size: rem-calc(18);
@@ -370,11 +378,12 @@ main{
 }
 
 .page-text{
+	padding-left:0;
 	p + .slider, .mosaic + .slider{
 		margin-top: 2rem;
 	}
 	.slider{
-		width: 90%;
+		width: 100%;
 		margin:auto;
 		margin-bottom: 2rem;
 		padding-left: 0;
@@ -443,24 +452,7 @@ main{
 body[data-template='home']{
 	// overflow: hidden;
 	position:relative;
-	// main{
-	// 	background: url('../images/illu-jour.jpg');
-	// 	background-repeat:no-repeat;
-	// 	background-size:cover; 
-	// 	background-position:100% 0%;
-	// 	height:100vh;
-	// 	&.night-mode{
-	// 		background: url('../images/illu-nuit.jpg');
-	// 		background-repeat:no-repeat;
-	// 		background-size:cover; 
-	// 		background-position:100% 0%;
-	// 		.wrap h2{
-	// 			color: #FFF;
-	// 			font-weight:normal;
-	// 		}
-	// 	}
 
-	// }
 	.home-illustration{
 		opacity: 0.8;
 		height: 70vh; 
@@ -488,19 +480,7 @@ body[data-template='home']{
 			font-weight:normal;
 		}
 	}
-	// .plan-droite, .plan-gauche{
-	// 	position: absolute;
-	// 	// height: 80vh;	
-	// 	width:88%;
-	// 	top:$header-height;
-	// 	z-index: 6;
-	// }
-	// .plan-droite{
-	// 	right:0;
-	// }
-	// .plan-gauche{
-	// 	left:0;
-	// }
+
 	.description{
 		padding: 30px 10px 20px 20px;
 		h3{
@@ -546,23 +526,26 @@ body[data-template='home']{
 
 body[data-template='menu']{
 	.wrap .submenu {
+		margin-top: 3em;
 		li{
 			margin-bottom: 1em;
 		}
 		a{
 			span.sub-title{
-				font-size: rem-calc(50);
+				// font-size: rem-calc(50);
+				font-size: rem-calc(25);
 				font-family: $bungee;
 				position:relative;
 			}
 			span.sub-des {
-				font-size: rem-calc(20);
+				font-size: rem-calc(18);
 				font-style: italic;
 				display:block;
 			}
 			&:hover, &.active{
 				span.sub-title{
-					@include brume(#FFF, $vert, 25%, -8%, 50%, 110%, 30px);
+					@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 20px);
+					// @include brume(#FFF, $vert, 25%, -8%, 50%, 110%, 30px);
 				}
 			}
 		}
@@ -597,9 +580,15 @@ body[data-template='qui']{
 	}
 }
 
+body[data-template='calendrier']{
+	.wrap{
+		max-width:none;
+	}
+}
+
 body[data-template='voyage']{
 	.breadcrumb{
-		padding: 0.5em 0.5em;
+		padding: 0.5em 0em;
 		&.no-cover{
 			padding: $header-height +0.5 0.5em 0.5em 0.5em;
 		}
@@ -617,12 +606,13 @@ body[data-template='voyage']{
 
 	.page-menu-parent{
 		// margin-top: 0.2em;
+		padding-left: 0;
 		nav{
 			h3, li{
 				@include texteCourant;
-				text-align: right;
-				margin-bottom: 0.8em;
-				font-size: rem-calc(15);
+				text-align: left;
+				margin-bottom: 1em;
+				font-size: rem-calc(14);
 			}
 			h3{
 				font-weight:bold;
@@ -630,7 +620,18 @@ body[data-template='voyage']{
 				margin-top: -1px;
 			}
 			a:hover{
-				@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 10px);
+				color: $vert;
+				//@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 10px);
+			}
+			.image-wrapper{
+				@include monochrome($vert)
+				&:hover{
+					background:transparent;
+					img{
+						filter: none;
+						mix-blend-mode: normal;
+					}
+				}
 			}
 		}
 	}
@@ -655,7 +656,7 @@ body[data-template='voyage']{
 
 .page-author{
 	padding-left:0;
-	p{text-align: right;}
+	// p{text-align: right;}
 }
 
 body[data-template='sectionblog']{
@@ -682,9 +683,9 @@ body[data-template='sectionblog']{
 	.section-article{
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
-		padding-top: 1.5em;
-		padding-bottom: 1em;
-		border-top:3px solid $vert;
+		padding-top: 1em;
+		padding-bottom: 2em;
+		border-bottom:1px solid $vert;
 	}
 	.pagination{
 		border-top: 1px solid $vert;
@@ -758,6 +759,17 @@ body[data-template='sectionblog']{
 // 		vertical-align:top;
 // 	}
 // }
+
+	.list-dates{
+		li{
+			padding: 10px;
+			border-top: 1px solid $vert;
+			a:hover{
+				@include brume(#FFF, $vert, 20%, -5%, 60%, 110%, 10px);
+			}
+		}
+	}
+
 
 #calendar{
 	margin-top: 3em;
@@ -834,12 +846,15 @@ body[data-template='sectionblog']{
   // &:hover button{
   // 	display:block;
   // }
+  &:hover button{
+  	// display: block !important;
+  }
   img {
     margin:auto;
     max-width:100%;
   }
   button{
-    background: transparent;
+    ///background: transparent;
     padding: 0;
     color: $vert;
     font-size: 1.5em;
@@ -849,12 +864,20 @@ body[data-template='sectionblog']{
     transform: translateY(-50%);
     z-index: 999;
     outline: none;
-    //display:none;
+    background-color: #FFF; 
+    border-radius: 100%; 
+    padding: 0px 5px 3px;
+    opacity: 0.5;
+    width: 32px; 
+    height:32px;
+    // display:none !important;
     &.slick-prev{
-      left:-35px;
+      //left:-35px;
+      left: 10px;
     }
     &.slick-next{
-      right:-35px;
+      // right:-35px;
+      right: 10px;
     }
     &.hidden{
     	opacity: 0;
